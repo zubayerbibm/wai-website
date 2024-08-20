@@ -27,7 +27,7 @@ acknowledgements: /perspective-videos/acknowledgements/ # Do not change this
 changelog: /perspective-videos/changelog/ # Do not change this
 
 description: Video pendek yang menunjukkan betapa pentingnya aksesibilitas Web bagi penyandang disabilitas dan berguna bagi semua orang dalam berbagai situasi.
-image: /perspective-videos/img/overview.jpg
+image: /perspective-videos//content-images/perspective-videos/overview.jpg
 
 # In the footer below:
 # Do not change the dates
@@ -44,16 +44,16 @@ Aksesibilitas web sangat penting bagi penyandang disabilitas dan bermanfaat bagi
 
 ## Perspectives Videos
 
-- [![](img/thumbnails/keyboard.jpg)<br>Kompatibilitas dengan Kibor]({{ "/perspective-videos/keyboard/id" | relative_url }})
-- [![](img/thumbnails/contrast.jpg)<br>Warna dengan Kontras yang Baik]({{ "/perspective-videos/contrast/id" | relative_url }})
-- [![](img/thumbnails/layout.jpg)<br>Tata Letak dan Desain yang Jelas]({{ "/perspective-videos/layout/id" | relative_url }})
-- [![](img/thumbnails/speech.jpg)<br>Teks-ke-Ucapan]({{ "/perspective-videos/speech/id" | relative_url }})
-- [![](img/thumbnails/controls.jpg)<br>Tautan, Tombol, dan Kontrol yang Besar]({{ "/perspective-videos/controls/id" | relative_url }})
-- [![](img/thumbnails/captions.jpg)<br>Takarir Video]({{ "/perspective-videos/captions/id" | relative_url }})
-- [![](img/thumbnails/customizable.jpg)<br>Teks yang Dapat Disesuaikan]({{ "/perspective-videos/customizable/id" | relative_url }})
-- [![](img/thumbnails/voice.jpg)<br>Pengenalan Ucapan]({{ "/perspective-videos/voice/id" | relative_url }})
-- [![](img/thumbnails/understandable.jpg)<br>Konten yang Dapat Dimengerti]({{ "/perspective-videos/understandable/id" | relative_url }})
-- [![](img/thumbnails/notifications.jpg)<br>Notifikasi dan Umpan Balik]({{ "/perspective-videos/notifications/id" | relative_url }})
+- [![](/content-images/perspective-videos/thumbnails/keyboard.jpg)<br>Kompatibilitas dengan Kibor]({{ "/perspective-videos/keyboard/id" | relative_url }})
+- [![](/content-images/perspective-videos/thumbnails/contrast.jpg)<br>Warna dengan Kontras yang Baik]({{ "/perspective-videos/contrast/id" | relative_url }})
+- [![](/content-images/perspective-videos/thumbnails/layout.jpg)<br>Tata Letak dan Desain yang Jelas]({{ "/perspective-videos/layout/id" | relative_url }})
+- [![](/content-images/perspective-videos/thumbnails/speech.jpg)<br>Teks-ke-Ucapan]({{ "/perspective-videos/speech/id" | relative_url }})
+- [![](/content-images/perspective-videos/thumbnails/controls.jpg)<br>Tautan, Tombol, dan Kontrol yang Besar]({{ "/perspective-videos/controls/id" | relative_url }})
+- [![](/content-images/perspective-videos/thumbnails/captions.jpg)<br>Takarir Video]({{ "/perspective-videos/captions/id" | relative_url }})
+- [![](/content-images/perspective-videos/thumbnails/customizable.jpg)<br>Teks yang Dapat Disesuaikan]({{ "/perspective-videos/customizable/id" | relative_url }})
+- [![](/content-images/perspective-videos/thumbnails/voice.jpg)<br>Pengenalan Ucapan]({{ "/perspective-videos/voice/id" | relative_url }})
+- [![](/content-images/perspective-videos/thumbnails/understandable.jpg)<br>Konten yang Dapat Dimengerti]({{ "/perspective-videos/understandable/id" | relative_url }})
+- [![](/content-images/perspective-videos/thumbnails/notifications.jpg)<br>Notifikasi dan Umpan Balik]({{ "/perspective-videos/notifications/id" | relative_url }})
 {:.two.columns.linklist}
 
 **Kompilasi semua 10 video (7:36 menit): [kompilasi di YouTube {% include icon.html name="external-link" label="Tautan Eksternal" %}](https://www.youtube.com/watch?v=3f31oufqFSM)**, [kompilasi di server W3C (format berkas: MP4, ukuran berkas: 73MB) {% include icon.html name="external-link" label="Tautan Eksternal" %}](https://media.w3.org/wai/perspective-videos/compilation.mp4), [berkas subtitel (SRT) {% include icon.html name="external-link" label="Tautan Eksternal" %}](https://media.w3.org/wai/perspective-videos/compilation.srt)
