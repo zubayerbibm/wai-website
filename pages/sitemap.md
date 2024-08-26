@@ -328,5 +328,6 @@ _To get short descriptions of primary content, see [[WAI Resources]](/resources/
   - [User Agent Accessibility Guidelines Working Group     (UAWG)](https://www.w3.org/WAI/UA/)
 - [WAI Projects](https://www.w3.org/WAI/about/projects) &mdash; lists current and past projects
 
+
 {% include excol.html type="end" %}
 {% include excol.html type="end" %}
