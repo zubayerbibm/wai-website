@@ -98,6 +98,7 @@
 /ARIA/apg/patterns/table/examples/sortable-table/index.html
 /ARIA/apg/patterns/table/examples/table/index.html
 /ARIA/apg/patterns/table/index.html
+/ARIA/apg/patterns/tabs/examples/tabs-actions/index.html
 /ARIA/apg/patterns/tabs/examples/tabs-automatic/index.html
 /ARIA/apg/patterns/tabs/examples/tabs-manual/index.html
 /ARIA/apg/patterns/tabs/index.html
@@ -673,7 +674,9 @@
 /content-assets/wai-aria-practices/patterns/table/examples/css/sortable-table.css
 /content-assets/wai-aria-practices/patterns/table/examples/css/table.css
 /content-assets/wai-aria-practices/patterns/table/examples/js/sortable-table.js
+/content-assets/wai-aria-practices/patterns/tabs/examples/css/tabs-actions.css
 /content-assets/wai-aria-practices/patterns/tabs/examples/css/tabs.css
+/content-assets/wai-aria-practices/patterns/tabs/examples/js/tabs-actions.js
 /content-assets/wai-aria-practices/patterns/tabs/examples/js/tabs-automatic.js
 /content-assets/wai-aria-practices/patterns/tabs/examples/js/tabs-manual.js
 /content-assets/wai-aria-practices/patterns/toolbar/examples/css/menuButton.css
