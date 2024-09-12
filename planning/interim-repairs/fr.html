@@ -1,0 +1,356 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+
+    function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "/WAI/assets/scripts/main.js?1725936703303430688";
+      document.body.appendChild(element);
+    }
+
+    window.addEventListener("load", downloadJSAtOnload, false);
+  </script>
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1725936703303430688">
+
+<title> Premiers secours de l&#39;accessibilité Web : stratégies de réparations provisoires | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Premiers secours de l’accessibilité Web : stratégies de réparations provisoires" />
+<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+<meta property="og:locale" content="fr" />
+<meta name="description" content="Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI)." />
+<meta property="og:description" content="Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI)." />
+<link rel="canonical" href="https://www.w3.org/WAI/planning/interim-repairs/fr" />
+<meta property="og:url" content="https://www.w3.org/WAI/planning/interim-repairs/fr" />
+<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="Premiers secours de l’accessibilité Web : stratégies de réparations provisoires" />
+<meta name="twitter:site" content="@w3c_wai" />
+<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"Premiers secours de l’accessibilité Web : stratégies de réparations provisoires","url":"https://www.w3.org/WAI/planning/interim-repairs/fr"}</script>
+<!-- End Jekyll SEO tag -->
+<meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
+
+  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
+</head>
+
+  <body id="top" class="page-premiers-secours-de-l-accessibilité-web-stratégies-de-réparations-provisoires ">
+    <nav aria-label="Liens d’évitement et sélecteur de langue" id="controls" class="default-grid">
+  <ul>
+      <li><a href="#main">Aller directement au contenu</a></li>
+      <li class="opt"><a href="/WAI/meta/customize/">Changer la taille ou la couleur du texte</a></li>
+      <li class="opt languagelist">
+          <strong>Cette&nbsp;page&nbsp;en&#8239;:</strong>
+          <ul class="languagelistul"><li><a style="text-transform: capitalize;" href="/WAI/planning/interim-repairs/" lang="en"  dir="auto" translate="no">English</a></li><li><strong style="text-transform: capitalize;">français</strong></li>
+          </ul>
+        </li>
+        <li class="opt">
+          <a href="/WAI/translations/">Toutes&nbsp;les&nbsp;traductions <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+        </li>
+        <li><button id="showoptions" data-showhidebuttonid="header-showoptions" class="showhidebutton button-inline" data-target="#controls .opt" aria-expanded="false" data-large-aria-expanded="true" data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Afficher la personnalisation, les langues et les traductions' data-hidetext='Cacher les options'><svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Afficher la personnalisation, les langues et les traductions</button></li>
+      </ul>
+    </nav>
+<header id="site-header" class="default-grid with-gap">
+  <div class="logos">
+    <a lang="en" class="home w3c" href="https://www.w3.org/">
+      <svg role="img" aria-label="W3C" viewBox="0 0 68 34" xmlns="http://www.w3.org/2000/svg"><g><path d="m16.117 1.006 5.759 19.58 5.759-19.58h4.17 11.444v1.946l-5.879 10.128c2.065.663 3.627 1.868 4.686 3.615 1.059 1.748 1.589 3.799 1.589 6.155 0 2.914-.775 5.363-2.324 7.348s-3.555 2.978-6.017 2.978c-1.854 0-3.469-.589-4.845-1.767-1.377-1.178-2.396-2.773-3.058-4.786l3.256-1.35c.477 1.218 1.106 2.178 1.887 2.879.781.702 1.701 1.052 2.76 1.052 1.112 0 2.052-.622 2.82-1.866.768-1.245 1.152-2.74 1.152-4.489 0-1.933-.411-3.429-1.231-4.488-.954-1.244-2.45-1.867-4.489-1.867h-1.588v-1.906l5.56-9.612h-6.712l-.382.65-8.163 27.548h-.397l-5.958-19.937-5.957 19.937h-.397l-9.53-32.168h4.17l5.759 19.58 3.892-13.185-1.906-6.395z"/><path d="m64.92 1.006c-.819 0-1.554.295-2.111.861-.591.6-.92 1.376-.92 2.178s.313 1.545.887 2.128c.583.591 1.334.912 2.145.912.793 0 1.562-.321 2.161-.903.574-.557.887-1.3.887-2.136 0-.811-.321-1.57-.878-2.136-.584-.592-1.344-.904-2.171-.904zm2.643 3.065c0 .701-.271 1.351-.768 1.832-.524.507-1.174.777-1.892.777-.675 0-1.342-.278-1.84-.785s-.777-1.157-.777-1.849.287-1.368.802-1.891c.481-.49 1.131-.751 1.84-.751.726 0 1.376.271 1.883.785.49.489.752 1.147.752 1.882zm-2.559-1.807h-1.3v3.445h.65v-1.469h.642l.701 1.469h.726l-.769-1.57c.498-.102.785-.439.785-.929 0-.625-.472-.946-1.435-.946zm-.118.422c.608 0 .886.169.886.591 0 .405-.278.549-.87.549h-.549v-1.14z"/><path d="m59.807.825.676 4.107-2.391 4.575s-.918-1.941-2.443-3.015c-1.285-.905-2.122-1.102-3.431-.832-1.681.347-3.587 2.357-4.419 4.835-.995 2.965-1.005 4.4-1.04 5.718-.056 2.113.277 3.362.277 3.362s-1.452-2.686-1.438-6.62c.009-2.808.451-5.354 1.75-7.867 1.143-2.209 2.842-3.535 4.35-3.691 1.559-.161 2.791.59 3.743 1.403 1 .854 2.01 2.721 2.01 2.721z"/><path d="m60.102 24.063s-1.057 1.889-1.715 2.617c-.659.728-1.837 2.01-3.292 2.651s-2.218.762-3.656.624c-1.437-.138-2.772-.97-3.24-1.317s-1.664-1.369-2.34-2.322-1.733-2.859-1.733-2.859.589 1.91.958 2.721c.212.467.864 1.894 1.789 3.136.863 1.159 2.539 3.154 5.086 3.604 2.547.451 4.297-.693 4.73-.97s1.346-1.042 1.924-1.66c.603-.645 1.174-1.468 1.49-1.962.231-.36.607-1.092.607-1.092z"/></g></svg>
+    </a>
+    <a lang="en" class="home" href="/WAI/">
+      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
+    </a>
+    <div class="claim">
+      <span>Stratégies, standards, ressources pour un Web accessible aux personnes en situation de handicap.</span>
+    </div>
+    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> Menu</span></button>
+  </div>
+
+  <div class="navigations">
+  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+    <ul>
+      <li><a href="/WAI/about/participating/">Get Involved</a></li>
+      <li><a href="/WAI/about/">About W3C WAI</a></li>
+      <li>
+        <form action="/WAI/search/" role="search">
+          <div>
+            <label for="header-search">
+              <span class="visuallyhidden">Recherche:</span>
+              <input id="header-search" type="search" name="q" placeholder="Recherche" aria-label="Recherche">
+            </label>
+            
+            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="Lancer la recherche" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
+          </div>
+        </form>
+      </li>
+    </ul>
+  </nav>
+</div>
+</header><nav class="mainnav" aria-label="Navigation principale" lang="fr"><ul><li><a lang="fr" href="/WAI/fundamentals/fr"><span>Fondamentaux de l&apos;accessibilité</span></a></li><li><a lang="fr" href="/WAI/planning/fr"><span>Organisation &amp; politiques</span></a></li><li><a lang="fr" href="/WAI/design-develop/fr"><span>Concevoir &amp; développer</span></a></li><li><a lang="fr" href="/WAI/test-evaluate/fr"><span>Tester et évaluer</span></a></li><li><a lang="fr" href="/WAI/teach-advocate/fr"><span>Former et promouvoir</span></a></li><li><a lang="fr" href="/WAI/standards-guidelines/fr"><span>Standards/<wbr>Règles</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="Chemin de fer" lang="en">
+  <ul style="align-self: center;">
+    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="fr" href="/WAI/planning/fr"><span>Organisation &amp; politiques</span></a></li><li><a lang="fr" href="/WAI/planning/interim-repairs/fr" aria-current="page"><span>Stratégies de réparations provisoires</span></a></li></ul>
+</nav>
+    <div class="default-grid with-gap leftcol">
+
+  
+      
+        <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
+      <ul class="sidenav--list">
+  <li>
+  <a lang="fr" href="/WAI/planning/fr" class="page-link"><span>Organisation &amp; politiques</span></a></li><li>
+  <a lang="fr" href="/WAI/planning/interim-repairs/fr" aria-current="page" class="page-link"><span>Stratégies de réparations provisoires</span></a></li><li>
+  <a lang="en" href="/WAI/planning-and-managing/" class="page-link"><span>Planning and Managing Accessibility</span></a><ul><li>
+  <a lang="en" href="/WAI/planning-and-managing/initiate/" class="page-link"><span>Initiate</span></a></li><li>
+  <a lang="en" href="/WAI/planning-and-managing/plan/" class="page-link"><span>Plan</span></a></li><li>
+  <a lang="en" href="/WAI/planning-and-managing/implement/" class="page-link"><span>Implement</span></a></li><li>
+  <a lang="en" href="/WAI/planning-and-managing/sustain/" class="page-link"><span>Sustain</span></a></li><li>
+  <a lang="en" href="/WAI/tools-list/authoring/" class="page-link"><span>Authoring Tools List</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/planning/org-policies/" class="page-link"><span>Developing an Organizational Policy</span></a><ul><li>
+  <a lang="en" href="/WAI/planning/org-policies/example/" class="page-link"><span>Example</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/planning/statements/" class="page-link"><span>Developing an Accessibility Statement</span></a><ul><li>
+  <a lang="en" href="/WAI/planning/statements/generator/" class="page-link"><span>Generator Tool</span></a></li><li>
+  <a lang="en" href="/WAI/planning/statements/minimal-example/" class="page-link"><span>Minimal Example</span></a></li><li>
+  <a lang="en" href="/WAI/planning/statements/complete-example/" class="page-link"><span>Complete Example</span></a></li></ul></li><li>
+  <a lang="fr" href="/WAI/planning/involving-users/fr" class="page-link"><span>Impliquer les utilisateurs pour améliorer l&apos;accessibilité</span></a></li><li>
+  <a lang="en" href="/WAI/policies/" class="page-link"><span>International Laws &amp; Policies</span></a></li></ul></nav><nav class="sidenav-languages" aria-labelledby="languagehead">
+        <header id="languagehead">Langues/Traductions</header>
+        <ul class="langlist">
+          <li style="margin-bottom: 2px;"><a href="/WAI/planning/interim-repairs/" lang="en" dir="auto" translate="no">English (original)</a></li><li style="margin-bottom: 2px;"><strong style="text-transform: capitalize;">français</strong></li></ul><p><a href="/WAI/translations/#fr">Autres ressources en français</a></p>
+        
+        <p><a href="/WAI/translations/">Toutes&nbsp;les&nbsp;traductions</a></p>
+        <p><a href="/WAI/about/translating/">Traduire les ressources de WAI</a></p>
+      </nav>
+</div>
+
+
+      
+  
+
+  <main id="main" lang="fr">
+
+    
+
+    
+    <header>
+      <h1>
+      
+      
+      
+        Premiers secours de l'accessibilité Web&nbsp;:<br />stratégies de réparations provisoires
+      
+      </h1></header>
+    <section id="translation-info" class="doc-note-box doc-note-translation">
+  <h2 class="visuallyhidden">À propos de cette traduction</h2>
+  <p>Cette traduction faite par des volontaires peut ne pas refléter les intentions de <a href="/WAI/planning/interim-repairs/">l’original en anglais</a>.</p>
+  
+  
+  <p><svg focusable="false" aria-hidden="true" class="icon-check-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-check-circle"></use></svg> Traduction à jour par rapport à la version anglaise.
+    <br>Traduction mise à jour&#8239;: <span dir="auto">2023-10-18</span>. Version anglaise mise à jour le&#8239;: <span dir="auto">2020-02-20</span>.
+   </p>
+  
+  
+  <p>
+    <strong>Traduction&#8239;:</strong> Sofia Ahmed. 
+    Contribution&#8239;: Sandra Velarde Velazquez (ETNIC), Rémi Bétin. <br>WAI remercie ces traducteurs, et accueille volontiers d’autres <a href="/WAI/about/translating/">traductions</a>.</p>
+</section><aside class="box box-full"><header class="box-h  box-h-full"> <h2> Résumé </h2></header><div class="box-i">
+
+<p>Vous avez besoin de prendre en compte urgemment l’accessibilité dans un projet Web en cours ?
+Cette page fournit un bref aperçu et des conseils pour vous aider à répondre aux problèmes les plus critiques.
+Retrouvez une approche plus détaillée de prise en compte de l’accessibilité dans tout le processus de conception et de développement sur <a href="/WAI/planning-and-managing/" hreflang="en">Planifier et gérer l’accessibilité Web (en anglais)</a>.</p>
+
+</div></aside>
+
+
+
+<nav class="box box-simple box-full" aria-labelledby="tocheading" id="toc">
+  <header id="tocheading" class="box-h box-h-simple box-h-full"> Table des matières</header>
+  <div class="box-i">
+
+
+
+<ul id="markdown-toc">
+  <li><a href="#resources" id="markdown-toc-resources">Ressources essentielles pour les designers et les développeurs</a></li>
+  <li><a href="#understand" id="markdown-toc-understand">Qu’est-ce que l’accessibilité ?</a></li>
+  <li><a href="#explore" id="markdown-toc-explore">Identifier les problèmes</a></li>
+  <li><a href="#scope" id="markdown-toc-scope">Soyez attentif au périmètre</a></li>
+  <li><a href="#target" id="markdown-toc-target">Fixer un niveau d’accessibilité à atteindre</a></li>
+  <li><a href="#repair" id="markdown-toc-repair">Conseils pour des réparations efficaces</a></li>
+  <li><a href="#plan" id="markdown-toc-plan">À plus long terme : planifier et gérer</a></li>
+</ul>
+
+
+  </div>
+</nav>
+
+
+
+<h2 id="resources">Ressources essentielles pour les designers et les développeurs</h2>
+
+<ul>
+  <li><a href="/WAI/tips/fr">Conseils pour démarrer</a> — Considérations d’ordre pratique, illustrées par des exemples, pour la conception, la rédaction et le développement de contenus Web accessibles.</li>
+  <li><a href="/WAI/tutorials/" hreflang="en">Tutoriels pour l’accessibilité Web (en anglais)</a> —
+  Informations détaillées sur des thèmes spécifiques, et conseils pour répondre aux exigences d’accessibilité.</li>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/">Comment répondre aux exigences des WCAG (aide-mémoire)</a> — Un aide-mémoire personnalisable des Règles pour l’accessibilité des contenus Web (WCAG) 2.</li>
+</ul>
+
+<h2 id="understand">Qu’est-ce que l’accessibilité ?</h2>
+
+<p>Si vous êtes novice en matière d’accessibilité, il est souvent utile de commencer par bien comprendre les bases de l’accessibilité :</p>
+
+<ul>
+  <li><a href="/WAI/fundamentals/accessibility-intro/fr">Introduction à l’accessibilité du web</a> — Introduit les concepts essentiels et les fondements de l’accessibilité ; ainsi que des ressources.</li>
+  <li><a href="/WAI/perspective-videos/fr">L’accessibilité Web illustrée</a> — Courtes vidéos non techniques introduisant des fonctionnalités d’accessibilité et leurs bénéfices pour tous.</li>
+</ul>
+
+<h3 id="background">Contexte supplémentaire</h3>
+
+<p>Pour une approche plus approfondie :</p>
+
+<ul>
+  <li><a href="/WAI/people-use-web/fr">Comment les personnes handicapées utilisent le web</a> — Introduit des expériences d’utilisateurs, et la terminologie en matière d’accessibilité et de handicap.</li>
+  <li><a href="/WAI/fundamentals/accessibility-principles/fr">Principes d’accessibilité</a> — Introduit les exigences d’accessibilité définies par les règles W3C.</li>
+</ul>
+
+<h2 id="explore">Identifier les problèmes</h2>
+
+<p>Si vous avez déjà détecté les problèmes d’accessibilité, vous pouvez passer cette section. Si vous avez besoin d’identifier des problèmes potentiels, ces ressources peuvent vous aider :</p>
+
+<ul>
+  <li><a href="/WAI/test-evaluate/preliminary/" hreflang="en">Vérifications simples — Un premier bilan de l’accessibilité Web (en anglais)</a> —
+  Vérifications simples pouvant être menées par tous, quelles que soient vos compétences techniques et vos connaissances en matière d’accessibilité.</li>
+  <li><a href="https://www.w3.org/WAI/ER/tools/">Liste d’outils d’évaluation de l’accessibilité Web</a> — Liste personnalisable qui vous permet de rechercher différents types d’outils.</li>
+</ul>
+
+<h3 id="comprehensive">Analyse détaillée</h3>
+
+<p>Pour une évaluation approfondie :</p>
+
+<ul>
+  <li><a href="/WAI/test-evaluate/conformance/wcag-em/" hreflang="en">Méthodologie pour l’évaluation de la conformité à l’accessibilité d’un site Web (WCAG-EM) (en anglais)</a> — Fournit une approche structurée pour aider à évaluer l’accessibilité des sites Web.</li>
+  <li><a href="https://www.w3.org/WAI/eval/report-tool/">Outil de rapport WCAG-EM</a> —
+  Outil en ligne gratuit qui vous aide à créer des rapports d’évaluation suivant la procédure WCAG-EM.</li>
+</ul>
+
+<h2 id="scope">Soyez attentif au périmètre</h2>
+
+<p>Vous pourriez ne pas réussir à aborder en une fois tous les problèmes sur chaque partie de votre site Web. Pour déterminer quelles parties vous souhaitez améliorer tout de suite, et lesquelles vous traiterez plus tard, pensez à prioriser :</p>
+
+<ul>
+  <li>Les <strong>tâches essentielles</strong>, telles que les processus d’inscription, de recherche, d’envoi ou de paiement. Incluez toutes les étapes nécessaires pour finaliser chaque tâche.</li>
+  <li>Le <strong>contenu essentiel</strong>, tel que le contenu fréquemment consulté, et le contenu pertinent pour les personnes en situation de handicap.</li>
+  <li>Le <strong>contenu signalé</strong>, qui contient des obstacles à l’accessibilité connus ; par exemple, grâce aux commentaires d’utilisateurs soumis via le formulaire de contact du site Web.</li>
+  <li>Le <strong>contenu en cours de développement</strong>, tel que les parties du site Web en cours de refonte ; pour éviter la création de nouveaux obstacles.</li>
+</ul>
+
+<p>Au sein de votre périmètre de réparations, pensez à prioriser les solutions à apporter en vous concentrant sur :</p>
+
+<ul>
+  <li>Les <strong>réparations à fort impact</strong>
+    <ul>
+      <li>Elles concernent plusieurs pages Web, telles que les barres de navigation</li>
+      <li>Elles concernent des pages Web fréquemment consultées, telles que la page d’accueil</li>
+      <li>Elles sont essentielles pour finaliser des processus, tels que les formulaires de commande</li>
+      <li>Elles sont en lien avec des problèmes de niveau A des Règles pour l’accessibilité des contenus Web (WCAG)</li>
+    </ul>
+  </li>
+  <li>Les <strong>réparations qui demandent peu d’efforts</strong>
+    <ul>
+      <li>Elles demandent moins de temps, moins de compétences ou sont moins coûteuses</li>
+      <li>Elles nécessitent moins de temps d’évaluation et de validation</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="target">Fixer un niveau d’accessibilité à atteindre</h2>
+
+<p>L’objectif généralement accepté en matière d’accessibilité est le niveau AA de la dernière version des <a href="/WAI/standards-guidelines/wcag/fr">Règles pour l’accessibilité des contenus Web (WCAG)</a>. C’est peut-être déjà le standard spécifié dans la politique de votre organisation ou une obligation légale pour votre site Web.</p>
+
+<p>Vous pourriez devoir définir une approche par étapes avec différentes dates pour différents niveaux. Par exemple, satisfaire à certains critères de succès des WCAG pour la prochaine publication, et satisfaire à tous les critères de succès aux <a href="https://www.w3.org/WAI/WCAG22/quickref/?currentsidebar=%23col_customize&amp;levels=aaa">niveaux A et AA</a> pour la publication suivante.</p>
+
+<p>Notez que dans certains cas, il est relativement facile de satisfaire à certains critères de succès de niveau AAA. Par exemple, il peut être facile de travailler d’un même mouvement, lors de la révision du contenu, sur l’usage de textes de liens appropriés (2.4.4, niveau A) et sur la structure des en-têtes de section (2.4.10, niveau AAA).</p>
+
+<h2 id="repair">Conseils pour des réparations efficaces</h2>
+
+<ul>
+  <li><strong>Exploitez les différentes compétences au sein de votre équipe</strong> — Bien que de nombreuses tâches seront confiées aux développeurs, d’autres intervenants peuvent contribuer de diverses manières. Par exemple, les designers peuvent sélectionner des meilleures couleurs et les auteurs du contenu peuvent améliorer la formulation des liens, des en-têtes de section et des équivalents textuels. La ressource <a href="/WAI/test-evaluate/combined-expertise/" hreflang="en">Utiliser l’expertise combinée pour évaluer l’accessibilité Web (en anglais)</a> pourrait vous être utile.</li>
+  <li><strong>Communiquez les exigences à votre équipe</strong> — Veillez à ce que toutes les personnes contribuant aux solutions apportées comprennent les fondements de l’accessibilité Web et les exigences spécifiques auxquelles elles doivent satisfaire. Distribuez les <a href="#resources">ressources importantes</a> aux membres concernés au sein de votre équipe.</li>
+  <li><strong>Validez les solutions le plus tôt possible</strong> — Veillez à ce que chaque solution réponde de manière adéquate aux problèmes soulevés pour éviter d’implémenter des changements qui ne fonctionneront pas dans la pratique. Dans la mesure du possible, il est important d’inclure des personnes en situation de handicap lors de cette phase de validation. Les ressources concernant l’<a href="/WAI/planning/involving-users/fr">inclusion des utilisateurs dans les projets Web</a> et l’<a href="/WAI/test-evaluate/involving-users/fr">évaluation avec les utilisateurs</a> fournissent davantage de contexte.</li>
+  <li><strong>Optimisez vos outils</strong> — Explorez et configurez les paramètres d’accessibilité des outils d’édition que vous utilisez pour créer du contenu Web, tel que votre système de gestion de contenu (CMS). Les ressources relatives à la
+  <a href="/WAI/test-evaluate/tools/selecting/" hreflang="en">sélection des outils d’évaluation (en anglais)</a> et la <a href="https://www.w3.org/WAI/impl/software">sélection des outils d’édition</a> pourraient vous être utile.</li>
+</ul>
+
+<h2 id="plan">À plus long terme : planifier et gérer</h2>
+
+<p>Une fois que vous avez traité les problèmes d’accessibilité les plus critiques au sein de votre projet Web, il est essentiel que vous planifiiez l’intégration de l’accessibilité tout au long de vos processus de conception et de développement futurs. Le guide pour <a href="/WAI/planning-and-managing/" hreflang="en">planifier et gérer l’accessibilité Web (en anglais)</a> peut vous aider à mettre en place ce plan.</p>
+
+
+    <aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Aider à améliorer cette page </h2></header><div class="box-i"><p>Merci de partager vos idées, vos suggestions ou vos commentaires par courriel à la liste archivée publiquement <a href="mailto:wai@w3.org?subject=%5Bfr%5D%20Premiers%20secours%20de%20l%27accessibilit%C3%A9%20Web%20%3A%20strat%C3%A9gies%20de%20r%C3%A9parations%20provisoires&amp;body=%5Bvotre%20commentaire%20ici...%5D%0A%0AJ%E2%80%99accepte%20que%20ceci%20soit%20partag%C3%A9%20sur%20une%20liste%20de%20diffusion%20archiv%C3%A9e%20publiquement.">wai@w3.org</a> ou via GitHub.</p>
+<div class="button-group">
+    <a href="mailto:wai@w3.org?subject=%5Bfr%5D%20Premiers%20secours%20de%20l%27accessibilit%C3%A9%20Web%20%3A%20strat%C3%A9gies%20de%20r%C3%A9parations%20provisoires&body=%5Bvotre%20commentaire%20ici...%5D%0A%0AJ%E2%80%99accepte%20que%20ceci%20soit%20partag%C3%A9%20sur%20une%20liste%20de%20diffusion%20archiv%C3%A9e%20publiquement." class="button"><span>Courriel</span></a><a href="
+https://github.com/w3c/wai-website/edit/main/pages/planning-policies/interim-repairs/index.fr.md
+" class="button"><span>Cloner et modifier sur GitHub</span></a><a href="https://github.com/w3c/wai-website/issues/new?template=content-issue.yml&title=[fr]%20&wai-resource-id=wai-first-aid&wai-url=https://www.w3.org/WAI/planning/interim-repairs/fr" class="button"><span>Nouveau ticket sur GitHub</span></a></div></div></aside>
+
+
+    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Retour en haut de page</span></a>
+  </main>
+</div>
+
+
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner"
+      >
+      <p><strong>Date :</strong> Mise à jour le 9 janvier 2019. Première publication en mars 2006.<br>Historique : précédemment intitulé "Améliorations à court terme de l'accessibilité de votre site Web" et "Améliorer l'accessibilité de votre site Web".</p> <p><strong>Rédacteur : </strong><a href="https://www.w3.org/People/shadi/">Shadi Abou-Zahra</a>. Rédacteurs précédents : <a href="https://www.w3.org/People/kevin">Kevin White</a> et <a href="https://www.w3.org/People/Shawn/">Shawn Lawton Henry</a>.  Contributeurs précédents : Sharron Rush, Anna Belle Leiserson, Judy Brewer, et les <a href="https://www.w3.org/groups/wg/eowg/participants/">participants au groupe de travail Éducation et Promotion (<abbr lang="en" title="Education and Outreach Working Group">EOWG</abbr>)</a>.</p> <p>Développé par le groupe de travail Éducation et Promotion (<a href="http://www.w3.org/WAI/EO/"><abbr>EOWG</abbr></a>). Initialement développé avec le soutien du projet <a href="https://www.w3.org/WAI/TIES/"><abbr lang="en" title="Web Accessibility Initiative: Training, Implementation, Education, Support">WAI-TIES</abbr></a>, mis à jour par la suite avec le soutien du projet <a href="https://www.w3.org/WAI/ACT/"><abbr lang="en" title="Web Accessibility Initiative - Cooperation Framework for Guidance on Advanced Technologies, Evaluation Methodologies, and Research Agenda Setting to Support eAccessibility">WAI-ACT</abbr></a>, puis du projet <a href="https://www.w3.org/WAI/DEV/"><abbr>WAI-DEV</abbr></a>.</p>
+</div>
+  </footer>
+  
+
+
+
+
+
+<footer class="site-footer grid-4q" aria-label="Site">
+  <div class="q1-start q3-end about">
+    <div>
+      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
+      <p>Stratégies, standards et ressources pour rendre le Web accessible aux personnes en situation de handicap.</p>
+    </div>
+    <div class="social" lang="en" dir="auto" translate="no">
+      <ul>
+        <li><a href="https://w3c.social/@wai"><svg focusable="false" aria-hidden="true" class="icon-mastodon "><use xlink:href="/WAI/assets/images/icons.svg#icon-mastodon"></use></svg> Mastodon</a></li>
+        <li><a href="https://www.linkedin.com/company/w3c-wai/"><svg focusable="false" aria-hidden="true" class="icon-linkedin "><use xlink:href="/WAI/assets/images/icons.svg#icon-linkedin"></use></svg> LinkedIn</a></li>
+        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
+        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
+        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+      </ul>
+    </div>
+    <div lang="en" dir="auto"  translate="no">
+      <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
+    </div>
+  </div>
+  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
+    <ul style="margin-bottom:0">
+      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+      <li><a href="/WAI/sitemap/">Site Map</a></li>
+      <li><a href="/WAI/news/">News</a></li>
+      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
+      <li><a href="/WAI/translations/"> Translations</a></li>
+      <li><a href="/WAI/roles/">Resources for Roles</a></li>
+    </ul>
+  </div>
+</footer><!-- Details4Everybody -->
+<script src="/WAI/assets/scripts/details4everybody.js?1725936703303430688"></script>
+<!-- SVG4Everybody -->
+<script src="/WAI/assets/scripts/svg4everybody.js?1725936703303430688"></script>
+<script>
+  svg4everybody();
+</script>
+<script src="/WAI/assets/scripts/lang/fr.js?1725936703303430688"></script>
+
+  </body>
+</html>

@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+
+    function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "/WAI/assets/scripts/main.js?1725936703303430688";
+      document.body.appendChild(element);
+    }
+
+    window.addEventListener("load", downloadJSAtOnload, false);
+  </script>
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1725936703303430688">
+
+<title> 3: Navigation Design | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="3: Navigation Design" />
+<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI)." />
+<meta property="og:description" content="Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI)." />
+<link rel="canonical" href="https://www.w3.org/WAI/curricula/designer-modules/navigation-design/" />
+<meta property="og:url" content="https://www.w3.org/WAI/curricula/designer-modules/navigation-design/" />
+<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="3: Navigation Design" />
+<meta name="twitter:site" content="@w3c_wai" />
+<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"3: Navigation Design","url":"https://www.w3.org/WAI/curricula/designer-modules/navigation-design/"}</script>
+<!-- End Jekyll SEO tag -->
+<meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
+
+  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
+</head>
+
+  <body id="top" class="page-3-navigation-design ">
+    <nav aria-label="Skip Link and Language Selector" id="controls" class="default-grid">
+  <ul>
+        <li><a href="#main">Skip to Content</a></li>
+        <li class="opt">
+          <a href="/WAI/meta/customize/">Change Text Size or Colors</a>
+        </li>
+        <li class="opt">
+            <a href="/WAI/translations/">All Translations <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+        </li>
+      </ul></nav>
+<header id="site-header" class="default-grid with-gap">
+  <div class="logos">
+    <a lang="en" class="home w3c" href="https://www.w3.org/">
+      <svg role="img" aria-label="W3C" viewBox="0 0 68 34" xmlns="http://www.w3.org/2000/svg"><g><path d="m16.117 1.006 5.759 19.58 5.759-19.58h4.17 11.444v1.946l-5.879 10.128c2.065.663 3.627 1.868 4.686 3.615 1.059 1.748 1.589 3.799 1.589 6.155 0 2.914-.775 5.363-2.324 7.348s-3.555 2.978-6.017 2.978c-1.854 0-3.469-.589-4.845-1.767-1.377-1.178-2.396-2.773-3.058-4.786l3.256-1.35c.477 1.218 1.106 2.178 1.887 2.879.781.702 1.701 1.052 2.76 1.052 1.112 0 2.052-.622 2.82-1.866.768-1.245 1.152-2.74 1.152-4.489 0-1.933-.411-3.429-1.231-4.488-.954-1.244-2.45-1.867-4.489-1.867h-1.588v-1.906l5.56-9.612h-6.712l-.382.65-8.163 27.548h-.397l-5.958-19.937-5.957 19.937h-.397l-9.53-32.168h4.17l5.759 19.58 3.892-13.185-1.906-6.395z"/><path d="m64.92 1.006c-.819 0-1.554.295-2.111.861-.591.6-.92 1.376-.92 2.178s.313 1.545.887 2.128c.583.591 1.334.912 2.145.912.793 0 1.562-.321 2.161-.903.574-.557.887-1.3.887-2.136 0-.811-.321-1.57-.878-2.136-.584-.592-1.344-.904-2.171-.904zm2.643 3.065c0 .701-.271 1.351-.768 1.832-.524.507-1.174.777-1.892.777-.675 0-1.342-.278-1.84-.785s-.777-1.157-.777-1.849.287-1.368.802-1.891c.481-.49 1.131-.751 1.84-.751.726 0 1.376.271 1.883.785.49.489.752 1.147.752 1.882zm-2.559-1.807h-1.3v3.445h.65v-1.469h.642l.701 1.469h.726l-.769-1.57c.498-.102.785-.439.785-.929 0-.625-.472-.946-1.435-.946zm-.118.422c.608 0 .886.169.886.591 0 .405-.278.549-.87.549h-.549v-1.14z"/><path d="m59.807.825.676 4.107-2.391 4.575s-.918-1.941-2.443-3.015c-1.285-.905-2.122-1.102-3.431-.832-1.681.347-3.587 2.357-4.419 4.835-.995 2.965-1.005 4.4-1.04 5.718-.056 2.113.277 3.362.277 3.362s-1.452-2.686-1.438-6.62c.009-2.808.451-5.354 1.75-7.867 1.143-2.209 2.842-3.535 4.35-3.691 1.559-.161 2.791.59 3.743 1.403 1 .854 2.01 2.721 2.01 2.721z"/><path d="m60.102 24.063s-1.057 1.889-1.715 2.617c-.659.728-1.837 2.01-3.292 2.651s-2.218.762-3.656.624c-1.437-.138-2.772-.97-3.24-1.317s-1.664-1.369-2.34-2.322-1.733-2.859-1.733-2.859.589 1.91.958 2.721c.212.467.864 1.894 1.789 3.136.863 1.159 2.539 3.154 5.086 3.604 2.547.451 4.297-.693 4.73-.97s1.346-1.042 1.924-1.66c.603-.645 1.174-1.468 1.49-1.962.231-.36.607-1.092.607-1.092z"/></g></svg>
+    </a>
+    <a lang="en" class="home" href="/WAI/">
+      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
+    </a>
+    <div class="claim">
+      <span>Strategies, standards, resources to make the Web accessible to people with disabilities</span>
+    </div>
+    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> Menu</span></button>
+  </div>
+
+  <div class="navigations">
+  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+    <ul>
+      <li><a href="/WAI/about/participating/">Get Involved</a></li>
+      <li><a href="/WAI/about/">About W3C WAI</a></li>
+      <li>
+        <form action="/WAI/search/" role="search">
+          <div>
+            <label for="header-search">
+              <span class="visuallyhidden">Search:</span>
+              <input id="header-search" type="search" name="q" placeholder="Search" aria-label="Search">
+            </label>
+            
+            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="Submit Search" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
+          </div>
+        </form>
+      </li>
+    </ul>
+  </nav>
+</div>
+</header><nav class="mainnav" aria-label="Main" lang="en"><ul><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/planning/"><span>Planning &amp; Policies</span></a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="en" href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a></li><li><a lang="en" href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
+  <ul style="align-self: center;">
+    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="en" href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a></li><li><a lang="en" href="/WAI/curricula/"><span>Curricula on Web Accessibility</span></a></li><li><a lang="en" href="/WAI/curricula/designer-modules/"><span>Designer Modules</span></a></li><li><a lang="en" href="/WAI/curricula/designer-modules/navigation-design/" aria-current="page"><span>Navigation Design</span></a></li></ul>
+</nav>
+    <div class="default-grid with-gap leftcol">
+
+  
+      
+        <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
+      <ul class="sidenav--list">
+  <li>
+  <a lang="en" href="/WAI/teach-advocate/" class="page-link"><span>Teach &amp; Advocate</span></a></li><li>
+  <a lang="en" href="/WAI/teach-advocate/accessible-presentations/" class="page-link"><span>Making Events Accessible Checklist</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/" aria-current="location" class="page-link"><span>Curricula on Web Accessibility</span></a><ul><li>
+  <a lang="en" href="/WAI/curricula/foundation-modules/" class="page-link"><span>Foundation Modules</span></a><ul><li>
+  <a lang="en" href="/WAI/curricula/foundation-modules/what-is-web-accessibility/" class="page-link"><span>What is Web Accessibility</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/foundation-modules/people-and-digital-technology/" class="page-link"><span>People and Digital Technology</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/foundation-modules/business-case-and-benefits/" class="page-link"><span>Business Case and Benefits</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/foundation-modules/principles-standards-and-checks/" class="page-link"><span>Principles, Standards, and Checks</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/foundation-modules/getting-started-with-accessibility/" class="page-link"><span>Getting Started with Accessibility</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/curricula/developer-modules/" class="page-link"><span>Developer Modules</span></a><ul><li>
+  <a lang="en" href="/WAI/curricula/developer-modules/page-structure/" class="page-link"><span>Page Structure</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/developer-modules/menus/" class="page-link"><span>Menus</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/developer-modules/images/" class="page-link"><span>Images</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/developer-modules/tables/" class="page-link"><span>Tables</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/developer-modules/forms/" class="page-link"><span>Forms</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/developer-modules/custom-widgets/" class="page-link"><span>Custom Widgets</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/developer-modules/rich-applications/" class="page-link"><span>Rich Applications</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/curricula/designer-modules/" aria-current="location" class="page-link"><span>Designer Modules</span></a><ul><li>
+  <a lang="en" href="/WAI/curricula/designer-modules/visual-design/" class="page-link"><span>Visual Design</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/designer-modules/information-design/" class="page-link"><span>Information Design</span></a></li>
+              
+              <li>
+  <a lang="en" href="/WAI/curricula/designer-modules/navigation-design/" aria-current="page" class="page-link"><span>Navigation Design</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/designer-modules/interaction-design/" class="page-link"><span>Interaction Design</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/designer-modules/images-and-graphics/" class="page-link"><span>Images and Graphics</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/designer-modules/multimedia-and-animations/" class="page-link"><span>Multimedia and Animations</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/designer-modules/forms-design/" class="page-link"><span>Forms Design</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/curricula/content-author-modules/" class="page-link"><span>Content Author Modules</span></a><ul><li>
+  <a lang="en" href="/WAI/curricula/content-author-modules/clear-content/" class="page-link"><span>Clear Content</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/content-author-modules/structure/" class="page-link"><span>Structure</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/content-author-modules/forms/" class="page-link"><span>Forms</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/content-author-modules/images/" class="page-link"><span>Images</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/content-author-modules/data-tables/" class="page-link"><span>Data Tables</span></a></li><li>
+  <a lang="en" href="/WAI/curricula/content-author-modules/multimedia/" class="page-link"><span>Multimedia</span></a></li></ul></li></ul></li><li>
+  <a lang="en" href="/WAI/teach-advocate/accessibility-training/" class="page-link"><span>Develop Accessibility Training</span></a><ul><li>
+  <a lang="en" href="/WAI/teach-advocate/accessibility-training/topics/" class="page-link"><span>Topics</span></a></li><li>
+  <a lang="en" href="/WAI/teach-advocate/accessibility-training/presentation-outlines/" class="page-link"><span>Presentation Outlines</span></a></li><li>
+  <a lang="en" href="/WAI/teach-advocate/accessibility-training/workshop-outline/" class="page-link"><span>Workshop Outline</span></a></li></ul></li><li>
+  <a lang="en" href="https://www.w3.org/WAI/demos/bad/" class="page-link"><span>Before and After Demo (BAD)</span></a></li><li>
+  <a lang="en" href="/WAI/teach-advocate/contact-inaccessible-websites/" class="page-link"><span>Contacting Inaccessible Websites</span></a></li><li>
+  <a lang="en" href="/WAI/business-case/" class="page-link"><span>Business Case</span></a><ul><li>
+  <a lang="en" href="/WAI/business-case/bibliography/" class="page-link"><span>Bibliography</span></a></li></ul></li></ul></nav>
+</div>
+
+
+      
+  
+
+  <main id="main" lang="en">
+
+    
+
+    
+    <header class="in-resource">
+      <h1>
+        
+        
+          Module 3: Navigation Design&nbsp;
+        
+        <span class="in-resource-sub">
+          in <a lang="en" href="/WAI/curricula/designer-modules/"><span>Designer Modules | Curricula</span></a>, <a lang="en" href="/WAI/curricula/"><span>Curricula on Web Accessibility</span></a></span>
+      </h1>
+    </header>
+    <h2 class="no-display" id="introduction">Introduction</h2>
+
+<p>Courses based on this module should:</p>
+
+<ul>
+  <li>explain strategies that people with disabilities use to navigate websites and applications</li>
+  <li>describe accessible behaviors, visual affordances, and interaction patterns of navigation menus and other navigational components</li>
+</ul>
+
+<h2 id="learning-outcomes-for-module">Learning Outcomes for Module</h2>
+
+<p>Students should be able to:</p>
+
+<ul>
+  <li>explain strategies that people with disabilities use to navigate websites and applications</li>
+  <li>design different navigational components, including menus, tables of contents, and search functionalities</li>
+  <li>describe different interactions for navigational components, including by keyboard, mouse, touch, and speech</li>
+  <li>specify clear and consistent visual and non-visual:
+    <ul>
+      <li>presentation of menus and menu items</li>
+      <li>indication of state changes for menu items</li>
+    </ul>
+  </li>
+  <li>define blocks of repeated content</li>
+  <li>create site maps and descriptive page titles to help users locate specific web pages within websites</li>
+  <li>evaluate the use of navigational components, including menus, tables of contents, and site maps</li>
+  <li>select navigational components that minimize distractions and unnecessary noise</li>
+  <li>identify related requirements for developers to implement:
+    <ul>
+      <li>interactions for navigational components, including by keyboard, mouse, touch, and speech</li>
+      <li>clear and descriptive names for navigational components</li>
+      <li>additional semantics for navigational components, including menus, menu items, and menu item states</li>
+      <li>methods to bypass blocks of repeated content</li>
+    </ul>
+  </li>
+</ul>
+
+<div class="excol-all"></div>
+
+<h2 id="competencies">Competencies</h2>
+
+<p>Skills required for this module:</p>
+
+<details><summary>
+
+    <h3 id="students">Students</h3>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li><a href="/WAI/curricula/designer-modules/#foundation-prerequisites">Foundation Prerequisites</a></li>
+      <li>Prior <a href="/WAI/curricula/designer-modules/">Designer Modules</a></li>
+      <li>Basic knowledge of:
+        <ul>
+          <li>Visual Design</li>
+          <li>Prototyping</li>
+          <li>Responsive Design</li>
+          <li>Information Architecture</li>
+        </ul>
+      </li>
+    </ul>
+
+  </div>
+</details>
+
+<details><summary>
+
+    <h3 id="instructors">Instructors</h3>
+
+  </summary>
+  <div>
+
+    <ul>
+      <li>Applied expertise in teaching:
+        <ul>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#info-and-relationships">WCAG Success Criterion 1.3.1 Info and Relationships</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#meaningful-sequence">WCAG Success Criterion 1.3.2 Meaningful Sequence</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#keyboard">WCAG Success Criterion 2.1.1 Keyboard</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#no-keyboard-trap">WCAG Success Criterion 2.1.2 No Keyboard Trap</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#bypass-blocks">WCAG Success Criterion 2.4.1 Bypass Blocks</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#page-titled">WCAG Success Criterion 2.4.2 Page Titled</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#multiple-ways">WCAG Success Criterion 2.4.5 Multiple Ways</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#headings-and-labels">WCAG Success Criterion 2.4.6 Headings and Labels</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#location">WCAG Success Criterion 2.4.8 Location</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#consistent-navigation">WCAG Success Criterion 3.2.3 Consistent Navigation</a></li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/quickref/#consistent-identification">WCAG Success Criterion 3.2.4 Consistent Identification</a></li>
+        </ul>
+      </li>
+      <li>In-depth knowledge of:
+        <ul>
+          <li><a href="/WAI/curricula/designer-modules/#foundation-prerequisites">Foundation Prerequisites</a></li>
+          <li>Prior <a href="/WAI/curricula/designer-modules/">Designer Modules</a></li>
+          <li>Visual Design</li>
+          <li>Prototyping</li>
+          <li>Responsive Design</li>
+          <li>Information Architecture</li>
+        </ul>
+      </li>
+    </ul>
+
+  </div>
+</details>
+
+<h2 id="topics-to-teach">Topics to Teach</h2>
+
+<p>Topics to achieve the learning outcomes:</p>
+
+<details><summary>
+
+    <h3 id="topic-menus">Topic: Menus</h3>
+
+  </summary>
+  <div>
+
+    <p>Explore different types of navigation menus, for example static, fly-out, and mega menus. Explain the different scenarios where each of them can be used. For references on the different types of menus and their uses, see the WAI tutorials on <a href="/WAI/tutorials/menus/">Menus</a>.</p>
+
+    <p>Explain styling conventions for menus, such as expected location, appropriate size, and ability for menus and menu items to resize depending on different user configurations. For references on how to apply accessible menu styles, see the WAI tutorial on <a href="/WAI/tutorials/menus/styling/">Menu Styling</a>.</p>
+
+    <h4 id="learning-outcomes-for-topic">Learning Outcomes for Topic</h4>
+
+    <p>Students should be able to:</p>
+
+    <ul>
+      <li>describe uses of different types of navigation menus, such as static, fly-out, and mega menus</li>
+      <li>define visual and text indications to identify menus, including:
+        <ul>
+          <li>consistent styling for menu identification across websites</li>
+          <li>visual and non-visual indications about the current page in the navigation menu</li>
+        </ul>
+      </li>
+      <li>specify interactions inside navigation menus, including through mouse, keyboard, touch, and speech</li>
+      <li>design navigation menus that adapt to different text sizes, screen magnifications, and screen sizes and resolutions</li>
+      <li>apply distinguishable and consistent styles for menu items in their different states, for example in fly-out menus</li>
+      <li>identify related requirements for developers to implement:
+        <ul>
+          <li>non-visual identification and naming of menus</li>
+          <li>semantics for different menu states and properties, such as hover, focus, current, active, and visited</li>
+          <li>support for different interaction methods, including keyboard, mouse, touch, and speech</li>
+          <li>support for different text and screen sizes</li>
+        </ul>
+      </li>
+    </ul>
+
+    <h4 id="teaching-ideas-for-topic">Teaching Ideas for Topic</h4>
+
+    <p>Optional ideas to teach the learning outcomes:</p>
+
+    <ul>
+      <li>Present different types of navigation menus, such as static, fly-out, and mega menus. Explain conventions for accessible navigation menus, for example clear and consistent styling to convey menu behaviors and states.</li>
+      <li>Demonstrate interactions with navigation menus using different input devices, including keyboard, mouse, touch, and speech. For example, activating a menu option by tapping, pressing the Enter and Space keys, and mouse clicking. Explain that defining the interactions is a designer’s responsibility, whereas providing the underlying code is a developer’s responsibility.</li>
+      <li>Show examples of navigation menus and menu items with large text. Explain that the text needs to adapt to different viewports and screen configurations, for example lines of text must wrap to avoid horizontal scrolling. Explain that different languages may have different word sizes, so designers must consider provisions for different word lengths.</li>
+      <li>Show examples of different menu and submenu item states, such as hover, focus, current, active, and visited. Explain how to communicate the states of these menu items visually and non-visually. Explain that defining the visual presentation is a designer’s responsibility, whereas providing the underlying code is a developer’s responsibility.</li>
+    </ul>
+
+    <h4 id="ideas-to-assess-knowledge-for-topic">Ideas to Assess Knowledge for Topic</h4>
+
+    <p>Optional ideas to assess knowledge:</p>
+
+    <ul>
+      <li>Practical — Have students define mouse, keyboard, touch, and speech interactions for navigation menus. For example, how to open, navigate, activate, and close such menus using the mouse, keyboard, touch, and speech. Assess how students understand the need for different interaction patterns based on the input method in use.</li>
+      <li>Practical — Give students different navigation menu states, such as hover, focus, current, active, and visited, and ask them to provide visual and non-visual methods to distinguish them from one another. Assess how students communicate navigation menus and menu items states visually and non-visually.</li>
+      <li>Practical — Give students a navigation menu and ask them to provide visual and non-visual indications about the currently selected item. Assess how students provide appropriate indications about the currently selected item.</li>
+      <li>Practical — Give students navigation menus containing long strings of text. Ask them to ensure the text is displayed irrespective of the viewport and screen configuration used. Assess how students understand the diversity among different languages, viewports, and screen configurations.</li>
+    </ul>
+
+  </div>
+</details>
+
+<details><summary>
+
+    <h3 id="topic-site-navigation">Topic: Site Navigation</h3>
+
+  </summary>
+  <div>
+
+    <p>Discuss strategies that people use to navigate to different pages of the same site, including menus, breadcrumb trails, search functionalities, and site maps. Explain that different people rely on different navigational components. Discuss strategies to use several site navigational methods to favor various user experiences.</p>
+
+    <h4 id="learning-outcomes-for-module">Learning Outcomes for Module</h4>
+
+    <p>Students should be able to:</p>
+
+    <ul>
+      <li>select navigational components to help navigate to different pages of the same site, including:
+        <ul>
+          <li>navigational menus to provide the overall site structure</li>
+          <li>breadcrumb trails to communicate the current location within the site</li>
+          <li>site maps to provide an overview of the entire website</li>
+          <li>search functionalities to navigate to specific parts of the site</li>
+        </ul>
+      </li>
+      <li>design methods for users to locate specific web pages within websites, for example:
+        <ul>
+          <li>descriptive page titles</li>
+          <li>text and visual indications about the current page in the navigation menu</li>
+        </ul>
+      </li>
+      <li>evaluate the amount of site navigational components in use</li>
+      <li>identify related requirements for developers to apply semantics and styles to site navigational components</li>
+    </ul>
+
+    <h4 id="teaching-ideas-for-topic-1">Teaching Ideas for Topic</h4>
+
+    <p>Optional ideas to teach the learning outcomes:</p>
+
+    <ul>
+      <li>Show examples of breadcrumb trails. Explain that they provide information about the user’s location in the context of a whole website. Emphasize that they are useful especially in cases where the navigation contains several nested levels. For reference on how to provide breadcrumb trails, see technique <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G65">G65: Providing a breadcrumb trail</a>.</li>
+      <li>Show examples of site maps and explain that they provide an overview of the whole site. Explain that some users rely on site maps to better understand the structure of the site and to find their way more easily through it. For references on how to provide a site map, see <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G63.html">G63: Providing a site map</a>.</li>
+      <li>Show examples of search functionalities. Explain that they help users find content by supporting navigation to different parts of the site. Emphasize that some users prefer this way of navigating, especially when they are already familiar with the site and know what they are looking for. For references on how to provide a search functionality, see technique <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G161">G161: Providing a search function to help users find content</a>.</li>
+      <li>Invite students to research different ways to present information in page titles. Reflect with them on how well the titles describe the page contents. Explain that page titles are useful to identify the purpose of a specific web page within a website. Mention that it is best practice to put the title text both in the page title and in the first heading of level 1 on the page. Some browsers and assistive technologies may truncate the titles or not show them at all. Explain that providing page titles is a responsibility shared with the content author. For references on how to provide descriptive page titles, see technique <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G88.html">G88: Providing descriptive titles for Web pages</a>.</li>
+      <li>Show examples of visual and non-visual indications in menus about the current page with respect to the website.</li>
+    </ul>
+
+    <h4 id="ideas-to-assess-knowledge-for-topic-1">Ideas to Assess Knowledge for Topic</h4>
+
+    <p>Optional ideas to assess knowledge:</p>
+
+    <ul>
+      <li>Practical — Give students a website and ask them to provide multiple ways to navigate across the website. Assess how students identify and design the different user experiences for site navigation, including search functionalities, breadcrumb trails, and site maps.</li>
+      <li>Practical — Give students a website and ask them to provide descriptive titles that identify each of the pages. Assess how students provide clear and descriptive page titles.</li>
+    </ul>
+
+  </div>
+</details>
+
+<details><summary>
+
+    <h3 id="topic-page-navigation">Topic: Page Navigation</h3>
+
+  </summary>
+  <div>
+
+    <p>Discuss strategies that people use to navigate to different parts of a web page, including tables of contents and methods to bypass blocks of repeated content. Explain that different groups of users rely on different navigational components. Discuss how to use page navigation components that minimize distractions and unnecessary noise.</p>
+
+    <h3 id="learning-outcomes-for-topic-1">Learning Outcomes for Topic</h3>
+
+    <p>Students should be able to:</p>
+
+    <ul>
+      <li>specify visual and non-visual methods to help users identify blocks of repeated content, including navigation bars and header contents</li>
+      <li>apply methods to skip blocks of repeated content using the following approaches:
+        <ul>
+          <li>a link at the top of each page that goes directly to the main content area</li>
+          <li>a link at the beginning of a block of repeated content to go to the end of the block</li>
+          <li>tables of contents at the top of the page that go to each area of the content</li>
+          <li>expandable and collapsible contents to make it easier for users to skip over them</li>
+        </ul>
+      </li>
+      <li>evaluate the amount of page navigational components in use</li>
+      <li>select components that minimize distractions and unnecessary noise</li>
+    </ul>
+
+    <h4 id="teaching-ideas-for-topic-2">Teaching Ideas for Topic</h4>
+
+    <p>Optional ideas to teach the learning outcomes:</p>
+
+    <ul>
+      <li>Show examples of methods to bypass blocks of repeated content, such as a link at the top of the page and the use of expandable and collapsible components. Explain that navigating through sets of repeated blocks of content using only the tab key is time consuming. For examples on how to provide a method to bypass blocks of repeated content, see the following techniques:
+        <ul>
+          <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G1.html">G1: Adding a link at the top of each page that goes directly to the main content area</a>,</li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G123.html">G123: Adding a link at the beginning of a block of repeated content to go to the end of the block</a>, and</li>
+          <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G124.html">G124: Adding links at the top of the page to each area of the content</a>.</li>
+        </ul>
+      </li>
+      <li>Show tables of contents for electronic books or documents. Explain that they provide an overview of the whole document and allow navigation to specific parts of the content. For references on how to provide a table of contents, see technique <a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G64.html">G64: Providing a Table of Contents</a>.</li>
+      <li>Invite students to research how the overuse of page navigational components can cause distractions and unnecessary noise for some users. For example, too many methods to bypass blocks of repeated content can contribute to a more cluttered keyboard user experience instead of making navigation easier.</li>
+    </ul>
+
+    <h4 id="ideas-to-assess-knowledge-for-topic-2">Ideas to Assess Knowledge for Topic</h4>
+
+    <p>Optional ideas to assess knowledge:</p>
+
+    <ul>
+      <li>Practical — Have students identify and describe the blocks of repeated content in a website and collaborate with developers to provide a way for users to bypass such blocks. Assess how students identify and describe blocks of repeated content and how they collaborate with developers to provide a method to bypass such blocks.</li>
+      <li>Practical — Give students a document and ask them to provide the table of contents. Assess how students provide the table of contents for documents.</li>
+      <li>Practical — Give students an interface with too many page navigational components. Ask students to identify the ones that are likely to cause distractions and unnecessary noise. Assess how students select page navigational components that minimize distractions and unnecessary noise.</li>
+    </ul>
+
+  </div>
+</details>
+
+<div class="excol-all"></div>
+
+<h2 id="ideas-to-assess-knowledge-for-module">Ideas to Assess Knowledge for Module</h2>
+
+<p>Optional ideas to assess knowledge:</p>
+
+<ul>
+  <li>Short Answer Questions — Ask students to outline the different types of navigational methods that exist and to provide examples for each. Assess how students understand and communicate the different types of navigational methods for websites, documents, and applications.</li>
+  <li>Practical — Give students an interface with excessive use of navigational components and ask them to determine which are necessary and which should be removed. Assess how students select navigational components that minimize distractions and unnecessary noise.</li>
+  <li>Portfolio — Have students design the navigation menu and other navigational components for a website. Assess how students understand accessibility features of navigation across websites and applications.</li>
+</ul>
+
+<h2 id="teaching-resources">Teaching Resources</h2>
+
+<p>Suggested resources to support your teaching:</p>
+
+<ul>
+  <li><a href="/WAI/tips/designing/">Designing for Web Accessibility</a> — Tips for user interface and visual design.</li>
+  <li><a href="/WAI/tutorials/menus/">Menus (WAI Web Accessibility Tutorials)</a> — Shows how to design navigational mechanisms that are accessible to people with disabilities.</li>
+  <li><a href="/WAI/people-use-web/">How People with Disabilities Use the Web</a> — Provides stories of people with disabilities using the Web; describes types of disabilities and some of the barriers that people encounter using the Web; and introduces types of assistive technologies and adaptive strategies that some people use.</li>
+  <li><a href="/WAI/perspective-videos/keyboard/">Keyboard Compatibility (Web Accessibility Perspectives)</a> — Is one of the Web accessibility perspectives videos that show accessibility features and how they impact people with disabilities.</li>
+  <li><a href="/WAI/perspective-videos/contrast/">Colors with Good Contrast (Web Accessibility Perspective)</a> — Is one of the Web accessibility perspectives videos that show accessibility features and how they impact people with disabilities.</li>
+  <li><a href="/WAI/perspective-videos/speech/">Text to Speech (Web Accessibility Perspectives)</a> — Is one of the Web accessibility perspectives videos that show accessibility features and how they impact people with disabilities.</li>
+  <li><a href="/WAI/perspective-videos/controls/">Large Links, Buttons, and Controls (Web Accessibility Perspectives)</a> — Is one of the Web accessibility perspectives videos that show accessibility features and how they impact people with disabilities.</li>
+  <li><a href="/WAI/standards-guidelines/wcag/">WCAG</a> — Address accessibility of web content on desktops, laptops, tablets, and mobile devices.</li>
+</ul>
+
+
+
+    
+
+<nav class="pager" aria-label="Previous/Next Page" style="clear: both;">
+  <ul><li class="pager--item previous">
+      <a href="/WAI/curricula/designer-modules/information-design/">
+        <svg focusable="false" aria-hidden="true" class="icon-arrow-left pager--item-icon"><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-left"></use></svg>
+        <span class="pager--item-text">
+          <span class="pager--item-text-direction">Previous:</span>
+          <span class="pager--item-text-target">Information Design</span>
+        </span>
+      </a>
+    </li><li class="pager--item next">
+      <a href="/WAI/curricula/designer-modules/interaction-design/">
+        <svg focusable="false" aria-hidden="true" class="icon-arrow-right pager--item-icon"><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-right"></use></svg>
+        <span class="pager--item-text">
+          <span class="pager--item-text-direction">Next:</span>
+          <span class="pager--item-text-target">Interaction Design</span>
+        </span>
+      </a>
+    </li>
+  </ul></nav><aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai@w3.org?subject=%5Ben%5D%203%3A%20Navigation%20Design&amp;body=%5Bput%20comment%20here...%5D%0A%0AI%20give%20permission%20to%20share%20this%20to%20a%20publicly-archived%20e-mail%20list.">wai@w3.org</a> or via GitHub.</p>
+<div class="button-group">
+    <a href="mailto:wai@w3.org?subject=%5Ben%5D%203%3A%20Navigation%20Design&body=%5Bput%20comment%20here...%5D%0A%0AI%20give%20permission%20to%20share%20this%20to%20a%20publicly-archived%20e-mail%20list." class="button"><span>E-mail</span></a><a href="
+https://github.com/w3c/wai-website/edit/main/pages/teach-advocate/curricula/designer/navigation-design.md
+" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wai-website/issues/new?template=content-issue.yml&wai-resource-id=wai-curricula&wai-url=https://www.w3.org/WAI/curricula/designer-modules/navigation-design/" class="button"><span>New GitHub Issue</span></a></div></div></aside>
+
+
+    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
+  </main>
+</div>
+
+
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner"
+      >
+      <p><strong>Date:</strong> Updated 9 February 2022. First published December 2019. <a href="/WAI/curricula/changelog/">Changelog</a></p> <p><strong>Editors:</strong> Daniel Montalvo and <a href="https://www.w3.org/People/shadi/">Shadi Abou-Zahra</a>. Contributors: <a href="https://www.w3.org/WAI/EO/EOWG-members">EOWG Participants</a>. <a href="/WAI/curricula/acknowledgements/">Acknowledgements</a> lists contributors and credits.</p>
+ <p>Developed by the Education and Outreach Working Group (<a href="https://www.w3.org/WAI/EO/">EOWG</a>). Developed with support from the <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide Project</a> funded by the European Commission (EC) under the Horizon 2020 program (Grant Agreement 822245).</p>
+<p><svg focusable="false" aria-hidden="true" class="icon-creative-commons "><use xlink:href="/WAI/assets/images/icons.svg#icon-creative-commons"></use></svg> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p></div>
+  </footer>
+  
+
+
+
+
+
+<footer class="site-footer grid-4q" aria-label="Site">
+  <div class="q1-start q3-end about">
+    <div>
+      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
+      <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
+    </div>
+    <div class="social" lang="en" dir="auto" translate="no">
+      <ul>
+        <li><a href="https://w3c.social/@wai"><svg focusable="false" aria-hidden="true" class="icon-mastodon "><use xlink:href="/WAI/assets/images/icons.svg#icon-mastodon"></use></svg> Mastodon</a></li>
+        <li><a href="https://www.linkedin.com/company/w3c-wai/"><svg focusable="false" aria-hidden="true" class="icon-linkedin "><use xlink:href="/WAI/assets/images/icons.svg#icon-linkedin"></use></svg> LinkedIn</a></li>
+        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
+        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
+        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+      </ul>
+    </div>
+    <div lang="en" dir="auto"  translate="no">
+      <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
+    </div>
+  </div>
+  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
+    <ul style="margin-bottom:0">
+      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+      <li><a href="/WAI/sitemap/">Site Map</a></li>
+      <li><a href="/WAI/news/">News</a></li>
+      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
+      <li><a href="/WAI/translations/"> Translations</a></li>
+      <li><a href="/WAI/roles/">Resources for Roles</a></li>
+    </ul>
+  </div>
+</footer><!-- Details4Everybody -->
+<script src="/WAI/assets/scripts/details4everybody.js?1725936703303430688"></script>
+<!-- SVG4Everybody -->
+<script src="/WAI/assets/scripts/svg4everybody.js?1725936703303430688"></script>
+<script>
+  svg4everybody();
+</script><script>
+  var translationStrings = {};
+</script>
+
+
+  </body>
+</html>

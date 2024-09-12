@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ja" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+
+    function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "/WAI/assets/scripts/main.js?1725936703303430688";
+      document.body.appendChild(element);
+    }
+
+    window.addEventListener("load", downloadJSAtOnload, false);
+  </script>
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1725936703303430688">
+
+<title> WCAG 2 概要 | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="WCAG 2 概要" />
+<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+<meta property="og:locale" content="ja" />
+<meta name="description" content="WCAG2.0、WCAG2.1、WCAG2.2を含む、国際標準のウェブコンテンツアクセシビリティガイドライン（WCAG）を紹介。WCAG文書は、ウェブコンテンツを障害がある人にとってよりアクセシブルにする方法を説明しています。" />
+<meta property="og:description" content="WCAG2.0、WCAG2.1、WCAG2.2を含む、国際標準のウェブコンテンツアクセシビリティガイドライン（WCAG）を紹介。WCAG文書は、ウェブコンテンツを障害がある人にとってよりアクセシブルにする方法を説明しています。" />
+<link rel="canonical" href="https://www.w3.org/WAI/standards-guidelines/wcag/ja" />
+<meta property="og:url" content="https://www.w3.org/WAI/standards-guidelines/wcag/ja" />
+<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
+<meta property="og:image" content="https://www.w3.org/WAI/content-images/wcag/wcag-intro-social.jpg" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://www.w3.org/WAI/content-images/wcag/wcag-intro-social.jpg" />
+<meta property="twitter:title" content="WCAG 2 概要" />
+<meta name="twitter:site" content="@w3c_wai" />
+<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"WCAG2.0、WCAG2.1、WCAG2.2を含む、国際標準のウェブコンテンツアクセシビリティガイドライン（WCAG）を紹介。WCAG文書は、ウェブコンテンツを障害がある人にとってよりアクセシブルにする方法を説明しています。","headline":"WCAG 2 概要","image":"https://www.w3.org/WAI/content-images/wcag/wcag-intro-social.jpg","url":"https://www.w3.org/WAI/standards-guidelines/wcag/ja"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
+</head>
+
+  <body id="top" class="page-wcag-2-概要 ">
+    <nav aria-label="リンクと言語選択をスキップ" id="controls" class="default-grid">
+  <ul>
+      <li><a href="#main">コンテンツにスキップ</a></li>
+      <li class="opt"><a href="/WAI/meta/customize/">テキストのサイズ・色を変更</a></li>
+      <li class="opt languagelist">
+          <strong>翻訳：</strong>
+          <ul class="languagelistul"><li><a style="text-transform: capitalize;" href="/WAI/standards-guidelines/wcag/" lang="en"  dir="auto" translate="no">English</a></li><li><a style="text-transform: capitalize;" href="/WAI/standards-guidelines/wcag/es" lang="es"  dir="auto" translate="no">español</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/standards-guidelines/wcag/fr" lang="fr"  dir="auto" translate="no">français</a></li>
+          <li><strong style="text-transform: capitalize;">日本語</strong></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/standards-guidelines/wcag/pl" lang="pl"  dir="auto" translate="no">polski</a></li>
+          </ul>
+        </li>
+        <li class="opt">
+          <a href="/WAI/translations/">全ての翻訳 <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+        </li>
+        <li><button id="showoptions" data-showhidebuttonid="header-showoptions" class="showhidebutton button-inline" data-target="#controls .opt" aria-expanded="false" data-large-aria-expanded="true" data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> カスタマイズ、言語、翻訳' data-hidetext='オプションを隠す'><svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> カスタマイズ、言語、翻訳</button></li>
+      </ul>
+    </nav>
+<header id="site-header" class="default-grid with-gap">
+  <div class="logos">
+    <a lang="en" class="home w3c" href="https://www.w3.org/">
+      <svg role="img" aria-label="W3C" viewBox="0 0 68 34" xmlns="http://www.w3.org/2000/svg"><g><path d="m16.117 1.006 5.759 19.58 5.759-19.58h4.17 11.444v1.946l-5.879 10.128c2.065.663 3.627 1.868 4.686 3.615 1.059 1.748 1.589 3.799 1.589 6.155 0 2.914-.775 5.363-2.324 7.348s-3.555 2.978-6.017 2.978c-1.854 0-3.469-.589-4.845-1.767-1.377-1.178-2.396-2.773-3.058-4.786l3.256-1.35c.477 1.218 1.106 2.178 1.887 2.879.781.702 1.701 1.052 2.76 1.052 1.112 0 2.052-.622 2.82-1.866.768-1.245 1.152-2.74 1.152-4.489 0-1.933-.411-3.429-1.231-4.488-.954-1.244-2.45-1.867-4.489-1.867h-1.588v-1.906l5.56-9.612h-6.712l-.382.65-8.163 27.548h-.397l-5.958-19.937-5.957 19.937h-.397l-9.53-32.168h4.17l5.759 19.58 3.892-13.185-1.906-6.395z"/><path d="m64.92 1.006c-.819 0-1.554.295-2.111.861-.591.6-.92 1.376-.92 2.178s.313 1.545.887 2.128c.583.591 1.334.912 2.145.912.793 0 1.562-.321 2.161-.903.574-.557.887-1.3.887-2.136 0-.811-.321-1.57-.878-2.136-.584-.592-1.344-.904-2.171-.904zm2.643 3.065c0 .701-.271 1.351-.768 1.832-.524.507-1.174.777-1.892.777-.675 0-1.342-.278-1.84-.785s-.777-1.157-.777-1.849.287-1.368.802-1.891c.481-.49 1.131-.751 1.84-.751.726 0 1.376.271 1.883.785.49.489.752 1.147.752 1.882zm-2.559-1.807h-1.3v3.445h.65v-1.469h.642l.701 1.469h.726l-.769-1.57c.498-.102.785-.439.785-.929 0-.625-.472-.946-1.435-.946zm-.118.422c.608 0 .886.169.886.591 0 .405-.278.549-.87.549h-.549v-1.14z"/><path d="m59.807.825.676 4.107-2.391 4.575s-.918-1.941-2.443-3.015c-1.285-.905-2.122-1.102-3.431-.832-1.681.347-3.587 2.357-4.419 4.835-.995 2.965-1.005 4.4-1.04 5.718-.056 2.113.277 3.362.277 3.362s-1.452-2.686-1.438-6.62c.009-2.808.451-5.354 1.75-7.867 1.143-2.209 2.842-3.535 4.35-3.691 1.559-.161 2.791.59 3.743 1.403 1 .854 2.01 2.721 2.01 2.721z"/><path d="m60.102 24.063s-1.057 1.889-1.715 2.617c-.659.728-1.837 2.01-3.292 2.651s-2.218.762-3.656.624c-1.437-.138-2.772-.97-3.24-1.317s-1.664-1.369-2.34-2.322-1.733-2.859-1.733-2.859.589 1.91.958 2.721c.212.467.864 1.894 1.789 3.136.863 1.159 2.539 3.154 5.086 3.604 2.547.451 4.297-.693 4.73-.97s1.346-1.042 1.924-1.66c.603-.645 1.174-1.468 1.49-1.962.231-.36.607-1.092.607-1.092z"/></g></svg>
+    </a>
+    <a lang="en" class="home" href="/WAI/">
+      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
+    </a>
+    <div class="claim">
+      <span>障害を持つ人々へのサポート - 戦略・標準化・リソース</span>
+    </div>
+    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> メニュー</span></button>
+  </div>
+
+  <div class="navigations">
+  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+    <ul>
+      <li><a href="/WAI/about/participating/">Get Involved</a></li>
+      <li><a href="/WAI/about/">About W3C WAI</a></li>
+      <li>
+        <form action="/WAI/search/" role="search">
+          <div>
+            <label for="header-search">
+              <span class="visuallyhidden">サーチ:</span>
+              <input id="header-search" type="search" name="q" placeholder="サーチ" aria-label="サーチ">
+            </label>
+            
+            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="サーチ" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
+          </div>
+        </form>
+      </li>
+    </ul>
+  </nav>
+</div>
+</header><nav class="mainnav" aria-label="メイン" lang="ja"><ul><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/planning/"><span>Planning &amp; Policies</span></a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="en" href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a></li><li><a lang="en" href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="小リンク集" lang="en">
+  <ul style="align-self: center;">
+    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li><li><a lang="ja" href="/WAI/standards-guidelines/wcag/ja" aria-current="page"><span>Web Content – WCAG 2</span></a></li></ul>
+</nav>
+    <div class="default-grid with-gap leftcol">
+
+  
+      
+        <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
+      <ul class="sidenav--list">
+  <li>
+  <a lang="en" href="/WAI/standards-guidelines/" class="page-link"><span>Standards/<wbr>Guidelines</span></a></li><li>
+  <a lang="ja" href="/WAI/standards-guidelines/wcag/ja" aria-current="page" class="page-link"><span>Web Content – WCAG 2</span></a><ul><li>
+  <a lang="en" href="https://www.w3.org/WAI/WCAG21/quickref/" class="page-link"><span>How to Meet WCAG 2 (Quick Reference)</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/wcag/glance/" class="page-link"><span>At a Glance</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/wcag/docs/" class="page-link"><span>The Documents</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/wcag/non-web-ict/" class="page-link"><span>Applying to Non-Web ICT</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/wcag/new-in-22/" class="page-link"><span>New in 2.2</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/wcag/new-in-21/" class="page-link"><span>New in 2.1</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/wcag/translations/" class="page-link"><span>Translations</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/wcag/commenting/" class="page-link"><span>Commenting</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/wcag/conformance-logos/" class="page-link"><span>Conformance Logos</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/wcag/faq/" class="page-link"><span>FAQ</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/wcag/wcag3-intro/" class="page-link"><span>WCAG 3 Draft</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/atag/" class="page-link"><span>Authoring Tool Accessibility Guidelines (ATAG) Overview</span></a><ul><li>
+  <a lang="en" href="/WAI/standards-guidelines/atag/glance/" class="page-link"><span>At a Glance</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/atag/education/" class="page-link"><span>For LMS</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/atag/no-code/" class="page-link"><span>For No-Code Tools</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/atag/social-media/" class="page-link"><span>For Social Media Platforms</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/uaag/" class="page-link"><span>User Agents – UAAG</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/aria/" class="page-link"><span>WAI-ARIA</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/evaluation/" class="page-link"><span>Evaluation – ACT &amp; EARL</span></a><ul><li>
+  <a lang="en" href="/WAI/standards-guidelines/act/" class="page-link"><span>Accessibility Conformance Testing – ACT</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/earl/" class="page-link"><span>Evaluation and Report Language – EARL</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/adapt/" class="page-link"><span>WAI-Adapt</span></a></li><li>
+  <a lang="en" href="/WAI/pronunciation/" class="page-link"><span>Pronunciation</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/harmonization/" class="page-link"><span>Standards Harmonization is Essential</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/w3c-process/" class="page-link"><span>W3C Process for Developing Standards</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/linking/" class="page-link"><span>Referencing and Linking to Standards</span></a></li><li>
+  <a lang="en" href="/WAI/cognitive/" class="page-link"><span>Cognitive Accessibility at W3C</span></a></li><li>
+  <a lang="en" href="/WAI/standards-guidelines/mobile/" class="page-link"><span>Mobile Accessibility at W3C</span></a></li></ul></nav><nav class="sidenav-languages" aria-labelledby="languagehead">
+        <header id="languagehead">言語/翻訳</header>
+        <ul class="langlist">
+          <li style="margin-bottom: 2px;"><a href="/WAI/standards-guidelines/wcag/" lang="en" dir="auto" translate="no">English (original)</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/standards-guidelines/wcag/es" dir="auto" translate="no" lang="es">español</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/standards-guidelines/wcag/fr" dir="auto" translate="no" lang="fr">français</a></li><li style="margin-bottom: 2px;"><strong style="text-transform: capitalize;">日本語</strong></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/standards-guidelines/wcag/pl" dir="auto" translate="no" lang="pl">polski</a></li></ul><p><a href="/WAI/translations/#ja">’他リソースの 日本語</a></p>
+        
+        <p><a href="/WAI/translations/">全ての翻訳</a></p>
+        <p><a href="/WAI/about/translating/">WAIリソース翻訳</a></p>
+      </nav>
+</div>
+
+
+      
+  
+
+  <main id="main" lang="ja">
+
+    
+
+    
+    <header>
+      <h1>
+      
+      
+      
+        WCAG 2 概要
+      
+      </h1></header>
+    <section id="translation-info" class="doc-note-box doc-note-translation">
+  <h2 class="visuallyhidden">本翻訳について</h2>
+  <p>ボランティアによる本翻訳は<a href="/WAI/standards-guidelines/wcag/">原文（英語）</a>の内容を正確に反映できていない可能性があります。</p>
+  
+  
+  <p><svg focusable="false" aria-hidden="true" class="icon-check-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-check-circle"></use></svg> 最新英語文書の翻訳
+    <br>翻訳更新済 <span dir="auto">2024-04-05</span>. 英語版更新 <span dir="auto">2024-03-07</span>.
+   </p>
+  
+  
+  <p>
+    <strong>翻訳者</strong> Makoto Ueki. 
+    <br>WAIは全ての翻訳者に感謝し、また他の<a href="/WAI/about/translating/">translations</a>も歓迎します</p>
+</section><aside class="box box-full"><header class="box-h  box-h-full"> <h2> サマリー </h2></header><div class="box-i">
+
+<p>このページでは、WCAG 2.0、WCAG 2.1、およびWCAG 2.2を含む、国際標準であるWebコンテンツ・アクセシビリティ・ガイドライン（WCAG）について紹介します。WCAG文書は、Webコンテンツを障害がある人にとってよりアクセシブルにする方法を説明しています。</p>
+
+<p>関連ページ <a href="/WAI/standards-guidelines/wcag/wcag3-intro/" hreflang="en">WCAG 3の紹介 (英語版)</a>.</p>
+
+<p>WCAGはアクセシビリティの入門書ではありません。入門書のようなドキュメントとしては、<a href="/WAI/fundamentals/" hreflang="en">アクセシビリティの基本概論 (英語版)</a> を参照してください。</p>
+
+<p>リソースへのクイックリンク：</p>
+<ul>
+  <li><a href="https://www.w3.org/WAI/WCAG22/quickref/">WCAG 2を満たす方法 (クイックリファレンス)</a></li>
+  <li><a href="https://www.w3.org/TR/WCAG22/">WCAG 2.2</a>, <a href="/WAI/standards-guidelines/wcag/new-in-22/" hreflang="en">WCAG 2.2での変更点 (英語版)</a></li>
+  <li><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a></li>
+</ul>
+
+</div></aside>
+
+
+
+<nav class="box box-simple box-simple" aria-labelledby="tocheading" id="toc">
+  <header id="tocheading" class="box-h box-h-simple box-h-simple"> このページのコンテンツ</header>
+  <div class="box-i">
+
+
+
+
+<ul id="markdown-toc">
+  <li><a href="#intro" id="markdown-toc-intro">イントロダクション</a></li>
+  <li><a href="#for" id="markdown-toc-for">WCAGは誰のためのものか</a></li>
+  <li><a href="#whatis2" id="markdown-toc-whatis2">WCAG 2の内容</a></li>
+  <li><a href="#versions" id="markdown-toc-versions">WCAG 2.0、2.1、2.2</a></li>
+  <li><a href="#翻訳" id="markdown-toc-翻訳">翻訳</a></li>
+  <li><a href="#iso" id="markdown-toc-iso">WCAG 2.0 は ISO/IEC 40500である</a></li>
+  <li><a href="#wg" id="markdown-toc-wg">誰がWCAGを作成しているのか</a></li>
+  <li><a href="#more" id="markdown-toc-more">WCAG 3とその他の情報</a></li>
+</ul>
+
+
+  </div>
+</nav>
+
+
+
+<h2 id="intro">イントロダクション</h2>
+
+<p>ウェブコンテンツ・アクセシビリティ・ガイドライン（WCAG）2は、個人、組織、政府のニーズを国際的に満たすウェブコンテンツのアクセシビリティに関する標準を単一で共有可能なものとして提供することを目的とし、<a href="/WAI/standards-guidelines/w3c-process/" hreflang="en">W3Cプロセス (英語版)</a>を通じて、世界中の個人および組織と協力して作成されています。</p>
+
+<p>WCAG文書は、ウェブコンテンツを障害がある人にとってよりアクセシブルにする方法を説明しています。ウェブの「コンテンツ」とは、一般的にウェブページやウェブアプリケーションに含まれる情報を指しており、次に挙げるものを含みます：</p>
+
+<ul>
+  <li>テキスト、画像、音声などの情報</li>
+  <li>構造や提示などを定義するコードやマークアップ</li>
+</ul>
+
+<h2 id="for">WCAGは誰のためのものか</h2>
+
+<p>WCAGは技術的な標準を求める人のためのものです。<strong>アクセシビリティの入門書ではありません。入門書のような資料へのリンクは、<a href="/WAI/standards-guidelines/wcag/faq/#start" hreflang="en">FAQの “どこから始めるべき?” (英語版)</a>にあります。</strong></p>
+
+<p>WCAGの主な対象者：</p>
+
+<ul>
+  <li>ウェブコンテンツ開発者（ページの制作者、サイトのデザイナーなど）</li>
+  <li>ウェブオーサリングツール開発者</li>
+  <li>ウェブアクセシビリティ評価ツールの開発者</li>
+  <li>モバイル・アクセシビリティを含め、ウェブ・アクセシビリティの標準を望む、または必要とするその他の人々</li>
+</ul>
+
+<p>ポリシー立案者、管理職、研究者など、その他の人たちのニーズに応えるため、さまざまな<a href="/WAI/resources/" hreflang="en">WAI リソース (英語版)</a>があります。</p>
+
+<h2 id="whatis2">WCAG 2の内容</h2>
+
+<p>WCAG 2.2には13のガイドラインがあり、ガイドラインは、<a href="https://www.w3.org/WAI/WCAG22/Understanding/intro#understanding-the-four-principles-of-accessibility">知覚可能、操作可能、理解可能、堅牢という4つの原則</a>のもとに構成されています。</p>
+
+<p>各ガイドラインにはテスト可能な達成基準があり、達成基準は<a href="https://www.w3.org/WAI/WCAG22/Understanding/conformance#levels">A、AA、AAA という3つのレベル</a>に分かれています。</p>
+
+<p>達成基準は、WCAGへの「適合性」を決定するものです。つまり、WCAGに適合するためには、コンテンツが達成基準を満たしている必要があります。詳細は、<a href="https://www.w3.org/TR/WCAG22/#conformance">WCAGの「適合」のセクション</a>に記載されています。</p>
+
+<p>WCAG 2ガイドラインの簡潔なサマリーは、<strong><a href="/WAI/standards-guidelines/wcag/glance/" hreflang="en">一目でわかるWCAG 2  (英語版)</a></strong>を参照してください。</p>
+
+<h3 id="supplement">サポート資料および補足ガイダンス</h3>
+
+<p>以下のリソースは、WCAGを理解して実装し、WCAGを超えてアクセシビリティを高めるのに役立ちます：</p>
+<ul>
+  <li>クイックリファレンス / WCAG 2を満たす方法 / チェックリスト</li>
+  <li>WCAG 2 解説書</li>
+  <li>WCAG 2 達成方法集</li>
+  <li>WCAG 2 テストルール</li>
+  <li>補足ガイダンス</li>
+</ul>
+
+<p><strong>これらのWCAG 2に関するリソースについては、<a href="/WAI/standards-guidelines/wcag/docs/" hreflang="en">WCAG 2 ドキュメント (英語版)</a>をお読みください。</strong></p>
+
+<h2 id="versions">WCAG 2.0、2.1、2.2</h2>
+
+<p>ウェブコンテンツ アクセシビリティガイドライン（WCAG）は、「W3C勧告」のウェブ標準として公開された時点で、安定性があり参照可能な標準となります。</p>
+
+<ul>
+  <li><a href="https://www.w3.org/TR/WCAG20/">WCAG 2.0</a> は2008年12月11日に公開されました。</li>
+  <li><a href="https://www.w3.org/TR/WCAG21/">WCAG 2.1</a> は2018年6月5日に公開され、更新版は2023年9月21日に公開されました。<a href="/WAI/standards-guidelines/wcag/faq/" hreflang="en">WCAG 2 FAQ (英語版)</a>にアップデートに関する情報が掲載されています。</li>
+  <li><a href="https://www.w3.org/TR/WCAG22/">WCAG 2.2</a> は2023年10月5日に公開されました。</li>
+</ul>
+
+<p>WCAG 2.0、2.1、2.2は「後方互換性」があるように設計されており、WCAG 2.2に適合するコンテンツはWCAG 2.1やWCAG 2.0にも適合します。すべてのバージョンを満たしたい場合は、WCAG 2.2のリソースを使用することができ、わざわざ以前のバージョンを探す必要はありません。</p>
+
+<p>2.0の達成基準はすべて2.1に含まれ、2.1の達成基準はすべて2.2に含まれています（ただし、次の段落で説明する達成基準 4.1.1を除く）。</p>
+<ul>
+  <li>WCAG 2.0 には12のガイドラインがあります。</li>
+  <li>WCAG 2.1 は1つのガイドラインと17の達成基準を追加しており、<a href="/WAI/standards-guidelines/wcag/new-in-21/" hreflang="en">WCAG 2.1での変更点 (英語版)</a>で紹介されています。</li>
+  <li>WCAG 2.2 はさらに9つの達成基準を追加しており、<a href="/WAI/standards-guidelines/wcag/new-in-22/" hreflang="en">WCAG 2.2での変更点 (英語版)</a>で紹介されています。</li>
+</ul>
+
+<p>いくつかの変更点があり、実際に後方互換性をサポートするために関連文書を更新しています。主な変更点は、WCAG 2.2において、1つの達成基準（4.1.1 構文解析）が廃止されたことです。WCAG 2.1とWCAG 2.0の正誤表に追加された注記は、<a href="/WAI/standards-guidelines/wcag/faq/#parsing411" hreflang="en">WCAG 2 FAQ, 4.1.1 構文解析 (英語版)</a>で説明されているように、これに対処しています。WCAG 2.2には、異なる言語に関する注記も含まれています。詳細は、<a href="/WAI/standards-guidelines/wcag/faq/#i18n22" hreflang="en">WCAG 2 FAQ, 国際化 (英語版)</a>にあります。</p>
+
+<p>WCAG 2.0、WCAG 2.1、WCAG 2.2はすべて存在している標準です。WCAG 2.2は、WCAG 2.1を非推奨にしたり、WCAG 2.1にとって代わったりするものではありません。そして、WCAG 2.1はWCAG 2.0を非推奨にするものでもなければ、WCAG 2.0にとって代わるものでもありません。ただ、W3CはWCAGの最新版を使用することを推奨しています。</p>
+
+<h2 id="翻訳">翻訳</h2>
+
+<p>WCAG 2の公認翻訳と非公式翻訳の一覧が、<a href="/WAI/standards-guidelines/wcag/translations/" hreflang="en">WCAG 2 翻訳 (英語版)</a>にあります。</p>
+
+<h2 id="iso">WCAG 2.0 は ISO/IEC 40500である</h2>
+
+<p>WCAG2.0は、ISO規格：ISO/IEC 40500:2012として承認されています。ISO/IEC 40500は、上記で関連リソースとともに紹介したオリジナルのWCAG 2.0と全く同じものです。</p>
+
+<p>ISO/IEC 40500の内容は、<a href="https://www.w3.org/TR/WCAG20/">www.w3.org/TR/WCAG20</a> から自由に入手できます。また、<a href="https://www.iso.org/standard/58625.html">ISOのサイト <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a>から購入することもできます。</p>
+
+<p>ISO規格としてのWCAG 2.0の利点は、<a href="/WAI/standards-guidelines/wcag/faq/#iso" hreflang="en">FAQのISO (英語版)</a>にまとめられています。W3CとISOプロセスに関する詳細は、<a href="https://www.w3.org/2010/04/pasfaq">W3C PAS FAQ</a>にあります。</p>
+
+<p><strong>W3Cは、ISOプロセスを通じてWCAG 2.2を提出する予定です。</strong></p>
+
+<h2 id="wg">誰がWCAGを作成しているのか</h2>
+
+<p>WCAGの技術文書は、ワールド・ワイド・ウェブ・コンソーシアム(<a href="https://www.w3.org">W3C</a>)のウェブ・アクセシビリティ・イニシアティブ(<a href="https://www.w3.org/WAI/">WAI</a>)に属するアクセシビリティガイドライン ワーキンググループ(<a href="/WAI/GL/" hreflang="en">AG WG (英語版)</a>)（旧ウェブコンテンツ アクセシビリティガイドライン ワーキンググループ）によって開発されています。</p>
+
+<p>WAIは、「WCAG 2 達成方法集」と「WCAG 2 解説書」を定期的に更新しています。私たちは<a href="/WAI/standards-guidelines/wcag/commenting/" hreflang="en">コメント (英語版)</a>や<a href="https://www.w3.org/WAI/GL/WCAG20/TECHS-SUBMIT/">新しい達成方法の提案</a>を歓迎しています。</p>
+
+<p>WCAGやその他のWAIにおける作業への参加のしかたは、<a href="/WAI/about/participating/" hreflang="en">WAIへの参加 (英語版)</a>でご紹介しています。</p>
+
+<h2 id="more">WCAG 3とその他の情報</h2>
+
+<p>WCAGは、オーサリングツール アクセシビリティガイドライン（ATAG）やユーザーエージェント アクセシビリティガイドライン（UAAG）を含む一連のアクセシビリティガイドラインの1つです。<a href="/WAI/fundamentals/components/" hreflang="en">ウェブアクセシビリティの必須構成要素 (英語版)</a>では、さまざまなガイドライン間の関係性について説明しています。</p>
+
+<p>以下に関する詳細については、<a href="/WAI/standards-guidelines/wcag/faq/" hreflang="en">WCAG 2 FAQ (英語版)</a>を参照してください：</p>
+
+<ul>
+  <li><strong><a href="/WAI/standards-guidelines/wcag/faq/#mobile" hreflang="en">モバイルアクセシビリティ (英語版)</a></strong> においてWCAG 2がカバーする範囲</li>
+  <li>** <a href="/WAI/standards-guidelines/wcag/faq/#wcag2ict" hreflang="en">ドキュメントとソフトウェア (英語版)</a>** へのWCAG 2の適用</li>
+  <li>その他</li>
+</ul>
+
+<p>W3C アクセシビリティガイドライン3.0（旧称「Silver」）の初期ドラフトに関する情報は、<strong><a href="/WAI/standards-guidelines/wcag/wcag3-intro/" hreflang="en">WCAG 3 イントロダクション (英語版)</a></strong>をご覧ください。</p>
+
+
+    <aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> 本ページの改善にご協力ください </h2></header><div class="box-i"><p>ご意見、ご提案、コメントをemail <a href="mailto:wai@w3.org?subject=%5Bja%5D%20WCAG%202%20%E6%A6%82%E8%A6%81&amp;body=%5B%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E6%AC%84%5D%0A%0AI%20%E4%B8%80%E8%88%AC%E3%81%AB%E5%85%AC%E9%96%8B%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8Bemail%E3%83%AA%E3%82%B9%E3%83%88%E3%81%B8%E3%81%AE%E5%85%B1%E6%9C%89">wai@w3.org</a> かGitHubまでお寄せください。</p>
+<div class="button-group">
+    <a href="mailto:wai@w3.org?subject=%5Bja%5D%20WCAG%202%20%E6%A6%82%E8%A6%81&body=%5B%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E6%AC%84%5D%0A%0AI%20%E4%B8%80%E8%88%AC%E3%81%AB%E5%85%AC%E9%96%8B%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8Bemail%E3%83%AA%E3%82%B9%E3%83%88%E3%81%B8%E3%81%AE%E5%85%B1%E6%9C%89" class="button"><span>E-mail</span></a><a href="
+https://github.com/w3c/wai-website/edit/main/pages/standards-guidelines/wcag/index.ja.md
+" class="button"><span>GitHubでフォークまたは編集する</span></a><a href="https://github.com/w3c/wai-website/issues/new?template=content-issue.yml&title=[ja]%20&wai-resource-id=wai-wcag-intro&wai-url=https://www.w3.org/WAI/standards-guidelines/wcag/ja" class="button"><span>GitHubで新しいIssueを作成する</span></a></div></div></aside>
+
+
+    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> 最初に戻る</span></a>
+  </main>
+</div>
+
+
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner"
+      >
+      <p><strong>最終更新日：</strong> 2024年3月7日、初版公開 2005年7月</p> <p><strong>編集者：</strong> <a href="https://www.w3.org/People/Shawn/">Shawn Lawton Henry</a></p> <p>教育・啓発ワーキンググループ (<a href="https://www.w3.org/WAI/about/groups/eowg/">EOWG</a>)及びアクセシビリティガイドライン ワーキンググループ (<a href="https://www.w3.org/WAI/about/groups/agwg/">AG WG</a>)の協力を得て作成されました。</p>
+</div>
+  </footer>
+  
+
+
+
+
+
+<footer class="site-footer grid-4q" aria-label="Site">
+  <div class="q1-start q3-end about">
+    <div>
+      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
+      <p>戦略、標準化、リソースの各サポートは、障害を持つ人々がウェブにアクセスできるようになる</p>
+    </div>
+    <div class="social" lang="en" dir="auto" translate="no">
+      <ul>
+        <li><a href="https://w3c.social/@wai"><svg focusable="false" aria-hidden="true" class="icon-mastodon "><use xlink:href="/WAI/assets/images/icons.svg#icon-mastodon"></use></svg> Mastodon</a></li>
+        <li><a href="https://www.linkedin.com/company/w3c-wai/"><svg focusable="false" aria-hidden="true" class="icon-linkedin "><use xlink:href="/WAI/assets/images/icons.svg#icon-linkedin"></use></svg> LinkedIn</a></li>
+        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
+        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
+        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+      </ul>
+    </div>
+    <div lang="en" dir="auto"  translate="no">
+      <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
+    </div>
+  </div>
+  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
+    <ul style="margin-bottom:0">
+      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+      <li><a href="/WAI/sitemap/">Site Map</a></li>
+      <li><a href="/WAI/news/">News</a></li>
+      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
+      <li><a href="/WAI/translations/"> Translations</a></li>
+      <li><a href="/WAI/roles/">Resources for Roles</a></li>
+    </ul>
+  </div>
+</footer><!-- Details4Everybody -->
+<script src="/WAI/assets/scripts/details4everybody.js?1725936703303430688"></script>
+<!-- SVG4Everybody -->
+<script src="/WAI/assets/scripts/svg4everybody.js?1725936703303430688"></script>
+<script>
+  svg4everybody();
+</script>
+<script src="/WAI/assets/scripts/lang/ja.js?1725936703303430688"></script>
+
+  </body>
+</html>

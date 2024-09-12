@@ -1,0 +1,541 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+
+    function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "/WAI/assets/scripts/main.js?1725936703303430688";
+      document.body.appendChild(element);
+    }
+
+    window.addEventListener("load", downloadJSAtOnload, false);
+  </script>
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1725936703303430688">
+
+<title> Impliquer les utilisateurs dans l’évaluation de l’accessibilité Web | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Impliquer les utilisateurs dans l’évaluation de l’accessibilité Web" />
+<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+<meta property="og:locale" content="fr" />
+<meta name="description" content="Introduit des considérations pour les tests d’utilisabilité et autres évaluations avec des personnes handicapées (“utilisateurs en situation de handicap”)." />
+<meta property="og:description" content="Introduit des considérations pour les tests d’utilisabilité et autres évaluations avec des personnes handicapées (“utilisateurs en situation de handicap”)." />
+<link rel="canonical" href="https://www.w3.org/WAI/test-evaluate/involving-users/fr" />
+<meta property="og:url" content="https://www.w3.org/WAI/test-evaluate/involving-users/fr" />
+<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="Impliquer les utilisateurs dans l’évaluation de l’accessibilité Web" />
+<meta name="twitter:site" content="@w3c_wai" />
+<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Introduit des considérations pour les tests d’utilisabilité et autres évaluations avec des personnes handicapées (“utilisateurs en situation de handicap”).","headline":"Impliquer les utilisateurs dans l’évaluation de l’accessibilité Web","url":"https://www.w3.org/WAI/test-evaluate/involving-users/fr"}</script>
+<!-- End Jekyll SEO tag -->
+<meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
+
+  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
+</head>
+
+  <body id="top" class="page-impliquer-les-utilisateurs-dans-l-évaluation-de-l-accessibilité-web ">
+    <nav aria-label="Liens d’évitement et sélecteur de langue" id="controls" class="default-grid">
+  <ul>
+      <li><a href="#main">Aller directement au contenu</a></li>
+      <li class="opt"><a href="/WAI/meta/customize/">Changer la taille ou la couleur du texte</a></li>
+      <li class="opt languagelist">
+          <strong>Cette&nbsp;page&nbsp;en&#8239;:</strong>
+          <ul class="languagelistul"><li><a style="text-transform: capitalize;" href="/WAI/test-evaluate/involving-users/" lang="en"  dir="auto" translate="no">English</a></li><li><strong style="text-transform: capitalize;">français</strong></li>
+          </ul>
+        </li>
+        <li class="opt">
+          <a href="/WAI/translations/">Toutes&nbsp;les&nbsp;traductions <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+        </li>
+        <li><button id="showoptions" data-showhidebuttonid="header-showoptions" class="showhidebutton button-inline" data-target="#controls .opt" aria-expanded="false" data-large-aria-expanded="true" data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Afficher la personnalisation, les langues et les traductions' data-hidetext='Cacher les options'><svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Afficher la personnalisation, les langues et les traductions</button></li>
+      </ul>
+    </nav>
+<header id="site-header" class="default-grid with-gap">
+  <div class="logos">
+    <a lang="en" class="home w3c" href="https://www.w3.org/">
+      <svg role="img" aria-label="W3C" viewBox="0 0 68 34" xmlns="http://www.w3.org/2000/svg"><g><path d="m16.117 1.006 5.759 19.58 5.759-19.58h4.17 11.444v1.946l-5.879 10.128c2.065.663 3.627 1.868 4.686 3.615 1.059 1.748 1.589 3.799 1.589 6.155 0 2.914-.775 5.363-2.324 7.348s-3.555 2.978-6.017 2.978c-1.854 0-3.469-.589-4.845-1.767-1.377-1.178-2.396-2.773-3.058-4.786l3.256-1.35c.477 1.218 1.106 2.178 1.887 2.879.781.702 1.701 1.052 2.76 1.052 1.112 0 2.052-.622 2.82-1.866.768-1.245 1.152-2.74 1.152-4.489 0-1.933-.411-3.429-1.231-4.488-.954-1.244-2.45-1.867-4.489-1.867h-1.588v-1.906l5.56-9.612h-6.712l-.382.65-8.163 27.548h-.397l-5.958-19.937-5.957 19.937h-.397l-9.53-32.168h4.17l5.759 19.58 3.892-13.185-1.906-6.395z"/><path d="m64.92 1.006c-.819 0-1.554.295-2.111.861-.591.6-.92 1.376-.92 2.178s.313 1.545.887 2.128c.583.591 1.334.912 2.145.912.793 0 1.562-.321 2.161-.903.574-.557.887-1.3.887-2.136 0-.811-.321-1.57-.878-2.136-.584-.592-1.344-.904-2.171-.904zm2.643 3.065c0 .701-.271 1.351-.768 1.832-.524.507-1.174.777-1.892.777-.675 0-1.342-.278-1.84-.785s-.777-1.157-.777-1.849.287-1.368.802-1.891c.481-.49 1.131-.751 1.84-.751.726 0 1.376.271 1.883.785.49.489.752 1.147.752 1.882zm-2.559-1.807h-1.3v3.445h.65v-1.469h.642l.701 1.469h.726l-.769-1.57c.498-.102.785-.439.785-.929 0-.625-.472-.946-1.435-.946zm-.118.422c.608 0 .886.169.886.591 0 .405-.278.549-.87.549h-.549v-1.14z"/><path d="m59.807.825.676 4.107-2.391 4.575s-.918-1.941-2.443-3.015c-1.285-.905-2.122-1.102-3.431-.832-1.681.347-3.587 2.357-4.419 4.835-.995 2.965-1.005 4.4-1.04 5.718-.056 2.113.277 3.362.277 3.362s-1.452-2.686-1.438-6.62c.009-2.808.451-5.354 1.75-7.867 1.143-2.209 2.842-3.535 4.35-3.691 1.559-.161 2.791.59 3.743 1.403 1 .854 2.01 2.721 2.01 2.721z"/><path d="m60.102 24.063s-1.057 1.889-1.715 2.617c-.659.728-1.837 2.01-3.292 2.651s-2.218.762-3.656.624c-1.437-.138-2.772-.97-3.24-1.317s-1.664-1.369-2.34-2.322-1.733-2.859-1.733-2.859.589 1.91.958 2.721c.212.467.864 1.894 1.789 3.136.863 1.159 2.539 3.154 5.086 3.604 2.547.451 4.297-.693 4.73-.97s1.346-1.042 1.924-1.66c.603-.645 1.174-1.468 1.49-1.962.231-.36.607-1.092.607-1.092z"/></g></svg>
+    </a>
+    <a lang="en" class="home" href="/WAI/">
+      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
+    </a>
+    <div class="claim">
+      <span>Stratégies, standards, ressources pour un Web accessible aux personnes en situation de handicap.</span>
+    </div>
+    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> Menu</span></button>
+  </div>
+
+  <div class="navigations">
+  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+    <ul>
+      <li><a href="/WAI/about/participating/">Get Involved</a></li>
+      <li><a href="/WAI/about/">About W3C WAI</a></li>
+      <li>
+        <form action="/WAI/search/" role="search">
+          <div>
+            <label for="header-search">
+              <span class="visuallyhidden">Recherche:</span>
+              <input id="header-search" type="search" name="q" placeholder="Recherche" aria-label="Recherche">
+            </label>
+            
+            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="Lancer la recherche" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
+          </div>
+        </form>
+      </li>
+    </ul>
+  </nav>
+</div>
+</header><nav class="mainnav" aria-label="Navigation principale" lang="fr"><ul><li><a lang="fr" href="/WAI/fundamentals/fr"><span>Fondamentaux de l&apos;accessibilité</span></a></li><li><a lang="fr" href="/WAI/planning/fr"><span>Organisation &amp; politiques</span></a></li><li><a lang="fr" href="/WAI/design-develop/fr"><span>Concevoir &amp; développer</span></a></li><li><a lang="fr" href="/WAI/test-evaluate/fr"><span>Tester et évaluer</span></a></li><li><a lang="fr" href="/WAI/teach-advocate/fr"><span>Former et promouvoir</span></a></li><li><a lang="fr" href="/WAI/standards-guidelines/fr"><span>Standards/<wbr>Règles</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="Chemin de fer" lang="en">
+  <ul style="align-self: center;">
+    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="fr" href="/WAI/test-evaluate/fr"><span>Tester et évaluer</span></a></li><li><a lang="fr" href="/WAI/test-evaluate/involving-users/fr" aria-current="page"><span>Impliquer les utilisateurs</span></a></li></ul>
+</nav>
+    <div class="default-grid with-gap leftcol">
+
+  
+      
+        <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
+      <ul class="sidenav--list">
+  <li>
+  <a lang="fr" href="/WAI/test-evaluate/fr" class="page-link"><span>Tester et évaluer</span></a></li><li>
+  <a lang="en" href="/WAI/test-evaluate/preliminary/" class="page-link"><span>Easy Checks – A First Review</span></a></li><li>
+  <a lang="en" href="/WAI/test-evaluate/easy-checks/" class="page-link"><span>Easy Checks - Draft Update</span></a><ul><li>
+  <a lang="en" href="/WAI/test-evaluate/easy-checks/image-alt/" class="page-link"><span>Image Alternative Text</span></a></li><li>
+  <a lang="en" href="/WAI/test-evaluate/easy-checks/title/" class="page-link"><span>Page Title</span></a></li><li>
+  <a lang="en" href="/WAI/test-evaluate/easy-checks/headings/" class="page-link"><span>Heading Structure</span></a></li><li>
+  <a lang="en" href="/WAI/test-evaluate/easy-checks/color-contrast/" class="page-link"><span>Color Contrast</span></a></li><li>
+  <a lang="en" href="/WAI/test-evaluate/easy-checks/skip-link/" class="page-link"><span>Skip Link</span></a></li><li>
+  <a lang="en" href="/WAI/test-evaluate/easy-checks/keyboard-focus/" class="page-link"><span>Keyboard Focus</span></a></li><li>
+  <a lang="en" href="/WAI/test-evaluate/easy-checks/language/" class="page-link"><span>Language of Page</span></a></li><li>
+  <a lang="en" href="/WAI/test-evaluate/easy-checks/zoom/" class="page-link"><span>Zoom</span></a></li><li>
+  <a lang="en" href="/WAI/test-evaluate/easy-checks/captions/" class="page-link"><span>Captions</span></a></li><li>
+  <a lang="en" href="/WAI/test-evaluate/easy-checks/transcripts/" class="page-link"><span>Transcripts</span></a></li><li>
+  <a lang="en" href="/WAI/test-evaluate/easy-checks/description/" class="page-link"><span>Audio Description</span></a></li><li>
+  <a lang="en" href="/WAI/test-evaluate/easy-checks/form-field-labels/" class="page-link"><span>Form Field Labels</span></a></li><li>
+  <a lang="en" href="/WAI/test-evaluate/easy-checks/required-fields/" class="page-link"><span>Required Fields</span></a></li></ul></li><li>
+  <a lang="fr" href="/WAI/test-evaluate/tools/fr" class="page-link"><span>Outils d&apos;évaluation</span></a><ul><li>
+  <a lang="en" href="/WAI/test-evaluate/tools/selecting/" class="page-link"><span>Selecting Evaluation Tools</span></a></li><li>
+  <a lang="en" href="/WAI/test-evaluate/tools/list/" class="page-link"><span>List of Evaluation Tools</span></a></li></ul></li><li>
+  <a lang="fr" href="/WAI/test-evaluate/conformance/fr" class="page-link"><span>Évaluation de la conformité, rapports</span></a><ul><li>
+  <a lang="en" href="/WAI/test-evaluate/conformance/wcag-em/" class="page-link"><span>WCAG-EM Conformance Methodology</span></a></li><li>
+  <a lang="en" href="https://www.w3.org/WAI/eval/report-tool/" class="page-link"><span>WCAG-EM Report Tool</span></a></li><li>
+  <a lang="en" href="/WAI/test-evaluate/report-template/" class="page-link"><span>Report Template</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/test-evaluate/combined-expertise/" class="page-link"><span>Using Combined Expertise</span></a></li><li>
+  <a lang="fr" href="/WAI/test-evaluate/involving-users/fr" aria-current="page" class="page-link"><span>Impliquer les utilisateurs</span></a></li></ul></nav><nav class="sidenav-languages" aria-labelledby="languagehead">
+        <header id="languagehead">Langues/Traductions</header>
+        <ul class="langlist">
+          <li style="margin-bottom: 2px;"><a href="/WAI/test-evaluate/involving-users/" lang="en" dir="auto" translate="no">English (original)</a></li><li style="margin-bottom: 2px;"><strong style="text-transform: capitalize;">français</strong></li></ul><p><a href="/WAI/translations/#fr">Autres ressources en français</a></p>
+        
+        <p><a href="/WAI/translations/">Toutes&nbsp;les&nbsp;traductions</a></p>
+        <p><a href="/WAI/about/translating/">Traduire les ressources de WAI</a></p>
+      </nav>
+</div>
+
+
+      
+  
+
+  <main id="main" lang="fr">
+
+    
+
+    
+    <header>
+      <h1>
+      
+      
+      
+        Impliquer les utilisateurs dans l’évaluation de l’accessibilité Web
+      
+      </h1></header>
+    <section id="translation-info" class="doc-note-box doc-note-translation">
+  <h2 class="visuallyhidden">À propos de cette traduction</h2>
+  <p>Cette traduction faite par des volontaires peut ne pas refléter les intentions de <a href="/WAI/test-evaluate/involving-users/">l’original en anglais</a>.</p>
+  
+  
+  <p><svg focusable="false" aria-hidden="true" class="icon-check-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-check-circle"></use></svg> Traduction à jour par rapport à la version anglaise.
+    <br>Traduction mise à jour&#8239;: <span dir="auto">2024-04-30</span>. Version anglaise mise à jour le&#8239;: <span dir="auto">2024-04-30</span>.
+   </p>
+  
+  
+  <p>
+    <strong>Traduction&#8239;:</strong> Rémi Bétin, Sofia Ahmed. 
+    Contribution&#8239;: Sandra Velarde Gonzalez (ETNIC), Sylvie Duchateau. <br>WAI remercie ces traducteurs, et accueille volontiers d’autres <a href="/WAI/about/translating/">traductions</a>.</p>
+</section><aside class="box"><header class="box-h "> Résumé</header><div class="box-i">
+
+<p>Cette page introduit des considérations pour les tests d’utilisabilité et autres évaluations avec des personnes handicapées (« utilisateurs en situation de handicap »).</p>
+
+</div></aside>
+
+
+
+<nav class="box box-simple" aria-labelledby="tocheading" id="toc">
+  <header id="tocheading" class="box-h box-h-simple"> Table des matières</header>
+  <div class="box-i">
+
+
+
+
+<ul id="markdown-toc">
+  <li><a href="#video" id="markdown-toc-video"><img src="/WAI/content-images/involving-users/video-thumb-involving-users.png" alt="" class=" video tiny" /> Vidéo : Impliquer les utilisateurs dans l’accessibilité Web – Vue d’ensemble</a></li>
+  <li><a href="#intro" id="markdown-toc-intro">Introduction</a></li>
+  <li><a href="#prelim" id="markdown-toc-prelim">Premières vérifications</a></li>
+  <li><a href="#range" id="markdown-toc-range">Types de tests utilisateurs</a></li>
+  <li><a href="#basics" id="markdown-toc-basics">Les fondamentaux</a></li>
+  <li><a href="#analyz" id="markdown-toc-analyz">Analyser les problèmes d’accessibilité</a></li>
+  <li><a href="#stdstoo" id="markdown-toc-stdstoo">Associez l’implication des utilisateurs et les standards</a></li>
+  <li><a href="#drawing" id="markdown-toc-drawing">Tirer des conclusions et créer un rapport</a></li>
+  <li><a href="#ut-access" id="markdown-toc-ut-access">Note à l’attention des ergonomes</a></li>
+  <li><a href="#fmi" id="markdown-toc-fmi">Plus d’informations et de conseils</a></li>
+</ul>
+
+
+
+  </div>
+</nav>
+
+
+
+<details id="video-intro"><summary>
+
+    <h2 id="video"><img src="/WAI/content-images/involving-users/video-thumb-involving-users.png" alt="" class=" video tiny" /> Vidéo : Impliquer les utilisateurs dans l’accessibilité Web – Vue d’ensemble</h2>
+
+  </summary>
+  <div>
+
+    <div class="video-container" data-video-type="" dir="ltr">
+    <video preload="metadata" data-youtube-id="lIA2zTXq_ts" data-youtube-nocookie="true" data-description-audible="false" playsinline=""><track src="/WAI/wai-videos/evaluating/involving-users.en.vtt" label="English" kind="captions" srclang="en" /><track src="/WAI/wai-videos/evaluating/involving-users.fr.vtt" label="français" kind="subtitles" srclang="fr" default="" /></video>
+</div>
+
+    <script src="//ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+    <script src="//cdn.jsdelivr.net/npm/js-cookie@3.0.1/dist/js.cookie.min.js"></script>
+
+    <script src="/WAI/assets/ableplayer/build/ableplayer.min.js"></script>
+
+    <script>
+    var youTubeDataAPIKey = "AIzaSyBzq155tA3E3gaYlRdx2S9U9FM78U1-568";
+    var googleApiReady = false;
+    function initGoogleClientApi() {
+        googleApiReady = true;
+    }
+</script>
+
+    <script src="//apis.google.com/js/client.js?onload=initGoogleClientApi"></script>
+
+    <script>
+    (function () {
+        'use strict';
+
+        let player1 = new AblePlayer($('[data-video-type=""] video'));
+        const audiodescribed = document.querySelectorAll('[data-video-type="audio-described"]');
+        const nonaudiodescribed = document.querySelectorAll('[data-video-type=""]');
+
+        if (audiodescribed.length > 0) {
+            let player2 = new AblePlayer($('[data-video-type="audio-described"] video'));
+
+            Array.prototype.forEach.call(audiodescribed, function(el, i){
+                el.setAttribute('hidden', true);
+            });
+
+            const adbutton = document.querySelector('#audio_description_button');
+            adbutton.addEventListener('click', function(e){
+                player1.pauseMedia();
+                player2.pauseMedia();
+
+                if (e.currentTarget.getAttribute('data-status') === "audio-described") {
+                    Array.prototype.forEach.call(nonaudiodescribed, function(el, i){
+                        el.removeAttribute("hidden");
+                    });
+                    Array.prototype.forEach.call(audiodescribed, function(el, i){
+                        el.setAttribute('hidden', true);
+                    });
+                    e.currentTarget.setAttribute('data-status', 'non-audio-described');
+                    e.currentTarget.querySelector('span').textContent = 'Enable Audio Description';
+                } else {
+                    Array.prototype.forEach.call(nonaudiodescribed, function(el, i){
+                        el.setAttribute('hidden', true);
+                    });
+                    Array.prototype.forEach.call(audiodescribed, function(el, i){
+                        el.removeAttribute("hidden");
+                    });
+                    e.currentTarget.setAttribute('data-status', 'audio-described');
+                    e.currentTarget.querySelector('span').textContent = 'Disable Audio Description';
+                }
+            });
+
+        }
+
+    }());
+</script>
+
+    <p><em>Cette vidéo est aussi disponible sur un serveur du W3C : <a href="https://media.w3.org/wai/evaluation-intros/involving-users.mp4">Vidéo : Impliquer les utilisateurs dans l’accessibilité Web – Vue d’ensemble (format du fichier : MP4, taille du fichier : 38 Mo)</a>.</em></p>
+
+    <details id="video-intro-transcript"><summary>
+
+        <p>Transcription textuelle avec description des visuels</p>
+
+      </summary>
+  <div>
+
+        <table>
+  <thead>
+    <tr>
+      <th width="65%">Audio</th>
+      <th>Visuel</th>
+    </tr>
+  </thead>
+<tbody>
+  <tr>
+    <td>Impliquer les utilisateurs dans l’accessibilité Web.</td>
+    <td>Impliquer les utilisateurs dans l’accessibilité Web.</td>
+  </tr>
+  <tr>
+    <td>L’accessibilité Web consiste à rendre vos sites et vos applications Web utilisables par les personnes en situation de handicap. Il s’agit de vos consommateurs, vos clients, vos employés, vos étudiants, etc.</td>
+    <td>L’accessibilité. Une personne se trouve face à un ordinateur. À côté de l’ordinateur apparaissent les mots : consommateurs ; clients ; employés ; et étudiants.</td>
+  </tr>
+  <tr>
+    <td>Malheureusement, bon nombre de personnes considèrent l’accessibilité uniquement comme une liste de choses à vérifier. En faisant cela, elles risquent de passer à côté de la raison d’être de l’accessibilité : l’expérience utilisateur. </td>
+    <td>Une liste remplace la personne. Le site Web sur l’écran s’écroule. 4 personnes remplacent l’ordinateur et la liste.</td>
+  </tr>
+  <tr>
+    <td>Impliquer des personnes en situation de handicap tout au long des processus de conception et de développement peut s’avérer plus efficace et produire de meilleurs résultats :
+      <ul>
+        <li> les designers et les développeurs apprennent comment les personnes en situation de handicap utilisent le Web, et comprennent les technologies d’assistance et les stratégies d’adaptation qu’elles utilisent ;</li>
+      </ul></td>
+    <td>Le groupe de personnes est entouré par des icônes au sein d’un cycle représentant le processus de développement : une icône crayon ; une icône de codage ; une icône pinceau ; et une icône loupe.
+Ces personnes sont intégrées en plus petit dans le processus.</td>
+  </tr>
+  <tr>
+    <td>(suite de la liste)
+      <ul>
+        <li>l’équipe chargée du projet est plus motivée lorsqu’elle comprend les conséquences positives de son travail dans la vie des utilisateurs ;</li>
+      </ul></td>
+    <td>Les icônes représentant le processus sont toujours présentes et les personnes sont remplacées par une jauge de motivation.</td>
+  </tr>
+  <tr>
+    <td>(suite de la liste)
+      <ul>
+        <li>le développement est plus efficient, et vos produits fonctionnent mieux pour plus de personnes, avec ou sans handicap ;</li>
+      </ul></td>
+    <td>Les icônes représentant le processus sont toujours présentes et la jauge est remplacée par un graphique montrant des résultats en hausse. Le graphique est remplacé par des silhouettes de plusieurs personnes.</td>
+  </tr>
+  <tr>
+    <td>(suite de la liste)
+      <ul>
+        <li>et vos produits finaux sont plus inclusifs, touchent un public plus large, augmentent la satisfaction client, et démontrent votre responsabilité sociale.</li>
+      </ul></td>
+    <td>Le nombre des personnes croît et les icônes représentant le processus disparaissent. Un classement à cinq étoiles apparaît au-dessus des personnes et les cinq étoiles se remplissent. Les personnes laissent place à une Terre contenant un cœur en son milieu.</td>
+  </tr>
+  <tr>
+    <td>« Impliquer les utilisateurs dans les projets Web pour améliorer et faciliter l’accessibilité » fournit des conseils pour organiser un projet, et un accompagnement tout au long du processus de conception et de développement.</td>
+    <td>Impliquer les utilisateurs dans les projets Web pour améliorer et faciliter l’accessibilité. Le cycle représentant le processus de développement, qui inclut les icônes, apparaît.</td>
+  </tr>
+  <tr>
+    <td>« Impliquer les utilisateurs dans l’évaluation de l’accessibilité Web » fournit une aide plus spécifique sur l’étape d’évaluation du processus.</td>
+    <td>Impliquer les utilisateurs dans l’évaluation de l’accessibilité Web. Les icônes du cycle représentant le processus sont mises en avant tour à tour à l’aide d’une loupe.</td>
+  </tr>
+  <tr>
+    <td>Ensemble, ces ressources vous aident à vous concentrer sur l’accessibilité pour les personnes qui utilisent votre site Web plutôt que sur les seuls pré-requis techniques. </td>
+    <td>« Impliquer les utilisateurs dans l’évaluation de l’accessibilité Web » et « Impliquer les utilisateurs dans les projets Web pour améliorer et faciliter l’accessibilité » fusionnent et se transforment en une personne face à l’ordinateur. Sur l’écran, les éléments accessibles et non-accessibles sont signalés.</td>
+  </tr>
+  <tr>
+    <td>L’accessibilité du Web : essentielle pour certains, utile à tous.</td>
+    <td>Des icônes apparaissent autour d’un ordinateur : une main ; un œil ; un cerveau ; une oreille ; et une bouche avec des ondes sonores.</td>
+  </tr>
+  <tr>
+    <td>Pour plus d’informations sur l’implication des utilisateurs dans l'accessibilité Web, consultez w3.o-r-g/W-A-I/involve-users.</td>
+    <td>Impliquer les utilisateurs dans l’accessibilité Web. Logos du W3C et de l’Initiative pour l’accessibilité du Web (WAI)</td>
+  </tr>
+</tbody>
+</table>
+
+      </div>
+</details>
+
+  </div>
+</details>
+
+<h2 id="intro">Introduction</h2>
+
+<p>L’évaluation de l’accessibilité Web met souvent l’accent sur la <a href="/WAI/test-evaluate/conformance/fr">conformité aux standards d’accessibilité</a> tels que les <a href="/WAI/standards-guidelines/wcag/fr">WCAG</a>. Bien que la conformité ait son importance, <a href="/WAI/planning/involving-users/fr#why">évaluer avec de vraies personnes a de nombreux avantages</a>. Par exemple, pour apprendre comment votre site ou votre outil Web fonctionne réellement pour les utilisateurs, et pour mieux comprendre les problèmes d’accessibilité. Évaluer avec des personnes en situation de handicap et des personnes âgées permet d’identifier les problèmes d’utilisabilité qui ne peuvent pas être détectés uniquement avec une évaluation de conformité.</p>
+
+<p>Cette page fait partie d’un ensemble de pages intitulé <a href="/WAI/test-evaluate/fr">Évaluer l’accessibilité web</a> qui offre un aperçu des différents aspects de l’évaluation de l’accessibilité Web. Il s’agit de la seconde page d’un ensemble de deux pages traitant de l’inclusion des utilisateurs dans les projets Web.</p>
+
+<p><strong>Veuillez lire <a href="/WAI/planning/involving-users/fr">Impliquer les utilisateurs dans les projets Web pour améliorer et faciliter l’accessibilité</a>, qui aborde des questions plus vastes sur l’inclusion des utilisateurs <em>tôt</em> dans la conception d’un site Web, le développement d’outils, de standards, et d’autres projets Web.</strong></p>
+
+<h2 id="prelim">Premières vérifications</h2>
+
+<p>Une des premières étapes pour évaluer l’accessibilité Web consiste à repérer les problèmes d’accessibilité évidents d’un site Web. À titre d’exemple, vous trouverez certaines vérifications sur <a href="/WAI/test-evaluate/preliminary/" hreflang="en">Premiers secours de l’accessibilité Web : stratégies de réparations provisoires (en anglais)</a>.</p>
+
+<p>Même les développeurs Web possédant peu de connaissances en accessibilité sont capables de repérer des problèmes d’accessibilité lors d’une première vérification. Un expert en accessibilité qui a une expérience directe de la manière dont les personnes en situation de handicap interagissent avec le Web peut, quant à lui :</p>
+
+<ul>
+  <li>évaluer les problèmes d’accessibilité pour un large éventail d’utilisateurs, qui n’auraient pas forcément été détectés par des utilisateurs individuels ;</li>
+  <li>aider à régler tout obstacle identifié avant d’inclure les utilisateurs ;</li>
+  <li>axer le test utilisateur sur les parties qui pourraient poser problème</li>
+</ul>
+
+<p><strong>La première vérification permet d’identifier les obstacles significatifs à l’accessibilité qu’il faudra régler avant l’évaluation impliquant des utilisateurs. Elle aide aussi à identifier sur quoi se concentrer lors des tests utilisateurs.</strong></p>
+
+<h2 id="range">Types de tests utilisateurs</h2>
+
+<p>Les utilisateurs en situation de handicap et les utilisateurs âgés peuvent être impliqués dans une grande variété d’activités d’évaluation, des consultations rapides aux tests utilisateurs à grande échelle. <strong>Il existe plusieurs options entre ces deux extrêmes</strong> :</p>
+
+<ul>
+  <li><strong>Les évaluations informelles</strong> de problèmes spécifiques d’accessibilité peuvent s’avérer très simples. Par exemple, en demandant à quelqu’un qui utilise un lecteur d’écran ou quelqu’un avec un handicap différent de trouver des données dans une première ébauche de tableau de données. Il suffit ensuite d’observer leur interaction et d’échanger sur les différents problèmes rencontrés.</li>
+  <li><strong>Le test d’utilisabilité formel</strong> d’un site Web suit des protocoles préétablis pour rassembler des données quantitatives et qualitatives provenant d’utilisateurs représentatifs qui réalisent des tâches spécifiques. <a href="#ut-access">Les tests utilisateurs formels peuvent être optimisés</a> pour mettre en exergue les problèmes d’accessibilité.</li>
+</ul>
+
+<p>Le type d’évaluation à pratiquer dépend de facteurs tel que le niveau d’avancement de votre projet ; par exemple, si vous en êtes à la recherche initiale d’idées de conception, au test de zones spécifiques de vos prototypes, ou à la vérification finale de vos créations.</p>
+
+<p><strong>Mener des évaluations informelles tout au long du développement est plus efficace qu’effectuer un test d’utilisabilité formel en fin de projet.</strong></p>
+
+<h2 id="basics">Les fondamentaux</h2>
+
+<p>Dans la plupart des cas, inclure les utilisateurs lors de l’évaluation suppose :</p>
+
+<ul>
+  <li>d’inclure quelques utilisateurs en situation de handicap - et selon votre public cible, des utilisateurs âgés</li>
+  <li>de les inclure tout au long du développement pour effectuer des tâches types sur vos prototypes, afin de vous permettre d’identifier comment améliorer différents aspects de la conception et du code</li>
+  <li>d’échanger avec eux sur les problèmes d’accessibilité</li>
+</ul>
+
+<p><strong>Consultez <a href="/WAI/planning/involving-users/fr">Impliquer les utilisateurs dans les projets Web pour améliorer et faciliter l’accessibilité</a></strong> pour en savoir plus sur <a href="/WAI/planning/involving-users/fr#diverse">le recrutement d’une palette d’utilisateurs</a> et sur <a href="/WAI/planning/involving-users/fr#experience">l’expérience des utilisateurs interagissant avec le Web</a>.</p>
+
+<p>Comme pour toute évaluation avec des utilisateurs, inclure des utilisateurs de niveau basique, intermédiaire ou avancé dépendra de vos utilisateurs cibles. Par exemple, si vous développez une application Web pour des comptables au sein d’une entreprise, vous opterez certainement pour des utilisateurs ayant un usage avancé des technologies d’assistance. En revanche, pour un site Web destiné aux demandes de prestation d’invalidité, vous travaillerez plutôt avec des utilisateurs novices dans l’usage des technologies d’assistance.</p>
+
+<p><mark id="caution"><strong>Attention :</strong> Considérez avec précaution chaque contribution. <strong>Évitez de supposer que la contribution d’une personne présentant une certaine forme de handicap s’applique à toutes les personnes en situation de handicap. </strong></mark></p>
+
+<p>Une personne en situation de handicap ne sait pas forcément comment d’autres personnes présentant le même type de handicap interagissent avec le Web. Elle pourrait ne pas en savoir assez sur les autres handicaps pour fournir une aide valable pour d’autres questions d’accessibilité. Il est préférable d’obtenir des contributions de plusieurs types d’utilisateurs.</p>
+
+<p>À noter : en plus de détecter des problèmes d’accessibilité, l’évaluation menée avec des utilisateurs en situation de handicap révèle habituellement des problèmes généraux d’utilisabilité qui touchent tous les utilisateurs, y compris ceux qui ne se trouvent <em>pas</em> en situation de handicap.</p>
+
+<h2 id="analyz">Analyser les problèmes d’accessibilité</h2>
+
+<p>L’accessibilité Web nécessite que des <a href="/WAI/fundamentals/components/fr">composantes multiples du développement Web et de l’interaction utilisateur</a> s’articulent convenablement, notamment les navigateurs Web, les technologies d’assistance, et le contenu Web.</p>
+
+<p>Les problèmes d’accessibilité peuvent être causés par une ou plusieurs composantes. Par exemple, si un utilisateur qui ne peut pas utiliser une souris éprouve des difficultés d’accès avec le clavier, il peut y avoir plusieurs explications :</p>
+
+<ul>
+  <li>le développeur n’a pas balisé/codé correctement la page Web, ou</li>
+  <li>le navigateur ou le lecteur multimédia ne traite pas correctement le balisage, ou</li>
+  <li>la technologie d’assistance de l’utilisateur ne traite pas correctement le balisage, ou</li>
+  <li>l’utilisateur ne sait pas comment utiliser le navigateur, le lecteur multimédia ou les fonctionnalités accessibles au clavier des technologies d’assistance, ou</li>
+  <li>la page est mal conçue et il s’agit d’un problème général d’utilisabilité touchant tous les utilisateurs, y compris ceux qui ne se trouvent <em>pas</em> en situation de handicap.</li>
+</ul>
+
+<h2 id="stdstoo">Associez l’implication des utilisateurs et les standards</h2>
+
+<p>Inclure les utilisateurs en situation de handicap dans l’évaluation présente de nombreux avantages. Ceci dit, cela ne suffit pas à déterminer si un site Web est accessible. Associez l’implication des utilisateurs et l’<a href="/WAI/test-evaluate/conformance/fr">évaluation de la conformité aux WCAG</a> afin de garantir que le site est accessible aux utilisateurs pour différents types de handicaps et de situations.</p>
+
+<h2 id="drawing">Tirer des conclusions et créer un rapport</h2>
+
+<p>Soyez vigilants si vous tirez des conclusions à partir d’évaluations ou d’études limitées. Les résultats obtenus avec deux personnes en situation de handicap ne peuvent être généralisés et appliqués à toutes les personnes dans la même situation de handicap ou présentant d’autres handicaps. Retrouvez plus d’informations dans la section <a href="#caution">Attention</a> ci-dessus.</p>
+
+<p>Incluez dans votre rapport le périmètre de votre étude et les paramètres de l’évaluation, tels que les méthodes de test et les caractéristiques des utilisateurs. Par exemple, si une étude a inclus uniquement des personnes aveugles, le rapport devra préciser que celle-ci n’a pas évalué la conformité aux standards d’accessibilité et qu’elle ne s’applique pas à toutes les personnes handicapées. Bien que les études de petite envergure peuvent souvent fournir des informations utiles, elles ne sont pas assez solides pour avoir une importance statistique.</p>
+
+<h2 id="ut-access">Note à l’attention des ergonomes</h2>
+
+<p>Lors de la recherche d’obstacles spécifiques à l’accessibilité, le protocole est généralement différent d’un test d’utilisabilité général. Par exemple :</p>
+
+<ul>
+  <li>vous utiliseriez certainement une technique de « réflexion à haute-voix » et une forte interaction avec l’animateur</li>
+  <li>la collecte de données s’attacherait surtout à comprendre les erreurs liées aux obstacles à l’accessibilité, plutôt que sur le temps passé à réaliser une tâche ou sur la satisfaction utilisateur</li>
+  <li>les tâches se concentreraient sur des zones spécifiques qui pourraient potentiellement poser des problèmes d’accessibilité, plutôt que sur l’utilisation générale du site</li>
+</ul>
+
+<p>Notez qu’il est également important d’évaluer d’autres facteurs pour les utilisateurs en situation de handicap. Ces facteurs comprennent : l’utilisabilité générale, la satisfaction utilisateur, et d’autres critères semblables.</p>
+
+<p>La section « Plus d’informations » ci-dessous inclut une aide supplémentaire à l’attention des ergonomes.</p>
+
+<h2 id="fmi">Plus d’informations et de conseils</h2>
+
+<p>Ce document aborde brièvement quelques points d’un sujet très complexe. De nombreuses ressources traitant des autres aspects liés à l’implication des utilisateurs dans l’évaluation sont disponibles sur le Web.</p>
+
+<ul>
+  <li><strong><a href="/WAI/planning/involving-users/fr">Impliquer les utilisateurs dans les projets Web pour améliorer et faciliter l’accessibilité</a> constitue un préalable essentiel à ce document</strong>. Cette page traite de questions plus vastes sur l’implication des utilisateurs tôt dans la conception d’un site Web, le développement d’outils, de standards, et d’autres projets Web.</li>
+  <li><a href="http://www.uiaccess.com/accessucd/overview.html"><cite lang="en">Just Ask: Integrating Accessibility Throughout Design</cite> <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a> (en anglais) fournit de l’aide sur l’intégration de l’accessibilité tout au long de la conception de sites Web et d’autres produits. Le chapitre sur les <a href="http://www.uiaccess.com/accessucd/ut.html">tests utilisateurs pour évaluer l’accessibilité <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a> détaille les différentes phases suivantes :
+    <ul>
+      <li>Organiser un test utilisateur pour évaluer l’accessibilité – <a href="http://www.uiaccess.com/accessucd/ut_plan.html#characteristics">déterminer les caractéristiques des participants <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a>, <a href="http://www.uiaccess.com/accessucd/ut_plan.html#recruiting">recruter des participants <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a>, fournir une compensation</li>
+      <li>Préparer le test d’utilisabilité pour évaluer l’accessibilité – préparer des supports de test, garantir l’accessibilité des installations, mettre en place et tester les technologies d’assistance, mener un test pilote, utiliser des <a href="http://www.uiaccess.com/accessucd/screening.html">techniques d’observation <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a></li>
+      <li>Mener un test d’utilisabilité pour évaluer l’accessibilité – <a href="http://www.uiaccess.com/accessucd/ut_conduct.html#interacting">interagir avec des personnes handicapées <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a>, préparer la pièce où aura lieu le test</li>
+      <li><a href="http://www.uiaccess.com/accessucd/ut_report.html">Créer un rapport à partir du test d’utilisabilité pour évaluer l’accessibilité <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a> – distinguer les problèmes d’accessibilité des problèmes d’utilisabilité, tirer des conclusions, donner des informations sur les personnes handicapées</li>
+    </ul>
+  </li>
+  <li><a href="https://web.archive.org/web/20160603030517/http://www-03.ibm.com/able/resources/userevaluations.html">Livre blanc : mener des tests utilisateurs avec des personnes en situation de handicap (en anglais) <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a></li>
+  <li>De nombreux livres, articles, supports de conférences, et d’autres ressources traitent des différentes méthodes pour évaluer l’utilisabilité. Ces ressources comprennent divers types de tests utilisateurs, des conceptions de tests, des protocoles de développement de tests, dont des questionnaires, des tâches, la collecte de données ; la réalisation de tests pilotes ; et le nombre de participants à inclure dans un test d’utilisabilité. Par exemple : <a href="https://www.alistapart.com/articles/usability-testing-demystified/"><cite lang="en">Usability Testing Demystified</cite> <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a> (en anglais), <a href="https://www.wiley.com/en-us/Handbook+of+Usability+Testing%3A+How+to+Plan%2C+Design%2C+and+Conduct+Effective+Tests%2C+2nd+Edition-p-9780470185483">les exemples de plans et de formulaires de test tirés de <cite lang="en">The Handbook of Usability Testing</cite> <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a> (en anglais), et <a href="https://sensible.com/rocket-surgery-made-easy/"><cite lang="en">Rocket Surgery Made Easy: The Do-It-Yourself Guide to Finding and Fixing Usability Problems</cite> <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a> (en anglais) avec un exemple de test d’utilisabilité, des scripts et des formulaires en ligne.</li>
+  <li>Il existe des organisations partout dans le monde spécialisées dans l’accompagnement pour recruter des personnes en situation de handicap et mener des évaluations avec des utilisateurs en situation de handicap.</li>
+</ul>
+
+
+    <aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Aider à améliorer cette page </h2></header><div class="box-i"><p>Merci de partager vos idées, vos suggestions ou vos commentaires par courriel à la liste archivée publiquement <a href="mailto:wai@w3.org?subject=%5Bfr%5D%20Impliquer%20les%20utilisateurs%20dans%20l%E2%80%99%C3%A9valuation%20de%20l%E2%80%99accessibilit%C3%A9%20Web&amp;body=%5Bvotre%20commentaire%20ici...%5D%0A%0AJ%E2%80%99accepte%20que%20ceci%20soit%20partag%C3%A9%20sur%20une%20liste%20de%20diffusion%20archiv%C3%A9e%20publiquement.">wai@w3.org</a> ou via GitHub.</p>
+<div class="button-group">
+    <a href="mailto:wai@w3.org?subject=%5Bfr%5D%20Impliquer%20les%20utilisateurs%20dans%20l%E2%80%99%C3%A9valuation%20de%20l%E2%80%99accessibilit%C3%A9%20Web&body=%5Bvotre%20commentaire%20ici...%5D%0A%0AJ%E2%80%99accepte%20que%20ceci%20soit%20partag%C3%A9%20sur%20une%20liste%20de%20diffusion%20archiv%C3%A9e%20publiquement." class="button"><span>Courriel</span></a><a href="
+https://github.com/w3c/wai-website/edit/main/pages/test-evaluate/involving-users/index.fr.md
+" class="button"><span>Cloner et modifier sur GitHub</span></a><a href="https://github.com/w3c/wai-website/issues/new?template=content-issue.yml&title=[fr]%20&wai-resource-id=wai-involving-users-eval&wai-url=https://www.w3.org/WAI/test-evaluate/involving-users/fr" class="button"><span>Nouveau ticket sur GitHub</span></a></div></div></aside>
+
+
+    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Retour en haut de page</span></a>
+  </main>
+</div>
+
+
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner"
+      >
+      <p>Note à propos de l’audiodescription : la vidéo présente sur cette page n’inclut pas l’audiodescription synchronisée car les images n’illustrent que l’audio et ne fournissent pas d’informations supplémentaires. Dans ce cas-ci, l’audiodescription serait plus distrayante qu’utile pour la plupart des utilisateurs, y compris pour les personnes qui ne peuvent pas voir les images. La description des informations contenues dans les images est reprise dans la transcription textuelle avec description des visuels (« transcription descriptive »).</p> <p><strong>Date :</strong> Mise à jour : 1<sup>er</sup> juin 2021. Liens mis à jour le 30 avril 2024. Première publication : novembre 2005.</p> <p><strong>Rédactrice :</strong> <a href="http://www.w3.org/People/Shawn">Shawn Lawton Henry</a>. <a href="https://www.w3.org/WAI/eval/ack#users">La page des remerciements</a> liste les contributeurs.</p> <p>Développé par le groupe de travail Éducation et Promotion (<a href="https://www.w3.org/WAI/EO/">EOWG</a>). Mis à jour dans le cadre du <a href="https://www.w3.org/WAI/WAI-AGE/"> projet WAI-AGE</a> financé par la Commission européenne au titre du 6e programme-cadre. Vidéo créée avec le soutien du projet <a href="https://www.w3.org/WAI/about/projects/wai-guide/">WAI-Guide</a> financé par la Commission européenne dans le cadre du programme Horizon 2020 (convention de subvention n° 822245). <a href="/WAI/test-evaluate/acknowledgements">Remerciements pour la vidéo</a>.</p>
+</div>
+  </footer>
+  
+
+
+
+
+
+<footer class="site-footer grid-4q" aria-label="Site">
+  <div class="q1-start q3-end about">
+    <div>
+      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
+      <p>Stratégies, standards et ressources pour rendre le Web accessible aux personnes en situation de handicap.</p>
+    </div>
+    <div class="social" lang="en" dir="auto" translate="no">
+      <ul>
+        <li><a href="https://w3c.social/@wai"><svg focusable="false" aria-hidden="true" class="icon-mastodon "><use xlink:href="/WAI/assets/images/icons.svg#icon-mastodon"></use></svg> Mastodon</a></li>
+        <li><a href="https://www.linkedin.com/company/w3c-wai/"><svg focusable="false" aria-hidden="true" class="icon-linkedin "><use xlink:href="/WAI/assets/images/icons.svg#icon-linkedin"></use></svg> LinkedIn</a></li>
+        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
+        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
+        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+      </ul>
+    </div>
+    <div lang="en" dir="auto"  translate="no">
+      <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
+    </div>
+  </div>
+  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
+    <ul style="margin-bottom:0">
+      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+      <li><a href="/WAI/sitemap/">Site Map</a></li>
+      <li><a href="/WAI/news/">News</a></li>
+      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
+      <li><a href="/WAI/translations/"> Translations</a></li>
+      <li><a href="/WAI/roles/">Resources for Roles</a></li>
+    </ul>
+  </div>
+</footer><!-- Details4Everybody -->
+<script src="/WAI/assets/scripts/details4everybody.js?1725936703303430688"></script>
+<!-- SVG4Everybody -->
+<script src="/WAI/assets/scripts/svg4everybody.js?1725936703303430688"></script>
+<script>
+  svg4everybody();
+</script>
+<script src="/WAI/assets/scripts/lang/fr.js?1725936703303430688"></script>
+
+  </body>
+</html>

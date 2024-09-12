@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-hans" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+
+    function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "/WAI/assets/scripts/main.js?1725936703303430688";
+      document.body.appendChild(element);
+    }
+
+    window.addEventListener("load", downloadJSAtOnload, false);
+  </script>
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1725936703303430688">
+
+<title> Web无障碍简介 | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Web无障碍简介" />
+<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+<meta property="og:locale" content="zh_hans" />
+<meta name="description" content="Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI)." />
+<meta property="og:description" content="Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI)." />
+<link rel="canonical" href="https://www.w3.org/WAI/fundamentals/accessibility-intro/zh-hans" />
+<meta property="og:url" content="https://www.w3.org/WAI/fundamentals/accessibility-intro/zh-hans" />
+<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="Web无障碍简介" />
+<meta name="twitter:site" content="@w3c_wai" />
+<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"Web无障碍简介","url":"https://www.w3.org/WAI/fundamentals/accessibility-intro/zh-hans"}</script>
+<!-- End Jekyll SEO tag -->
+<meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
+
+  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
+</head>
+
+  <body id="top" class="page-web无障碍简介 ">
+    <nav aria-label="跳过链接和语言选择器" id="controls" class="default-grid">
+  <ul>
+      <li><a href="#main">跳到内容</a></li>
+      <li class="opt"><a href="/WAI/meta/customize/">更改文本大小或颜色</a></li>
+      <li class="opt languagelist">
+          <strong>当前语言为：</strong>
+          <ul class="languagelistul"><li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/" lang="en"  dir="auto" translate="no">English</a></li><li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/ar" lang="ar"  dir="auto" translate="no">العربية</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/cs" lang="cs"  dir="auto" translate="no">čeština</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/de" lang="de"  dir="auto" translate="no">Deutsch</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/es" lang="es"  dir="auto" translate="no">español</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/fr" lang="fr"  dir="auto" translate="no">français</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/id" lang="id"  dir="auto" translate="no">Bahasa Indonesia</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/ko" lang="ko"  dir="auto" translate="no">한국어</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/pl" lang="pl"  dir="auto" translate="no">polski</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/ru" lang="ru"  dir="auto" translate="no">русский язык</a></li>
+          <li><strong style="text-transform: capitalize;">简体中文</strong></li>
+          </ul>
+        </li>
+        <li class="opt">
+          <a href="/WAI/translations/">所有翻译 <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+        </li>
+        <li><button id="showoptions" data-showhidebuttonid="header-showoptions" class="showhidebutton button-inline" data-target="#controls .opt" aria-expanded="false" data-large-aria-expanded="true" data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> 显示定制，语言，翻译' data-hidetext='隐藏选项'><svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> 显示定制，语言，翻译</button></li>
+      </ul>
+    </nav>
+<header id="site-header" class="default-grid with-gap">
+  <div class="logos">
+    <a lang="en" class="home w3c" href="https://www.w3.org/">
+      <svg role="img" aria-label="W3C" viewBox="0 0 68 34" xmlns="http://www.w3.org/2000/svg"><g><path d="m16.117 1.006 5.759 19.58 5.759-19.58h4.17 11.444v1.946l-5.879 10.128c2.065.663 3.627 1.868 4.686 3.615 1.059 1.748 1.589 3.799 1.589 6.155 0 2.914-.775 5.363-2.324 7.348s-3.555 2.978-6.017 2.978c-1.854 0-3.469-.589-4.845-1.767-1.377-1.178-2.396-2.773-3.058-4.786l3.256-1.35c.477 1.218 1.106 2.178 1.887 2.879.781.702 1.701 1.052 2.76 1.052 1.112 0 2.052-.622 2.82-1.866.768-1.245 1.152-2.74 1.152-4.489 0-1.933-.411-3.429-1.231-4.488-.954-1.244-2.45-1.867-4.489-1.867h-1.588v-1.906l5.56-9.612h-6.712l-.382.65-8.163 27.548h-.397l-5.958-19.937-5.957 19.937h-.397l-9.53-32.168h4.17l5.759 19.58 3.892-13.185-1.906-6.395z"/><path d="m64.92 1.006c-.819 0-1.554.295-2.111.861-.591.6-.92 1.376-.92 2.178s.313 1.545.887 2.128c.583.591 1.334.912 2.145.912.793 0 1.562-.321 2.161-.903.574-.557.887-1.3.887-2.136 0-.811-.321-1.57-.878-2.136-.584-.592-1.344-.904-2.171-.904zm2.643 3.065c0 .701-.271 1.351-.768 1.832-.524.507-1.174.777-1.892.777-.675 0-1.342-.278-1.84-.785s-.777-1.157-.777-1.849.287-1.368.802-1.891c.481-.49 1.131-.751 1.84-.751.726 0 1.376.271 1.883.785.49.489.752 1.147.752 1.882zm-2.559-1.807h-1.3v3.445h.65v-1.469h.642l.701 1.469h.726l-.769-1.57c.498-.102.785-.439.785-.929 0-.625-.472-.946-1.435-.946zm-.118.422c.608 0 .886.169.886.591 0 .405-.278.549-.87.549h-.549v-1.14z"/><path d="m59.807.825.676 4.107-2.391 4.575s-.918-1.941-2.443-3.015c-1.285-.905-2.122-1.102-3.431-.832-1.681.347-3.587 2.357-4.419 4.835-.995 2.965-1.005 4.4-1.04 5.718-.056 2.113.277 3.362.277 3.362s-1.452-2.686-1.438-6.62c.009-2.808.451-5.354 1.75-7.867 1.143-2.209 2.842-3.535 4.35-3.691 1.559-.161 2.791.59 3.743 1.403 1 .854 2.01 2.721 2.01 2.721z"/><path d="m60.102 24.063s-1.057 1.889-1.715 2.617c-.659.728-1.837 2.01-3.292 2.651s-2.218.762-3.656.624c-1.437-.138-2.772-.97-3.24-1.317s-1.664-1.369-2.34-2.322-1.733-2.859-1.733-2.859.589 1.91.958 2.721c.212.467.864 1.894 1.789 3.136.863 1.159 2.539 3.154 5.086 3.604 2.547.451 4.297-.693 4.73-.97s1.346-1.042 1.924-1.66c.603-.645 1.174-1.468 1.49-1.962.231-.36.607-1.092.607-1.092z"/></g></svg>
+    </a>
+    <a lang="en" class="home" href="/WAI/">
+      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
+    </a>
+    <div class="claim">
+      <span>使残疾人能够访问Web的策略、标准和资源。</span>
+    </div>
+    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> 菜单</span></button>
+  </div>
+
+  <div class="navigations">
+  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+    <ul>
+      <li><a href="/WAI/about/participating/">Get Involved</a></li>
+      <li><a href="/WAI/about/">About W3C WAI</a></li>
+      <li>
+        <form action="/WAI/search/" role="search">
+          <div>
+            <label for="header-search">
+              <span class="visuallyhidden">搜索:</span>
+              <input id="header-search" type="search" name="q" placeholder="搜索" aria-label="搜索">
+            </label>
+            
+            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="提交搜索" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
+          </div>
+        </form>
+      </li>
+    </ul>
+  </nav>
+</div>
+</header><nav class="mainnav" aria-label="主导航" lang="zh-hans"><ul><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/planning/"><span>Planning &amp; Policies</span></a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="en" href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a></li><li><a lang="en" href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="面包屑导航" lang="en">
+  <ul style="align-self: center;">
+    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="zh-hans" href="/WAI/fundamentals/accessibility-intro/zh-hans" aria-current="page"><span>Web无障碍简介</span></a></li></ul>
+</nav>
+    <div class="default-grid with-gap leftcol">
+
+  
+      
+        <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
+      <ul class="sidenav--list">
+  <li>
+  <a lang="en" href="/WAI/fundamentals/" class="page-link"><span>Accessibility Fundamentals</span></a></li><li>
+  <a lang="zh-hans" href="/WAI/fundamentals/accessibility-intro/zh-hans" aria-current="page" class="page-link"><span>Web无障碍简介</span></a><ul><li>
+  <a lang="zh-hans" href="/WAI/videos/standards-and-benefits/zh-hans" class="page-link"><span>视频介绍</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/people/" class="page-link"><span>Accessibility is About People</span></a><ul><li>
+  <a lang="en" href="/WAI/perspective-videos/" class="page-link"><span>Perspectives Videos</span></a><ul><li>
+  <a lang="en" href="/WAI/perspective-videos/keyboard/" class="page-link"><span>Keyboard Compatibility</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/contrast/" class="page-link"><span>Colors with Good Contrast</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/layout/" class="page-link"><span>Clear Layout and Design</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/speech/" class="page-link"><span>Text to Speech</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/controls/" class="page-link"><span>Large Links, Buttons, and Controls</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/captions/" class="page-link"><span>Video Captions</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/customizable/" class="page-link"><span>Customizable Text</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/voice/" class="page-link"><span>Speech Recognition</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/understandable/" class="page-link"><span>Understandable Content</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/notifications/" class="page-link"><span>Notifications and Feedback</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/people-use-web/" class="page-link"><span>How People with Disabilities Use the Web</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/" class="page-link"><span>Stories of Web Users</span></a><ul><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-one/" class="page-link"><span>Ade&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-two/" class="page-link"><span>Ian&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-three/" class="page-link"><span>Lakshmi&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-four/" class="page-link"><span>Lexie&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-five/" class="page-link"><span>Sophie&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-six/" class="page-link"><span>Dhruv&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-seven/" class="page-link"><span>Marta&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-eight/" class="page-link"><span>Stefan&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-nine/" class="page-link"><span>Elias&apos; Story</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/people-use-web/abilities-barriers/" class="page-link"><span>Diverse Abilities and Barriers</span></a><ul><li>
+  <a lang="en" href="/WAI/people-use-web/abilities-barriers/auditory/" class="page-link"><span>Auditory</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/abilities-barriers/cognitive/" class="page-link"><span>Cognitive and Learning</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/abilities-barriers/physical/" class="page-link"><span>Physical</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/abilities-barriers/speech/" class="page-link"><span>Speech</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/abilities-barriers/visual/" class="page-link"><span>Visual</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/people-use-web/tools-techniques/" class="page-link"><span>Tools and Techniques</span></a><ul><li>
+  <a lang="en" href="/WAI/people-use-web/tools-techniques/perception/" class="page-link"><span>Perception</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/tools-techniques/presentation/" class="page-link"><span>Presentation</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/tools-techniques/input/" class="page-link"><span>Input</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/tools-techniques/navigation/" class="page-link"><span>Interaction</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/older-users/" class="page-link"><span>Older Users and Accessibility</span></a><ul><li>
+  <a lang="en" href="/WAI/older-users/developing/" class="page-link"><span>How WCAG 2 Applies</span></a></li><li>
+  <a lang="en" href="/WAI/older-users/literature/" class="page-link"><span>Literature Review</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/fundamentals/accessibility-usability-inclusion/" class="page-link"><span>Accessibility, Usability, Inclusion</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/fundamentals/components/" class="page-link"><span>Components of Web Accessibility</span></a></li><li>
+  <a lang="zh-hans" href="/WAI/fundamentals/accessibility-principles/zh-hans" class="page-link"><span>无障碍原则</span></a></li><li>
+  <a lang="en" href="/WAI/research/" class="page-link"><span>Research</span></a><ul><li>
+  <a lang="en" href="/WAI/research/user-requirements/" class="page-link"><span>User Requirements</span></a></li><li>
+  <a lang="en" href="/WAI/research/ai2023/" class="page-link"><span>AI and Accessibility</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/courses/" class="page-link"><span>Digital Accessibility Courses</span></a><ul><li>
+  <a lang="en" href="/WAI/courses/foundations-course/" class="page-link"><span>W3C Foundations Online Course</span></a></li><li>
+  <a lang="en" href="/WAI/courses/list/" class="page-link"><span>Course List</span></a></li></ul></li></ul></nav><nav class="sidenav-languages" aria-labelledby="languagehead">
+        <header id="languagehead">语言/翻译</header>
+        <ul class="langlist">
+          <li style="margin-bottom: 2px;"><a href="/WAI/fundamentals/accessibility-intro/" lang="en" dir="auto" translate="no">English (original)</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/ar" dir="auto" translate="no" lang="ar">العربية</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/cs" dir="auto" translate="no" lang="cs">čeština</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/de" dir="auto" translate="no" lang="de">Deutsch</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/es" dir="auto" translate="no" lang="es">español</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/fr" dir="auto" translate="no" lang="fr">français</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/id" dir="auto" translate="no" lang="id">Bahasa Indonesia</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/ko" dir="auto" translate="no" lang="ko">한국어</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/pl" dir="auto" translate="no" lang="pl">polski</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/ru" dir="auto" translate="no" lang="ru">русский язык</a></li><li style="margin-bottom: 2px;"><strong style="text-transform: capitalize;">简体中文</strong></li></ul><p><a href="/WAI/translations/#zh-hans">其他语言资源： 简体中文</a></p>
+        
+        <p><a href="/WAI/translations/">所有翻译</a></p>
+        <p><a href="/WAI/about/translating/">翻译WAI的资源</a></p>
+      </nav>
+</div>
+
+
+      
+  
+
+  <main id="main" lang="zh-hans">
+
+    
+
+    
+    <header>
+      <h1>
+      
+      
+      
+        Web无障碍简介
+      
+      </h1></header>
+    <section id="translation-info" class="doc-note-box doc-note-translation">
+  <h2 class="visuallyhidden">关于该翻译</h2>
+  <p>该志愿翻译可能不能准确地反映出<a href="/WAI/fundamentals/accessibility-intro/">英文原版内容</a>。</p>
+  
+  
+  <p><svg focusable="false" aria-hidden="true" class="icon-warning "><use xlink:href="/WAI/assets/images/icons.svg#icon-warning"></use></svg> 自该翻译版之后的英文版本更新：<a href="/WAI/fundamentals/accessibility-intro/changelog/">修改日志</a>.
+    <br>英文版本更新： <span dir="auto">2024-03-07</span>. 翻译更新 <span dir="auto">2019-07-12</span>.
+  </p>
+  
+  
+  <p>
+    <strong>翻译者：</strong> <a href="https://www.w3.org/people/roy" rel="nofollow noopener" target="_blank">冉若曦 <svg focusable="false" aria-label="new tab/window" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a>. 
+    <br>WAI感谢这些翻译者们，并欢迎其他的<a href="/WAI/about/translating/">翻译</a>。</p>
+</section><aside class="box box-full"><header class="box-h  box-h-full"> <h2> Summary </h2></header><div class="box-i">
+
+<p>当网站和web工具得到适当的设计和编码时，残疾人就可以使用它们。然而，目前许多网站和工具都带有可访问性障碍，使得一些人很难或不可能使用它们。</p>
+
+<p>使web无障碍对个人、企业和社会都有好处。国际web标准定义了无障碍所需的内容。</p>
+
+</div></aside>
+
+
+
+<nav class="box box-simple box-full" aria-labelledby="tocheading" id="toc">
+  <header id="tocheading" class="box-h box-h-simple box-h-full"> Page Contents</header>
+  <div class="box-i">
+
+
+
+
+<ul id="markdown-toc">
+  <li><a href="#context" id="markdown-toc-context">Accessibility in Context</a></li>
+  <li><a href="#what" id="markdown-toc-what">什么是Web无障碍</a></li>
+  <li><a href="#important" id="markdown-toc-important">无障碍对个人、企业和社会的重要性</a></li>
+  <li><a href="#making" id="markdown-toc-making">使Web无障碍</a></li>
+  <li><a href="#evaluate" id="markdown-toc-evaluate">无障碍评测</a></li>
+  <li><a href="#section" id="markdown-toc-section">例子</a></li>
+  <li><a href="#more-info" id="markdown-toc-more-info">更多信息</a></li>
+</ul>
+
+<p><span class="box-h box-h-simple box-h-full">相关资源</span><br />
+<a href="https://www.w3.org/WAI/videos/standards-and-benefits.html" class="video-link">
+  <img src="/WAI/content-images/intro-accessibility/video-still-accessibility-intro-16-9.jpg" alt="" />
+  <span>介绍Web无障碍和W3C标准的视频 <em>(4分钟)</em></span>
+</a></p>
+
+
+
+  </div>
+</nav>
+
+
+
+<h2 id="context">Accessibility in Context</h2>
+
+<blockquote class="pull">
+  <p>Web的力量在于它的普遍性。<br />
+    每个人不论残疾与否都能访问是一个最基本的方面。</p>
+  <footer><cite>Tim Berners-Lee, 万维网的发明者和W3C主管</cite></footer>
+</blockquote>
+
+<p>Web从根本上是为所有人设计的，无论他们的硬件、软件、语言、位置或能力如何。当web达到这一目标时，具有不同听力、运动、视觉和认知能力的人就可以访问它。</p>
+
+<p>因此，残疾对Web的影响发生了根本性的变化，因为Web消除了许多人在现实世界中面临的沟通和互动障碍。然而，当网站、应用程序、技术或工具设计得很糟糕时，它们可能会造成阻碍，使人们无法使用Web。</p>
+
+<p><strong>对于想要创建高质量网站和web工具的开发人员和组织来说，无障碍是必不可少的，这就不会让一些人在使用他们的产品和服务的时候被排除在外。</strong></p>
+
+<h2 id="what">什么是Web无障碍</h2>
+
+<p>Web无障碍是指设计和开发网站、工具和技术，使残疾人能够使用它们。更具体地说，人们可以:</p>
+
+<ul>
+  <li>感知、理解、导航和与Web交互</li>
+  <li>为Web做贡献</li>
+</ul>
+
+<p>Web无障碍包括所有影响浏览网页的障碍，包括:</p>
+
+<ul>
+  <li>听觉</li>
+  <li>认知能力</li>
+  <li>神经损伤</li>
+  <li>身体上的</li>
+  <li>语言</li>
+  <li>视觉</li>
+</ul>
+
+<p>Web无障碍对<em>无</em>残疾人士亦有好处，例如:</p>
+
+<ul>
+  <li>人们使用手机、智能手表、智能电视等具有小屏幕、不同输入模式的设备等</li>
+  <li>随着年龄的增长能力发生变化的老年人</li>
+  <li>有“暂时性残疾”的人，如手臂骨折或眼镜丢失</li>
+  <li>有“情境限制”的人，例如在明亮的阳光下或在无法听音频的环境中</li>
+  <li>使用慢速互联网连接，或带宽有限或昂贵的人</li>
+</ul>
+
+<p>有关无障碍设施对残疾人士的重要性及在不同情况下对每个人的重要性的例子，请参阅:<br />
+<a href="https://www.youtube.com/watch?v=3f31oufqFSM" class="video-link">
+  <img src="/WAI/content-images/intro-accessibility/video-still-accessibility-perspectives-16-9.jpg" alt="" />
+  <span>Web无障碍愿景视频 <em>(YouTube)</em></span>
+</a></p>
+
+<aside class="box box-simple box-aside"><header class="box-h  box-h-simple box-h-aside"> <h3> 更多信息关于什么是Web无障碍 </h3></header><div class="box-i">
+
+<ul>
+  <li>如果您想了解更多关于不同残疾如何影响Web使用的信息，并阅读有关残疾人士使用Web的场景，请参见 <a href="/WAI/people-use-web/" hreflang="en">残疾人如何使用Web (英文)</a>。</li>
+  <li>如果您想要更多关于WCAG支持的其他好处的例子，请参阅<a href="/WAI/standards-guidelines/shared-experiences/" hreflang="en">共享Web体验:移动设备用户和残疾人共同面临的障碍 (英文)</a>和<a href="https://www.w3.org/WAI/business-case/archive/soc#groups">Web无障碍使残疾人和非残疾人受益</a>。</li>
+</ul>
+
+</div></aside>
+
+<h2 id="important">无障碍对个人、企业和社会的重要性</h2>
+
+<p>在教育、就业、政府、商业、医疗、娱乐等生活的许多方面，Web都是越来越重要的资源。为了给具有不同能力的人提供平等的访问和平等的机会，网络的可访问性是至关重要的。《联合国残疾人权利公约》(UN <a href="https://www.un.org/development/desa/disabilities/convention-on-the-rights-of-persons-with-disabilities.html">CRPD</a>)将获得包括网络在内的信息和通信技术定义为一项基本人权 .</p>
+
+<p>Web为许多残疾人提供了前所未有的获取信息和互动的可能性。也就是说，通过web技术可以更容易地克服打印、音频和可视媒体的可访问性障碍。</p>
+
+<p>无障碍设施为残疾人士及其他人士提供社会包容服务，例如:</p>
+
+<ul>
+  <li>老年人</li>
+  <li>农村人口</li>
+  <li>发展中国家的人们</li>
+</ul>
+
+<p><strong>对于无障碍，还有一个强有力的业务案例。</strong>如前一节所示，无障碍设计改善了总体用户体验和满意度，特别是在各种情况下，跨不同的设备，并为老年用户。无障碍可以增强您的品牌，推动创新，并扩大您的市场范围。</p>
+
+<p>在许多情况下，<strong>法律要求</strong>Web无障碍。</p>
+
+<aside class="box box-simple box-aside"><header class="box-h  box-h-simple box-h-aside"> <h3> 更多关于无障碍的重要信息 </h3></header><div class="box-i">
+
+<ul>
+  <li>对商业有益的通用信息在 <a href="/WAI/business-case/" hreflang="en">数字无障碍的业务案例 (英文)</a>。</li>
+  <li>有关制定法律要求的指导意见已存档于 <a href="https://www.w3.org/WAI/business-case/archive/pol">法律及政策因素</a>。</li>
+</ul>
+
+</div></aside>
+
+<h2 id="making">使Web无障碍</h2>
+
+<p>Web无障碍依赖于几个共同工作的组件，包括Web技术、Web浏览器和其他“用户代理”、创作工具和网站。</p>
+
+<p>W3C Web无障碍推进 (<a href="/WAI/get-involved/" hreflang="en">WAI (英文)</a>)开发描述无障碍解决方案的技术规范、指南、技术和支持资源。这些被认为是无障碍网页的国际标准;例如, <abbr title="Web Content Accessibility Guidelines (WCAG)">WCAG</abbr> 2.0 也是 <abbr title="International Organization for Standardization">ISO</abbr>标准: ISO/<abbr title="International Electrotechnical Commission">IEC</abbr> 40500。</p>
+
+<aside class="box box-simple box-aside"><header class="box-h  box-h-simple box-h-aside"> <h3> 更多关于如何使Web无障碍 </h3></header><div class="box-i">
+
+<ul>
+  <li>有关无障碍方面的更多信息请参见 <a href="/WAI/fundamentals/components/" hreflang="en">web无障碍的基本组成部分 (英文)</a>.</li>
+  <li>Web内容无障碍指南(WCAG), 创作工具无障碍指南(ATAG), 富互联网应用(ARIA), <a href="/WAI/standards-guidelines/zh-hans">W3C 可访问性标准概述</a>中介绍了其他重要资源。</li>
+  <li>要了解更多关于W3C WAI如何通过多方利益攸关方、国际参与开发材料以及如何做出贡献的信息，请参见 <a href="/WAI/about/" hreflang="en">关于WAI (英文)</a> and <a href="/WAI/get-involved/" hreflang="en">参与WAI (英文)</a>。</li>
+</ul>
+
+</div></aside>
+
+<h3 id="website">让你的网站更无障碍</h3>
+
+<p>无障碍的许多方面都非常容易理解和实现。一些无障碍解决方案会比较复杂，需要更多的知识来实现。</p>
+
+<p>从项目一开始就包含无障碍是最有效的方式，这样您就不需要返回并重新做工作。</p>
+
+<aside class="box box-simple box-aside"><header class="box-h  box-h-simple box-h-aside"> <h3> 更多关于如何让你的网站更无障碍 </h3></header><div class="box-i">
+
+<ul>
+  <li>有关无障碍要求和国际标准的介绍，请参见<a href="/WAI/fundamentals/accessibility-principles/zh-hans">无障碍原则</a>。</li>
+  <li>要从测试的角度理解一些常见的无障碍问题，请参见 <a href="/WAI/test-evaluate/preliminary/" hreflang="en">轻松测试-第一次检查 (英文)</a>。</li>
+  <li>有关设计、编写和开发无障碍的一些基本考虑事项，请参见<a href="/WAI/tips/" hreflang="en">入门技巧 (英文)</a>。</li>
+  <li>当您准备了解更多关于开发和设计的知识时，您可能会使用以下资源:
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/">如何使用WCAG(快速参考)</a></li>
+      <li><a href="https://www.w3.org/WAI/tutorials/">Web无障碍教程</a></li>
+    </ul>
+  </li>
+  <li>有关项目管理和组织方面的考虑，请参见<a href="/WAI/planning-and-managing/" hreflang="en">规划和管理Web可访问性 (英文)</a>。<br />
+如果您现在需要快速修复，请参阅<a href="/WAI/planning/interim-repairs/" hreflang="en">临时修复方法 (英文)</a>。</li>
+</ul>
+
+</div></aside>
+
+<h2 id="evaluate">无障碍评测</h2>
+
+<p>在开发或重新设计网站时，尽早评测无障碍性，并贯穿整个开发过程，以便尽早发现无障碍问题，以便更容易地解决这些问题。简单的步骤，例如在浏览器中更改设置，可以帮助您评估无障碍的某些方面。综合评估，以确定一个网站是否符合所有无障碍指南需要更多的努力。</p>
+
+<p>有一些评估工具可以帮助进行评测。但是，没有任何工具可以单独确定站点是否符合无障碍指南。需要有知识的人工评测来确定站点是否无障碍。</p>
+
+<aside class="box box-simple box-aside"><header class="box-h  box-h-simple box-h-aside"> <h3> 更多信息关于无障碍评测 </h3></header><div class="box-i">
+
+<ul>
+  <li>辅助无障碍评测的资源在<a href="/WAI/test-evaluate/" hreflang="en">无障碍评测网站 (英文)</a>。</li>
+</ul>
+
+</div></aside>
+
+<details id="examples"><summary>
+
+    <h2 id="section">例子</h2>
+
+  </summary>
+  <div>
+
+    <h3 id="section-1">图片的替代文本</h3>
+
+    <p><img src="https://www.w3.org/WAI/intro/alt-logo.png" alt="标识图片; HTML 标签 img alt='Web Accessibility Initiative logo'" class="right" /></p>
+
+    <p>图像应包括<em><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv.html">等效替代文本</a></em> (alt文本) 在标记语言或者代码中.</p>
+
+    <p>如果没有为图像提供alt文本，则图像信息是不可访问的，例如，对于无法看到和使用屏幕阅读器的人来说，屏幕阅读器会大声读出页面上的信息，包括可视图像的alt文本。</p>
+
+    <p>当提供相同的alt文本时，盲人和关闭图像的人(例如，在带宽昂贵或较低的地区)都可以获得这些信息。它也适用于无法看到图像的技术，比如搜索引擎。</p>
+
+    <h3 id="section-2">键盘输入</h3>
+
+    <p><img src="https://www.w3.org/WAI/intro/no-mouse.png" alt="鼠标划掉了" class="left" width="67" height="45" /></p>
+
+    <p>有些人不能使用鼠标，包括许多老年人，他们的精细运动控制能力有限。一个无障碍的网站不依赖鼠标；它使<a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation.html">所有功能都可以从键盘上获得</a>. 然后残疾人可以使用<a href="/WAI/planning/involving-users/#at" hreflang="en">辅助技术 (英文)</a> 模仿键盘，如语音输入。</p>
+
+    <h3 id="section-3">为音频提供文本</h3>
+
+    <p><a href="https://www.w3.org/WAI/highlights/200606wcag2interview.html"><img src="https://www.w3.org/WAI/intro/transcript.png" alt="文本例子" class="right" width="251" height="254" /></a></p>
+
+    <p>就像图像对看不见的人不可用一样，音频文件对听不见的人也不可用。提供文本文本使聋人或重听人以及搜索引擎和其他听不见的技术可以访问音频信息。</p>
+
+    <p>Web提供文字记录既简单又相对便宜。还有<a href="http://www.uiaccess.com/transcripts/transcript_services.html">文本记录服务</a> 来创建HTML格式的文本。</p>
+
+<aside class="box box-simple box-aside"><header class="box-h  box-h-simple box-h-aside"> <h3> 更多例子 </h3></header><div class="box-i">
+
+    <ul>
+      <li><a href="/WAI/tips/" hreflang="en">开始行动的小贴士 (英文)</a></li>
+      <li><a href="/WAI/test-evaluate/preliminary/" hreflang="en">轻松评测-第一次检查 (英文)</a></li>
+      <li><a href="/WAI/perspective-videos/" class="video-link video-link-small video-link-inline">
+  <img src="/WAI/content-images/intro-accessibility/video-still-accessibility-perspectives-16-9.jpg" alt="" />
+  <span>Web无障碍愿景 — 视频和描述</span>
+</a></li>
+    </ul>
+
+</div></aside>
+
+  </div>
+</details>
+
+<h2 id="more-info">更多信息</h2>
+
+<p>W3C WAI提供了不同方面的广泛资源，关于web无障碍<a href="/WAI/standards-guidelines/zh-hans">标准</a>, <a href="/WAI/teach-advocate/" hreflang="en">教育 (英文)</a>, <a href="/WAI/test-evaluate/" hreflang="en">评测 (英文)</a>, <a href="/WAI/planning/" hreflang="en">项目管理, 及政策 (英文)</a>. 我们鼓励您浏览本网站，或浏览<a href="/WAI/Resources/" hreflang="en">WAI参考资料 (英文)</a>.</p>
+
+
+    <aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> 帮助提升本页 </h2></header><div class="box-i"><p>请通过电子邮件将您的想法、建议或意见分享到公共存档列表<a href="mailto:wai@w3.org?subject=%5Bzh-hans%5D%20Web%E6%97%A0%E9%9A%9C%E7%A2%8D%E7%AE%80%E4%BB%8B&amp;body=%5B%E6%8A%8A%E6%B3%A8%E9%87%8A%E5%86%99%E5%9C%A8%E8%BF%99%E9%87%8C......%5D%0A%0AI%20%E5%85%81%E8%AE%B8%E5%B0%86%E5%85%B6%E5%85%B1%E4%BA%AB%E5%88%B0%E5%85%AC%E5%BC%80%E5%AD%98%E6%A1%A3%E7%9A%84%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6%E5%88%97%E8%A1%A8%E3%80%82">wai@w3.org</a>或通过GitHub提交意见</p>
+<div class="button-group">
+    <a href="mailto:wai@w3.org?subject=%5Bzh-hans%5D%20Web%E6%97%A0%E9%9A%9C%E7%A2%8D%E7%AE%80%E4%BB%8B&body=%5B%E6%8A%8A%E6%B3%A8%E9%87%8A%E5%86%99%E5%9C%A8%E8%BF%99%E9%87%8C......%5D%0A%0AI%20%E5%85%81%E8%AE%B8%E5%B0%86%E5%85%B6%E5%85%B1%E4%BA%AB%E5%88%B0%E5%85%AC%E5%BC%80%E5%AD%98%E6%A1%A3%E7%9A%84%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6%E5%88%97%E8%A1%A8%E3%80%82" class="button"><span>邮件</span></a><a href="
+https://github.com/w3c/wai-website/edit/main/pages/fundamentals/introduction/index.zh-hans.md
+" class="button"><span>派生到本地，在Github上编辑</span></a><a href="https://github.com/w3c/wai-website/issues/new?template=content-issue.yml&title=[zh-hans]%20&wai-resource-id=wai-accessibility-intro&wai-url=https://www.w3.org/WAI/fundamentals/accessibility-intro/zh-hans" class="button"><span>创建新的Github问题</span></a></div></div></aside>
+
+
+    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> 回到顶部</span></a>
+  </main>
+</div>
+
+
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner"
+      >
+      <p><strong>日期:</strong> 2019年6月5日更新. 第一版发布于2005年. <a href="/WAI/fundamentals/accessibility-intro/changelog/">修改日志</a>.</p> <p><strong>编者:</strong> <a href="https://www.w3.org/People/Shawn/">Shawn Lawton Henry</a>.</p> <p>由教育及外展工作组 (<a href="https://www.w3.org/WAI/EO/">EOWG</a>)开发。</p>
+</div>
+  </footer>
+  
+
+
+
+
+
+<footer class="site-footer grid-4q" aria-label="Site">
+  <div class="q1-start q3-end about">
+    <div>
+      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
+      <p>使残疾人能够访问Web的策略、标准和支持资源。</p>
+    </div>
+    <div class="social" lang="en" dir="auto" translate="no">
+      <ul>
+        <li><a href="https://w3c.social/@wai"><svg focusable="false" aria-hidden="true" class="icon-mastodon "><use xlink:href="/WAI/assets/images/icons.svg#icon-mastodon"></use></svg> Mastodon</a></li>
+        <li><a href="https://www.linkedin.com/company/w3c-wai/"><svg focusable="false" aria-hidden="true" class="icon-linkedin "><use xlink:href="/WAI/assets/images/icons.svg#icon-linkedin"></use></svg> LinkedIn</a></li>
+        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
+        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
+        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+      </ul>
+    </div>
+    <div lang="en" dir="auto"  translate="no">
+      <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
+    </div>
+  </div>
+  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
+    <ul style="margin-bottom:0">
+      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+      <li><a href="/WAI/sitemap/">Site Map</a></li>
+      <li><a href="/WAI/news/">News</a></li>
+      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
+      <li><a href="/WAI/translations/"> Translations</a></li>
+      <li><a href="/WAI/roles/">Resources for Roles</a></li>
+    </ul>
+  </div>
+</footer><!-- Details4Everybody -->
+<script src="/WAI/assets/scripts/details4everybody.js?1725936703303430688"></script>
+<!-- SVG4Everybody -->
+<script src="/WAI/assets/scripts/svg4everybody.js?1725936703303430688"></script>
+<script>
+  svg4everybody();
+</script>
+<script src="/WAI/assets/scripts/lang/zh-hans.js?1725936703303430688"></script>
+
+  </body>
+</html>

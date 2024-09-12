@@ -1,0 +1,708 @@
+<!DOCTYPE html>
+<html class="no-js" lang="en" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+
+    function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "/WAI/assets/scripts/main.js?1725936703303430688";
+      document.body.appendChild(element);
+    }
+
+    window.addEventListener("load", downloadJSAtOnload, false);
+  </script>
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1725936703303430688">
+
+<title> Custom Controls | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Custom Controls" />
+<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+<meta property="og:locale" content="en" />
+<meta name="description" content="Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI)." />
+<meta property="og:description" content="Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI)." />
+<link rel="canonical" href="https://www.w3.org/WAI/tutorials/forms/custom-controls/" />
+<meta property="og:url" content="https://www.w3.org/WAI/tutorials/forms/custom-controls/" />
+<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
+<meta property="og:image" content="https://www.w3.org/WAI/content-images/tutorials/forms/social.png" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:image" content="https://www.w3.org/WAI/content-images/tutorials/forms/social.png" />
+<meta property="twitter:title" content="Custom Controls" />
+<meta name="twitter:site" content="@w3c_wai" />
+<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"Custom Controls","image":"https://www.w3.org/WAI/content-images/tutorials/forms/social.png","url":"https://www.w3.org/WAI/tutorials/forms/custom-controls/"}</script>
+<!-- End Jekyll SEO tag -->
+
+
+  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
+</head>
+
+  <body id="top" class="page-custom-controls ">
+    <nav aria-label="Skip Link and Language Selector" id="controls" class="default-grid">
+  <ul>
+        <li><a href="#main">Skip to Content</a></li>
+        <li class="opt">
+          <a href="/WAI/meta/customize/">Change Text Size or Colors</a>
+        </li>
+        <li class="opt">
+            <a href="/WAI/translations/">All Translations <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+        </li>
+      </ul></nav>
+<header id="site-header" class="default-grid with-gap">
+  <div class="logos">
+    <a lang="en" class="home w3c" href="https://www.w3.org/">
+      <svg role="img" aria-label="W3C" viewBox="0 0 68 34" xmlns="http://www.w3.org/2000/svg"><g><path d="m16.117 1.006 5.759 19.58 5.759-19.58h4.17 11.444v1.946l-5.879 10.128c2.065.663 3.627 1.868 4.686 3.615 1.059 1.748 1.589 3.799 1.589 6.155 0 2.914-.775 5.363-2.324 7.348s-3.555 2.978-6.017 2.978c-1.854 0-3.469-.589-4.845-1.767-1.377-1.178-2.396-2.773-3.058-4.786l3.256-1.35c.477 1.218 1.106 2.178 1.887 2.879.781.702 1.701 1.052 2.76 1.052 1.112 0 2.052-.622 2.82-1.866.768-1.245 1.152-2.74 1.152-4.489 0-1.933-.411-3.429-1.231-4.488-.954-1.244-2.45-1.867-4.489-1.867h-1.588v-1.906l5.56-9.612h-6.712l-.382.65-8.163 27.548h-.397l-5.958-19.937-5.957 19.937h-.397l-9.53-32.168h4.17l5.759 19.58 3.892-13.185-1.906-6.395z"/><path d="m64.92 1.006c-.819 0-1.554.295-2.111.861-.591.6-.92 1.376-.92 2.178s.313 1.545.887 2.128c.583.591 1.334.912 2.145.912.793 0 1.562-.321 2.161-.903.574-.557.887-1.3.887-2.136 0-.811-.321-1.57-.878-2.136-.584-.592-1.344-.904-2.171-.904zm2.643 3.065c0 .701-.271 1.351-.768 1.832-.524.507-1.174.777-1.892.777-.675 0-1.342-.278-1.84-.785s-.777-1.157-.777-1.849.287-1.368.802-1.891c.481-.49 1.131-.751 1.84-.751.726 0 1.376.271 1.883.785.49.489.752 1.147.752 1.882zm-2.559-1.807h-1.3v3.445h.65v-1.469h.642l.701 1.469h.726l-.769-1.57c.498-.102.785-.439.785-.929 0-.625-.472-.946-1.435-.946zm-.118.422c.608 0 .886.169.886.591 0 .405-.278.549-.87.549h-.549v-1.14z"/><path d="m59.807.825.676 4.107-2.391 4.575s-.918-1.941-2.443-3.015c-1.285-.905-2.122-1.102-3.431-.832-1.681.347-3.587 2.357-4.419 4.835-.995 2.965-1.005 4.4-1.04 5.718-.056 2.113.277 3.362.277 3.362s-1.452-2.686-1.438-6.62c.009-2.808.451-5.354 1.75-7.867 1.143-2.209 2.842-3.535 4.35-3.691 1.559-.161 2.791.59 3.743 1.403 1 .854 2.01 2.721 2.01 2.721z"/><path d="m60.102 24.063s-1.057 1.889-1.715 2.617c-.659.728-1.837 2.01-3.292 2.651s-2.218.762-3.656.624c-1.437-.138-2.772-.97-3.24-1.317s-1.664-1.369-2.34-2.322-1.733-2.859-1.733-2.859.589 1.91.958 2.721c.212.467.864 1.894 1.789 3.136.863 1.159 2.539 3.154 5.086 3.604 2.547.451 4.297-.693 4.73-.97s1.346-1.042 1.924-1.66c.603-.645 1.174-1.468 1.49-1.962.231-.36.607-1.092.607-1.092z"/></g></svg>
+    </a>
+    <a lang="en" class="home" href="/WAI/">
+      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
+    </a>
+    <div class="claim">
+      <span>Strategies, standards, resources to make the Web accessible to people with disabilities</span>
+    </div>
+    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> Menu</span></button>
+  </div>
+
+  <div class="navigations">
+  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+    <ul>
+      <li><a href="/WAI/about/participating/">Get Involved</a></li>
+      <li><a href="/WAI/about/">About W3C WAI</a></li>
+      <li>
+        <form action="/WAI/search/" role="search">
+          <div>
+            <label for="header-search">
+              <span class="visuallyhidden">Search:</span>
+              <input id="header-search" type="search" name="q" placeholder="Search" aria-label="Search">
+            </label>
+            
+            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="Submit Search" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
+          </div>
+        </form>
+      </li>
+    </ul>
+  </nav>
+</div>
+</header><nav class="mainnav" aria-label="Main" lang="en"><ul><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/planning/"><span>Planning &amp; Policies</span></a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="en" href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a></li><li><a lang="en" href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="Breadcrumb" lang="en">
+  <ul style="align-self: center;">
+    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="en" href="/WAI/tutorials/"><span>Tutorials</span></a></li><li><a lang="en" href="/WAI/tutorials/forms/"><span>Forms</span></a></li><li><a lang="en" href="/WAI/tutorials/forms/custom-controls/" aria-current="page"><span>Custom Controls</span></a></li></ul>
+</nav>
+    <div class="default-grid with-gap leftcol">
+
+  
+      
+        <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
+      <ul class="sidenav--list">
+  <li>
+  <a lang="en" href="/WAI/design-develop/" class="page-link"><span>Design &amp; Develop</span></a></li><li>
+  <a lang="en" href="/WAI/tips/writing/" class="page-link"><span>Tips for Writing</span></a></li><li>
+  <a lang="en" href="/WAI/tips/designing/" class="page-link"><span>Tips for Designing</span></a></li><li>
+  <a lang="en" href="/WAI/tips/developing/" class="page-link"><span>Tips for Developing</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/" class="page-link"><span>Audio &amp; Video Media</span></a><ul><li>
+  <a lang="en" href="/WAI/media/av/users-orgs/" class="page-link"><span>User Needs</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/planning/" class="page-link"><span>Planning</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/av-content/" class="page-link"><span>Audio Content &amp; Video Content</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/description/" class="page-link"><span>Description</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/captions/" class="page-link"><span>Captions/Subtitles</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/transcripts/" class="page-link"><span>Transcripts</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/transcribing/" class="page-link"><span>Transcribing Audio to Text</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/sign-languages/" class="page-link"><span>Sign Languages</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/player/" class="page-link"><span>Media Player</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/" aria-current="location" class="page-link"><span>Tutorials</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/" class="page-link"><span>Page Structure</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/regions/" class="page-link"><span>Page Regions</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/labels/" class="page-link"><span>Labeling Regions</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/headings/" class="page-link"><span>Headings</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/content/" class="page-link"><span>Content Structure</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/example/" class="page-link"><span>Full Example</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/menus/" class="page-link"><span>Menus</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/menus/structure/" class="page-link"><span>Structure</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/menus/styling/" class="page-link"><span>Styling</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/menus/flyout/" class="page-link"><span>Fly-Out Menus</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/menus/application-menus/" class="page-link"><span>Application Menus</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/menus/application-menus-code/" class="page-link"><span>Application Menu Example &amp; Code</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/images/" class="page-link"><span>Images</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/images/informative/" class="page-link"><span>Informative Images</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/decorative/" class="page-link"><span>Decorative Images</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/functional/" class="page-link"><span>Functional Images</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/textual/" class="page-link"><span>Images of Text</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/complex/" class="page-link"><span>Complex Images</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/groups/" class="page-link"><span>Groups of Images</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/imagemap/" class="page-link"><span>Image Maps</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/decision-tree/" class="page-link"><span>An <code style="color: inherit;">alt</code> Decision Tree</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/tips/" class="page-link"><span>Tips and Tricks</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/" class="page-link"><span>Tables</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/tables/one-header/" class="page-link"><span>One Header</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/two-headers/" class="page-link"><span>Two Headers</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/irregular/" class="page-link"><span>Irregular Headers</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/multi-level/" class="page-link"><span>Multi-level Headers</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/caption-summary/" class="page-link"><span>Caption &amp; Summary</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/tips/" class="page-link"><span>Tips and Tricks</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/" aria-current="location" class="page-link"><span>Forms</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/forms/labels/" class="page-link"><span>Labeling Controls</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/grouping/" class="page-link"><span>Grouping Controls</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/instructions/" class="page-link"><span>Form Instructions</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/validation/" class="page-link"><span>Validating Input</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/notifications/" class="page-link"><span>User Notifications</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/multi-page/" class="page-link"><span>Multi-page Forms</span></a></li>
+              
+              <li>
+  <a lang="en" href="/WAI/tutorials/forms/custom-controls/" aria-current="page" class="page-link"><span>Custom Controls</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/" class="page-link"><span>Carousels</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/carousels/structure/" class="page-link"><span>Structure</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/functionality/" class="page-link"><span>Functionality</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/animations/" class="page-link"><span>Animations</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/styling/" class="page-link"><span>Styling</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/working-example/" class="page-link"><span>Working Example</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/full-code/" class="page-link"><span>Complete Code</span></a></li></ul></li></ul></li></ul></nav>
+</div>
+
+
+      
+  
+
+  <main id="main" lang="en">
+
+    
+
+    
+    <header class="in-resource">
+      <h1>
+        
+        
+        
+          Custom Controls
+        </h1><p>in <a lang="en" href="/WAI/tutorials/forms/"><span>Forms Tutorial</span></a></p></header>
+    <aside class="box box-full"><header class="box-h  box-h-full"> <h2> Overview </h2></header><div class="box-i">
+
+<p>Sometimes form designs require something beyond what is achievable with standard form controls. In such cases, it is possible to build additional functionality and styling to standard controls. To ensure robustness, try to reuse HTML elements that do a subset of the functionality that the final control is intended to cover, and build from there. The following examples provide some general guidance on what to consider to ensure the additions are made accessible.</p>
+
+<p>For components where there is no adequate HTML element to build on, WAI-ARIA attributes can be useful to convey the functionality for people using assistive technologies.</p>
+
+</div></aside>
+
+
+
+<nav class="box box-simple" aria-labelledby="tocheading" id="toc">
+  <header id="tocheading" class="box-h box-h-simple"> Page Contents</header>
+  <div class="box-i">
+
+
+
+
+<ul id="markdown-toc">
+  <li><a href="#a-share-button" id="markdown-toc-a-share-button">A Share Button</a></li>
+  <li><a href="#a-star-rating" id="markdown-toc-a-star-rating">A Star Rating</a></li>
+</ul>
+
+
+
+  </div>
+</nav>
+
+
+
+<h2 class="ex" id="a-share-button">A Share Button</h2>
+
+<p>The example below shows a social media “share button” that has two functions: it shows how many people have already activated the button (“shared”), and allows users to press the button to activate the share function.</p>
+
+<p>The custom button relies on CSS to style a regular <code class="language-plaintext highlighter-rouge">&lt;button&gt;</code> element so that the basic functionality remains intact when it is rendered without CSS. For example, most screen readers will announce the button and its contents.</p>
+
+<p>Also, the <code class="language-plaintext highlighter-rouge">action</code> attribute of the <code class="language-plaintext highlighter-rouge">&lt;form&gt;</code> element references a server-side script that carries out the same functionality for cases when JavaScript is not supported.</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> Example</header><div class="box-i">
+
+<form action="#submit-like">
+	<button type="submit" id="share-btn" class="btn-primary">
+		<span class="count">3</span> 
+		<span class="text">Shares</span>
+	</button>
+</form>
+
+<style>
+	#share-btn {
+		line-height: 1;
+		float:none;
+	}
+	#share-btn[disabled] {
+		background: #063;
+		border: 1px solid #063;
+	}
+	#share-btn[disabled]:hover,
+	#share-btn[disabled]:focus {
+		text-decoration: none;
+	}
+	#share-btn[disabled] .count {
+		color: #063;
+	}
+	#share-btn .count {
+		background-color: #fff;
+		color: #036;
+		min-width: 1em;
+		line-height: 1;
+		display: inline-block;
+		border-radius: 50px;
+		border: 4px solid #fff;
+		text-align: center;
+	}
+</style>
+
+<script>
+document.getElementById('share-btn').removeAttribute('disabled');
+document.getElementById('share-btn').addEventListener('click', function(event){
+	event.preventDefault();
+	event.stopImmediatePropagation();
+
+	var count = this.querySelector('.count');
+	var text = this.querySelector('.text');
+
+	count.textContent = parseInt(count.textContent) + 1;
+	text.textContent = "Shared ✓";
+
+	this.setAttribute("disabled", "true");
+});
+</script>
+
+</div></aside>
+<aside class="box box-example"><header class="box-h  box-h-example"> Code: HTML</header><div class="box-i">
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"path/to/submit"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">id=</span><span class="s">"share-btn"</span> <span class="na">class=</span><span class="s">"btn-primary"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"count"</span><span class="nt">&gt;</span>3<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"text"</span><span class="nt">&gt;</span>Shares<span class="nt">&lt;/span&gt;</span>
+	<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre></div></div>
+
+</div></aside>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> Code: JavaScript</header><div class="box-i">
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">share-btn</span><span class="dl">'</span><span class="p">).</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+	<span class="nx">event</span><span class="p">.</span><span class="nf">preventDefault</span><span class="p">();</span>
+	<span class="nx">event</span><span class="p">.</span><span class="nf">stopImmediatePropagation</span><span class="p">();</span>
+
+	<span class="kd">var</span> <span class="nx">count</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nf">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">.count</span><span class="dl">'</span><span class="p">);</span>
+	<span class="kd">var</span> <span class="nx">text</span> <span class="o">=</span> <span class="k">this</span><span class="p">.</span><span class="nf">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">.text</span><span class="dl">'</span><span class="p">);</span>
+
+	<span class="nx">count</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nf">parseInt</span><span class="p">(</span><span class="nx">count</span><span class="p">.</span><span class="nx">textContent</span><span class="p">)</span> <span class="o">+</span> <span class="mi">1</span><span class="p">;</span>
+	<span class="nx">text</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="dl">"</span><span class="s2">Shared ✓</span><span class="dl">"</span><span class="p">;</span>
+
+	<span class="k">this</span><span class="p">.</span><span class="nf">setAttribute</span><span class="p">(</span><span class="dl">"</span><span class="s2">disabled</span><span class="dl">"</span><span class="p">,</span> <span class="dl">"</span><span class="s2">true</span><span class="dl">"</span><span class="p">);</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+</div></aside>
+
+<h2 class="ex" id="a-star-rating">A Star Rating</h2>
+
+<p>A star rating usually consists of images of five stars that can be used to rate a particular item. A mouse user hovers over the stars and clicks one to select it. For example, if the user clicks on the third star from the left, the rating of the item is 3 of 5 stars.</p>
+
+<p>To make this as accessible as possible, a form is used with its fields visually hidden. It contains six radio buttons, one for each star and another for 0 stars, which is checked by default. The labels for the radio buttons contain actual text (“1 Star”, “2 Stars”, …), and are also hidden visually. The form also contains a visually hidden submit button so that the form is not automatically submitted when keyboard users browse through the radio buttons.</p>
+
+<p>The images of the stars are generated using <abbr title="Scalable Vector Graphics">SVG</abbr>. The coloring animation of these stars is initiated through the <abbr title="Cascading Style Sheets">CSS</abbr> <code class="language-plaintext highlighter-rouge">:focus</code> and <code class="language-plaintext highlighter-rouge">:hover</code> pseudo-classes so that they can be activated using a mouse, keyboard, and other input methods. The <code class="language-plaintext highlighter-rouge">:checked</code> pseudo-class and the general sibling selector <code class="language-plaintext highlighter-rouge">~</code> are used to indicate the selected, active, and inactive stars.</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> Example</header><div class="box-i">
+
+<form action="#" id="star_rating">
+ <input value="0" id="star0" checked="" type="radio" name="rating" class="visuallyhidden" />
+	<label for="star0">
+		<span class="visuallyhidden">0 Stars</span>
+		<svg viewBox="0 0 512 512">
+			<g stroke-width="70" stroke-linecap="square">
+						<path d="M91.5,442.5 L409.366489,124.633512"></path>
+						<path d="M90.9861965,124.986197 L409.184248,443.184248"></path>
+				</g>
+		</svg>
+	</label>
+
+	<input value="1" id="star1" type="radio" name="rating" class="visuallyhidden" />
+	<label for="star1">
+		<span class="visuallyhidden">1 Star</span>
+		<svg viewBox="0 0 512 512"><path d="M512 198.525l-176.89-25.704-79.11-160.291-79.108 160.291-176.892 25.704 128 124.769-30.216 176.176 158.216-83.179 158.216 83.179-30.217-176.176 128.001-124.769z"></path></svg>
+	</label>
+
+	<input value="2" id="star2" type="radio" name="rating" class="visuallyhidden" />
+	<label for="star2">
+		<span class="visuallyhidden">2 Stars</span>
+		<svg viewBox="0 0 512 512"><path d="M512 198.525l-176.89-25.704-79.11-160.291-79.108 160.291-176.892 25.704 128 124.769-30.216 176.176 158.216-83.179 158.216 83.179-30.217-176.176 128.001-124.769z"></path></svg>
+	</label>
+
+	<input value="3" id="star3" type="radio" name="rating" class="visuallyhidden" />
+	<label for="star3">
+		<span class="visuallyhidden">3 Stars</span> <svg viewBox="0 0 512 512"><path d="M512 198.525l-176.89-25.704-79.11-160.291-79.108 160.291-176.892 25.704 128 124.769-30.216 176.176 158.216-83.179 158.216 83.179-30.217-176.176 128.001-124.769z"></path></svg>
+	</label>
+
+	<input value="4" id="star4" type="radio" name="rating" class="visuallyhidden" />
+	<label for="star4">
+		<span class="visuallyhidden">4 Stars</span> <svg viewBox="0 0 512 512"><path d="M512 198.525l-176.89-25.704-79.11-160.291-79.108 160.291-176.892 25.704 128 124.769-30.216 176.176 158.216-83.179 158.216 83.179-30.217-176.176 128.001-124.769z"></path></svg>
+	</label>
+
+	<input value="5" id="star5" type="radio" name="rating" class="visuallyhidden" />
+	<label for="star5">
+		<span class="visuallyhidden">5 Stars</span> <svg viewBox="0 0 512 512"><path d="M512 198.525l-176.89-25.704-79.11-160.291-79.108 160.291-176.892 25.704 128 124.769-30.216 176.176 158.216-83.179 158.216 83.179-30.217-176.176 128.001-124.769z"></path></svg>
+	</label>
+
+	<button type="submit" class="btn-small visuallyhidden focusable">Submit rating</button>
+
+	<output></output>
+</form>
+
+<style>
+	#star_rating svg {
+		width: 1em;
+		height: 1em;
+		fill: currentColor;
+		stroke: currentColor;
+	}
+	#star_rating label, #star_rating output {
+		display:block;
+		float:left;
+		font-size: 2em;
+		height: 1.2em;
+		color: #036;
+		cursor: pointer;
+		border-bottom: 2px solid transparent;
+	}
+	#star_rating output {
+		font-size: 1.5em;
+		padding: 0 1em;
+	}
+
+	#star_rating input:checked ~ label {
+		color: #858585;
+	}
+	#star_rating input:checked + label {
+		color: #036;
+		border-bottom-color: #036;
+	}
+	#star_rating input:focus + label {
+		border-bottom-style: dotted;
+	}
+	#star_rating:hover input + label {
+		color: #036;
+	}
+	#star_rating input:hover ~ label,
+	#star_rating input:focus ~ label,
+	#star_rating input[id="star0"] + label {
+		color: #999;
+	}
+	#star_rating input:hover + label,
+	#star_rating input:focus + label {
+		color: #036;
+	}
+	#star_rating input[id="star0"]:checked + label {
+		color: #ff2d21;
+	}
+	#star_rating [type="submit"] {
+		float: none;
+	}
+</style>
+
+<script>
+var radios = document.querySelectorAll('#star_rating input[type=radio]');
+var btn = document.querySelector('#star_rating button');
+var output = document.querySelector('#star_rating output');
+var do_something = function(stars) {
+	// An AJAX request could send the data to the server
+	output.textContent = stars;
+};
+
+Array.prototype.forEach.call(radios, function(el, i){
+	var label = el.nextSibling.nextSibling;
+	label.addEventListener("click", function(event){
+		do_something(label.querySelector('span').textContent);
+	});
+});
+
+document.querySelector('#star_rating').addEventListener('submit', function(event){
+	do_something(document.querySelector('#star_rating :checked ~ label span').textContent);
+	event.preventDefault();
+	event.stopImmediatePropagation();
+});
+</script>
+
+</div></aside>
+<aside class="box box-example"><header class="box-h  box-h-example"> Code: HTML</header><div class="box-i">
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"#"</span> <span class="na">id=</span><span class="s">"star_rating"</span><span class="nt">&gt;</span>
+ <span class="nt">&lt;input</span> <span class="na">value=</span><span class="s">"0"</span> <span class="na">id=</span><span class="s">"star0"</span> <span class="na">checked</span>
+	<span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"rating"</span> <span class="na">class=</span><span class="s">"visuallyhidden"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"star0"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visuallyhidden"</span><span class="nt">&gt;</span>0 Stars<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;svg</span> <span class="na">viewBox=</span><span class="s">"0 0 512 512"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;g</span> <span class="na">stroke-width=</span><span class="s">"70"</span> <span class="na">stroke-linecap=</span><span class="s">"square"</span><span class="nt">&gt;</span>
+				<span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M91.5,442.5 L409.366489,124.633512"</span><span class="nt">&gt;&lt;/path&gt;</span>
+				<span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"M90.9861965,124.986197 L409.184248,443.184248"</span><span class="nt">&gt;&lt;/path&gt;</span>
+			<span class="nt">&lt;/g&gt;</span>
+		<span class="nt">&lt;/svg&gt;</span>
+	<span class="nt">&lt;/label&gt;</span>
+
+	<span class="nt">&lt;input</span> <span class="na">value=</span><span class="s">"1"</span> <span class="na">id=</span><span class="s">"star1"</span>
+		<span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"rating"</span> <span class="na">class=</span><span class="s">"visuallyhidden"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"star1"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visuallyhidden"</span><span class="nt">&gt;</span>1 Star<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;svg</span> <span class="na">viewBox=</span><span class="s">"0 0 512 512"</span><span class="nt">&gt;&lt;path</span> <span class="na">d=</span><span class="s">"M512 198.525l-176.89-25.704-79.11-160.291-79.108 160.291-176.892 25.704 128 124.769-30.216 176.176 158.216-83.179 158.216 83.179-30.217-176.176 128.001-124.769z"</span><span class="nt">&gt;&lt;/path&gt;&lt;/svg&gt;</span>
+	<span class="nt">&lt;/label&gt;</span>
+
+	<span class="nt">&lt;input</span> <span class="na">value=</span><span class="s">"2"</span> <span class="na">id=</span><span class="s">"star2"</span>
+		<span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"rating"</span> <span class="na">class=</span><span class="s">"visuallyhidden"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"star2"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visuallyhidden"</span><span class="nt">&gt;</span>2 Stars<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;svg</span> <span class="na">viewBox=</span><span class="s">"0 0 512 512"</span><span class="nt">&gt;</span>…<span class="nt">&lt;/svg&gt;</span>
+	<span class="nt">&lt;/label&gt;</span>
+
+	<span class="nt">&lt;input</span> <span class="na">value=</span><span class="s">"3"</span> <span class="na">id=</span><span class="s">"star3"</span>
+		<span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"rating"</span> <span class="na">class=</span><span class="s">"visuallyhidden"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"star3"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visuallyhidden"</span><span class="nt">&gt;</span>3 Stars<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;svg</span> <span class="na">viewBox=</span><span class="s">"0 0 512 512"</span><span class="nt">&gt;</span>…<span class="nt">&lt;/svg&gt;</span>
+	<span class="nt">&lt;/label&gt;</span>
+
+	<span class="nt">&lt;input</span> <span class="na">value=</span><span class="s">"4"</span> <span class="na">id=</span><span class="s">"star4"</span>
+		<span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"rating"</span> <span class="na">class=</span><span class="s">"visuallyhidden"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"star4"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visuallyhidden"</span><span class="nt">&gt;</span>4 Stars<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;svg</span> <span class="na">viewBox=</span><span class="s">"0 0 512 512"</span><span class="nt">&gt;</span>…<span class="nt">&lt;/svg&gt;</span>
+	<span class="nt">&lt;/label&gt;</span>
+
+	<span class="nt">&lt;input</span> <span class="na">value=</span><span class="s">"5"</span> <span class="na">id=</span><span class="s">"star5"</span>
+		<span class="na">type=</span><span class="s">"radio"</span> <span class="na">name=</span><span class="s">"rating"</span> <span class="na">class=</span><span class="s">"visuallyhidden"</span><span class="nt">&gt;</span>
+	<span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"star5"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;span</span> <span class="na">class=</span><span class="s">"visuallyhidden"</span><span class="nt">&gt;</span>5 Stars<span class="nt">&lt;/span&gt;</span>
+		<span class="nt">&lt;svg</span> <span class="na">viewBox=</span><span class="s">"0 0 512 512"</span><span class="nt">&gt;</span>…<span class="nt">&lt;/svg&gt;</span>
+	<span class="nt">&lt;/label&gt;</span>
+
+	<span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span> <span class="na">class=</span><span class="s">"btn-small visuallyhidden focusable"</span><span class="nt">&gt;</span>Submit rating<span class="nt">&lt;/button&gt;</span>
+
+	<span class="nt">&lt;output&gt;&lt;/output&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre></div></div>
+
+</div></aside>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> Code: CSS</header><div class="box-i">
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nf">#star_rating</span> <span class="nt">svg</span> <span class="p">{</span>
+	<span class="nl">width</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+	<span class="nl">height</span><span class="p">:</span> <span class="m">1em</span><span class="p">;</span>
+	<span class="py">fill</span><span class="p">:</span> <span class="n">currentColor</span><span class="p">;</span>
+	<span class="py">stroke</span><span class="p">:</span> <span class="n">currentColor</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#star_rating</span> <span class="nt">label</span><span class="o">,</span> <span class="nf">#star_rating</span> <span class="nt">output</span> <span class="p">{</span>
+	<span class="nl">display</span><span class="p">:</span> <span class="nb">block</span><span class="p">;</span>
+	<span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+	<span class="nl">font-size</span><span class="p">:</span> <span class="m">2em</span><span class="p">;</span>
+	<span class="nl">height</span><span class="p">:</span> <span class="m">1.2em</span><span class="p">;</span>
+	<span class="nl">color</span><span class="p">:</span> <span class="m">#036</span><span class="p">;</span>
+	<span class="nl">cursor</span><span class="p">:</span> <span class="nb">pointer</span><span class="p">;</span>
+	<span class="c">/* Transparent border-bottom avoids jumping
+	   when a colored border is applied
+		 on :hover/:focus */</span>
+	<span class="nl">border-bottom</span><span class="p">:</span> <span class="m">2px</span> <span class="nb">solid</span> <span class="nb">transparent</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#star_rating</span> <span class="nt">output</span> <span class="p">{</span>
+	<span class="nl">font-size</span><span class="p">:</span> <span class="m">1.5em</span><span class="p">;</span>
+	<span class="nl">padding</span><span class="p">:</span> <span class="m">0</span> <span class="m">1em</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#star_rating</span> <span class="nt">input</span><span class="nd">:checked</span> <span class="o">~</span> <span class="nt">label</span> <span class="p">{</span>
+	<span class="nl">color</span><span class="p">:</span> <span class="m">#999</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#star_rating</span> <span class="nt">input</span><span class="nd">:checked</span> <span class="o">+</span> <span class="nt">label</span> <span class="p">{</span>
+	<span class="nl">color</span><span class="p">:</span> <span class="m">#036</span><span class="p">;</span>
+	<span class="nl">border-bottom-color</span><span class="p">:</span> <span class="m">#036</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#star_rating</span> <span class="nt">input</span><span class="nd">:focus</span> <span class="o">+</span> <span class="nt">label</span> <span class="p">{</span>
+	<span class="nl">border-bottom-style</span><span class="p">:</span> <span class="nb">dotted</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#star_rating</span><span class="nd">:hover</span> <span class="nt">input</span> <span class="o">+</span> <span class="nt">label</span> <span class="p">{</span>
+	<span class="nl">color</span><span class="p">:</span> <span class="m">#036</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#star_rating</span> <span class="nt">input</span><span class="nd">:hover</span> <span class="o">~</span> <span class="nt">label</span><span class="o">,</span>
+<span class="nf">#star_rating</span> <span class="nt">input</span><span class="nd">:focus</span> <span class="o">~</span> <span class="nt">label</span><span class="o">,</span>
+<span class="nf">#star_rating</span> <span class="nt">input</span><span class="o">[</span><span class="nt">id</span><span class="o">=</span><span class="s1">"star0"</span><span class="o">]</span> <span class="o">+</span> <span class="nt">label</span> <span class="p">{</span>
+	<span class="nl">color</span><span class="p">:</span> <span class="m">#999</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#star_rating</span> <span class="nt">input</span><span class="nd">:hover</span> <span class="o">+</span> <span class="nt">label</span><span class="o">,</span>
+<span class="nf">#star_rating</span> <span class="nt">input</span><span class="nd">:focus</span> <span class="o">+</span> <span class="nt">label</span> <span class="p">{</span>
+	<span class="nl">color</span><span class="p">:</span> <span class="m">#036</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#star_rating</span> <span class="nt">input</span><span class="o">[</span><span class="nt">id</span><span class="o">=</span><span class="s1">"star0"</span><span class="o">]</span><span class="nd">:checked</span> <span class="o">+</span> <span class="nt">label</span> <span class="p">{</span>
+	<span class="nl">color</span><span class="p">:</span> <span class="m">#ff2d21</span><span class="p">;</span>
+<span class="p">}</span>
+<span class="nf">#star_rating</span> <span class="o">[</span><span class="nt">type</span><span class="o">=</span><span class="s1">"submit"</span><span class="o">]</span> <span class="p">{</span>
+	<span class="nl">float</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+</div></aside>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> Code: JavaScript</header><div class="box-i">
+
+<div class="language-js highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">radios</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">querySelectorAll</span><span class="p">(</span><span class="dl">'</span><span class="s1">#star_rating input[type=radio]</span><span class="dl">'</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">output</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#star_rating output</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="kd">var</span> <span class="nx">do_something</span> <span class="o">=</span> <span class="kd">function</span><span class="p">(</span><span class="nx">stars</span><span class="p">)</span> <span class="p">{</span>
+	<span class="c1">// An AJAX request could send the data to the server</span>
+	<span class="nx">output</span><span class="p">.</span><span class="nx">textContent</span> <span class="o">=</span> <span class="nx">stars</span><span class="p">;</span>
+<span class="p">};</span>
+
+<span class="c1">// Iterate through all radio buttons and add a click</span>
+<span class="c1">// event listener to the labels</span>
+<span class="nb">Array</span><span class="p">.</span><span class="nx">prototype</span><span class="p">.</span><span class="nx">forEach</span><span class="p">.</span><span class="nf">call</span><span class="p">(</span><span class="nx">radios</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">el</span><span class="p">,</span> <span class="nx">i</span><span class="p">){</span>
+	<span class="kd">var</span> <span class="nx">label</span> <span class="o">=</span> <span class="nx">el</span><span class="p">.</span><span class="nx">nextSibling</span><span class="p">.</span><span class="nx">nextSibling</span><span class="p">;</span>
+	<span class="nx">label</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">"</span><span class="s2">click</span><span class="dl">"</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+		<span class="nf">do_something</span><span class="p">(</span><span class="nx">label</span><span class="p">.</span><span class="nf">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">span</span><span class="dl">'</span><span class="p">).</span><span class="nx">textContent</span><span class="p">);</span>
+	<span class="p">});</span>
+<span class="p">});</span>
+
+<span class="c1">// If the form gets submitted, do_something</span>
+<span class="nb">document</span><span class="p">.</span><span class="nf">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#star_rating</span><span class="dl">'</span><span class="p">).</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">submit</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">event</span><span class="p">){</span>
+	<span class="nf">do_something</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nf">querySelector</span><span class="p">(</span><span class="dl">'</span><span class="s1">#star_rating :checked ~ label span</span><span class="dl">'</span><span class="p">).</span><span class="nx">textContent</span><span class="p">);</span>
+	<span class="nx">event</span><span class="p">.</span><span class="nf">preventDefault</span><span class="p">();</span>
+	<span class="nx">event</span><span class="p">.</span><span class="nf">stopImmediatePropagation</span><span class="p">();</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+</div></aside>
+
+
+    
+
+<nav class="pager" aria-label="Previous/Next Page" style="clear: both;">
+  <ul><li class="pager--item previous">
+      <a href="/WAI/tutorials/forms/multi-page/">
+        <svg focusable="false" aria-hidden="true" class="icon-arrow-left pager--item-icon"><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-left"></use></svg>
+        <span class="pager--item-text">
+          <span class="pager--item-text-direction">Previous:</span>
+          <span class="pager--item-text-target">Multi-page Forms</span>
+        </span>
+      </a>
+    </li></nav><aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai@w3.org?subject=%5Ben%5D%20Custom%20Controls&amp;body=%5Bput%20comment%20here...%5D%0A%0AI%20give%20permission%20to%20share%20this%20to%20a%20publicly-archived%20e-mail%20list.">wai@w3.org</a> or via GitHub.</p>
+<div class="button-group">
+    <a href="mailto:wai@w3.org?subject=%5Ben%5D%20Custom%20Controls&body=%5Bput%20comment%20here...%5D%0A%0AI%20give%20permission%20to%20share%20this%20to%20a%20publicly-archived%20e-mail%20list." class="button"><span>E-mail</span></a><a href="
+https://github.com/w3c/wai-website/edit/main/pages/design-develop/tutorials/forms/custom-controls.md
+" class="button"><span>Fork &amp; Edit on GitHub</span></a><a href="https://github.com/w3c/wai-website/issues/new?template=content-issue.yml&wai-resource-id=wai-tutorials&wai-url=https://www.w3.org/WAI/tutorials/forms/custom-controls/" class="button"><span>New GitHub Issue</span></a></div></div></aside>
+
+
+    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Back to Top</span></a>
+  </main>
+</div>
+
+
+  
+
+
+
+
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner">
+      <div><strong>Status:</strong>
+        
+          Updated
+        
+        27 July 2019
+        
+      </div>
+      <div>
+          Editors:
+          
+          <ul class="sentence">
+            
+            
+              
+              
+              
+            <li><a href="https://www.w3.org/People/yatil/">Eric Eggert</a></li>
+            
+          
+          
+          
+            
+            
+              
+              
+              
+            <li><a href="https://www.w3.org/People/shadi/">Shadi Abou-Zahra</a></li>
+            
+          </ul>
+          
+          &nbsp;
+      
+
+          Update Editor:
+          
+          <ul class="sentence">
+            
+            
+            <li>Brian Elton</li>
+            
+          </ul>
+          
+          &nbsp;
+      
+          Contributors:
+          
+          <ul class="sentence">
+            
+            
+            <li>see <a href="/WAI/tutorials/acknowledgements/">Acknowledgements</a></li>
+            
+          </ul>
+          
+      </div>
+      
+        <p>Developed by the Education and Outreach Working Group (<a href="https://www.w3.org/groups/wg/eowg">EOWG</a>). Developed with support from the <a href="https://www.w3.org/WAI/ACT/">WAI-ACT project</a>, co-funded by the <strong>European Commission <abbr title="Information Society Technologies">IST</abbr> Programme</strong>.</p>
+      
+      
+      </div>
+  </footer>
+
+
+<footer class="site-footer grid-4q" aria-label="Site">
+  <div class="q1-start q3-end about">
+    <div>
+      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
+      <p>Strategies, standards, and supporting resources to make the Web accessible to people with disabilities.</p>
+    </div>
+    <div class="social" lang="en" dir="auto" translate="no">
+      <ul>
+        <li><a href="https://w3c.social/@wai"><svg focusable="false" aria-hidden="true" class="icon-mastodon "><use xlink:href="/WAI/assets/images/icons.svg#icon-mastodon"></use></svg> Mastodon</a></li>
+        <li><a href="https://www.linkedin.com/company/w3c-wai/"><svg focusable="false" aria-hidden="true" class="icon-linkedin "><use xlink:href="/WAI/assets/images/icons.svg#icon-linkedin"></use></svg> LinkedIn</a></li>
+        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
+        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
+        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+      </ul>
+    </div>
+    <div lang="en" dir="auto"  translate="no">
+      <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
+    </div>
+  </div>
+  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
+    <ul style="margin-bottom:0">
+      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+      <li><a href="/WAI/sitemap/">Site Map</a></li>
+      <li><a href="/WAI/news/">News</a></li>
+      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
+      <li><a href="/WAI/translations/"> Translations</a></li>
+      <li><a href="/WAI/roles/">Resources for Roles</a></li>
+    </ul>
+  </div>
+</footer><!-- Details4Everybody -->
+<script src="/WAI/assets/scripts/details4everybody.js?1725936703303430688"></script>
+<!-- SVG4Everybody -->
+<script src="/WAI/assets/scripts/svg4everybody.js?1725936703303430688"></script>
+<script>
+  svg4everybody();
+</script><script>
+  var translationStrings = {};
+</script>
+
+
+  </body>
+</html>

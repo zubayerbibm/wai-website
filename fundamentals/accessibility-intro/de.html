@@ -1,0 +1,504 @@
+<!DOCTYPE html>
+<html class="no-js" lang="de" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+
+    function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "/WAI/assets/scripts/main.js?1725936703303430688";
+      document.body.appendChild(element);
+    }
+
+    window.addEventListener("load", downloadJSAtOnload, false);
+  </script>
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1725936703303430688">
+
+<title> Einführung in das barrierefreie Web | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Einführung in das barrierefreie Web" />
+<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+<meta property="og:locale" content="de" />
+<meta name="description" content="Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI)." />
+<meta property="og:description" content="Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI)." />
+<link rel="canonical" href="https://www.w3.org/WAI/fundamentals/accessibility-intro/de" />
+<meta property="og:url" content="https://www.w3.org/WAI/fundamentals/accessibility-intro/de" />
+<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="Einführung in das barrierefreie Web" />
+<meta name="twitter:site" content="@w3c_wai" />
+<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"Einführung in das barrierefreie Web","url":"https://www.w3.org/WAI/fundamentals/accessibility-intro/de"}</script>
+<!-- End Jekyll SEO tag -->
+<meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
+
+  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
+</head>
+
+  <body id="top" class="page-einführung-in-das-barrierefreie-web ">
+    <nav aria-label="Sprunglink und Sprachauswahl" id="controls" class="default-grid">
+  <ul>
+      <li><a href="#main">Zum Inhalt springen</a></li>
+      <li class="opt"><a href="/WAI/meta/customize/">Textgröße oder -farben ändern</a></li>
+      <li class="opt languagelist">
+          <strong>Diese&nbsp;Seite&nbsp;auf:</strong>
+          <ul class="languagelistul"><li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/" lang="en"  dir="auto" translate="no">English</a></li><li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/ar" lang="ar"  dir="auto" translate="no">العربية</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/cs" lang="cs"  dir="auto" translate="no">čeština</a></li>
+          <li><strong style="text-transform: capitalize;">Deutsch</strong></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/es" lang="es"  dir="auto" translate="no">español</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/fr" lang="fr"  dir="auto" translate="no">français</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/id" lang="id"  dir="auto" translate="no">Bahasa Indonesia</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/ko" lang="ko"  dir="auto" translate="no">한국어</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/pl" lang="pl"  dir="auto" translate="no">polski</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/ru" lang="ru"  dir="auto" translate="no">русский язык</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/zh-hans" lang="zh-hans"  dir="auto" translate="no">简体中文</a></li>
+          </ul>
+        </li>
+        <li class="opt">
+          <a href="/WAI/translations/">Alle&nbsp;Übersetzungen <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+        </li>
+        <li><button id="showoptions" data-showhidebuttonid="header-showoptions" class="showhidebutton button-inline" data-target="#controls .opt" aria-expanded="false" data-large-aria-expanded="true" data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Anpassungen, Sprachen, Übersetzungen anzeigen' data-hidetext='Optionen verbergen'><svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Anpassungen, Sprachen, Übersetzungen anzeigen</button></li>
+      </ul>
+    </nav>
+<header id="site-header" class="default-grid with-gap">
+  <div class="logos">
+    <a lang="en" class="home w3c" href="https://www.w3.org/">
+      <svg role="img" aria-label="W3C" viewBox="0 0 68 34" xmlns="http://www.w3.org/2000/svg"><g><path d="m16.117 1.006 5.759 19.58 5.759-19.58h4.17 11.444v1.946l-5.879 10.128c2.065.663 3.627 1.868 4.686 3.615 1.059 1.748 1.589 3.799 1.589 6.155 0 2.914-.775 5.363-2.324 7.348s-3.555 2.978-6.017 2.978c-1.854 0-3.469-.589-4.845-1.767-1.377-1.178-2.396-2.773-3.058-4.786l3.256-1.35c.477 1.218 1.106 2.178 1.887 2.879.781.702 1.701 1.052 2.76 1.052 1.112 0 2.052-.622 2.82-1.866.768-1.245 1.152-2.74 1.152-4.489 0-1.933-.411-3.429-1.231-4.488-.954-1.244-2.45-1.867-4.489-1.867h-1.588v-1.906l5.56-9.612h-6.712l-.382.65-8.163 27.548h-.397l-5.958-19.937-5.957 19.937h-.397l-9.53-32.168h4.17l5.759 19.58 3.892-13.185-1.906-6.395z"/><path d="m64.92 1.006c-.819 0-1.554.295-2.111.861-.591.6-.92 1.376-.92 2.178s.313 1.545.887 2.128c.583.591 1.334.912 2.145.912.793 0 1.562-.321 2.161-.903.574-.557.887-1.3.887-2.136 0-.811-.321-1.57-.878-2.136-.584-.592-1.344-.904-2.171-.904zm2.643 3.065c0 .701-.271 1.351-.768 1.832-.524.507-1.174.777-1.892.777-.675 0-1.342-.278-1.84-.785s-.777-1.157-.777-1.849.287-1.368.802-1.891c.481-.49 1.131-.751 1.84-.751.726 0 1.376.271 1.883.785.49.489.752 1.147.752 1.882zm-2.559-1.807h-1.3v3.445h.65v-1.469h.642l.701 1.469h.726l-.769-1.57c.498-.102.785-.439.785-.929 0-.625-.472-.946-1.435-.946zm-.118.422c.608 0 .886.169.886.591 0 .405-.278.549-.87.549h-.549v-1.14z"/><path d="m59.807.825.676 4.107-2.391 4.575s-.918-1.941-2.443-3.015c-1.285-.905-2.122-1.102-3.431-.832-1.681.347-3.587 2.357-4.419 4.835-.995 2.965-1.005 4.4-1.04 5.718-.056 2.113.277 3.362.277 3.362s-1.452-2.686-1.438-6.62c.009-2.808.451-5.354 1.75-7.867 1.143-2.209 2.842-3.535 4.35-3.691 1.559-.161 2.791.59 3.743 1.403 1 .854 2.01 2.721 2.01 2.721z"/><path d="m60.102 24.063s-1.057 1.889-1.715 2.617c-.659.728-1.837 2.01-3.292 2.651s-2.218.762-3.656.624c-1.437-.138-2.772-.97-3.24-1.317s-1.664-1.369-2.34-2.322-1.733-2.859-1.733-2.859.589 1.91.958 2.721c.212.467.864 1.894 1.789 3.136.863 1.159 2.539 3.154 5.086 3.604 2.547.451 4.297-.693 4.73-.97s1.346-1.042 1.924-1.66c.603-.645 1.174-1.468 1.49-1.962.231-.36.607-1.092.607-1.092z"/></g></svg>
+    </a>
+    <a lang="en" class="home" href="/WAI/">
+      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
+    </a>
+    <div class="claim">
+      <span>Strategien, Standards, Ressourcen, um das Web für Menschen mit Behinderungen zugänglich zu machen</span>
+    </div>
+    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> Menü</span></button>
+  </div>
+
+  <div class="navigations">
+  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+    <ul>
+      <li><a href="/WAI/about/participating/">Get Involved</a></li>
+      <li><a href="/WAI/about/">About W3C WAI</a></li>
+      <li>
+        <form action="/WAI/search/" role="search">
+          <div>
+            <label for="header-search">
+              <span class="visuallyhidden">Suche:</span>
+              <input id="header-search" type="search" name="q" placeholder="Suche" aria-label="Suche">
+            </label>
+            
+            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="Suche ausführen" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
+          </div>
+        </form>
+      </li>
+    </ul>
+  </nav>
+</div>
+</header><nav class="mainnav" aria-label="Hauptmenü" lang="de"><ul><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/planning/"><span>Planning &amp; Policies</span></a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="en" href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a></li><li><a lang="en" href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="Brotkrumen-Navigation" lang="en">
+  <ul style="align-self: center;">
+    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="de" href="/WAI/fundamentals/accessibility-intro/de" aria-current="page"><span>Einführung in das barrierefreie Web</span></a></li></ul>
+</nav>
+    <div class="default-grid with-gap leftcol">
+
+  
+      
+        <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
+      <ul class="sidenav--list">
+  <li>
+  <a lang="en" href="/WAI/fundamentals/" class="page-link"><span>Accessibility Fundamentals</span></a></li><li>
+  <a lang="de" href="/WAI/fundamentals/accessibility-intro/de" aria-current="page" class="page-link"><span>Einführung in das barrierefreie Web</span></a><ul><li>
+  <a lang="de" href="/WAI/videos/standards-and-benefits/de" class="page-link"><span>Video-Einführung</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/people/" class="page-link"><span>Accessibility is About People</span></a><ul><li>
+  <a lang="en" href="/WAI/perspective-videos/" class="page-link"><span>Perspectives Videos</span></a><ul><li>
+  <a lang="en" href="/WAI/perspective-videos/keyboard/" class="page-link"><span>Keyboard Compatibility</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/contrast/" class="page-link"><span>Colors with Good Contrast</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/layout/" class="page-link"><span>Clear Layout and Design</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/speech/" class="page-link"><span>Text to Speech</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/controls/" class="page-link"><span>Large Links, Buttons, and Controls</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/captions/" class="page-link"><span>Video Captions</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/customizable/" class="page-link"><span>Customizable Text</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/voice/" class="page-link"><span>Speech Recognition</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/understandable/" class="page-link"><span>Understandable Content</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/notifications/" class="page-link"><span>Notifications and Feedback</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/people-use-web/" class="page-link"><span>How People with Disabilities Use the Web</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/" class="page-link"><span>Stories of Web Users</span></a><ul><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-one/" class="page-link"><span>Ade&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-two/" class="page-link"><span>Ian&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-three/" class="page-link"><span>Lakshmi&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-four/" class="page-link"><span>Lexie&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-five/" class="page-link"><span>Sophie&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-six/" class="page-link"><span>Dhruv&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-seven/" class="page-link"><span>Marta&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-eight/" class="page-link"><span>Stefan&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-nine/" class="page-link"><span>Elias&apos; Story</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/people-use-web/abilities-barriers/" class="page-link"><span>Diverse Abilities and Barriers</span></a><ul><li>
+  <a lang="en" href="/WAI/people-use-web/abilities-barriers/auditory/" class="page-link"><span>Auditory</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/abilities-barriers/cognitive/" class="page-link"><span>Cognitive and Learning</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/abilities-barriers/physical/" class="page-link"><span>Physical</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/abilities-barriers/speech/" class="page-link"><span>Speech</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/abilities-barriers/visual/" class="page-link"><span>Visual</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/people-use-web/tools-techniques/" class="page-link"><span>Tools and Techniques</span></a><ul><li>
+  <a lang="en" href="/WAI/people-use-web/tools-techniques/perception/" class="page-link"><span>Perception</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/tools-techniques/presentation/" class="page-link"><span>Presentation</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/tools-techniques/input/" class="page-link"><span>Input</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/tools-techniques/navigation/" class="page-link"><span>Interaction</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/older-users/" class="page-link"><span>Older Users and Accessibility</span></a><ul><li>
+  <a lang="en" href="/WAI/older-users/developing/" class="page-link"><span>How WCAG 2 Applies</span></a></li><li>
+  <a lang="en" href="/WAI/older-users/literature/" class="page-link"><span>Literature Review</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/fundamentals/accessibility-usability-inclusion/" class="page-link"><span>Accessibility, Usability, Inclusion</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/fundamentals/components/" class="page-link"><span>Components of Web Accessibility</span></a></li><li>
+  <a lang="en" href="/WAI/fundamentals/accessibility-principles/" class="page-link"><span>Accessibility Principles</span></a></li><li>
+  <a lang="en" href="/WAI/research/" class="page-link"><span>Research</span></a><ul><li>
+  <a lang="en" href="/WAI/research/user-requirements/" class="page-link"><span>User Requirements</span></a></li><li>
+  <a lang="en" href="/WAI/research/ai2023/" class="page-link"><span>AI and Accessibility</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/courses/" class="page-link"><span>Digital Accessibility Courses</span></a><ul><li>
+  <a lang="en" href="/WAI/courses/foundations-course/" class="page-link"><span>W3C Foundations Online Course</span></a></li><li>
+  <a lang="en" href="/WAI/courses/list/" class="page-link"><span>Course List</span></a></li></ul></li></ul></nav><nav class="sidenav-languages" aria-labelledby="languagehead">
+        <header id="languagehead">Sprachen/Übersetzungen</header>
+        <ul class="langlist">
+          <li style="margin-bottom: 2px;"><a href="/WAI/fundamentals/accessibility-intro/" lang="en" dir="auto" translate="no">English (original)</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/ar" dir="auto" translate="no" lang="ar">العربية</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/cs" dir="auto" translate="no" lang="cs">čeština</a></li><li style="margin-bottom: 2px;"><strong style="text-transform: capitalize;">Deutsch</strong></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/es" dir="auto" translate="no" lang="es">español</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/fr" dir="auto" translate="no" lang="fr">français</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/id" dir="auto" translate="no" lang="id">Bahasa Indonesia</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/ko" dir="auto" translate="no" lang="ko">한국어</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/pl" dir="auto" translate="no" lang="pl">polski</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/ru" dir="auto" translate="no" lang="ru">русский язык</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/zh-hans" dir="auto" translate="no" lang="zh-hans">简体中文</a></li></ul><p><a href="/WAI/translations/#de">Weitere Ressourcen auf Deutsch</a></p>
+        
+        <p><a href="/WAI/translations/">Alle&nbsp;Übersetzungen</a></p>
+        <p><a href="/WAI/about/translating/">WAI-Ressourcen übersetzen</a></p>
+      </nav>
+</div>
+
+
+      
+  
+
+  <main id="main" lang="de">
+
+    
+
+    
+    <header>
+      <h1>
+      
+      
+      
+        Einführung in das barrierefreie Web
+      
+      </h1></header>
+    <section id="translation-info" class="doc-note-box doc-note-translation">
+  <h2 class="visuallyhidden">Über diese Übersetzung</h2>
+  <p>Diese ehrenamtliche Übersetzung spiegelt möglicherweise nicht genau die Absichten des <a href="/WAI/fundamentals/accessibility-intro/">englischen Originals</a> wider.</p>
+  
+  
+  <p><svg focusable="false" aria-hidden="true" class="icon-warning "><use xlink:href="/WAI/assets/images/icons.svg#icon-warning"></use></svg> Englische Version aktualisiert seit dieser Übersetzung: <a href="/WAI/fundamentals/accessibility-intro/changelog/">Änderungsprotokoll</a>.
+    <br>Englisch aktualisiert: <span dir="auto">2024-03-07</span>. Übersetzung aktualisiert: <span dir="auto">2024-02-23</span>.
+  </p>
+  
+  
+  <p>
+    <strong>Übersetzung:</strong> Alexej Rotar. 
+    Mitwirkende(r): <a href="https://meiert.com/de/biography/" rel="nofollow noopener" target="_blank">Jens Oliver Meiert <svg focusable="false" aria-label="new tab/window" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a>. <br>WAI dankt Übersetzerinnen und Übersetzern und begrüßt weitere <a href="/WAI/about/translating/">Übersetzungen</a>.</p>
+</section><aside class="box box-full"><header class="box-h  box-h-full"> <h2> Zusammenfassung </h2></header><div class="box-i">
+
+<p>Wenn Webseiten und Webwerkzeuge richtig gestaltet und programmiert sind, können Menschen mit Behinderungen sie nutzen. Derzeit werden jedoch viele Seiten und Werkzeuge mit Barrieren entwickelt, die ihre Nutzung für manche Menschen schwer oder unmöglich machen.</p>
+
+<p>Das Web barrierefrei zu machen dient Einzelnen, Unternehmen sowie der Gesellschaft. Internationale Webstandards legen fest, was für Barrierefreiheit erforderlich ist.</p>
+
+</div></aside>
+
+
+
+<nav class="box box-simple box-full" aria-labelledby="tocheading" id="toc">
+  <header id="tocheading" class="box-h box-h-simple box-h-full"> Inhaltsverzeichnis</header>
+  <div class="box-i">
+
+
+
+
+<ul id="markdown-toc">
+  <li><a href="#context" id="markdown-toc-context">Barrierefreiheit im Kontext</a></li>
+  <li><a href="#what" id="markdown-toc-what">Was ist das barrierefreie Web</a></li>
+  <li><a href="#important" id="markdown-toc-important">Barrierefreiheit ist wichtig für Einzelne, Unternehmen und Gesellschaft</a></li>
+  <li><a href="#making" id="markdown-toc-making">Das Web barrierefrei machen</a></li>
+  <li><a href="#evaluate" id="markdown-toc-evaluate">Barrierefreiheit beurteilen</a></li>
+  <li><a href="#beispiele" id="markdown-toc-beispiele">Beispiele</a></li>
+  <li><a href="#more-info" id="markdown-toc-more-info">Für weitere Informationen</a></li>
+</ul>
+
+<p><span class="box-h box-h-simple box-h-full">Verwandte Quelle</span><br />
+<a href="https://www.w3.org/WAI/videos/standards-and-benefits/" class="video-link">
+  <img src="/WAI/content-images/intro-accessibility/video-still-accessibility-intro-16-9.jpg" alt="" />
+  <span>Videoeinführung in das barrierefreie Web und W3C-Standards <em>(4 Minuten)</em></span>
+</a></p>
+
+
+
+  </div>
+</nav>
+
+
+
+<h2 id="context">Barrierefreiheit im Kontext</h2>
+
+<blockquote class="pull">
+  <p>Die Stärke des Webs liegt in dessen Universalität.<br />
+    Der Zugriff aller Menschen, unabhängig von Behinderungen, ist ein unabdingbarer Bestandteil.</p>
+  <footer><cite>Tim Berners-Lee, Leiter des W3C und Erfinder des World Wide Web</cite></footer>
+</blockquote>
+
+<p>Das Web ist grundlegend so gestaltet, dass es für alle Menschen unabhängig von deren Hardware, Software, Sprache, Ort oder Fähigkeiten funktioniert. Wenn das Web dieses Ziel erreicht, ist es für Menschen mit unterschiedlichen Hör-, Bewegungs-, Sehvermögen und kognitiven Fähigkeiten zugänglich.</p>
+
+<p>Der Einfluss von Behinderungen ist im Web anders, weil das Web Barrieren in der Kommunikation und Interaktion beseitigt, denen viele Menschen in der physischen Welt begegnen. Wenn Webseiten, Anwendungen, Technologien oder Werkzeuge allerdings schlecht gestaltet sind, können sie Barrieren erzeugen, die Menschen an der Nutzung des Webs hindern.</p>
+
+<p><strong>Barrierefreitheit ist essenziell für Entwickler:innen und Organisationen, die hochwertige Webseiten und Webwerkzeuge erstellen und Menschen nicht an der Nutzung ihrer Produkte und Dienstleistungen hindern wollen.</strong></p>
+
+<h2 id="what">Was ist das barrierefreie Web</h2>
+
+<p>Barrierefreies Web bedeutet, dass Webseiten, Werkzeuge und Technologien so gestaltet sind, dass Menschen mit Behinderungen sie nutzen können. Genauer gesagt können Menschen</p>
+
+<ul>
+  <li>das Web wahrnehmen, verstehen, navigieren sowie mit ihm interagieren</li>
+  <li>zum Web beitragen</li>
+</ul>
+
+<p>Barrierefreies Web schließt alle Behinderungen ein, die den Zugang zum Web beeinträchtigen, einschließlich</p>
+
+<ul>
+  <li>Hörbehinderungen,</li>
+  <li>kognitive Behinderungen,</li>
+  <li>neurologische Erkrankungen,</li>
+  <li>körperliche Behinderungen,</li>
+  <li>Sprachbehinderungen und</li>
+  <li>Sehbehinderungen.</li>
+</ul>
+
+<p>Ein barrierefreies Web dient auch Menschen <em>ohne</em> Behinderungen, beispielsweise:</p>
+
+<ul>
+  <li>Menschen, die Handys, Smart Watches, Smart TVs oder andere Geräte mit kleinen Bildschirmen, unterschiedlichen Eingabemethoden etc. nutzen</li>
+  <li>älteren Menschen mit altersbedingt ändernden Fähigkeiten</li>
+  <li>Menschen mit “vorübergehenden Behinderungen”, etwa einem gebrochenen Arm oder einer verlegten Brille</li>
+  <li>Menschen mit “situationsbedingten Einschränkungen”, wie etwa im hellen Sonnenlicht oder in Umgebungen, in denen sie keine Audioinhalte hören können</li>
+  <li>Menschen, die eine langsame Internetverbindung nutzen oder die beschränkte oder teure Bandbreite haben</li>
+</ul>
+
+<p>Im nachfolgenden 7-minütigen Video sehen Sie Beispiele, die zeigen, wie Barrierefreiheit essenziell für Menschen mit Behinderungen und nützlich für alle in verschiedenen Situationen ist:<br />
+<a href="https://www.youtube.com/watch?v=3f31oufqFSM" class="video-link">
+  <img src="/WAI/content-images/intro-accessibility/video-still-accessibility-perspectives-16-9.jpg" alt="" />
+  <span>Video zu Perspektiven auf barrierefreies Web <em>(YouTube)</em></span>
+</a></p>
+
+<aside class="box box-simple box-aside"><header class="box-h  box-h-simple box-h-aside"> <h3> Weitere Infos zum barrierefreien Web </h3></header><div class="box-i">
+
+<ul>
+  <li>Wenn Sie mehr darüber lernen wollen, wie verschiedene Behinderungen die Nutzung des Webs beeinflussen und Beispiele sehen wollen, wie Menschen mit Behinderung das Web nutzen, lesen Sie <a href="/WAI/people-use-web/" hreflang="en">Wie Menschen mit Behinderung das Web nutzen (auf Englisch)</a>.</li>
+  <li>Mehr Beispiele über Vorteile für andere finden Sie in den Ressourcen zu Mobile <a href="/WAI/standards-guidelines/shared-experiences/" hreflang="en">Geteilte Erfahrungen im Web: gemeinsame Barrieren von Nutzer:innen mit mobilen Geräten und Menschen mit Behinderung (auf Englisch)</a>, Multimedia <a href="/WAI/media/av/users-orgs/#situations" hreflang="en">Genutzt von Menschen mit und ohne Behinderungen (auf Englisch)</a> sowie in der archivierten Seite <a href="https://www.w3.org/WAI/business-case/archive/soc#groups">Ein barrierefreies Web nutzt Menschen mit und ohne Behinderungen</a>.</li>
+</ul>
+
+</div></aside>
+
+<h2 id="important">Barrierefreiheit ist wichtig für Einzelne, Unternehmen und Gesellschaft</h2>
+
+<p>Das Web ist eine zunehmend wichtigere Ressource in vielen Bereichen des Lebens: Bildung, Beschäftigung, Regierung, Handel, Gesundheitsversorgung, Freizeit und mehr. Ein barrierefreies Web ist essenziell, um Menschen mit verschiedenen Fähigkeiten gleichen Zugang und gleiche Chancen zu bieten. Der Zugang zu Kommunikationstechnologien, einschließlich des Webs, wurde im Übereinkommen über die Rechte von Menschen mit Behinderungen (UN <a href="https://www.un.org/development/desa/disabilities/convention-on-the-rights-of-persons-with-disabilities.html">CRPD</a>) als grundlegendes Menschenrecht festgelegt.</p>
+
+<p>Das Web bietet für Menschen mit Behinderungen eine noch nie dagewesene Möglichkeit für den Zugang zu Informationen sowie für die Interaktion, in dem Sinne, dass Barrieren von Print-, Audio- und Videomedien viel einfacher mittels Webtechnologien beseitigt werden können.</p>
+
+<p>Barrierefreiheit unterstützt die soziale Inklusion von Menschen mit Behinderungen und anderen, darunter:</p>
+
+<ul>
+  <li>älteren Menschen</li>
+  <li>Menschen in ländlichen Gegenden</li>
+  <li>Menschen in Entwicklungsländern</li>
+</ul>
+
+<p><strong>Es gibt auch aus unternehmerischer Sicht ein starkes Argument für Barrierefreiheit.</strong> Wie im vorigen Abschnitt gezeigt, verbessert barrierefreies Design die allgemeine Nutzer:innenerfahrung und Befriedigung, insbesondere in einer Vielzahl von Umständen, über verschiedene Geräte hinweg und für ältere Nutzer:innen. Barrierefreiheit kann Ihre Marke stärken, Innovation fördern und Ihre Marktreichweite erhöhen.</p>
+
+<p>Barrierefreiheit ist in vielen Fällen <strong>gesetzlich verpflichtend</strong>.</p>
+
+<aside class="box box-simple box-aside"><header class="box-h  box-h-simple box-h-aside"> <h3> Weitere Infos zur Bedeutung von Barrierefreiheit </h3></header><div class="box-i">
+
+<ul>
+  <li>Allgemeine Informationen über die geschäftlichen Vorteile finden Sie unter <a href="/WAI/business-case/" hreflang="en">Gründe für digitale Barrierefreiheit aus unternehmerisches Sicht (auf Englisch)</a>.
+    <ul>
+      <li>Beispiele für Vorteile von <a href="/WAI/media/av/" hreflang="en">barrierefreien Audio- und Videomedien (auf Englisch)</a> finden Sie unter <a href="/WAI/media/av/users-orgs/#benefits" hreflang="en">Vorteile für Unternehmen (auf Englisch)</a>.</li>
+    </ul>
+  </li>
+  <li>Anleitungen für die Erfassung von rechtlichen Anforderungen finden Sie im archivierten <a href="https://www.w3.org/WAI/business-case/archive/pol">Rechtliche Faktoren und Richtlinien</a>.</li>
+</ul>
+
+</div></aside>
+
+<h2 id="making">Das Web barrierefrei machen</h2>
+
+<p>Barrierefreiheit im Web hängt vom Zusammenspiel zahlreicher Komponenten ab, unter anderem Webtechnologien, Webbrowsern und anderen "User Agents", Erstellungswerkzeugen und Webseiten.</p>
+
+<p>Die W3C-Initiative für barrierefreies Web – die Web Accessibility Initiative (<a href="/WAI/about/participating/" hreflang="en">WAI (auf Englisch)</a>) – entwickelt technische Spezifikationen, Richtlinien, Techniken sowie unterstützende Ressourcen, die Lösungen für Barrierefreiheit beschreiben. Diese gelten als internationale Standards für barrierefreies Web. Die Richtlinien für barrierefreie Webinhalte, <abbr title="Web Content Accessibility Guidelines (WCAG)" lang="en">WCAG</abbr> 2.0, ist beispielsweise auch ein <abbr title="International Organization for Standardization" lang="en">ISO</abbr> Standard: ISO/<abbr title="International Electrotechnical Commission" lang="en">IEC</abbr> 40500.</p>
+
+<aside class="box box-simple box-aside"><header class="box-h  box-h-simple box-h-aside"> <h3> Weitere Infos zum barrierefreien Gestalten des Webs </h3></header><div class="box-i">
+
+<ul>
+  <li>Mehr zum Zusammenspiel dieser Aspekte gibt es unter <a href="/WAI/fundamentals/components/" hreflang="en">Wesentliche Komponenten des barrierefreien Webs (auf Englisch)</a>.</li>
+  <li>Die Richtlinien für barrierefreie Webinhalte (WCAG), die Richtlinien für barrierefreie Erstellungswerkzeuge (ATAG), den Standard für barrierefreie Internetanwendungen (ARIA), und weitere wichtige Ressourcen werden eingeführt unter <a href="/WAI/standards-guidelines/" hreflang="en">Übersicht über die Standards für Barrierefreiheit des W3C (auf Englisch)</a>.</li>
+  <li>Mehr darüber wie W3C WAI durch die internationale Beteiligung vieler Interessensvertreter:innen Material entwickelt und wie Sie beitragen können, finden Sie in <a href="/WAI/about/" hreflang="en">Über WAI (auf Englisch)</a> und unter <a href="/WAI/about/participating/" hreflang="en">Sich bei WAI beteiligen (auf Englisch)</a>.</li>
+</ul>
+
+</div></aside>
+
+<h3 id="website">Ihre Webseite barrierefrei gestalten</h3>
+
+<p>Viele Aspekte von Barrierefreiheit sind ziemlich einfach zu verstehen und zu implementieren. Manche Lösungen für Barrierefreiheit sind eher komplex und benötigen mehr Kenntnisse für die Umsetzung.</p>
+
+<p>Am effizientesten und effektivsten ist es, Barrierefreiheit von Anfang an in einem Projekt zu berücksichtigen, damit Sie nicht zurückgehen und Arbeiten erneut durchführen müssen.</p>
+
+<aside class="box box-simple box-aside"><header class="box-h  box-h-simple box-h-aside"> <h3> Weitere Infos zum barrierefreien Gestalten Ihrer Webseite </h3></header><div class="box-i">
+
+<ul>
+  <li>Eine Einführung in die Anforderungen an Barrierefreiheit und internationale Standards finden Sie unter <a href="/WAI/fundamentals/accessibility-principles/" hreflang="en">Grundlagen der Barrierefreiheit (auf Englisch)</a>.</li>
+  <li>Um einige übliche Barrieren aus Sicht des Testens zu verstehen, beachten Sie <a href="/WAI/test-evaluate/preliminary/" hreflang="en">Einfache Checks – Eine erste Beurteilung (auf Englisch)</a>.</li>
+  <li>Für ein paar grundsätzliche Überlegungen im Bezug auf das Gestalten, Schreiben und Entwickeln für Barrierefreiheit, beachten Sie <a href="/WAI/tips/" hreflang="en">Tipps für den Einstieg (auf Englisch)</a>.</li>
+  <li>Sobald Sie bereit sind, mehr über das Entwickeln und Gestalten zu erfahren, werden Sie wahrscheinlich Ressourcen wie die nachfolgenden nutzen:
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG22/quickref/">Wie erfülle ich die WCAG (Kurzübersicht)</a></li>
+      <li><a href="/WAI/tutorials/" hreflang="en">Tutorials für barrierefreies Web (auf Englisch)</a></li>
+    </ul>
+  </li>
+  <li>Für Projektmanagement und organisationelle Überlegungen, lesen Sie <a href="/WAI/planning-and-managing/" hreflang="en">Planung und Management für barrierefreies Web (auf Englisch)</a>.<br />
+Falls Sie sofort schnelle Lösungen benötigen, finden Sie hier <a href="/WAI/planning/interim-repairs/" hreflang="en">Ansätze für vorübergehende Korrekturen (auf Englisch)</a>.</li>
+</ul>
+
+</div></aside>
+
+<h2 id="evaluate">Barrierefreiheit beurteilen</h2>
+
+<p>Beim Entwickeln und Neugestalten einer Webseite sollten Sie schon früh und während des gesamten Entwicklungsprozesses die Barrierefreiheit beurteilen, um Probleme dann zu erkennen, wenn sie einfacher zu adressieren sind. Einfache Maßnahmen wie das Ändern von Browsereinstellungen können Ihnen helfen, einige Aspekte von Barrierefreiheit direkt einzuschätzen. Eine umfangreiche Evaluierung, um zu überprüfen, ob eine Webseite alle Richtlinien für Barrierefreiheit erfüllt, erfordert mehr Aufwand.</p>
+
+<p>Es gibt Tools, die bei der Auswertung unterstützen. Es kann jedoch kein Tool alleine feststellen, ob eine Seite die Richtlinien für Barrierefreiheit erfüllt. Eine Auswertung durch jemand mit der entsprechenden Erfahrung ist notwendig, um zu bestimmen, ob eine Seite tatsächlich barrierefrei ist.</p>
+
+<aside class="box box-simple box-aside"><header class="box-h  box-h-simple box-h-aside"> <h3> Weitere Infos zur Beurteilung von Barrierefreiheit </h3></header><div class="box-i">
+
+<ul>
+  <li>Ressourcen zur Unterstützung bei der Beurteilung von Barrierefreiheit werden in <a href="/WAI/test-evaluate/" hreflang="en">Barrierefreiheit von Webseiten beurteilen (auf Englisch)</a> beschrieben.</li>
+</ul>
+
+</div></aside>
+
+<details id="examples"><summary>
+
+    <h2 id="beispiele">Beispiele</h2>
+
+  </summary>
+  <div>
+
+    <h3 id="alternativer-text-fr-bilder">Alternativer Text für Bilder</h3>
+
+    <p><img src="https://www.w3.org/WAI/intro/alt-logo.png" alt="Bild von einem Logo; HTML Markup img alt='Web Accessibility Initiative logo'" class="right" /></p>
+
+    <p>Bilder sollten <em><a href="https://www.w3.org/WAI/WCAG22/Understanding/text-alternatives">äquivalenten alternativen Text</a></em> (sogenannten alt-Text) im Markup/Code enthalten.</p>
+
+    <p>Wenn kein alternativer Text für Bilder angegeben wird, ist die Information im Bild nicht zugänglich für Menschen, die beispielsweise nicht sehen können und die einen Screenreader nutzen, der die Informationen auf der Seite – einschließlich der alternativen Texte visueller Bilder – laut vorliest.</p>
+
+    <p>Wenn äquivalente alternative Texte angegeben werden, sind Informationen für Menschen, die blind sind, ebenso zugänglich wie für Menschen, die Bilder deaktivieren (etwa in Gebieten mit teurer oder geringer Bandbreite). Zudem sind sie zugänglich für Technologien, die keine Bilder wahrnehmen können, wie etwa Suchmaschinen.</p>
+
+    <h3 id="tastatureingabe">Tastatureingabe</h3>
+
+    <p><img src="https://www.w3.org/WAI/intro/no-mouse.png" alt="durchgestrichene Maus" class="left" width="67" height="45" /></p>
+
+    <p>Manche Menschen können keine Maus benutzen, wie beispielsweise ältere Menschen mit eingeschränkter motorischer Kontrolle. Eine barrierefreie Webseite ist nicht auf eine Maus angewiesen; sie stellt <a href="https://www.w3.org/WAI/WCAG22/Understanding/keyboard-accessible">sämtliche Funktionalität über die Tastatur zur Verfügung</a>. Dann können Menschen mit Behinderungen <a href="/WAI/planning/involving-users/#at" hreflang="en">Hilfstechnologien (auf Englisch)</a> nutzen, die die Tastatur imitieren, wie etwa per Spracheingabe.</p>
+
+    <h3 id="transkription-von-audio">Transkription von Audio</h3>
+
+    <p><a href="https://www.w3.org/WAI/highlights/200606wcag2interview.html"><img src="https://www.w3.org/WAI/intro/transcript.png" alt="Beispiel einer Transkription" class="right" width="251" height="254" /></a></p>
+
+    <p>So wie Bilder nicht für Menschen zugänglich sind, die nicht sehen können, sind auch Audiodateien nicht verfügbar für Menschen, die nicht hören können. Das Bereitstellen einer Transkription macht Audioinformationen für Menschen verfügbar, die taub oder schwerhörig sind, ebenso wie für Suchmaschinen oder andere Technologien, die nicht hören können.</p>
+
+    <p>Es ist einfach und relativ günstig, für Webseiten Transkriptionen bereitzustellen. Außerdem gibt es <a href="http://www.uiaccess.com/transcripts/transcript_services.html">Transkriptionsdienstleistungen</a>, die Texttranskriptionen im HTML-Format erstellen.</p>
+
+<aside class="box box-simple box-aside"><header class="box-h  box-h-simple box-h-aside"> <h3> Mehr Beispiele </h3></header><div class="box-i">
+
+    <ul>
+      <li><a href="/WAI/tips/" hreflang="en">Tipps für den Einstieg (auf Englisch)</a></li>
+      <li><a href="/WAI/test-evaluate/preliminary/" hreflang="en">Einfache Checks – Eine erste Beurteilung (auf Englisch)</a></li>
+      <li><a href="/WAI/perspective-videos/" class="video-link video-link-small video-link-inline">
+  <img src="/WAI/content-images/intro-accessibility/video-still-accessibility-perspectives-16-9.jpg" alt="" />
+  <span>Perspektiven auf barrierefreies Web — Videos und Beschreibungen</span>
+</a></li>
+    </ul>
+
+</div></aside>
+
+  </div>
+</details>
+
+<h2 id="more-info">Für weitere Informationen</h2>
+
+<p>Die W3C WAI bietet eine breite Palette an Ressourcen rund um <a href="/WAI/standards-guidelines/" hreflang="en">Standards (auf Englisch)</a>, <a href="/WAI/teach-advocate/" hreflang="en">Bildung (auf Englisch)</a>, <a href="/WAI/test-evaluate/" hreflang="en">Testing/Auswertung (auf Englisch)</a>, <a href="/WAI/planning/" hreflang="en">Projektmanagement und Richtlinien (auf Englisch)</a> für ein barrierefreies Web. Wir empfehlen Ihnen, diese Webseite näher zu erkunden und sich mit der Liste von <a href="/WAI/resources/" hreflang="en">WAI-Ressourcen (auf Englisch)</a> vertraut zu machen.</p>
+
+<p><strong><a href="/WAI/courses/foundations-course/" hreflang="en">Grundlagen der digitalen Barrierefreiheit – kostenloser Onlinekurs (auf Englisch)</a></strong> bietet Ihnen die nötigen Grundlagen, um Ihre digitale Technologie barrierefrei zu machen.</p>
+
+
+    <aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Helfen Sie diese Seite zu verbessern </h2></header><div class="box-i"><p>Bitte teilen Sie Ihre Ideen, Vorschläge oder Kommentare per E-Mail an die öffentlich archivierte Liste <a href="mailto:wai@w3.org?subject=%5Bde%5D%20Einf%C3%BChrung%20in%20das%20barrierefreie%20Web&amp;body=%5BIhr%20Kommentar%20%E2%80%A6%5D%0A%0AIch%20erteile%20die%20Erlaubnis%2C%20dies%20in%20einer%20%C3%B6ffentlich%20archivierten%20E-Mail-Liste%20zu%20%C3%BCbermitteln.">wai@w3.org</a> oder via GitHub mit.</p>
+<div class="button-group">
+    <a href="mailto:wai@w3.org?subject=%5Bde%5D%20Einf%C3%BChrung%20in%20das%20barrierefreie%20Web&body=%5BIhr%20Kommentar%20%E2%80%A6%5D%0A%0AIch%20erteile%20die%20Erlaubnis%2C%20dies%20in%20einer%20%C3%B6ffentlich%20archivierten%20E-Mail-Liste%20zu%20%C3%BCbermitteln." class="button"><span>E-Mail</span></a><a href="
+https://github.com/w3c/wai-website/edit/main/pages/fundamentals/introduction/index.de.md
+" class="button"><span>Forken &amp; editieren auf GitHub</span></a><a href="https://github.com/w3c/wai-website/issues/new?template=content-issue.yml&title=[de]%20&wai-resource-id=wai-accessibility-intro&wai-url=https://www.w3.org/WAI/fundamentals/accessibility-intro/de" class="button"><span>Neues GitHub-Issue</span></a></div></div></aside>
+
+
+    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Zum Seitenanfang</span></a>
+  </main>
+</div>
+
+
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner"
+      >
+      <p><strong>Datum:</strong> Aktualisiert am 20. November 2023. Erstmals veröffentlicht 2005. <a href="/WAI/fundamentals/accessibility-intro/changelog/">Änderungsprotokoll</a>.</p> <p><strong>Redakteur:</strong> <a href="https://www.w3.org/People/Shawn/">Shawn Lawton Henry</a>.</p> <p>Entwickelt von der Arbeitsgruppe für Bildung und Öffentlichkeitsarbeit. (<a href="https://www.w3.org/WAI/EO/">EOWG</a>).</p>
+</div>
+  </footer>
+  
+
+
+
+
+
+<footer class="site-footer grid-4q" aria-label="Site">
+  <div class="q1-start q3-end about">
+    <div>
+      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
+      <p>Strategien, Standards und unterstützende Ressourcen, um das Web für Menschen mit Behinderungen zugänglich zu machen.</p>
+    </div>
+    <div class="social" lang="en" dir="auto" translate="no">
+      <ul>
+        <li><a href="https://w3c.social/@wai"><svg focusable="false" aria-hidden="true" class="icon-mastodon "><use xlink:href="/WAI/assets/images/icons.svg#icon-mastodon"></use></svg> Mastodon</a></li>
+        <li><a href="https://www.linkedin.com/company/w3c-wai/"><svg focusable="false" aria-hidden="true" class="icon-linkedin "><use xlink:href="/WAI/assets/images/icons.svg#icon-linkedin"></use></svg> LinkedIn</a></li>
+        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
+        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
+        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+      </ul>
+    </div>
+    <div lang="en" dir="auto"  translate="no">
+      <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
+    </div>
+  </div>
+  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
+    <ul style="margin-bottom:0">
+      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+      <li><a href="/WAI/sitemap/">Site Map</a></li>
+      <li><a href="/WAI/news/">News</a></li>
+      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
+      <li><a href="/WAI/translations/"> Translations</a></li>
+      <li><a href="/WAI/roles/">Resources for Roles</a></li>
+    </ul>
+  </div>
+</footer><!-- Details4Everybody -->
+<script src="/WAI/assets/scripts/details4everybody.js?1725936703303430688"></script>
+<!-- SVG4Everybody -->
+<script src="/WAI/assets/scripts/svg4everybody.js?1725936703303430688"></script>
+<script>
+  svg4everybody();
+</script>
+<script src="/WAI/assets/scripts/lang/de.js?1725936703303430688"></script>
+
+  </body>
+</html>

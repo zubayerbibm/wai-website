@@ -1,0 +1,942 @@
+<!DOCTYPE html>
+<html class="no-js" lang="ja" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+
+    function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "/WAI/assets/scripts/main.js?1725936703303430688";
+      document.body.appendChild(element);
+    }
+
+    window.addEventListener("load", downloadJSAtOnload, false);
+  </script>
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1725936703303430688">
+
+<title> ウェブ・アクセシビリティのためのデザイン – 始めるにあたってのヒント | Web Accessibility Initiative (WAI) | W3C</title><link rel="stylesheet" href="/WAI/tips/css/tips.css?1725936703303430688"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="ウェブ・アクセシビリティのためのデザイン – 始めるにあたってのヒント" />
+<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+<meta property="og:locale" content="ja" />
+<meta name="description" content="概要" />
+<meta property="og:description" content="概要" />
+<link rel="canonical" href="https://www.w3.org/WAI/tips/designing/ja" />
+<meta property="og:url" content="https://www.w3.org/WAI/tips/designing/ja" />
+<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-09-10T02:51:43+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="ウェブ・アクセシビリティのためのデザイン – 始めるにあたってのヒント" />
+<meta name="twitter:site" content="@w3c_wai" />
+<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"dateModified":"2024-09-10T02:51:43+00:00","datePublished":"2024-09-10T02:51:43+00:00","description":"概要","headline":"ウェブ・アクセシビリティのためのデザイン – 始めるにあたってのヒント","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.w3.org/WAI/tips/designing/ja"},"url":"https://www.w3.org/WAI/tips/designing/ja"}</script>
+<!-- End Jekyll SEO tag -->
+<meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
+
+  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
+</head>
+
+  <body id="top" class="page-ウェブ-アクセシビリティのためのデザイン-始めるにあたってのヒント resource-tips">
+    <nav aria-label="リンクと言語選択をスキップ" id="controls" class="default-grid">
+  <ul>
+      <li><a href="#main">コンテンツにスキップ</a></li>
+      <li class="opt"><a href="/WAI/meta/customize/">テキストのサイズ・色を変更</a></li>
+      <li class="opt languagelist">
+          <strong>翻訳：</strong>
+          <ul class="languagelistul"><li><a style="text-transform: capitalize;" href="/WAI/tips/designing/" lang="en"  dir="auto" translate="no">English</a></li><li><a style="text-transform: capitalize;" href="/WAI/tips/designing/fr" lang="fr"  dir="auto" translate="no">français</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/tips/designing/id" lang="id"  dir="auto" translate="no">Bahasa Indonesia</a></li>
+          <li><strong style="text-transform: capitalize;">日本語</strong></li>
+          </ul>
+        </li>
+        <li class="opt">
+          <a href="/WAI/translations/">全ての翻訳 <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+        </li>
+        <li><button id="showoptions" data-showhidebuttonid="header-showoptions" class="showhidebutton button-inline" data-target="#controls .opt" aria-expanded="false" data-large-aria-expanded="true" data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> カスタマイズ、言語、翻訳' data-hidetext='オプションを隠す'><svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> カスタマイズ、言語、翻訳</button></li>
+      </ul>
+    </nav>
+<header id="site-header" class="default-grid with-gap">
+  <div class="logos">
+    <a lang="en" class="home w3c" href="https://www.w3.org/">
+      <svg role="img" aria-label="W3C" viewBox="0 0 68 34" xmlns="http://www.w3.org/2000/svg"><g><path d="m16.117 1.006 5.759 19.58 5.759-19.58h4.17 11.444v1.946l-5.879 10.128c2.065.663 3.627 1.868 4.686 3.615 1.059 1.748 1.589 3.799 1.589 6.155 0 2.914-.775 5.363-2.324 7.348s-3.555 2.978-6.017 2.978c-1.854 0-3.469-.589-4.845-1.767-1.377-1.178-2.396-2.773-3.058-4.786l3.256-1.35c.477 1.218 1.106 2.178 1.887 2.879.781.702 1.701 1.052 2.76 1.052 1.112 0 2.052-.622 2.82-1.866.768-1.245 1.152-2.74 1.152-4.489 0-1.933-.411-3.429-1.231-4.488-.954-1.244-2.45-1.867-4.489-1.867h-1.588v-1.906l5.56-9.612h-6.712l-.382.65-8.163 27.548h-.397l-5.958-19.937-5.957 19.937h-.397l-9.53-32.168h4.17l5.759 19.58 3.892-13.185-1.906-6.395z"/><path d="m64.92 1.006c-.819 0-1.554.295-2.111.861-.591.6-.92 1.376-.92 2.178s.313 1.545.887 2.128c.583.591 1.334.912 2.145.912.793 0 1.562-.321 2.161-.903.574-.557.887-1.3.887-2.136 0-.811-.321-1.57-.878-2.136-.584-.592-1.344-.904-2.171-.904zm2.643 3.065c0 .701-.271 1.351-.768 1.832-.524.507-1.174.777-1.892.777-.675 0-1.342-.278-1.84-.785s-.777-1.157-.777-1.849.287-1.368.802-1.891c.481-.49 1.131-.751 1.84-.751.726 0 1.376.271 1.883.785.49.489.752 1.147.752 1.882zm-2.559-1.807h-1.3v3.445h.65v-1.469h.642l.701 1.469h.726l-.769-1.57c.498-.102.785-.439.785-.929 0-.625-.472-.946-1.435-.946zm-.118.422c.608 0 .886.169.886.591 0 .405-.278.549-.87.549h-.549v-1.14z"/><path d="m59.807.825.676 4.107-2.391 4.575s-.918-1.941-2.443-3.015c-1.285-.905-2.122-1.102-3.431-.832-1.681.347-3.587 2.357-4.419 4.835-.995 2.965-1.005 4.4-1.04 5.718-.056 2.113.277 3.362.277 3.362s-1.452-2.686-1.438-6.62c.009-2.808.451-5.354 1.75-7.867 1.143-2.209 2.842-3.535 4.35-3.691 1.559-.161 2.791.59 3.743 1.403 1 .854 2.01 2.721 2.01 2.721z"/><path d="m60.102 24.063s-1.057 1.889-1.715 2.617c-.659.728-1.837 2.01-3.292 2.651s-2.218.762-3.656.624c-1.437-.138-2.772-.97-3.24-1.317s-1.664-1.369-2.34-2.322-1.733-2.859-1.733-2.859.589 1.91.958 2.721c.212.467.864 1.894 1.789 3.136.863 1.159 2.539 3.154 5.086 3.604 2.547.451 4.297-.693 4.73-.97s1.346-1.042 1.924-1.66c.603-.645 1.174-1.468 1.49-1.962.231-.36.607-1.092.607-1.092z"/></g></svg>
+    </a>
+    <a lang="en" class="home" href="/WAI/">
+      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
+    </a>
+    <div class="claim">
+      <span>障害を持つ人々へのサポート - 戦略・標準化・リソース</span>
+    </div>
+    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> メニュー</span></button>
+  </div>
+
+  <div class="navigations">
+  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+    <ul>
+      <li><a href="/WAI/about/participating/">Get Involved</a></li>
+      <li><a href="/WAI/about/">About W3C WAI</a></li>
+      <li>
+        <form action="/WAI/search/" role="search">
+          <div>
+            <label for="header-search">
+              <span class="visuallyhidden">サーチ:</span>
+              <input id="header-search" type="search" name="q" placeholder="サーチ" aria-label="サーチ">
+            </label>
+            
+            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="サーチ" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
+          </div>
+        </form>
+      </li>
+    </ul>
+  </nav>
+</div>
+</header><nav class="mainnav" aria-label="メイン" lang="ja"><ul><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/planning/"><span>Planning &amp; Policies</span></a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="en" href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a></li><li><a lang="en" href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="小リンク集" lang="en">
+  <ul style="align-self: center;">
+    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="ja" href="/WAI/tips/designing/ja" aria-current="page"><span>デザインのためのヒント</span></a></li></ul>
+</nav>
+    <div class="default-grid with-gap leftcol">
+
+  
+      
+        <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
+      <ul class="sidenav--list">
+  <li>
+  <a lang="en" href="/WAI/design-develop/" class="page-link"><span>Design &amp; Develop</span></a></li><li>
+  <a lang="ja" href="/WAI/tips/writing/ja" class="page-link"><span>Tips for Writing</span></a></li><li>
+  <a lang="ja" href="/WAI/tips/designing/ja" aria-current="page" class="page-link"><span>デザインのためのヒント</span></a></li><li>
+  <a lang="ja" href="/WAI/tips/developing/ja" class="page-link"><span>Tips for Developing</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/" class="page-link"><span>Audio &amp; Video Media</span></a><ul><li>
+  <a lang="en" href="/WAI/media/av/users-orgs/" class="page-link"><span>User Needs</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/planning/" class="page-link"><span>Planning</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/av-content/" class="page-link"><span>Audio Content &amp; Video Content</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/description/" class="page-link"><span>Description</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/captions/" class="page-link"><span>Captions/Subtitles</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/transcripts/" class="page-link"><span>Transcripts</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/transcribing/" class="page-link"><span>Transcribing Audio to Text</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/sign-languages/" class="page-link"><span>Sign Languages</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/player/" class="page-link"><span>Media Player</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/" class="page-link"><span>Tutorials</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/" class="page-link"><span>Page Structure</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/regions/" class="page-link"><span>Page Regions</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/labels/" class="page-link"><span>Labeling Regions</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/headings/" class="page-link"><span>Headings</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/content/" class="page-link"><span>Content Structure</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/example/" class="page-link"><span>Full Example</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/menus/" class="page-link"><span>Menus</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/menus/structure/" class="page-link"><span>Structure</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/menus/styling/" class="page-link"><span>Styling</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/menus/flyout/" class="page-link"><span>Fly-Out Menus</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/menus/application-menus/" class="page-link"><span>Application Menus</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/menus/application-menus-code/" class="page-link"><span>Application Menu Example &amp; Code</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/images/" class="page-link"><span>Images</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/images/informative/" class="page-link"><span>Informative Images</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/decorative/" class="page-link"><span>Decorative Images</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/functional/" class="page-link"><span>Functional Images</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/textual/" class="page-link"><span>Images of Text</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/complex/" class="page-link"><span>Complex Images</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/groups/" class="page-link"><span>Groups of Images</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/imagemap/" class="page-link"><span>Image Maps</span></a></li><li>
+  <a lang="ja" href="/WAI/tutorials/images/decision-tree/ja" class="page-link"><span><code style="color: inherit;">alt</code> 의사결정나무</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/tips/" class="page-link"><span>Tips and Tricks</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/" class="page-link"><span>Tables</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/tables/one-header/" class="page-link"><span>One Header</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/two-headers/" class="page-link"><span>Two Headers</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/irregular/" class="page-link"><span>Irregular Headers</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/multi-level/" class="page-link"><span>Multi-level Headers</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/caption-summary/" class="page-link"><span>Caption &amp; Summary</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/tips/" class="page-link"><span>Tips and Tricks</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/" class="page-link"><span>Forms</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/forms/labels/" class="page-link"><span>Labeling Controls</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/grouping/" class="page-link"><span>Grouping Controls</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/instructions/" class="page-link"><span>Form Instructions</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/validation/" class="page-link"><span>Validating Input</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/notifications/" class="page-link"><span>User Notifications</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/multi-page/" class="page-link"><span>Multi-page Forms</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/custom-controls/" class="page-link"><span>Custom Controls</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/" class="page-link"><span>Carousels</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/carousels/structure/" class="page-link"><span>Structure</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/functionality/" class="page-link"><span>Functionality</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/animations/" class="page-link"><span>Animations</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/styling/" class="page-link"><span>Styling</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/working-example/" class="page-link"><span>Working Example</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/full-code/" class="page-link"><span>Complete Code</span></a></li></ul></li></ul></li></ul></nav><nav class="sidenav-languages" aria-labelledby="languagehead">
+        <header id="languagehead">言語/翻訳</header>
+        <ul class="langlist">
+          <li style="margin-bottom: 2px;"><a href="/WAI/tips/designing/" lang="en" dir="auto" translate="no">English (original)</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/tips/designing/fr" dir="auto" translate="no" lang="fr">français</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/tips/designing/id" dir="auto" translate="no" lang="id">Bahasa Indonesia</a></li><li style="margin-bottom: 2px;"><strong style="text-transform: capitalize;">日本語</strong></li></ul><p><a href="/WAI/translations/#ja">’他リソースの 日本語</a></p>
+        
+        <p><a href="/WAI/translations/">全ての翻訳</a></p>
+        <p><a href="/WAI/about/translating/">WAIリソース翻訳</a></p>
+      </nav>
+</div>
+
+
+      
+  
+
+  <main id="main" lang="ja">
+
+    
+
+    
+    <header class="in-resource">
+      <h1>
+        
+        <svg class="icon-in-title" aria-hidden="true"><use xlink:href="/WAI/content-images/tips/icons.svg#designing"></use></svg>
+        
+        
+        
+          ウェブ・アクセシビリティのためのデザイン
+        </h1><p>親ページ： <a lang="en" href="/WAI/tips/"><span>Tips for Getting Started <span class="lang" lang="ja" dir="auto" translate="no">(英語版)</span></span></a></p></header>
+    <section id="translation-info" class="doc-note-box doc-note-translation">
+  <h2 class="visuallyhidden">本翻訳について</h2>
+  <p>ボランティアによる本翻訳は<a href="/WAI/tips/designing/">原文（英語）</a>の内容を正確に反映できていない可能性があります。</p>
+  
+  
+  <p><svg focusable="false" aria-hidden="true" class="icon-warning "><use xlink:href="/WAI/assets/images/icons.svg#icon-warning"></use></svg> 本翻訳後に英語版が更新されています：<a href="$1">変更履歴</a>
+    <br>英語版更新 <span dir="auto">2024-07-16</span>. 翻訳更新済 <span dir="auto">2024-03-29</span>.
+  </p>
+  
+  
+  <p>
+    <strong>翻訳者</strong> Jay Kishigami. 
+    <br>WAIは全ての翻訳者に感謝し、また他の<a href="/WAI/about/translating/">translations</a>も歓迎します</p>
+</section><aside class="box box-full"><header class="box-h  box-h-full"> <h2> 概要 </h2></header><div class="box-i">
+
+<p>このページでは､ユーザーインターフェースの設計およびビジュアルデザインを障害者にとってアクセシブルなものにするため考慮すべき基本的な事項を紹介します｡これらのヒントは､Webコンテンツ・アクセシビリティ・ガイドライン(WCAG)の要件を満たすためのグッドプラクティスです｡関連するWCAG要件､「理解する」ためのドキュメントの詳細な背景､チュートリアルから始まるガイダンス､ユーザーストーリーなどへのリンクをたどってください｡</p>
+
+</div></aside>
+
+
+
+<nav class="box box-simple box-full" aria-labelledby="tocheading" id="toc">
+  <header id="tocheading" class="box-h box-h-simple box-h-full"> 目次</header>
+  <div class="box-i">
+
+
+
+
+<ul id="markdown-toc">
+  <li><a href="#前景と背景の間に十分なコントラストをつける" id="markdown-toc-前景と背景の間に十分なコントラストをつける">前景と背景の間に十分なコントラストをつける</a></li>
+  <li><a href="#色だけで情報を伝えない" id="markdown-toc-色だけで情報を伝えない">色だけで情報を伝えない</a></li>
+  <li><a href="#インタラクティブな要素を識別しやすくする" id="markdown-toc-インタラクティブな要素を識別しやすくする">インタラクティブな要素を識別しやすくする</a></li>
+  <li><a href="#明確で一貫性のあるナビゲーションオプションの提供" id="markdown-toc-明確で一貫性のあるナビゲーションオプションの提供">明確で一貫性のあるナビゲーション・オプションの提供</a></li>
+  <li><a href="#フォーム要素に明確に関連付けられたラベルが含まれるようにする" id="markdown-toc-フォーム要素に明確に関連付けられたラベルが含まれるようにする">フォーム要素に明確に関連付けられたラベルが含まれるようにする</a></li>
+  <li><a href="#理解しやすいフィードバックの提供" id="markdown-toc-理解しやすいフィードバックの提供">理解しやすいフィードバックの提供</a></li>
+  <li><a href="#見出しと間隔を使用して関連するコンテンツをグループ化する" id="markdown-toc-見出しと間隔を使用して関連するコンテンツをグループ化する">見出しと間隔を使用して､関連するコンテンツをグループ化する</a></li>
+  <li><a href="#さまざまなビューポートサイズに対応するデザインを作成" id="markdown-toc-さまざまなビューポートサイズに対応するデザインを作成">さまざまなビューポートサイズに対応するデザインを作成</a></li>
+  <li><a href="#デザインに画像やメディアの代替機能を含める" id="markdown-toc-デザインに画像やメディアの代替機能を含める">デザインに画像やメディアの代替機能を含める</a></li>
+  <li><a href="#自動的に開始するコンテンツのコントロールの提供" id="markdown-toc-自動的に開始するコンテンツのコントロールの提供">自動的に開始するコンテンツのコントロールの提供</a></li>
+</ul>
+
+
+
+  </div>
+</nav>
+
+
+
+<h2 id="前景と背景の間に十分なコントラストをつける">前景と背景の間に十分なコントラストをつける</h2>
+
+<p>前景テキストは背景色と十分なコントラストが必要です｡これには画像上のテキスト､背景グラデーション､ボタン､その他の要素が含まれます｡ロゴや､写真に偶然写り込んだテキストなどの付随的なテキストには適用されません｡以下のリンクは､WCAGが要求する最小コントラスト比の詳細と､コントラストをチェックする方法を提供しています｡「コントラスト比」は､より技術的に正しい用語「輝度コントラスト比」の短縮版です｡.</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> <strong>例:</strong> コントラスト比</header><div class="box-i">
+
+<div class="two-column">
+  <figure>
+    <figcaption><svg focusable="false" aria-label="良くない場合" class="icon-ex-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-ex-circle"></use></svg>不十分な場合t</figcaption>
+    <div>
+      <p style="color: #999;">文字と背景のコントラストが十分でないと文字が読めない人もいる｡また､明るい色（高輝度）は読めず､低輝度が必要な人もいる｡.</p>
+    </div>
+  </figure>
+  <figure>
+    <figcaption><svg focusable="false" aria-label="良い場合" class="icon-check-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-check-circle"></use></svg> 十分な場合</figcaption>
+    <div>
+      <p class="pass">文字と背景のコントラストが十分でないと文字が読めない人もいる｡また､明るい色（高輝度）は読めず､低輝度が必要な人もいる｡.</p>
+    </div>
+  </figure>
+</div>
+
+</div></aside>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> 詳細情報</header><div class="box-i">
+
+<ul>
+  <li><strong>WCAG</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#contrast-minimum">コントラスト（最小） 1.4.3</a> (<a href="/WAI/WCAG21/Understanding/contrast-minimum">理解のため 1.4.3</a>)</li>
+    </ul>
+  </li>
+  <li><strong>ユーザーストーリー</strong>
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/archived/#shopper" hreflang="en">｢色覚異常」のユーザーがウェブを体験する方法 (英語版)</a></li>
+    </ul>
+  </li>
+  <li><strong>簡単なチェック</strong>
+    <ul>
+      <li><a href="/WAI/test-evaluate/preliminary/#contrast" hreflang="en">コントラスト比の確認方法 (英語版)</a></li>
+    </ul>
+  </li>
+  <li><strong>サポートツール</strong>
+    <ul>
+      <li><a href="/TR/UNDERSTANDING-WCAG20/visual-audio-contrast-contrast.html#visual-audio-contrast-contrast-resources-head">コントラスト比の決定に役立つツールのリスト</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="色だけで情報を伝えない">色だけで情報を伝えない</h2>
+
+<p>色は情報を伝達するのに役立つが､色だけで情報を伝達すべきではない｡要素を区別するために色を使用する場合は､色の知覚に依存しない追加的な識別も行いましょう｡例えば､フォームの必須項目を示すために色に加えてアスタリスクを使用したり､グラフの領域を区別するためにラベルを使用したりしましょう</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> 例: 色で意味を伝える</header><div class="box-i">
+
+<div class="color-alone two-column">
+  <figure class="reference fail">
+    <figcaption><svg focusable="false" aria-label="良くない場合" class="icon-ex-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-ex-circle"></use></svg>色だけを使った場合</figcaption>
+    <div>
+      <form action="#" method="post">
+        <p class="instruction"><span class="required" style="color: #992929;">必要な箇所は赤で表示</span></p>
+        <div class="row">
+          <label for="name1">名前</label> <input type="text" id="name1" name="name" />
+        </div>
+        <div class="row">
+          <label class="required" style="color: #992929;" for="email1">メール</label> <input type="text" id="email1" name="email" />
+        </div>
+      </form>
+    </div>
+  </figure>
+  <figure class="reference pass">
+    <figcaption><svg focusable="false" aria-label="良い場合" class="icon-check-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-check-circle"></use></svg>色と記号を使った場合</figcaption>
+    <div>
+      <form action="#" method="post">
+        <p class="instruction"><span class="required" style="color: #992929;">必要な箇所は</span> 赤で記述され <span class="required" style="color: #992929;">*</span>の記号とともに表示</p>
+        <div class="row">
+          <label for="name2">名前</label> <input type="text" id="name2" name="name" /><br />
+        </div>
+        <div class="row">
+          <label class="required" style="color: #992929;" for="email2">メール *</label> <input type="text" id="email2" name="email" />
+        </div>
+      </form>
+    </div>
+  </figure>
+</div>
+
+</div></aside>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> 例: 色だけで何かを参照する場合</header><div class="box-i">
+<div class="color-alone two-column">
+  <figure class="question fail">
+    <figcaption><svg focusable="false" aria-label="良くない場合" class="icon-ex-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-ex-circle"></use></svg>色だけの場合</figcaption>
+    <div>
+      <svg version="1.1" width="153" height="154" aria-labelledby="inaccessible-triangles-title" role="img">
+        <g>
+          <title id="inaccessible-triangles-title">異なる角度を持つ4つの三角形</title>
+          <path d="m2.06902,49.92402l91.82715,-48.2264l-42.35869,75.85164l-49.46846,-27.62524z" fill="#09610D" />
+          <path d="m147.18413,95.39555l-41.64554,-80.62148l43.24728,27.76369l-1.60175,52.85779z" fill="#0000CC" />
+          <path d="m110.9136,148.01692l-27.57392,-82.3039l69.97661,50.70448l-42.40269,31.59943z" fill="#AA0402" />
+          <path d="m21.07534,112.17733l48.69831,-22.53485l-4.90304,52.17411l-43.79528,-29.63926z" fill="#DDDD00" />
+        </g>
+      </svg>
+      <form action="#" method="post">
+        <fieldset>
+          <legend style="width: 100%;">どれが直角三角形か?</legend>
+          <input id="answer-green1" name="answer1" value="green" type="radio" /> <label for="answer-green1">緑</label><br />
+          <input id="answer-blue1" name="answer1" value="blue" type="radio" /> <label for="answer-blue1">青</label><br />
+          <input id="answer-red1" name="answer1" value="red" type="radio" /> <label for="answer-red1">赤</label><br />
+          <input id="answer-yellow1" name="answer1" value="yellow" type="radio" /> <label for="answer-yellow1">黄色</label><br />
+          <input id="answer-pass1" name="answer1" value="pass" type="radio" /> <label for="answer-pass1">わからない</label>
+        </fieldset>
+      </form>
+    </div>
+  </figure>
+  <figure class="question pass">
+    <figcaption><svg focusable="false" aria-label="良い場合" class="icon-check-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-check-circle"></use></svg>色と数字</figcaption>
+    <div>
+      <svg version="1.1" width="153" height="154">
+        <g>
+          <path d="m2.06902,49.92402l91.82715,-48.2264l-42.35869,75.85164l-49.46846,-27.62524z" fill="#09610D" />
+          <text fill="#f4f4f4" y="51" x="44"><tspan>1</tspan><tspan dx="100" style="opacity:0">緑の三角形:各角度は 30°, 60°, 90°</tspan></text>
+          <path d="m147.18413,95.39555l-41.64554,-80.62148l43.24728,27.76369l-1.60175,52.85779z" fill="#0000CC" />
+          <text fill="#f4f4f4" y="54" x="132"><tspan>2</tspan><tspan dx="100" style="opacity:0"> 青い三角形: 各角度は 30°, 30°, 120°</tspan></text>
+          <path d="m110.9136,148.01692l-27.57392,-82.3039l69.97661,50.70448l-42.40269,31.59943z" fill="#AA0402" />
+          <text fill="#f4f4f4" y="114" x="110"><tspan>3</tspan><tspan dx="100" style="opacity:0"> 赤い三角形: 各角度は 40°, 70°, 70°</tspan></text>
+          <path d="m21.07534,112.17733l48.69831,-22.53485l-4.90304,52.17411l-43.79528,-29.63926z" fill="#DDDD00" />
+          <text fill="#333" y="118" x="48"><tspan>4</tspan><tspan dx="100" style="opacity:0"> 黄色の三角形: 各角度は 60°, 60°, 60°</tspan></text>
+        </g>
+      </svg>
+      <form action="#" method="post">
+        <fieldset>
+          <legend style="width: 100%;">どれが直角三角形か?</legend>
+          <input id="answer-green2" name="answer2" value="green" type="radio" /> <label for="answer-green2">緑 (1)</label><br />
+          <input id="answer-blue2" name="answer2" value="blue" type="radio" /> <label for="answer-blue2">青 (2)</label><br />
+          <input id="answer-red2" name="answer2" value="red" type="radio" /> <label for="answer-red2">赤 (3)</label><br />
+          <input id="answer-yellow2" name="answer2" value="yellow" type="radio" /> <label for="answer-yellow2">黄色 (4)</label><br />
+          <input id="answer-pass2" name="answer2" value="pass" type="radio" /> <label for="answer-pass2">わからない</label>
+        </fieldset>
+      </form>
+    </div>
+  </figure>
+</div>
+
+</div></aside>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> 詳細情報</header><div class="box-i">
+
+<ul>
+  <li><strong>WCAG</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#use-of-color">色の使用 1.4.1</a> (<a href="/WAI/WCAG21/Understanding/use-of-color">理解のため 1.4.1</a>)</li>
+    </ul>
+  </li>
+  <li><strong>ユーザーストーリー</strong>
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/archived/#shopper" hreflang="en">｢色覚異常」のユーザーがウェブを体験する方法 (英語版)</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="インタラクティブな要素を識別しやすくする">インタラクティブな要素を識別しやすくする</h2>
+
+<p>リンクやボタンなどのインタラクティブな要素には､識別しやすいように明確なスタイルを用意しましょう｡たとえば､マウスホバー､キーボードフォーカス､タッチスクリーン起動時にリンクの外観を変更します｡インタラクティブ要素のスタイルとネーミングは､ウェブサイト全体で一貫して使用するようにしましょう｡</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> 例: 異なるリンク状態に対する独自のスタイル</header><div class="box-i">
+
+<div class="focus two-column">
+  <div>
+    <figure>
+      <figcaption><svg focusable="false" aria-label="OK" class="icon-check-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-check-circle"></use></svg>テキストからリンクを目立たせる</figcaption>
+      <div>
+        <p>マウスが使えず､ウェブページを<a href="javascript:return false;" aria-label="リンクは本文より目立つようにスタイルされている">キーボードだけで操作</a>する人もいる｡</p>
+        <p>ユーザーがキーボードを使ってすべてのインタラクティブな要素に到達でき､どの要素にフォーカスされているかが明確に分かることが重要です｡</p>
+        <p>目に見えるキーボード・フォーカスは､ウェブ・ページをタブで移動するときに移動するボーダーやハイライトで示される｡</p>
+      </div>
+    </figure>
+  </div>
+  <div>
+    <figure class="hover">
+      <figcaption><svg focusable="false" aria-label="良い場合" class="icon-check-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-check-circle"></use></svg> マウスホーバースタイル</figcaption>
+      <div>
+        <p style="text-align: center; position:relative;"><a href="javascript:return false;" aria-label="リンクは、ホバー状態を強調するために微妙な背景でスタイルされている。" style="color: #850BAC; background-color: rgba(253, 247, 15, 0.3)">keyboard to navigate</a><img src="/WAI/content-images/tips/pointer.png" style="position: absolute; left: 50%; top:1em;" width="20" alt="" /></p>
+      </div>
+    </figure>
+    <figure class="keyboard">
+      <figcaption><svg focusable="false" aria-label="良い場合" class="icon-check-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-check-circle"></use></svg>キーボードフォーカスのスタイル</figcaption>
+      <div>
+        <p style="text-align: center; position:relative;"><a href="javascript:return false;" aria-label="リンクは目立つようにホバースタイルの強いバージョンでスタイルされている。" style="color: #850BAC; background-color: #fdf70f">keyboard to navigate</a></p>
+      </div>
+    </figure>
+    <figure class="active">
+      <figcaption><svg focusable="false" aria-label="良い場合" class="icon-check-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-check-circle"></use></svg> タッチまたはクリックスタイル</figcaption>
+      <div>
+        <p style="text-align: center; position:relative;"><a href="javascript:return false;" aria-label="リンクには、アクションが起こることを示す強いスタイリングが与えられている。" style="background: #850BAC; color: #f4f4f4">keyboard to navigate</a><img src="/WAI/content-images/tips/pointer.png" style="position: absolute; left: 50%; top:1em;" width="20" alt="" /></p>
+      </div>
+    </figure>
+  </div>
+</div>
+
+</div></aside>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> 詳細情報</header><div class="box-i">
+
+<ul>
+  <li><strong>WCAG</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#focus-visible">目に見えるフォーカス方法 2.4.7</a> (<a href="/WAI/WCAG21/Understanding/focus-visible">理解のため 2.4.7</a>)</li>
+      <li><a href="/WAI/WCAG21/quickref/#consistent-identification">一貫した識別 3.2.4</a> (<a href="/WAI/WCAG21/Understanding/consistent-identification">理解のため 3.2.4</a>)</li>
+    </ul>
+  </li>
+  <li><strong>ユーザーストーリー</strong>
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/archived/#reporter" hreflang="en">マウス操作に制限のある人が直面する課題 (英語版)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/archived/#retiree" hreflang="en">手の震えを持つ高齢ユーザーが直面する課題 (英語版)</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="明確で一貫性のあるナビゲーションオプションの提供">明確で一貫性のあるナビゲーション・オプションの提供</h2>
+<p>ウェブサイト内のページ間のナビゲーションは､一貫性のあるネーミング､スタイル､配置にすること｡サイト内検索やサイトマップなど､複数のナビゲーション方法を用意すること｡トピックパスや明確な見出しなど､自分のいる位置を示す手がかりを提供することで､ユーザーがウェブサイトやページのどこにいるのかを理解を助けます｡</p>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> 詳細情報</header><div class="box-i">
+
+<ul>
+  <li><strong>WCAG</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#consistent-navigation">一貫性のあるナビゲーション 3.2.3</a> (<a href="/WAI/WCAG21/Understanding/consistent-identification">理解のため 3.2.3</a>)</li>
+      <li><a href="/WAI/WCAG21/quickref/#multiple-ways">様々な方法 2.4.5</a> (<a href="/WAI/WCAG21/Understanding/multiple-ways">理解のため 2.4.5</a>)</li>
+    </ul>
+  </li>
+  <li><strong>ユーザーストーリー</strong>
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/archived/#supermarketassistant" hreflang="en">一貫性とナビゲーションが認知障害を持つ人の助けになる (英語版)</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="フォーム要素に明確に関連付けられたラベルが含まれるようにする">フォーム要素に明確に関連付けられたラベルが含まれるようにする</h2>
+
+<p>すべてのフィールドが隣接して説明的なラベルを持っていることを確認してください｡左から右へ記述する言語の場合､ラベルは通常フィールドの左か上に配置されますが､チェックボックスとラジオボタンは通常右に配置されます｡ラベルとフィールドの間にスペースが空きすぎないようにしましょう｡</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-check-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-check-circle"></use></svg> 例: 近接によって関連付けられたラベルと入力フィールド</header><div class="box-i">
+
+<div class="labels">
+  <figure>
+    <div>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>コメントを追加</legend>
+          <div class="row">
+            <label for="email4">あなたのメールアドレス</label>
+            <input type="text" id="email4" name="email" />
+          </div>
+          <div class="row checkbox">
+            <input type="checkbox" id="contact1" name="contact" />
+            <label for="contact1">私にコンタクトしてください</label>
+          </div>
+          <div class="row">
+            <label for="website2">あなたのWebサイト</label>
+            <input type="text" id="website2" name="website" />
+          </div>
+          <div class="row">
+            <label for="comment2">コメント</label>
+            <textarea name="comment" id="comment2"></textarea>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </figure>
+</div>
+
+</div></aside>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> 詳細情報</header><div class="box-i">
+
+<ul>
+  <li><strong>WCAG</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#labels-or-instructions">ラベルまたは説明書 3.3.2</a> (<a href="/WAI/WCAG21/Understanding/labels-or-instructions">理解のため 3.3.2</a>)</li>
+      <li><a href="/WAI/WCAG21/quickref/#headings-and-labels">見出しとラベル 2.4.6</a> (<a href="/WAI/WCAG21/Understanding/headings-and-labels">理解のため 2.4.6</a>)</li>
+    </ul>
+  </li>
+  <li><strong>チュートリアル</strong>
+    <ul>
+      <li><a href="/WAI/tutorials/forms/labels/#visual-position-of-label-text" hreflang="en">ラベルテキストの視覚的位置 (英語版)</a></li>
+    </ul>
+  </li>
+  <li><strong>ユーザーストーリー</strong>
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/archived/#supermarketassistant" hreflang="en">明確な表示が認知障害のある人をどのように助けるか (英語版)</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="理解しやすいフィードバックの提供">理解しやすいフィードバックの提供</h2>
+
+<p>フォームの送信を確認する､何か問題が起きたときにユーザーに警告する､ページの変更をユーザーに通知するなど､インタラクションに対するフィードバックを提供することがある｡指示は理解しやすいものでなければなりません｡ユーザーのアクションを必要とする重要なフィードバックは目立つスタイルで表示されるべきです｡</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-check-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-check-circle"></use></svg> 例: エラーリスト､アイコン､背景色を使ってエラーを目立たせる</header><div class="box-i">
+
+<div class="errors">
+  <figure>
+    <div>
+      <div class="error-list">
+        <p>以下のエラーを修正してください：</p>
+        <ol>
+          <li id="error_email"><svg focusable="false" aria-label="エラー" class="icon-warning "><use xlink:href="/WAI/assets/images/icons.svg#icon-warning"></use></svg> <a href="javascript:document.getElementById('email5').focus()">メールアドレスが無効です</a></li>
+          <li id="error_comment"><svg focusable="false" aria-label="エラー" class="icon-warning "><use xlink:href="/WAI/assets/images/icons.svg#icon-warning"></use></svg> <a href="javascript:document.getElementById('comment3').focus()">コメントは必須です</a></li>
+        </ol>
+      </div>
+      <form action="#" method="post">
+        <fieldset>
+          <legend>コメントを追加してください</legend>
+          <p class="instruction"><span class="required">必須項目</span> は赤字で<span class="required">*</span>のマークをつけています</p>
+          <div class="row">
+            <label for="name5">名前</label>
+            <input type="text" id="name5" name="name" value="Superbear" />
+          </div>
+          <div class="row error">
+            <label class="required" for="email5"><svg focusable="false" aria-label="エラー" class="icon-warning "><use xlink:href="/WAI/assets/images/icons.svg#icon-warning"></use></svg> メールアドレス *</label>
+            <input type="text" id="email5" name="email" value="superbear@@hq.example.com" aria-invalid="true" aria-describedby="error_email" />
+          </div>
+          <div class="row">
+            <label for="website3">Webサイト名</label>
+            <input type="text" id="website3" name="website" />
+          </div>
+          <div class="row error">
+            <label class="required" for="comment3"><svg focusable="false" aria-label="エラー" class="icon-warning "><use xlink:href="/WAI/assets/images/icons.svg#icon-warning"></use></svg> コメント *</label>
+            <textarea name="comment" id="comment3" aria-invalid="true" aria-describedby="error_comment"></textarea>
+          </div>
+        </fieldset>
+      </form>
+    </div>
+  </figure>
+</div>
+
+</div></aside>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> 詳細情報</header><div class="box-i">
+
+<ul>
+  <li><strong>WCAG</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#error-identification">エラー識別 3.3.1</a> (<a href="/WAI/WCAG21/Understanding/error-identification">理解のため 3.3.1</a>)</li>
+      <li><a href="/WAI/WCAG21/quickref/#labels-or-instructions">ラベルまたは説明書 3.3.2</a> (<a href="/WAI/WCAG21/Understanding/labels-or-instructions">理解のため 3.3.2</a>)</li>
+      <li><a href="/WAI/WCAG21/quickref/#error-suggestion">エラーのコメント 3.3.3</a> (<a href="/WAI/WCAG21/Understanding/error-suggestion">理解のため 3.3.3</a>)</li>
+    </ul>
+  </li>
+  <li><strong>チュートリアル</strong>
+    <ul>
+      <li><a href="/WAI/tutorials/forms/notifications/" hreflang="en">ユーザーへの通知 (英語版)</a></li>
+    </ul>
+  </li>
+  <li><strong>ユーザーストーリー</strong>
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/archived/#classroomstudent" hreflang="en">重要なコンテンツを簡単に識別できるようにすることが､どのように役立つか (英語版)</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="見出しと間隔を使用して関連するコンテンツをグループ化する">見出しと間隔を使用して､関連するコンテンツをグループ化する</h2>
+
+<p>コンテンツ間の関係をより明確にするために､空白と近接を利用する｡見出しをつけることで､コンテンツをグループ化し､乱雑さをなくし､さっと見やすくし理解しやすくする｡</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> 例: コンテンツ間の関係を強調するスペーシング</header><div class="box-i">
+
+<div class="headings two-column">
+  <figure class="fail">
+    <figcaption id="inaccessible-headings-title"><svg focusable="false" aria-label="良くない場合" class="icon-ex-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-ex-circle"></use></svg> 間隔が狭く､関係が不明確な場合</figcaption>
+    <div>
+      <svg version="1.1" height="173" aria-labelledby="inaccessible-headings-title" aria-describedby="inaccessible-headings-desc" role="img">
+        <g>
+          <desc id="inaccessible-headings-desc">一つの主題で大きなブロックの文､見出しの間隔も狭く図との関係も分かりにくい</desc>
+          <text class="heading" x="0" y="14">主題</text>
+          <rect x="0" y="18" width="247" height="3" />
+          <rect x="0" y="24" width="244" height="3" />
+          <rect x="0" y="30" width="249" height="3" />
+          <rect class="image" x="180" y="36" width="70" height="55" />
+          <line x1="181" y1="37" x2="249" y2="90" stroke-width="1" />
+          <line x1="181" y1="90" x2="249" y2="37" stroke-width="1" />
+          <rect x="0" y="36" width="168" height="3" />
+          <rect x="0" y="42" width="171" height="3" />
+          <rect x="0" y="48" width="166" height="3" />
+          <rect x="0" y="54" width="172" height="3" />
+          <rect x="0" y="60" width="120" height="3" />
+          <text class="sub-heading" x="0" y="74">副題</text>
+          <rect x="0" y="76" width="144" height="3" />
+          <rect x="0" y="82" width="136" height="3" />
+          <rect x="0" y="88" width="142" height="3" />
+          <rect x="0" y="94" width="236" height="3" />
+          <rect x="0" y="100" width="249" height="3" />
+          <rect x="0" y="106" width="239" height="3" />
+          <rect x="0" y="112" width="205" height="3" />
+          <text class="sub-heading" x="0" y="126">副題</text>
+          <rect x="0" y="128" width="236" height="3" />
+          <rect x="0" y="134" width="242" height="3" />
+          <rect x="0" y="140" width="243" height="3" />
+          <rect x="0" y="146" width="250" height="3" />
+          <rect x="0" y="152" width="245" height="3" />
+          <rect x="0" y="158" width="187" height="3" />
+        </g>
+      </svg>
+    </div>
+  </figure>
+  <figure class="pass">
+    <figcaption id="accessible-headings-title"><svg focusable="false" aria-label="良い場合" class="icon-check-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-check-circle"></use></svg>  間隔を広げ､関係を明確な場合</figcaption>
+    <div>
+      <svg version="1.1" height="173" aria-labelledby="accessible-headings-title" aria-describedby="accessible-headings-desc" role="img">
+        <g>
+          <desc id="accessible-headings-desc">主題, 複数の見出し, リスト, 大きくない分のブロック</desc>
+          <text class="heading" x="0" y="14">主題</text>
+          <rect x="0" y="21" width="175" height="3" />
+          <rect x="0" y="27" width="170" height="3" />
+          <rect x="0" y="33" width="159" height="3" />
+          <rect x="0" y="39" width="95" height="3" />
+          <rect x="0" y="51" width="175" height="3" />
+          <rect x="0" y="57" width="170" height="3" />
+          <rect x="0" y="63" width="159" height="3" />
+          <rect x="0" y="69" width="172" height="3" />
+          <rect x="0" y="75" width="143" height="3" />
+          <rect class="image" x="180" y="21" width="70" height="55" />
+          <line x1="181" y1="22" x2="249" y2="75" />
+          <line x1="181" y1="75" x2="249" y2="22" />
+          <text class="sub-heading" x="0" y="98">副題</text>
+          <rect x="0" y="103" width="106" height="3" />
+          <rect x="0" y="109" width="99" height="3" />
+          <rect x="0" y="115" width="114" height="3" />
+          <rect x="0" y="121" width="110" height="3" />
+          <rect x="0" y="127" width="110" height="3" />
+          <rect x="0" y="139" width="99" height="3" />
+          <rect x="0" y="145" width="114" height="3" />
+          <rect x="0" y="151" width="110" height="3" />
+          <rect x="0" y="157" width="84" height="3" />
+          <text class="sub-heading" x="135" y="98">副題</text>
+          <rect x="135" y="103" width="106" height="3" />
+          <rect x="135" y="109" width="99" height="3" />
+          <rect x="135" y="115" width="114" height="3" />
+          <rect x="135" y="127" width="114" height="3" />
+          <rect x="135" y="133" width="110" height="3" />
+          <rect x="135" y="139" width="99" height="3" />
+          <rect x="135" y="145" width="108" height="3" />
+          <rect x="135" y="151" width="110" height="3" />
+          <rect x="135" y="157" width="62" height="3" />
+        </g>
+      </svg>
+    </div>
+  </figure>
+</div>
+
+</div></aside>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> 詳細情報</header><div class="box-i">
+
+<ul>
+  <li><strong>WCAG</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#headings-and-labels">見出しとラベル 2.4.6</a> (<a href="/WAI/WCAG21/Understanding/headings-and-labels">理解のため 2.4.6</a>)</li>
+      <li><a href="/WAI/WCAG21/quickref/#section-headings">章の見出し 2.4.10</a> (<a href="/WAI/WCAG21/Understanding/section-headings">理解のため 2.4.10</a>)</li>
+    </ul>
+  </li>
+  <li><strong>チュートリアル</strong>
+    <ul>
+      <li><a href="/WAI/tutorials/page-structure/headings/" hreflang="en">Headings (英語版)</a></li>
+    </ul>
+  </li>
+  <li><strong>ユーザーストーリー</strong>
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/archived/#accountant" hreflang="en">見出しがナビゲーションにどのように役立つかの説明 (英語版)</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="さまざまなビューポートサイズに対応するデザインを作成">さまざまなビューポートサイズに対応するデザインを作成</h2>
+<p>携帯電話やズームしたブラウザウィンドウなど､異なるサイズのビューポートでページ情報がどのように表示されるかを考慮すること｡ヘッダーやナビゲーションなどの主要要素の位置や表示は､スペースを最大限に活用することで変更することができます｡読みやすさと可読性を最大化するために､テキストサイズと行幅を確実に設定してください｡</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> 例: コンテンツとナビゲーションがモバイルの小さな画面に適応する場合</header><div class="box-i">
+
+<div class="responsive">
+  <figure>
+    <div>
+      <img src="/WAI/content-images/tips/content_in_browser.png" alt="" />
+      <img src="/WAI/content-images/tips/content_in_phone.png" alt="" />
+      <p>小さなテキストで広いウィンドウに表示するには､主要コンテンツ､表示可能なナビゲーション・オプション､表示可能な二次情報に複数の列を使用します｡</p>
+      <p>携帯電話のような狭いウィンドウでの表示や､大きな文字での表示では､主要なコンテンツは1カラムで表示され､ナビゲーション・オプションはアイコンで表示され､二次情報もアイコンで表示されます｡</p>
+    </div>
+  </figure>
+</div>
+
+</div></aside>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> 詳細情報</header><div class="box-i">
+
+<ul>
+  <li><strong>Background</strong>
+    <ul>
+      <li><a href="/TR/mobile-accessibility-mapping/#h-small-screen-size">スクリーンが小さい場合</a></li>
+      <li><a href="/TR/mobile-accessibility-mapping/#mobile-accessibility-considerations-related-primarily-to-principle-3-understandable">理解しやすさに関連するモバイルへの配慮</a></li>
+    </ul>
+  </li>
+  <li><strong>ユーザーストーリー</strong>
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/archived/#retiree" hreflang="en">ズームされたページの代替ビューがどのように役立つかを説明する (英語版)</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="デザインに画像やメディアの代替機能を含める">デザインに画像やメディアの代替機能を含める</h2>
+<p>画像やメディアの代替となる仕組をデザインに用意してください｡例えば下記のものが必要になるでしょう｡</p>
+<ul>
+  <li>音声のトランスクリプトへのビジブルなリンク</li>
+  <li>ビデオの音声解説版への可視リンク</li>
+  <li>アイコンやグラフィカルなボタンとテキスト</li>
+  <li>表や複雑なグラフのキャプションと説明
+コンテンツ作成者や開発者と協力し､テキスト以外のコンテンツの代替案を提供してください｡</li>
+</ul>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> 例: トランスクリプトへのリンクと音声付きビデオへのリンクが含まれたデザイン</header><div class="box-i">
+
+<div class="text-alt">
+  <figure>
+    <div>
+      <img src="/WAI/content-images/tips/example_media_player.png" alt="media playerが出ています｡さらに標準化された再生/一時停止ボタン､進行を示すバー､音量､クローズドキャプションのボタンが見えます｡また翻訳と音声での説明へのリンクが出ています｡" />
+    </div>
+  </figure>
+</div>
+
+</div></aside>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> 詳細情報</header><div class="box-i">
+
+<ul>
+  <li><strong>WCAG</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#non-text-content">文字でないコンテンツ 1.1.1</a> (<a href="/WAI/WCAG21/Understanding/non-text-content">理解のため 1.1.1</a>)</li>
+    </ul>
+  </li>
+  <li><strong>チュートリアル</strong>
+    <ul>
+      <li><a href="/WAI/tutorials/images/" hreflang="en">Images (英語版)</a></li>
+    </ul>
+  </li>
+  <li><strong>ユーザーストーリー</strong>
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/archived/#accountant" hreflang="en">視覚障害者にとっての代替テキストの価値を説明する｡ (英語版)</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="自動的に開始するコンテンツのコントロールの提供">自動的に開始するコンテンツのコントロールの提供</h2>
+
+<p>ユーザーがアニメーションや自動再生サウンドを停止できるように､目に見えるコントロールを提供しましょう｡これは､カルーセル､画像スライダー､背景音､動画に適用されます｡</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> 例: カルーセルデザインに再生/停止と選択コントロールを表示するn</header><div class="box-i">
+
+<div class="autoplay">
+  <figure>
+    <div>
+      <img src="/WAI/content-images/tips/carousel_controls.png" alt="カルーセルデザインに再生/停止と選択コントロールを表示する例" />
+    </div>
+  </figure>
+</div>
+
+</div></aside>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> 詳細情報</header><div class="box-i">
+
+<ul>
+  <li><strong>WCAG</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#audio-control">オーディオコントロール 1.4.2</a> (<a href="/WAI/WCAG21/Understanding/audio-control">理解のため 1.4.2</a>)</li>
+      <li><a href="/WAI/WCAG21/quickref/#pause-stop-hide">一時停止､停止､離れる 2.2.2</a> (<a href="/WAI/WCAG21/Understanding/pause-stop-hide">理解のため 2.2.2</a>)</li>
+    </ul>
+  </li>
+  <li><strong>Tutorial</strong>
+    <ul>
+      <li><a href="/WAI/tutorials/carousels/" hreflang="en">カルーセルのコンセプト (英語版)</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<aside class="box box-large"><header class="box-h  box-h-large box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-readmore "><use xlink:href="/WAI/assets/images/icons.svg#icon-readmore"></use></svg> アクセシビリティについてのさらなる情報</header><div class="box-i">
+
+<p>これらのヒントは､Webアクセシビリティのために考慮すべきことのほんの一部です｡アクセシビリティが重要である理由､および障害者がWebをより利用しやすくするためのガイドラインについては､以下のリソースを参照してください｡</p>
+
+<ul>
+  <li><a href="/WAI/fundamentals/accessibility-intro/" hreflang="en">ウェブ・アクセシビリティ入門 (英語版)</a> — - ビジネスケースなど幅広い問題を取り上げ､役立つリソースへのリンクを掲載</li>
+  <li><a href="/WAI/fundamentals/accessibility-principles/" hreflang="en">アクセシビリティ原則 (英語版)</a> — ウェブ・アクセシビリティ要件の背景にある概念を紹介します</li>
+  <li><a href="/WAI/people-use-web/" hreflang="en">障害者はどのようにウェブを利用しているか (英語版)</a> — 実際の事例をもとにアクセシブルデザインの影響を探る</li>
+  <li><a href="/WAI/tutorials/" hreflang="en">ウェブ・アクセシビリティ・チュートリアル (英語版)</a> — - <a href="/WAI/tutorials/images/" hreflang="en">画像の代替テキストの提供 (英語版)</a>など､デザインに関するガイダンスが含まれています</li>
+  <li><a href="/WAI/demos/bad/">ビフォー・アフター・デモンストレーション </a> — 同じウェブサイトのアクセシブルでないバージョンとアクセシブルなバージョンを示し､アクセシビリティの障害と修復に関する注釈を付けています</li>
+  <li><a href="/WAI/WCAG21/quickref/">WCAGを満たす方法（クイックリファレンス）</a> — すべてのWCAG要件とテクニックのカスタマイズ可能なリファレンス</li>
+  <li><a href="/WAI/ER/tools/">ウェブアクセシビリティ評価ツールリスト</a> — コントラスト比の調査に役立つツールを含む</li>
+</ul>
+
+</div></aside>
+
+
+    
+
+<nav class="pager" aria-label="Previous/Next Page" style="clear: both;">
+  <ul><li class="pager--item previous">
+      <a href="/WAI/tips/writing/ja">
+        <svg focusable="false" aria-hidden="true" class="icon-arrow-left pager--item-icon"><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-left"></use></svg>
+        <span class="pager--item-text">
+          <span class="pager--item-text-direction">前ページ:</span>
+          <span class="pager--item-text-target">始めるためのヒント</span>
+        </span>
+      </a>
+    </li><li class="pager--item next">
+      <a href="/WAI/tips/developing/ja">
+        <svg focusable="false" aria-hidden="true" class="icon-arrow-right pager--item-icon"><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-right"></use></svg>
+        <span class="pager--item-text">
+          <span class="pager--item-text-direction">次ページ:</span>
+          <span class="pager--item-text-target">始めるにあたってのヒント</span>
+        </span>
+      </a>
+    </li>
+  </ul></nav><aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> 本ページの改善にご協力ください </h2></header><div class="box-i"><p>ご意見、ご提案、コメントをemail <a href="mailto:wai@w3.org?subject=%5Bja%5D%20%E3%82%A6%E3%82%A7%E3%83%96%E3%83%BB%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B7%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%20%E2%80%93%20%E5%A7%8B%E3%82%81%E3%82%8B%E3%81%AB%E3%81%82%E3%81%9F%E3%81%A3%E3%81%A6%E3%81%AE%E3%83%92%E3%83%B3%E3%83%88&amp;body=%5B%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E6%AC%84%5D%0A%0AI%20%E4%B8%80%E8%88%AC%E3%81%AB%E5%85%AC%E9%96%8B%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8Bemail%E3%83%AA%E3%82%B9%E3%83%88%E3%81%B8%E3%81%AE%E5%85%B1%E6%9C%89">wai@w3.org</a> かGitHubまでお寄せください。</p>
+<div class="button-group">
+    <a href="mailto:wai@w3.org?subject=%5Bja%5D%20%E3%82%A6%E3%82%A7%E3%83%96%E3%83%BB%E3%82%A2%E3%82%AF%E3%82%BB%E3%82%B7%E3%83%93%E3%83%AA%E3%83%86%E3%82%A3%E3%81%AE%E3%81%9F%E3%82%81%E3%81%AE%E3%83%87%E3%82%B6%E3%82%A4%E3%83%B3%20%E2%80%93%20%E5%A7%8B%E3%82%81%E3%82%8B%E3%81%AB%E3%81%82%E3%81%9F%E3%81%A3%E3%81%A6%E3%81%AE%E3%83%92%E3%83%B3%E3%83%88&body=%5B%E3%82%B3%E3%83%A1%E3%83%B3%E3%83%88%E6%AC%84%5D%0A%0AI%20%E4%B8%80%E8%88%AC%E3%81%AB%E5%85%AC%E9%96%8B%E3%81%95%E3%82%8C%E3%81%A6%E3%81%84%E3%82%8Bemail%E3%83%AA%E3%82%B9%E3%83%88%E3%81%B8%E3%81%AE%E5%85%B1%E6%9C%89" class="button"><span>E-mail</span></a><a href="
+https://github.com/w3c/wai-website/edit/main/collections/_tips/designing.ja.md
+" class="button"><span>GitHubでフォークまたは編集する</span></a><a href="https://github.com/w3c/wai-website/issues/new?template=content-issue.yml&title=[ja]%20&wai-resource-id=wai-tips&wai-url=https://www.w3.org/WAI/tips/designing/ja" class="button"><span>GitHubで新しいIssueを作成する</span></a></div></div></aside>
+
+
+    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> 最初に戻る</span></a>
+  </main>
+</div>
+
+
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner"
+      >
+      <p><strong>日にち:</strong> マイナーアップデート:2019年1月9日､アップデート:2016年4月15日｡最初の出版:2015年9月</p> <p><strong>編集者:</strong> <a href="https://www.w3.org/People/kevin">Kevin White</a>, <a href="https://www.w3.org/People/shadi">Shadi Abou-Zahra</a>, そして <a href="https://www.w3.org/People/Shawn">Shawn Lawton Henry</a><a href="/WAI/tips/acknowledgements/">謝辞</a></p> <p><a href="https://www.w3.org/WAI/EO/">教育と援助のためのWG (EOWG)</a>によって開発され. <a href="https://www.w3.org/WAI/DEV/">WAI-DEV プロジェクト</a>からのサポートを受けるとともに, ヨーロッパ委員会の <abbr title="Information Society Technologies">IST</abbr> プログラムの援助を受けた｡</p>
+</div>
+  </footer>
+  
+
+
+
+
+
+<footer class="site-footer grid-4q" aria-label="Site">
+  <div class="q1-start q3-end about">
+    <div>
+      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
+      <p>戦略、標準化、リソースの各サポートは、障害を持つ人々がウェブにアクセスできるようになる</p>
+    </div>
+    <div class="social" lang="en" dir="auto" translate="no">
+      <ul>
+        <li><a href="https://w3c.social/@wai"><svg focusable="false" aria-hidden="true" class="icon-mastodon "><use xlink:href="/WAI/assets/images/icons.svg#icon-mastodon"></use></svg> Mastodon</a></li>
+        <li><a href="https://www.linkedin.com/company/w3c-wai/"><svg focusable="false" aria-hidden="true" class="icon-linkedin "><use xlink:href="/WAI/assets/images/icons.svg#icon-linkedin"></use></svg> LinkedIn</a></li>
+        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
+        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
+        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+      </ul>
+    </div>
+    <div lang="en" dir="auto"  translate="no">
+      <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
+    </div>
+  </div>
+  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
+    <ul style="margin-bottom:0">
+      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+      <li><a href="/WAI/sitemap/">Site Map</a></li>
+      <li><a href="/WAI/news/">News</a></li>
+      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
+      <li><a href="/WAI/translations/"> Translations</a></li>
+      <li><a href="/WAI/roles/">Resources for Roles</a></li>
+    </ul>
+  </div>
+</footer><!-- Details4Everybody -->
+<script src="/WAI/assets/scripts/details4everybody.js?1725936703303430688"></script>
+<!-- SVG4Everybody -->
+<script src="/WAI/assets/scripts/svg4everybody.js?1725936703303430688"></script>
+<script>
+  svg4everybody();
+</script>
+<script src="/WAI/assets/scripts/lang/ja.js?1725936703303430688"></script>
+
+  </body>
+</html>

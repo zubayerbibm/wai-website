@@ -1,0 +1,772 @@
+{
+    "version": "https://jsonfeed.org/version/1",
+    "title": "Web Accessibility Initiative (WAI)",
+    "home_page_url": "https://www.w3.org/WAI/",
+    "feed_url": "https://www.w3.org/WAI/feed.json",
+    "description": "Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).\n",
+    "icon": "https://www.w3.org/WAI/apple-touch-icon.png",
+    "favicon": "https://www.w3.org/WAI/favicon.ico",
+    "expired": false,
+    
+    "author": "W3C Web Accessibility Initiative (WAI)",
+    
+"items": [
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2024-07-10/ctaur/",
+            "title": "For Wide Review: Collaboration Tools Accessibility User Requirements",
+            "summary": null,
+            "content_text": "Collaboration Tools Accessibility User Requirements is ready for review. The document covers accessibility user needs, requirements, and scenarios for collaborative content creation and development tools. The solutions identified in this document are intended to influence the evolution of future accessibility guidelines, technical specifications, or features of collaboration tools and assistive technologies. They are also relevant to software developers who contribute to developing the collaborative experience. Questions for this review are in e-mail for CTAUR review. Please send any comments by 30 September 2024.",
+            "content_html": "<p><a href=\"https://www.w3.org/TR/ctaur/\">Collaboration Tools Accessibility User Requirements</a> is ready for review. The document covers accessibility user needs, requirements, and scenarios for collaborative content creation and development tools. The solutions identified in this document are intended to influence the evolution of future accessibility guidelines, technical specifications, or features of collaboration tools and assistive technologies. They are also relevant to software developers who contribute to developing the collaborative experience. Questions for this review are in <a href=\"https://lists.w3.org/Archives/Public/public-wai-announce/2024JulSep/0001.html\">e-mail for CTAUR review</a>. Please send any comments by 30 September 2024.</p>",
+            "url": "https://www.w3.org/WAI/news/2024-07-10/ctaur/",
+            
+            
+            
+            
+            
+            "date_published": "2024-07-10T00:00:00+00:00",
+            "date_modified": "2024-07-10T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2024-07-02/wcag2ict/",
+            "title": "For Wide Review: Guidance on Applying WCAG 2 to Non-Web ICT (WCAG2ICT)",
+            "summary": null,
+            "content_text": "WCAG2ICT is Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies (WCAG2ICT), including documents and software. The Draft is ready for final review before we publish it as a completed W3C Group Note. For an introduction, see the WCAG2ICT Overview. Please submit any comments by 6 August 2024.",
+            "content_html": "<p>WCAG2ICT is <a href=\"https://www.w3.org/TR/wcag2ict-22/\">Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies (WCAG2ICT)</a>, including documents and software. The Draft is ready for final review before we publish it as a completed W3C Group Note. For an introduction, see the <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/non-web-ict/\">WCAG2ICT Overview</a>. Please submit any comments by 6 August 2024.</p>",
+            "url": "https://www.w3.org/WAI/news/2024-07-02/wcag2ict/",
+            
+            
+            
+            
+            
+            "date_published": "2024-07-02T00:00:00+00:00",
+            "date_modified": "2024-07-02T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2024-06-24/people-use-web/",
+            "title": "Updated Resource: How People with Disabilities Use the Web",
+            "summary": null,
+            "content_text": "How People with Disabilities Use the Web is updated with new user stories (personas) and new videos highlighting “Accessibility: It’s about people”. It describes tools and approaches that disabled people use to interact with technology and it covers barriers that people experience because of inaccessible digital technology. The resource helps developers, designers, content creators, and others understand the reasons behind creating accessible digital products. To quote the new videos: Whatever your role, “You can help make technology accessible to me.”",
+            "content_html": "<p><a href=\"https://www.w3.org/WAI/people-use-web/\">How People with Disabilities Use the Web</a> is updated with new user stories (personas) and new videos highlighting “Accessibility: It’s about people”. It describes tools and approaches that disabled people use to interact with technology and it covers barriers that people experience because of inaccessible digital technology. The resource helps developers, designers, content creators, and others understand the reasons behind creating accessible digital products. To quote the new videos: Whatever your role, “You can help make technology accessible to me.”</p>",
+            "url": "https://www.w3.org/WAI/news/2024-06-24/people-use-web/",
+            
+            
+            
+            
+            
+            "date_published": "2024-06-24T00:00:00+00:00",
+            "date_modified": "2024-06-24T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2024-06-18/act-rules-format/",
+            "title": "For Review: ACT Rules Format 1.1 - First Public Working Draft",
+            "summary": null,
+            "content_text": "Accessibility Conformance Testing (ACT) Rules Format 1.1 Working Draft is available for review. The ACT Rules Format defines a format for writing accessibility test rules. It helps developers of automated testing tools and manual testing methodologies to write, share, and implement test rules. The test rules contribute to consistent testing for accessibility standards compliance. Changes from ACT Rules Format 1.0 include: new secondary accessibility requirements and allowing subjective applicability statements. For an introduction to ACT resources, see the ACT Overview. Please submit any comments by 18 August 2024.",
+            "content_html": "<p><a href=\"https://www.w3.org/TR/act-rules-format-1.1/\">Accessibility Conformance Testing (ACT) Rules Format 1.1</a> Working Draft is available for review. The ACT Rules Format defines a format for writing accessibility test rules. It helps developers of automated testing tools and manual testing methodologies to write, share, and implement test rules. The test rules contribute to consistent testing for accessibility standards compliance. Changes from ACT Rules Format 1.0 include: new secondary accessibility requirements and allowing subjective applicability statements. For an introduction to ACT resources, see the <a href=\"https://www.w3.org/WAI/standards-guidelines/act/\">ACT Overview</a>. Please submit any comments by 18 August 2024.</p>",
+            "url": "https://www.w3.org/WAI/news/2024-06-18/act-rules-format/",
+            
+            
+            
+            
+            
+            "date_published": "2024-06-18T00:00:00+00:00",
+            "date_modified": "2024-06-18T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2024-06-13/wcag-22-dutch/",
+            "title": "WCAG 2.2 in Dutch: Authorized Translation Published",
+            "summary": null,
+            "content_text": "Richtlijnen voor Toegankelijkheid van Webcontent (WCAG) 2.2, the Dutch Authorized Translation of Web Content Accessibility Guidelines (WCAG) 2.2, is now available, following completion of the W3C Authorized Translations process. Other translations of WAI resources are listed in All WAI Translations. WAI encourages translations in all languages. If you might be interesting in translating resources, see Translating WAI Resources. Thank you to all who contribute to translations.",
+            "content_html": "<p><a href=\"https://www.w3.org/Translations/WCAG22-nl/\">Richtlijnen voor Toegankelijkheid van Webcontent (WCAG) 2.2</a>, the Dutch Authorized Translation of <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">Web Content Accessibility Guidelines (WCAG) 2.2</a>, is now available, following completion of the <a href=\"https://www.w3.org/2005/02/TranslationPolicy\">W3C Authorized Translations process</a>. Other translations of WAI resources are listed in <a href=\"https://www.w3.org/WAI/translations/\">All WAI Translations</a>. WAI encourages translations in all languages. If you might be interesting in translating resources, see <a href=\"https://www.w3.org/WAI/about/translating/\">Translating WAI Resources</a>. Thank you to all who contribute to translations.</p>",
+            "url": "https://www.w3.org/WAI/news/2024-06-13/wcag-22-dutch/",
+            
+            
+            
+            
+            
+            "date_published": "2024-06-13T00:00:00+00:00",
+            "date_modified": "2024-06-13T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2024-05-22/wcag-22-catalan/",
+            "title": "WCAG 2.2 in Catalan: Authorized Translation Published",
+            "summary": null,
+            "content_text": "Directrius per a l’accessibilitat del contingut web (WCAG) 2.2, the Catalan Authorized Translation of Web Content Accessibility Guidelines (WCAG) 2.2, is now available, following completion of the W3C Authorized Translations process. Other translations of WAI resources are listed in All WAI Translations. WAI encourages translations in all languages. If you might be interesting in translating resources, see Translating WAI Resources. Thank you to all who contribute to translations.",
+            "content_html": "<p><a href=\"https://www.w3.org/Translations/WCAG22-ca/\">Directrius per a l’accessibilitat del contingut web (WCAG) 2.2</a>, the Catalan Authorized Translation of <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">Web Content Accessibility Guidelines (WCAG) 2.2</a>, is now available, following completion of the <a href=\"https://www.w3.org/2005/02/TranslationPolicy\">W3C Authorized Translations process</a>. Other translations of WAI resources are listed in <a href=\"https://www.w3.org/WAI/translations/\">All WAI Translations</a>. WAI encourages translations in all languages. If you might be interesting in translating resources, see <a href=\"https://www.w3.org/WAI/about/translating/\">Translating WAI Resources</a>. Thank you to all who contribute to translations.</p>",
+            "url": "https://www.w3.org/WAI/news/2024-05-22/wcag-22-catalan/",
+            
+            
+            
+            
+            
+            "date_published": "2024-05-22T00:00:00+00:00",
+            "date_modified": "2024-05-22T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2024-05-16/wcag3/",
+            "title": "For Review: WCAG 3 Working Draft Outcomes",
+            "summary": null,
+            "content_text": "An updated WCAG 3 Working Draft is ready for review. This draft includes potential outcomes that we are exploring. The purpose of this draft is to:  better understand the scope of user needs and how they could be addressed in an accessibility standard,  request assistance in identifying gaps, and  request assistance locating and conducting research to validate or invalidate the drafted outcomes.To learn more about this draft and review questions, please see the WCAG 3 Introduction.",
+            "content_html": "<p>An updated <a href=\"https://www.w3.org/TR/wcag-3.0/\">WCAG 3 Working Draft</a> is ready for review. This draft includes potential outcomes that we are exploring. The purpose of this draft is to:</p><ul>  <li>better understand the scope of user needs and how they could be addressed in an accessibility standard,</li>  <li>request assistance in identifying gaps, and</li>  <li>request assistance locating and conducting research to validate or invalidate the drafted outcomes.</li></ul><p>To learn more about this draft and review questions, please see the <a href=\"https://www.w3.org/WAI/wcag3\">WCAG 3 Introduction</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2024-05-16/wcag3/",
+            
+            
+            
+            
+            
+            "date_published": "2024-05-16T00:00:00+00:00",
+            "date_modified": "2024-05-16T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2024-03-19/job-openings/",
+            "title": "Job Openings: Content Specialist, Technical Specialist",
+            "summary": null,
+            "content_text": "W3C is seeking candidates from diverse backgrounds for two open positions in accessibility: 1. Accessibility Content Specialist for full-time remote work on accessibility materials. 2. Web Technical Specialist for full-time remote work in the USA on a project developing the technical infrastructure to support digital accessibility materials development and delivery. We welcome applications by 2 April 2024.",
+            "content_html": "<p>W3C is seeking candidates from diverse backgrounds for two open positions in accessibility: 1. <a href=\"https://www.w3.org/careers/2024-accessibility-content-specialist-job-posting/\">Accessibility Content Specialist</a> for full-time remote work on accessibility materials. 2. <a href=\"https://www.w3.org/careers/2024-web-technical-specialist/\">Web Technical Specialist</a> for full-time remote work in the USA on a project developing the technical infrastructure to support digital accessibility materials development and delivery. We welcome applications by 2 April 2024.</p>",
+            "url": "https://www.w3.org/WAI/news/2024-03-19/job-openings/",
+            
+            
+            
+            
+            
+            "date_published": "2024-03-19T00:00:00+00:00",
+            "date_modified": "2024-03-19T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2024-02-27/dpub/",
+            "title": "Call for Implementations: Digital Publishing Accessibility Candidate Recommendations",
+            "summary": null,
+            "content_text": "Digital Publishing WAI-ARIA Module 1.1 (DPUB-ARIA) and Digital Publishing Accessibility API Mappings 1.1 (DPUB-AAM) are now Candidate Recommendation Snapshots. That means we’re seeking example implementations. These specifications help assistive technology users navigate through structural divisions in documents, for example, in ebooks. To learn more, see the e-mail announcement. Please submit implementations and any comments by 27 April 2024.",
+            "content_html": "<p><a href=\"https://www.w3.org/TR/dpub-aria/\">Digital Publishing WAI-ARIA Module 1.1 (DPUB-ARIA)</a> and <a href=\"https://www.w3.org/TR/dpub-aam/\">Digital Publishing Accessibility API Mappings 1.1 (DPUB-AAM)</a> are now Candidate Recommendation Snapshots. That means we’re seeking example implementations. These specifications help assistive technology users navigate through structural divisions in documents, for example, in ebooks. To learn more, see the <a href=\"https://lists.w3.org/Archives/Public/public-wai-announce/2024JanMar/0001.html\">e-mail announcement</a>. Please submit implementations and any comments by 27 April 2024.</p>",
+            "url": "https://www.w3.org/WAI/news/2024-02-27/dpub/",
+            
+            
+            
+            
+            
+            "date_published": "2024-02-27T00:00:00+00:00",
+            "date_modified": "2024-02-27T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2024-01-23/for-review-wai-aria-1-3-FPWD/",
+            "title": "For Review: WAI-ARIA 1.3 First Public Working Draft",
+            "summary": null,
+            "content_text": "Accessible Rich Internet Applications (WAI-ARIA) 1.3 Working Draft is available for review. WAI-ARIA provides an ontology of roles, states, and properties that define accessible user interface elements. These semantics allow authors to convey user interface behaviors and structural information to assistive technologies. Changes from ARIA 1.2 include: new roles (suggestion, comment, mark), new attributes (aria-description, aria-braillelabel, aria-brailleroledescription) and updates to aria-details to allow multiple IDREFS. Additional changes are in the changelog. Please submit any comments by 21 February 2024. For an introduction to WAI-ARIA and related resources, see the WAI-ARIA Overview.",
+            "content_html": "<p><a href=\"https://www.w3.org/TR/wai-aria-1.3/\">Accessible Rich Internet Applications (WAI-ARIA) 1.3</a> Working Draft is available for review. WAI-ARIA provides an ontology of roles, states, and properties that define accessible user interface elements. These semantics allow authors to convey user interface behaviors and structural information to assistive technologies. Changes from ARIA 1.2 include: new roles (suggestion, comment, mark), new attributes (aria-description, aria-braillelabel, aria-brailleroledescription) and updates to aria-details to allow multiple IDREFS. Additional changes are in the <a href=\"https://www.w3.org/TR/wai-aria-1.3/#changelog\">changelog</a>. Please submit any comments by 21 February 2024. For an introduction to WAI-ARIA and related resources, see the <a href=\"https://www.w3.org/WAI/standards-guidelines/aria/\">WAI-ARIA Overview</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2024-01-23/for-review-wai-aria-1-3-FPWD/",
+            
+            
+            
+            
+            
+            "date_published": "2024-01-23T00:00:00+00:00",
+            "date_modified": "2024-01-23T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2023-12-05/Italian-WCAG22/",
+            "title": "WCAG 2.2 in Italian: Authorized Translation Published",
+            "summary": null,
+            "content_text": "Linee guida per l'accessibilità dei contenuti Web (WCAG) 2.2, the Italian Authorized Translation of Web Content Accessibility Guidelines (WCAG) 2.2, is now available, following completion of the W3C Authorized Translations process. Other translations of WAI resources are listed in All WAI Translations. WAI encourages translations in all languages. If you might be interesting in translating resources, please see Translating WAI Resources. Thank you to all who contribute to translations.",
+            "content_html": "<p><a href=\"https://www.w3.org/Translations/WCAG22-it/\">Linee guida per l'accessibilità dei contenuti Web (WCAG) 2.2</a>, the Italian Authorized Translation of <a href=\"http://www.w3.org/WAI/intro/wcag\">Web Content Accessibility Guidelines (WCAG) 2.2</a>, is now available, following completion of the <a href=\"http://www.w3.org/2005/02/TranslationPolicy\">W3C Authorized Translations process</a>. Other translations of WAI resources are listed in <a href=\"https://www.w3.org/WAI/translations/\">All WAI Translations</a>. WAI encourages translations in all languages. If you might be interesting in translating resources, please see <a href=\"https://www.w3.org/WAI/about/translating/\">Translating WAI Resources</a>. Thank you to all who contribute to translations.</p>",
+            "url": "https://www.w3.org/WAI/news/2023-12-05/Italian-WCAG22/",
+            
+            
+            
+            
+            
+            "date_published": "2023-12-05T00:00:00+00:00",
+            "date_modified": "2023-12-05T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2023-10-31/symposium-3/",
+            "title": "Invitation: Evaluating Accessibility Symposium, Online, 16 November 2023",
+            "summary": null,
+            "content_text": "You are invited to the symposium Evaluating Accessibility: Meeting Key Challenges, online 16 November 2023. Participation is free and registration is required by 13 November 2023. We encourage participation from researchers, academics, industry, government, and people with disabilities. Join us to explore practices and challenges monitoring and evaluating digital accessibility. The symposium will focus on: digital accessibility training, mobile accessibility, and artificial intelligence (AI). The link to register, the agenda, and more is in the symposium page.",
+            "content_html": "<p>You are invited to the symposium <a href=\"https://www.w3.org/WAI/about/projects/wai-coop/symposium3/\">Evaluating Accessibility: Meeting Key Challenges, online 16 November 2023</a>. Participation is free and registration is required by 13 November 2023. We encourage participation from researchers, academics, industry, government, and people with disabilities. Join us to explore practices and challenges monitoring and evaluating digital accessibility. The symposium will focus on: digital accessibility training, mobile accessibility, and artificial intelligence (AI). The link to register, the agenda, and more is in the <a href=\"https://www.w3.org/WAI/about/projects/wai-coop/symposium3/\">symposium page</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2023-10-31/symposium-3/",
+            
+            
+            
+            
+            
+            "date_published": "2023-10-31T00:00:00+00:00",
+            "date_modified": "2023-10-31T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2023-10-30/wai-coop-meeting/",
+            "title": "Invitation: WAI-CooP Meeting, Online, 14 November 2023",
+            "summary": null,
+            "content_text": "You are invited to the WAI-CooP Open Meeting, online 14 November 2023. Participation is free and registration is required by 13 November 2023. We encourage participation from people interested in: digital accessibility implementation in Europe and internationally; guidance on available web accessibility training, tools, and resources; and exchanges on the European Union (EU) Web Accessibility Directive (WAD). The link to register, the agenda, and more is in the  meeting page.",
+            "content_html": "<p>You are invited to the <a href=\"https://www.edf-feph.org/events-slug/wai-coop-open-meeting-14-november-2023\">WAI-CooP Open Meeting, online 14 November 2023</a>. Participation is free and registration is required by 13 November 2023. We encourage participation from people interested in: digital accessibility implementation in Europe and internationally; guidance on available web accessibility training, tools, and resources; and exchanges on the European Union (EU) Web Accessibility Directive (WAD). The link to register, the agenda, and more is in the  <a href=\"https://www.edf-feph.org/events-slug/wai-coop-open-meeting-14-november-2023\">meeting page</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2023-10-30/wai-coop-meeting/",
+            
+            
+            
+            
+            
+            "date_published": "2023-10-30T00:00:00+00:00",
+            "date_modified": "2023-10-30T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2023-10-05/wcag22rec/",
+            "title": "WCAG 2.2 is a Web Standard \"W3C Recommendation\"",
+            "summary": null,
+            "content_text": "Web Content Accessibility Guidelines (WCAG) 2.2 is now a “W3C Recommendation” web standard. For an introduction to WCAG, see the WCAG 2 Overview. WCAG 2.2 adds 9 requirements (called success criteria) since WCAG 2.1. To learn more about WCAG 2.2, see What’s New in WCAG 2.2.",
+            "content_html": "<p><a href=\"https://www.w3.org/TR/WCAG22/\">Web Content Accessibility Guidelines (WCAG) 2.2</a> is now a “W3C Recommendation” web standard. For an introduction to WCAG, see the <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG 2 Overview</a>. WCAG 2.2 adds 9 requirements (called success criteria) since WCAG 2.1. To learn more about WCAG 2.2, see <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/\">What’s New in WCAG 2.2</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2023-10-05/wcag22rec/",
+            
+            
+            
+            
+            
+            "date_published": "2023-10-05T00:00:00+00:00",
+            "date_modified": "2023-10-05T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2023-09-21/wcag21updated/",
+            "title": "Web Content Accessibility Guidelines (WCAG) 2.1 is Updated",
+            "summary": null,
+            "content_text": "Web Content Accessibility Guidelines (WCAG) 2.1 is updated to include errata and informative notes to success criteria 4.1.1 Parsing. To learn more about WCAG and these updates, see WCAG 2 Overview and WCAG 2 FAQ.",
+            "content_html": "<p><a href=\"https://www.w3.org/TR/WCAG21/\">Web Content Accessibility Guidelines (WCAG) 2.1</a> is updated to include <a href=\"https://www.w3.org/TR/WCAG21/#changelog\">errata</a> and informative notes to success criteria <a href=\"https://www.w3.org/TR/WCAG21/#parsing\">4.1.1 Parsing</a>. To learn more about WCAG and these updates, see <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG 2 Overview</a> and <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/faq/#Sept2023\">WCAG 2 FAQ</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2023-09-21/wcag21updated/",
+            
+            
+            
+            
+            
+            "date_published": "2023-09-21T00:00:00+00:00",
+            "date_modified": "2023-09-21T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2023-09-08/job-opening/",
+            "title": "Job Opening: Accessibility Specialist",
+            "summary": null,
+            "content_text": "W3C is seeking an Accessibility Specialist to work on digital accessibility standards and supporting materials. This is a unique opportunity to contribute to the vision of an accessible digital future. Please see details in Accessibility Specialist job posting.",
+            "content_html": "<p>W3C is seeking an Accessibility Specialist to work on digital accessibility standards and supporting materials. This is a unique opportunity to contribute to the vision of an accessible digital future. Please see details in <a href=\"https://w3.org/careers/2023-accessibility-specialist/\">Accessibility Specialist job posting</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2023-09-08/job-opening/",
+            
+            
+            
+            
+            
+            "date_published": "2023-09-08T00:00:00+00:00",
+            "date_modified": "2023-09-08T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2023-08-30/ai-symposium/",
+            "title": "AI and Accessibility Research Symposium Report",
+            "summary": null,
+            "content_text": "The Artificial Intelligence (AI) and Accessibility Research Symposium 2023 Report provides summaries, transcripts, and videos of the international symposium exploring the positive and negative impacts of artificial intelligence (AI) in digital accessibility.",
+            "content_html": "<p>The <a href=\"https://www.w3.org/WAI/research/ai2023/\">Artificial Intelligence (AI) and Accessibility Research Symposium 2023 Report</a> provides summaries, transcripts, and videos of the international symposium exploring the positive and negative impacts of artificial intelligence (AI) in digital accessibility.</p>",
+            "url": "https://www.w3.org/WAI/news/2023-08-30/ai-symposium/",
+            
+            
+            
+            
+            
+            "date_published": "2023-08-30T00:00:00+00:00",
+            "date_modified": "2023-08-30T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2023-08-30/WCAG22-Aug-update/",
+            "title": "WCAG 2.2 Update, August 2023",
+            "summary": null,
+            "content_text": "W3C expects to publish Web Content Accessibility Guidelines WCAG 2.2 as a “W3C Recommendation” web standard in 2023. We are addressing new comments that we received in August 2023. Depending how that goes, the final publication could be in September or later in 2023. For the latest up-to-date information, check What’s New in WCAG 2.2 - Status, Timeline, Changes.",
+            "content_html": "<p>W3C expects to publish Web Content Accessibility Guidelines <a href=\"https://www.w3.org/TR/WCAG22\">WCAG 2.2</a> as a “W3C Recommendation” web standard in 2023. We are addressing new comments that we received in August 2023. Depending how that goes, the final publication could be in September or later in 2023. For the latest up-to-date information, check <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/#status-timeline-changes\">What’s New in WCAG 2.2 - Status, Timeline, Changes</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2023-08-30/WCAG22-Aug-update/",
+            
+            
+            
+            
+            
+            "date_published": "2023-08-30T00:00:00+00:00",
+            "date_modified": "2023-08-30T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2023-08-15/wcag2ict/",
+            "title": "For Review: Guidance on Applying WCAG 2.2 to Non-Web ICT (WCAG2ICT)",
+            "summary": null,
+            "content_text": "Guidance on Applying WCAG 2.2 to Non-Web Information and Communications Technologies (WCAG2ICT) is available as a Draft Note. This document is a first draft update to the previous WCAG2ICT Note that provided guidance on applying WCAG 2.0 to non-web documents and software. This updated draft includes guidance for WCAG 2.1 success criteria and glossary terms. We will add guidance for WCAG 2.2 success criteria in upcoming drafts. For an introduction, see the WCAG2ICT Overview.",
+            "content_html": "<p><a href=\"https://www.w3.org/TR/wcag2ict-22/\">Guidance on Applying WCAG 2.2 to Non-Web Information and Communications Technologies (WCAG2ICT)</a> is available as a Draft Note. This document is a first draft update to the previous <a href=\"https://www.w3.org/TR/wcag2ict-20/\">WCAG2ICT Note that provided guidance on applying WCAG 2.0</a> to non-web documents and software. This updated draft includes guidance for WCAG 2.1 success criteria and glossary terms. We will add guidance for WCAG 2.2 success criteria in upcoming drafts. For an introduction, see the <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/non-web-ict/\">WCAG2ICT Overview</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2023-08-15/wcag2ict/",
+            
+            
+            
+            
+            
+            "date_published": "2023-08-15T00:00:00+00:00",
+            "date_modified": "2023-08-15T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2023-07-24/wcag3/",
+            "title": "WCAG 3 Working Draft Updated July 2023",
+            "summary": null,
+            "content_text": "The updated WCAG 3 Working Draft clarifies the maturity of each section, includes new potential approaches to conformance, and lists some guidelines to be developed. Please see more about this work in an e-mail from the Working Group Chairs. To learn more and get up-to-date information, see the WCAG 3 Introduction.",
+            "content_html": "<p>The updated <a href=\"https://www.w3.org/TR/wcag-3.0/\">WCAG 3 Working Draft</a> clarifies the maturity of each section, includes new potential approaches to conformance, and lists some guidelines to be developed. Please see more about this work in an <a href=\"https://lists.w3.org/Archives/Public/public-wai-announce/2023JulSep/0001.html\">e-mail from the Working Group Chairs</a>. To learn more and get up-to-date information, see the <a href=\"https://www.w3.org/WAI/wcag3\">WCAG 3 Introduction</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2023-07-24/wcag3/",
+            
+            
+            
+            
+            
+            "date_published": "2023-07-24T00:00:00+00:00",
+            "date_modified": "2023-07-24T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2023-07-20/wcag22PR/",
+            "title": "WCAG 2.2 final web standard expected in 2023",
+            "summary": null,
+            "content_text": "WCAG 2.2 is now a W3C ‘Proposed Recommendation’. Proposed Recommendation means that W3C accepted it and W3C Members vote on publishing the document as a ‘W3C Recommendation’ web standard. The voting ends on 19 August. WCAG 2.2 might be ready to publish soon after that, or additional W3C Member input could require more work. To learn more and get up-to-date information, see What’s New in WCAG 2.2.",
+            "content_html": "<p><a href=\"https://www.w3.org/TR/WCAG22\">WCAG 2.2</a> is now a W3C ‘Proposed Recommendation’. Proposed Recommendation means that W3C accepted it and W3C Members vote on publishing the document as a ‘W3C Recommendation’ web standard. The voting ends on 19 August. WCAG 2.2 might be ready to publish soon after that, or additional W3C Member input could require more work. To learn more and get up-to-date information, see <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/\">What’s New in WCAG 2.2</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2023-07-20/wcag22PR/",
+            
+            
+            
+            
+            
+            "date_published": "2023-07-20T00:00:00+00:00",
+            "date_modified": "2023-07-20T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2023-06-06/aria-12-rec/",
+            "title": "WAI-ARIA 1.2 is a Web Standard \"W3C Recommendation\"",
+            "summary": null,
+            "content_text": "WAI-ARIA 1.2 is now a “W3C Recommendation” web standard. WAI-ARIA provides an ontology of roles, states, and properties that define accessible user interface elements. These semantics allow authors to convey user interface behaviors and structural information to assistive technologies. A list of what’s changed since WAI-ARIA 1.1 is in the changelog. For an introduction to WAI-ARIA and related resources, see the WAI-ARIA Overview.",
+            "content_html": "<p><a href=\"https://www.w3.org/TR/wai-aria-1.2/\">WAI-ARIA 1.2</a> is now a “W3C Recommendation” web standard. WAI-ARIA provides an ontology of roles, states, and properties that define accessible user interface elements. These semantics allow authors to convey user interface behaviors and structural information to assistive technologies. A list of what’s changed since WAI-ARIA 1.1 is in the <a href=\"https://www.w3.org/TR/wai-aria-1.2/#changelog\">changelog</a>. For an introduction to WAI-ARIA and related resources, see the <a href=\"https://www.w3.org/WAI/standards-guidelines/aria/\">WAI-ARIA Overview</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2023-06-06/aria-12-rec/",
+            
+            
+            
+            
+            
+            "date_published": "2023-06-06T00:00:00+00:00",
+            "date_modified": "2023-06-06T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2023-05-25/EPUB/",
+            "title": "EPUB Standard for Accessible Digital Documents",
+            "summary": null,
+            "content_text": "EPUB 3.3 is now a “W3C Recommendation” web standard. EPUB defines a distribution and interchange format for digital publications and documents. Accessibility is an integral part of the EPUB standard. Today’s publications include: EPUB Accessibility 1.1. Learn more from the press release EPUB 3.3 becomes a W3C Recommendation.",
+            "content_html": "<p><a href=\"https://www.w3.org/TR/2023/REC-epub-33-20230525/\">EPUB 3.3</a> is now a “W3C Recommendation” web standard. EPUB defines a distribution and interchange format for digital publications and documents. Accessibility is an integral part of the EPUB standard. Today’s publications include: <a href=\"https://www.w3.org/TR/epub-a11y-11/\">EPUB Accessibility 1.1</a>. Learn more from the press release <a href=\"https://w3.org/2023/05/pressrelease-epub33-rec.html.en\">EPUB 3.3 becomes a W3C Recommendation</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2023-05-25/EPUB/",
+            
+            
+            
+            
+            
+            "date_published": "2023-05-25T00:00:00+00:00",
+            "date_modified": "2023-05-25T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2023-05-17/wcag-22-cr/",
+            "title": "Updated May 2023: WCAG 2.2 Candidate Recommendation Draft",
+            "summary": null,
+            "content_text": "WCAG 2.2 ‘Candidate Recommendation’ draft was updated 17 May 2023. For the latest list of changes, status, and expected publication date, please see What’s New in WCAG 2.2 Draft.",
+            "content_html": "<p><a href=\"https://www.w3.org/TR/WCAG22\">WCAG 2.2</a> ‘Candidate Recommendation’ draft was updated 17 May 2023. For the latest list of changes, status, and expected publication date, please see <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/\">What’s New in WCAG 2.2 Draft</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2023-05-17/wcag-22-cr/",
+            
+            
+            
+            
+            
+            "date_published": "2023-05-17T00:00:00+00:00",
+            "date_modified": "2023-05-17T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2023-05-17/GAAD/",
+            "title": "W3C WAI Updates for GAAD 2023",
+            "summary": null,
+            "content_text": "In preparation for Global Accessibility Awareness Day (GAAD), W3C WAI Updates for GAAD 2023 includes brief notes on:  WCAG 2.2 and WCAG 3  WAI resources  WAI leadershipWe welcome your sharing this information widely.",
+            "content_html": "<p>In preparation for Global Accessibility Awareness Day (GAAD), <a href=\"https://www.w3.org/blog/2023/w3c-wai-updates-for-gaad-2023/\">W3C WAI Updates for GAAD 2023</a> includes brief notes on:</p><ul>  <li>WCAG 2.2 and WCAG 3</li>  <li>WAI resources</li>  <li>WAI leadership</li></ul><p>We welcome your sharing this information widely.</p>",
+            "url": "https://www.w3.org/WAI/news/2023-05-17/GAAD/",
+            
+            
+            
+            
+            
+            "date_published": "2023-05-17T00:00:00+00:00",
+            "date_modified": "2023-05-17T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2023-02-20/Ukrainian-WCAG21/",
+            "title": "WCAG 2.1 in Ukrainian: Authorized Translation Published",
+            "summary": null,
+            "content_text": "Настанови з доступності вебвмісту (WCAG) 2.1, the Ukrainian Authorized Translation of Web Content Accessibility Guidelines (WCAG) 2.1, is now available, following completion of the W3C Authorized Translations process. Other translations of WAI resources are listed in All WAI Translations. WAI encourages translations in all languages. If you might be interesting in translating resources, see Translating WAI Resources.",
+            "content_html": "<p><a href=\"https://www.w3.org/Translations/WCAG21-ua/\">Настанови з доступності вебвмісту (WCAG) 2.1</a>, the Ukrainian Authorized Translation of <a href=\"http://www.w3.org/WAI/intro/wcag\">Web Content Accessibility Guidelines (WCAG) 2.1</a>, is now available, following completion of the <a href=\"http://www.w3.org/2005/02/TranslationPolicy\">W3C Authorized Translations process</a>. Other translations of WAI resources are listed in <a href=\"https://www.w3.org/WAI/translations/\">All WAI Translations</a>. WAI encourages translations in all languages. If you might be interesting in translating resources, see <a href=\"https://www.w3.org/WAI/about/translating/\">Translating WAI Resources</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2023-02-20/Ukrainian-WCAG21/",
+            
+            
+            
+            
+            
+            "date_published": "2023-02-20T00:00:00+00:00",
+            "date_modified": "2023-02-20T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2023-02-13/WCAG-21-Catalan/",
+            "title": "WCAG 2.1 in Catalan: Authorized Translation Published",
+            "summary": null,
+            "content_text": "Directrius per a l'accessibilitat del contingut web (WCAG) 2.1, the Catalan Authorized Translation of Web Content Accessibility Guidelines (WCAG) 2.1, is now available, following completion of the W3C Authorized Translations process. Other translations of WAI resources are listed in All WAI Translations. WAI encourages translations in all languages. If you might be interesting in translating resources, see Translating WAI Resources.",
+            "content_html": "<p><a href=\"https://www.w3.org/Translations/WCAG21-ca/\">Directrius per a l'accessibilitat del contingut web (WCAG) 2.1</a>, the Catalan Authorized Translation of <a href=\"http://www.w3.org/WAI/intro/wcag\">Web Content Accessibility Guidelines (WCAG) 2.1</a>, is now available, following completion of the <a href=\"http://www.w3.org/2005/02/TranslationPolicy\">W3C Authorized Translations process</a>. Other translations of WAI resources are listed in <a href=\"https://www.w3.org/WAI/translations/\">All WAI Translations</a>. WAI encourages translations in all languages. If you might be interesting in translating resources, see <a href=\"https://www.w3.org/WAI/about/translating/\">Translating WAI Resources</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2023-02-13/WCAG-21-Catalan/",
+            
+            
+            
+            
+            
+            "date_published": "2023-02-13T00:00:00+00:00",
+            "date_modified": "2023-02-13T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2023-01-25/wcag-22-cr2/",
+            "title": "Updated: WCAG 2.2 Candidate Recommendation Draft",
+            "summary": null,
+            "content_text": "WCAG 2.2 ‘Candidate Recommendation’ draft is updated. A list of changes, status, and expected publication date is kept up-to-date in What’s New in WCAG 2.2 Draft. Please submit any comments by 17 February 2023.",
+            "content_html": "<p><a href=\"https://www.w3.org/TR/WCAG22\">WCAG 2.2</a> ‘Candidate Recommendation’ draft is updated. A list of changes, status, and expected publication date is kept up-to-date in <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/\">What’s New in WCAG 2.2 Draft</a>. Please submit any comments by <strong>17 February 2023</strong>.</p>",
+            "url": "https://www.w3.org/WAI/news/2023-01-25/wcag-22-cr2/",
+            
+            
+            
+            
+            
+            "date_published": "2023-01-25T00:00:00+00:00",
+            "date_modified": "2023-01-25T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2023-01-05/wai-adapt-symbols/",
+            "title": "Call for Implementations: WAI-Adapt: Symbols Module Candidate Recommendation",
+            "summary": null,
+            "content_text": "WAI-Adapt: Symbols Module is a technical specification that enables symbols to replace text in web content. It's now a W3C 'Candidate Recommendation'. That means we're seeking example implementations. To learn more, start with the e-mail announcement and the WAI-Adapt Overview.",
+            "content_html": "<p>WAI-Adapt: Symbols Module is a technical specification that enables symbols to replace text in web content. It's now a W3C 'Candidate Recommendation'. That means we're seeking example implementations. To learn more, start with the <a href=\"https://lists.w3.org/Archives/Public/public-wai-announce/2023JanMar/0000.html\">e-mail announcement</a> and the <a href=\"https://w3.org/WAI/adapt/\">WAI-Adapt Overview</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2023-01-05/wai-adapt-symbols/",
+            
+            
+            
+            
+            
+            "date_published": "2023-01-05T00:00:00+00:00",
+            "date_modified": "2023-01-05T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2022-12-15/symposium/",
+            "title": "Invitation: AI and Accessibility Symposium, 10-11 January 2023, online",
+            "summary": null,
+            "content_text": "You are invited to the Artificial Intelligence and Accessibility Research Symposium 10&ndash;11 January 2023. This online symposium brings together researchers, academics, industry, government, and people with disabilities to explore an aspect of emerging technology for accessibility: artificial intelligence (AI). Program, schedule, and registration information is in the meeting page. The symposium is free, and registration is required by 5 January 2023.",
+            "content_html": "<p>You are invited to the <a href=\"https://www.w3.org/WAI/about/projects/wai-coop/symposium2/\">Artificial Intelligence and Accessibility Research Symposium 10&ndash;11 January 2023</a>. This online symposium brings together researchers, academics, industry, government, and people with disabilities to explore an aspect of emerging technology for accessibility: artificial intelligence (AI). Program, schedule, and registration information is in the <a href=\"https://www.w3.org/WAI/about/projects/wai-coop/symposium2/\">meeting page</a>. The symposium is free, and registration is required by 5 January 2023.</p>",
+            "url": "https://www.w3.org/WAI/news/2022-12-15/symposium/",
+            
+            
+            
+            
+            
+            "date_published": "2022-12-15T00:00:00+00:00",
+            "date_modified": "2022-12-15T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2022-12-12/atag-resources/",
+            "title": "New Resources: For CMS, LMS, no-code website builders, and other authoring tools",
+            "summary": null,
+            "content_text": "New resources encourage content management systems (CMS), learning management systems (LMS), social media platforms, and no-code website tools to be more accessible. For vendors: We invite you to submit information about accessibility support in your tool for the Authoring Tools List. For everyone:  To introduce accessibility issues and how the web standard Authoring Tool Accessibility Guidelines (ATAG) applies to specific types of tools, you can share with developers, project managers, and others: Standards to Make Your LMS Accessible, Guidelines to Make Your Social Media Platform Accessible, Guidelines to Make Your No-Code Website Tool Accessible.",
+            "content_html": "<p>New resources encourage content management systems (CMS), learning management systems (LMS), social media platforms, and no-code website tools to be more accessible. <em>For vendors: </em>We invite you to submit information about accessibility support in your tool for the <a href=\"https://www.w3.org/WAI/tools-list/authoring/\">Authoring Tools List</a>. <em>For everyone: </em> To introduce accessibility issues and how the web standard Authoring Tool Accessibility Guidelines (<a href=\"https://www.w3.org/WAI/standards-guidelines/atag/\">ATAG</a>) applies to specific types of tools, you can share with developers, project managers, and others: <a href=\"https://www.w3.org/WAI/standards-guidelines/atag/education/\">Standards to Make Your <strong>LMS</strong> Accessible</a>, <a href=\"https://www.w3.org/WAI/standards-guidelines/atag/social-media/\">Guidelines to Make Your <strong>Social Media</strong> Platform Accessible</a>, <a href=\"https://www.w3.org/WAI/standards-guidelines/atag/no-code/\">Guidelines to Make Your No-Code <strong>Website Tool</strong> Accessible</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2022-12-12/atag-resources/",
+            
+            
+            
+            
+            
+            "date_published": "2022-12-12T00:00:00+00:00",
+            "date_modified": "2022-12-12T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2022-12-06/act-rules/",
+            "title": "ACT Rules for Accessibility Evaluation Tools And Methodologies",
+            "summary": null,
+            "content_text": "Accessibility Conformance Testing (ACT) Rules help evaluation tools and methodologies produced accurate, consistent results. ACT Rules help test accessibility standards more reliably. Learn more About ACT Rules. We encourage evaluation tools and methodologies to implement the individual ACT Rules and to share your implementation report on the W3C WAI website. Learn about submitting an implementation.",
+            "content_html": "<p>Accessibility Conformance Testing (ACT) Rules help evaluation tools and methodologies produced accurate, consistent results. ACT Rules help test accessibility standards more reliably. Learn more <a href=\"https://www.w3.org/WAI/standards-guidelines/act/rules/about/\">About ACT Rules</a>. We encourage evaluation tools and methodologies to implement the individual ACT Rules and to share your implementation report on the W3C WAI website. Learn about <a href=\"https://www.w3.org/WAI/standards-guidelines/act/report/submit/\">submitting an implementation</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2022-12-06/act-rules/",
+            
+            
+            
+            
+            
+            "date_published": "2022-12-06T00:00:00+00:00",
+            "date_modified": "2022-12-06T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2022-11-08/ctaur/",
+            "title": "For Review: Collaboration Tools Accessibility User Requirements - First Draft",
+            "summary": null,
+            "content_text": "Collaboration Tools Accessibility User Requirements is available as a First Public Draft Note. It addresses features and capabilities unique to interactive, collaborative content creation and editing applications. We particularly invite input on additional user needs and issues that are not yet addressed in this early draft, including the needs of users with cognitive and learning disabilities. Please send comments by 30 December 2022.",
+            "content_html": "<p><a href=\"https://www.w3.org/TR/ctaur/\">Collaboration Tools Accessibility User Requirements</a> is available as a First Public Draft Note. It addresses features and capabilities unique to interactive, collaborative content creation and editing applications. We particularly invite input on additional user needs and issues that are not yet addressed in this early draft, including the needs of users with cognitive and learning disabilities. Please send comments by 30 December 2022.</p>",
+            "url": "https://www.w3.org/WAI/news/2022-11-08/ctaur/",
+            
+            
+            
+            
+            
+            "date_published": "2022-11-08T00:00:00+00:00",
+            "date_modified": "2022-11-08T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2022-09-29/curricula/",
+            "title": "Updated Resource: Content Author Modules in Curricula on Web Accessibility",
+            "summary": null,
+            "content_text": "Curricula on Web Accessibility now has new content author modules. This curricula provides a framework for creating courses on digital accessibility, for including accessibility in other courses, and for reviewing and comparing existing and proposed courses. The September 2022 publication adds new content author modules. These modules focus on teaching accessibility to writers, editors, content creators, and content publishers.",
+            "content_html": "<p><a href=\"https://www.w3.org/WAI/curricula/\">Curricula on Web Accessibility</a> now has new content author modules. This curricula provides a framework for creating courses on digital accessibility, for including accessibility in other courses, and for reviewing and comparing existing and proposed courses. The September 2022 publication adds new <a href=\"https://www.w3.org/WAI/curricula/content-author-modules/\">content author modules</a>. These modules focus on teaching accessibility to writers, editors, content creators, and content publishers.</p>",
+            "url": "https://www.w3.org/WAI/news/2022-09-29/curricula/",
+            
+            
+            
+            
+            
+            "date_published": "2022-09-29T00:00:00+00:00",
+            "date_modified": "2022-09-29T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2022-09-19/course-list/",
+            "title": "New Resource: Accessibility Course List",
+            "summary": null,
+            "content_text": "Course List - Digital Accessibility Education, Training, and Certification includes publicly-available courses around the world. We expect to add more courses in the coming weeks. We invite course providers to submit your courses. We may also revise the user interface based on additional user feedback. Please send any comments by 17 October 2022.",
+            "content_html": "<p><a href=\"https://www.w3.org/WAI/courses/list/\">Course List - Digital Accessibility Education, Training, and Certification</a> includes publicly-available courses around the world. We expect to add more courses in the coming weeks. We invite course providers to submit your courses. We may also revise the user interface based on additional user feedback. Please send any comments by 17 October 2022.</p>",
+            "url": "https://www.w3.org/WAI/news/2022-09-19/course-list/",
+            
+            
+            
+            
+            
+            "date_published": "2022-09-19T00:00:00+00:00",
+            "date_modified": "2022-09-19T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2022-09-06/wcag-22-cr/",
+            "title": "Call for Implementations: WCAG 2.2 Candidate Recommendation",
+            "summary": null,
+            "content_text": "WCAG 2.2 is now officially a ‘Candidate Recommendation’. We’re seeking examples of how the new ‘success criteria’ are implemented in websites and web apps. We plan to publish the finalized WCAG 2.2 in December 2022. Please see status and updates in What’s New in WCAG 2.2 Draft. Please submit implementations and any comments by 4 October 2022.",
+            "content_html": "<p><a href=\"https://www.w3.org/TR/WCAG22\">WCAG 2.2</a> is now officially a ‘Candidate Recommendation’. We’re seeking examples of how the new ‘success criteria’ are implemented in websites and web apps. We plan to publish the finalized WCAG 2.2 in December 2022. Please see status and updates in <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/\">What’s New in WCAG 2.2 Draft</a>. Please submit implementations and any comments by <strong>4 October 2022</strong>.</p>",
+            "url": "https://www.w3.org/WAI/news/2022-09-06/wcag-22-cr/",
+            
+            
+            
+            
+            
+            "date_published": "2022-09-06T00:00:00+00:00",
+            "date_modified": "2022-09-06T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        }
+    
+    ]
+}

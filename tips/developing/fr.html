@@ -1,0 +1,893 @@
+<!DOCTYPE html>
+<html class="no-js" lang="fr" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+
+    function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "/WAI/assets/scripts/main.js?1725936703303430688";
+      document.body.appendChild(element);
+    }
+
+    window.addEventListener("load", downloadJSAtOnload, false);
+  </script>
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1725936703303430688">
+
+<title> Développer pour l’accessibilité Web – Conseils pour démarrer | Web Accessibility Initiative (WAI) | W3C</title><link rel="stylesheet" href="/WAI/tips/css/tips.css?1725936703303430688"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Développer pour l’accessibilité Web – Conseils pour démarrer" />
+<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+<meta property="og:locale" content="fr" />
+<meta name="description" content="Résumé" />
+<meta property="og:description" content="Résumé" />
+<link rel="canonical" href="https://www.w3.org/WAI/tips/developing/fr" />
+<meta property="og:url" content="https://www.w3.org/WAI/tips/developing/fr" />
+<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-09-10T02:51:43+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="Développer pour l’accessibilité Web – Conseils pour démarrer" />
+<meta name="twitter:site" content="@w3c_wai" />
+<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"dateModified":"2024-09-10T02:51:43+00:00","datePublished":"2024-09-10T02:51:43+00:00","description":"Résumé","headline":"Développer pour l’accessibilité Web – Conseils pour démarrer","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.w3.org/WAI/tips/developing/fr"},"url":"https://www.w3.org/WAI/tips/developing/fr"}</script>
+<!-- End Jekyll SEO tag -->
+<meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
+
+  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
+</head>
+
+  <body id="top" class="page-développer-pour-l-accessibilité-web-conseils-pour-démarrer resource-tips">
+    <nav aria-label="Liens d’évitement et sélecteur de langue" id="controls" class="default-grid">
+  <ul>
+      <li><a href="#main">Aller directement au contenu</a></li>
+      <li class="opt"><a href="/WAI/meta/customize/">Changer la taille ou la couleur du texte</a></li>
+      <li class="opt languagelist">
+          <strong>Cette&nbsp;page&nbsp;en&#8239;:</strong>
+          <ul class="languagelistul"><li><a style="text-transform: capitalize;" href="/WAI/tips/developing/" lang="en"  dir="auto" translate="no">English</a></li><li><strong style="text-transform: capitalize;">français</strong></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/tips/developing/id" lang="id"  dir="auto" translate="no">Bahasa Indonesia</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/tips/developing/ja" lang="ja"  dir="auto" translate="no">日本語</a></li>
+          </ul>
+        </li>
+        <li class="opt">
+          <a href="/WAI/translations/">Toutes&nbsp;les&nbsp;traductions <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+        </li>
+        <li><button id="showoptions" data-showhidebuttonid="header-showoptions" class="showhidebutton button-inline" data-target="#controls .opt" aria-expanded="false" data-large-aria-expanded="true" data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Afficher la personnalisation, les langues et les traductions' data-hidetext='Cacher les options'><svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Afficher la personnalisation, les langues et les traductions</button></li>
+      </ul>
+    </nav>
+<header id="site-header" class="default-grid with-gap">
+  <div class="logos">
+    <a lang="en" class="home w3c" href="https://www.w3.org/">
+      <svg role="img" aria-label="W3C" viewBox="0 0 68 34" xmlns="http://www.w3.org/2000/svg"><g><path d="m16.117 1.006 5.759 19.58 5.759-19.58h4.17 11.444v1.946l-5.879 10.128c2.065.663 3.627 1.868 4.686 3.615 1.059 1.748 1.589 3.799 1.589 6.155 0 2.914-.775 5.363-2.324 7.348s-3.555 2.978-6.017 2.978c-1.854 0-3.469-.589-4.845-1.767-1.377-1.178-2.396-2.773-3.058-4.786l3.256-1.35c.477 1.218 1.106 2.178 1.887 2.879.781.702 1.701 1.052 2.76 1.052 1.112 0 2.052-.622 2.82-1.866.768-1.245 1.152-2.74 1.152-4.489 0-1.933-.411-3.429-1.231-4.488-.954-1.244-2.45-1.867-4.489-1.867h-1.588v-1.906l5.56-9.612h-6.712l-.382.65-8.163 27.548h-.397l-5.958-19.937-5.957 19.937h-.397l-9.53-32.168h4.17l5.759 19.58 3.892-13.185-1.906-6.395z"/><path d="m64.92 1.006c-.819 0-1.554.295-2.111.861-.591.6-.92 1.376-.92 2.178s.313 1.545.887 2.128c.583.591 1.334.912 2.145.912.793 0 1.562-.321 2.161-.903.574-.557.887-1.3.887-2.136 0-.811-.321-1.57-.878-2.136-.584-.592-1.344-.904-2.171-.904zm2.643 3.065c0 .701-.271 1.351-.768 1.832-.524.507-1.174.777-1.892.777-.675 0-1.342-.278-1.84-.785s-.777-1.157-.777-1.849.287-1.368.802-1.891c.481-.49 1.131-.751 1.84-.751.726 0 1.376.271 1.883.785.49.489.752 1.147.752 1.882zm-2.559-1.807h-1.3v3.445h.65v-1.469h.642l.701 1.469h.726l-.769-1.57c.498-.102.785-.439.785-.929 0-.625-.472-.946-1.435-.946zm-.118.422c.608 0 .886.169.886.591 0 .405-.278.549-.87.549h-.549v-1.14z"/><path d="m59.807.825.676 4.107-2.391 4.575s-.918-1.941-2.443-3.015c-1.285-.905-2.122-1.102-3.431-.832-1.681.347-3.587 2.357-4.419 4.835-.995 2.965-1.005 4.4-1.04 5.718-.056 2.113.277 3.362.277 3.362s-1.452-2.686-1.438-6.62c.009-2.808.451-5.354 1.75-7.867 1.143-2.209 2.842-3.535 4.35-3.691 1.559-.161 2.791.59 3.743 1.403 1 .854 2.01 2.721 2.01 2.721z"/><path d="m60.102 24.063s-1.057 1.889-1.715 2.617c-.659.728-1.837 2.01-3.292 2.651s-2.218.762-3.656.624c-1.437-.138-2.772-.97-3.24-1.317s-1.664-1.369-2.34-2.322-1.733-2.859-1.733-2.859.589 1.91.958 2.721c.212.467.864 1.894 1.789 3.136.863 1.159 2.539 3.154 5.086 3.604 2.547.451 4.297-.693 4.73-.97s1.346-1.042 1.924-1.66c.603-.645 1.174-1.468 1.49-1.962.231-.36.607-1.092.607-1.092z"/></g></svg>
+    </a>
+    <a lang="en" class="home" href="/WAI/">
+      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
+    </a>
+    <div class="claim">
+      <span>Stratégies, standards, ressources pour un Web accessible aux personnes en situation de handicap.</span>
+    </div>
+    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> Menu</span></button>
+  </div>
+
+  <div class="navigations">
+  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+    <ul>
+      <li><a href="/WAI/about/participating/">Get Involved</a></li>
+      <li><a href="/WAI/about/">About W3C WAI</a></li>
+      <li>
+        <form action="/WAI/search/" role="search">
+          <div>
+            <label for="header-search">
+              <span class="visuallyhidden">Recherche:</span>
+              <input id="header-search" type="search" name="q" placeholder="Recherche" aria-label="Recherche">
+            </label>
+            
+            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="Lancer la recherche" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
+          </div>
+        </form>
+      </li>
+    </ul>
+  </nav>
+</div>
+</header><nav class="mainnav" aria-label="Navigation principale" lang="fr"><ul><li><a lang="fr" href="/WAI/fundamentals/fr"><span>Fondamentaux de l&apos;accessibilité</span></a></li><li><a lang="fr" href="/WAI/planning/fr"><span>Organisation &amp; politiques</span></a></li><li><a lang="fr" href="/WAI/design-develop/fr"><span>Concevoir &amp; développer</span></a></li><li><a lang="fr" href="/WAI/test-evaluate/fr"><span>Tester et évaluer</span></a></li><li><a lang="fr" href="/WAI/teach-advocate/fr"><span>Former et promouvoir</span></a></li><li><a lang="fr" href="/WAI/standards-guidelines/fr"><span>Standards/<wbr>Règles</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="Chemin de fer" lang="en">
+  <ul style="align-self: center;">
+    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="fr" href="/WAI/design-develop/fr"><span>Concevoir &amp; développer</span></a></li><li><a lang="fr" href="/WAI/tips/developing/fr" aria-current="page"><span>Conseils pour le développement</span></a></li></ul>
+</nav>
+    <div class="default-grid with-gap leftcol">
+
+  
+      
+        <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
+      <ul class="sidenav--list">
+  <li>
+  <a lang="fr" href="/WAI/design-develop/fr" class="page-link"><span>Concevoir &amp; développer</span></a></li><li>
+  <a lang="fr" href="/WAI/tips/writing/fr" class="page-link"><span>Conseils pour l&apos;écriture</span></a></li><li>
+  <a lang="fr" href="/WAI/tips/designing/fr" class="page-link"><span>Conseils pour le design</span></a></li><li>
+  <a lang="fr" href="/WAI/tips/developing/fr" aria-current="page" class="page-link"><span>Conseils pour le développement</span></a></li><li>
+  <a lang="fr" href="/WAI/media/av/fr" class="page-link"><span>Médias audio et vidéo</span></a><ul><li>
+  <a lang="fr" href="/WAI/media/av/users-orgs/fr" class="page-link"><span>Besoins utilisateurs</span></a></li><li>
+  <a lang="fr" href="/WAI/media/av/planning/fr" class="page-link"><span>Planification</span></a></li><li>
+  <a lang="fr" href="/WAI/media/av/av-content/fr" class="page-link"><span>Contenu audio &amp; contenu vidéo</span></a></li><li>
+  <a lang="fr" href="/WAI/media/av/description/fr" class="page-link"><span>Description</span></a></li><li>
+  <a lang="fr" href="/WAI/media/av/captions/fr" class="page-link"><span>Sous-titres</span></a></li><li>
+  <a lang="fr" href="/WAI/media/av/transcripts/fr" class="page-link"><span>Transcriptions</span></a></li><li>
+  <a lang="fr" href="/WAI/media/av/transcribing/fr" class="page-link"><span>Transcrire un contenu audio en texte</span></a></li><li>
+  <a lang="fr" href="/WAI/media/av/sign-languages/fr" class="page-link"><span>Langues des signes</span></a></li><li>
+  <a lang="fr" href="/WAI/media/av/player/fr" class="page-link"><span>Lecteur multimédia</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/" class="page-link"><span>Tutorials</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/" class="page-link"><span>Page Structure</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/regions/" class="page-link"><span>Page Regions</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/labels/" class="page-link"><span>Labeling Regions</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/headings/" class="page-link"><span>Headings</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/content/" class="page-link"><span>Content Structure</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/example/" class="page-link"><span>Full Example</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/menus/" class="page-link"><span>Menus</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/menus/structure/" class="page-link"><span>Structure</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/menus/styling/" class="page-link"><span>Styling</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/menus/flyout/" class="page-link"><span>Fly-Out Menus</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/menus/application-menus/" class="page-link"><span>Application Menus</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/menus/application-menus-code/" class="page-link"><span>Application Menu Example &amp; Code</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/images/" class="page-link"><span>Images</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/images/informative/" class="page-link"><span>Informative Images</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/decorative/" class="page-link"><span>Decorative Images</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/functional/" class="page-link"><span>Functional Images</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/textual/" class="page-link"><span>Images of Text</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/complex/" class="page-link"><span>Complex Images</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/groups/" class="page-link"><span>Groups of Images</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/imagemap/" class="page-link"><span>Image Maps</span></a></li><li>
+  <a lang="fr" href="/WAI/tutorials/images/decision-tree/fr" class="page-link"><span>Arbre décisionnel pour l’attribut <code style="color: inherit;">alt</code></span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/tips/" class="page-link"><span>Tips and Tricks</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/" class="page-link"><span>Tables</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/tables/one-header/" class="page-link"><span>One Header</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/two-headers/" class="page-link"><span>Two Headers</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/irregular/" class="page-link"><span>Irregular Headers</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/multi-level/" class="page-link"><span>Multi-level Headers</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/caption-summary/" class="page-link"><span>Caption &amp; Summary</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/tips/" class="page-link"><span>Tips and Tricks</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/" class="page-link"><span>Forms</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/forms/labels/" class="page-link"><span>Labeling Controls</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/grouping/" class="page-link"><span>Grouping Controls</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/instructions/" class="page-link"><span>Form Instructions</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/validation/" class="page-link"><span>Validating Input</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/notifications/" class="page-link"><span>User Notifications</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/multi-page/" class="page-link"><span>Multi-page Forms</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/custom-controls/" class="page-link"><span>Custom Controls</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/" class="page-link"><span>Carousels</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/carousels/structure/" class="page-link"><span>Structure</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/functionality/" class="page-link"><span>Functionality</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/animations/" class="page-link"><span>Animations</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/styling/" class="page-link"><span>Styling</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/working-example/" class="page-link"><span>Working Example</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/full-code/" class="page-link"><span>Complete Code</span></a></li></ul></li></ul></li></ul></nav><nav class="sidenav-languages" aria-labelledby="languagehead">
+        <header id="languagehead">Langues/Traductions</header>
+        <ul class="langlist">
+          <li style="margin-bottom: 2px;"><a href="/WAI/tips/developing/" lang="en" dir="auto" translate="no">English (original)</a></li><li style="margin-bottom: 2px;"><strong style="text-transform: capitalize;">français</strong></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/tips/developing/id" dir="auto" translate="no" lang="id">Bahasa Indonesia</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/tips/developing/ja" dir="auto" translate="no" lang="ja">日本語</a></li></ul><p><a href="/WAI/translations/#fr">Autres ressources en français</a></p>
+        
+        <p><a href="/WAI/translations/">Toutes&nbsp;les&nbsp;traductions</a></p>
+        <p><a href="/WAI/about/translating/">Traduire les ressources de WAI</a></p>
+      </nav>
+</div>
+
+
+      
+  
+
+  <main id="main" lang="fr">
+
+    
+
+    
+    <header class="in-resource">
+      <h1>
+        
+        <svg class="icon-in-title" aria-hidden="true"><use xlink:href="/WAI/content-images/tips/icons.svg#developing"></use></svg>
+        
+        
+        
+          Développer pour l’accessibilité Web
+        </h1><p>dans <a lang="fr" href="/WAI/tips/fr"><span>Conseils pour démarrer</span></a></p></header>
+    <section id="translation-info" class="doc-note-box doc-note-translation">
+  <h2 class="visuallyhidden">À propos de cette traduction</h2>
+  <p>Cette traduction faite par des volontaires peut ne pas refléter les intentions de <a href="/WAI/tips/developing/">l’original en anglais</a>.</p>
+  
+  
+  <p><svg focusable="false" aria-hidden="true" class="icon-warning "><use xlink:href="/WAI/assets/images/icons.svg#icon-warning"></use></svg> Version anglaise mise à jour depuis cette traduction&#8239;: <a href="$1">changements</a>.
+    <br>Version anglaise mise à jour le&#8239;: <span dir="auto">2024-07-16</span>. Traduction mise à jour&#8239;: <span dir="auto">2023-10-10</span>.
+  </p>
+  
+  
+  <p>
+    <strong>Traduction&#8239;:</strong> Sofia Ahmed. 
+    Contribution&#8239;: Sandra Velarde Gonzalez (ETNIC), Rémi Bétin. <br>WAI remercie ces traducteurs, et accueille volontiers d’autres <a href="/WAI/about/translating/">traductions</a>.</p>
+</section><aside class="box box-full"><header class="box-h  box-h-full"> <h2> Résumé </h2></header><div class="box-i">
+
+<p>Cette page présente quelques considérations de base pour vous aider dans le développement de contenus Web plus accessibles aux personnes en situation de handicap. Ces conseils sont de bonnes pratiques pour vous aider à satisfaire aux exigences des Règles pour l’accessibilité des contenus Web (WCAG). Suivez les liens vers les recommandations WCAG correspondantes, du contexte détaillée dans les documents « Comprendre », des instructions dans les tutoriels, des témoignages d’utilisateurs, et plus encore.</p>
+
+</div></aside>
+
+
+
+<nav class="box box-simple box-full" aria-labelledby="tocheading" id="toc">
+  <header id="tocheading" class="box-h box-h-simple box-h-full"> Table des matières</header>
+  <div class="box-i">
+
+
+
+
+<ul id="markdown-toc">
+  <li><a href="#associez-une-étiquette-à-chaque-composant-dinterface-de-formulaire" id="markdown-toc-associez-une-étiquette-à-chaque-composant-dinterface-de-formulaire">Associez une étiquette à chaque composant d’interface de formulaire</a></li>
+  <li><a href="#incluez-des-équivalents-textuels-pour-les-images" id="markdown-toc-incluez-des-équivalents-textuels-pour-les-images">Incluez des équivalents textuels pour les images</a></li>
+  <li><a href="#identifiez-la-langue-de-la-page-et-les-changements-de-lange" id="markdown-toc-identifiez-la-langue-de-la-page-et-les-changements-de-lange">Identifiez la langue de la page et les changements de lange</a></li>
+  <li><a href="#utilisez-le-balisage-pour-fournir-du-sens-et-de-la-structure" id="markdown-toc-utilisez-le-balisage-pour-fournir-du-sens-et-de-la-structure">Utilisez le balisage pour fournir du sens et de la structure</a></li>
+  <li><a href="#aidez-les-utilisateurs-à-éviter-les-erreurs-et-à-les-corriger" id="markdown-toc-aidez-les-utilisateurs-à-éviter-les-erreurs-et-à-les-corriger">Aidez les utilisateurs à éviter les erreurs, et à les corriger</a></li>
+  <li><a href="#reflétez-lordre-logique-de-lecture-dans-lordre-du-code" id="markdown-toc-reflétez-lordre-logique-de-lecture-dans-lordre-du-code">Reflétez l’ordre logique de lecture dans l’ordre du code</a></li>
+  <li><a href="#créez-un-code-qui-sadapte-aux-technologies-des-utilisateurs" id="markdown-toc-créez-un-code-qui-sadapte-aux-technologies-des-utilisateurs">Créez un code qui s’adapte aux technologies des utilisateurs</a></li>
+  <li><a href="#transmettez-une-signification-pour-les-éléments-interactifs-non-standards" id="markdown-toc-transmettez-une-signification-pour-les-éléments-interactifs-non-standards">Transmettez une signification pour les éléments interactifs non standards</a></li>
+  <li><a href="#assurez-vous-que-tous-les-éléments-interactifs-sont-accessibles-au-clavier" id="markdown-toc-assurez-vous-que-tous-les-éléments-interactifs-sont-accessibles-au-clavier">Assurez-vous que tous les éléments interactifs sont accessibles au clavier</a></li>
+  <li><a href="#évitez-les-captchas-si-possible" id="markdown-toc-évitez-les-captchas-si-possible">Évitez les CAPTCHAs si possible</a></li>
+</ul>
+
+
+
+  </div>
+</nav>
+
+
+
+<h2 id="associez-une-étiquette-à-chaque-composant-dinterface-de-formulaire">Associez une étiquette à chaque composant d’interface de formulaire</h2>
+
+<p>Utilisez un attribut <code class="language-plaintext highlighter-rouge">for</code> sur l’élément <code class="language-plaintext highlighter-rouge">&lt;label&gt;</code> correspondant à l’attribut <code class="language-plaintext highlighter-rouge">id</code> de l’élément de formulaire, ou utilisez des attributs <abbr lang="en" title="Accessible Rich Internet Applications">WAI-ARIA</abbr>. Dans certaines situations particulières, il peut être acceptable de masquer visuellement les éléments <code class="language-plaintext highlighter-rouge">&lt;label&gt;</code> ; mais la plupart du temps, les étiquettes sont nécessaires pour permettre à tous les lecteurs de comprendre la saisie requise.</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> Exemple : utiliser les attributs <code>for</code> et <code>id</code></header><div class="box-i">
+
+<div class="two-column">
+<figure>
+<figcaption><svg focusable="false" aria-hidden="true" class="icon-desktop "><use xlink:href="/WAI/assets/images/icons.svg#icon-desktop"></use></svg> Rendu</figcaption>
+<label for="username">Nom d’utilisateur</label>
+<input id="username" type="text" name="username">
+</figure>
+<figure>
+<figcaption><svg focusable="false" aria-hidden="true" class="icon-code "><use xlink:href="/WAI/assets/images/icons.svg#icon-code"></use></svg> Extrait de code</figcaption>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"username"</span><span class="nt">&gt;</span>Nom d’utilisateur<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"username"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"username"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+</figure>
+</div>
+</div></aside>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> Plus d’informations</header><div class="box-i">
+
+<ul>
+  <li><strong>WCAG</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#labels-or-instructions">Étiquettes et instructions 3.3.2</a> (<a href="/WAI/WCAG21/Understanding/labels-or-instructions">Comprendre 3.3.2</a>)</li>
+    </ul>
+  </li>
+  <li><strong>Tutoriel</strong>
+    <ul>
+      <li><a href="/WAI/tutorials/forms/labels/" hreflang="en">Commandes des étiquettes (en anglais)</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="incluez-des-équivalents-textuels-pour-les-images">Incluez des équivalents textuels pour les images</h2>
+
+<p>Veillez à ce qu’un équivalent textuel pour les images soit ajouté à toutes les images fonctionnelles et informatives. Utilisez un équivalent textuel vide <code class="language-plaintext highlighter-rouge">alt=""</code> pour les images décoratives, ou incluez-les dans les CSS. Les équivalents textuels sont généralement fournis par les auteurs du contenu écrit.</p>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> Plus d’informations</header><div class="box-i">
+
+<ul>
+  <li><strong>WCAG</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#non-text-content">Contenu non textuel 1.1.1</a> (<a href="/WAI/WCAG21/Understanding/non-text-content">Comprendre 1.1.1</a>)</li>
+    </ul>
+  </li>
+  <li><strong>Tutoriel</strong>
+    <ul>
+      <li><a href="/WAI/tutorials/images/" hreflang="en">Images (en anglais)</a></li>
+    </ul>
+  </li>
+  <li><strong>Témoignage d’utilisateur</strong>
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/archived/#accountant" hreflang="en">Importance des équivalents textuels pour un utilisateur aveugle (en anglais)</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="identifiez-la-langue-de-la-page-et-les-changements-de-lange">Identifiez la langue de la page et les changements de lange</h2>
+
+<p>Indiquez la langue principale de chaque page en utilisant l’attribut <code class="language-plaintext highlighter-rouge">lang</code> dans la balise <code class="language-plaintext highlighter-rouge">html</code>, par exemple <code class="language-plaintext highlighter-rouge">&lt;html lang="fr"&gt;</code>. Utilisez l’attribut <code class="language-plaintext highlighter-rouge">lang</code> sur des éléments spécifiques lorsque la langue de l’élément diffère du reste de la page.</p>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> Plus d’informations</header><div class="box-i">
+
+<ul>
+  <li><strong>WCAG</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#language-of-page">Langue de la page 3.1.1</a> (<a href="/WAI/WCAG21/Understanding/language-of-page">Comprendre 3.1.1</a>)</li>
+      <li><a href="/WAI/WCAG21/quickref/#language-of-parts">Langue d’un passage 3.1.2</a> (<a href="/WAI/WCAG21/Understanding/language-of-parts">Comprendre 3.1.2</a>)</li>
+    </ul>
+  </li>
+  <li><strong>Guide pratique</strong>
+    <ul>
+      <li><a href="/International/questions/qa-html-language-declarations">Déclarer la langue en HTML</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="utilisez-le-balisage-pour-fournir-du-sens-et-de-la-structure">Utilisez le balisage pour fournir du sens et de la structure</h2>
+
+<p>Utilisez le balisage approprié pour les en-têtes, les listes, les tableaux, etc. Le HTML5 fournit des éléments supplémentaires, tels <code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code> et <code class="language-plaintext highlighter-rouge">&lt;aside&gt;</code>, pour mieux structurer votre contenu. Les attributs role <abbr>WAI-ARIA</abbr> peuvent contribuer à donner plus de sens ; par exemple, en utilisant l’attribut <code class="language-plaintext highlighter-rouge">role="search"</code> pour identifier une fonctionnalité de recherche. Travaillez avec les designers et les auteurs des contenus pour vous accorder sur les significations et les utiliser de manière cohérente par la suite.</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> Exemple : utiliser l’HTML pour fournir une structure et du sens</header><div class="box-i">
+
+<div class="two-column">
+<figure>
+<figcaption><svg focusable="false" aria-hidden="true" class="icon-desktop "><use xlink:href="/WAI/assets/images/icons.svg#icon-desktop"></use></svg> Rendu</figcaption>
+<section>
+  <article>
+    <h2>Superours à la rescousse</h2>
+    <time datetime="2015-08-07">7 août 2015</time>
+    <p>Superours, l’ours favori de la ville, a encore une fois prouvé son courage en secourant un chaton coincé dans un arbre. Les témoins de la scène racontent que les efforts de Superours n’ont pas été appréciés par le félin, qui a infligé quelques petits coups de griffes à son sauveteur.</p>
+    <aside>
+      <h3>Articles connexes</h3>
+      <ul>
+        <li><a href="#">Superours reçoit les clés de la ville</a></li>
+        <li><a href="#">Superours se présente comme maire</a></li>
+      </ul>
+    </aside>
+  </article>
+</section>
+</figure>
+<figure>
+<figcaption><svg focusable="false" aria-hidden="true" class="icon-code "><use xlink:href="/WAI/assets/images/icons.svg#icon-code"></use></svg> Extrait de code</figcaption>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;section&gt;</span>
+  <span class="nt">&lt;article&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>Superours à la rescousse<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">"2015-08-07"</span><span class="nt">&gt;</span>7 août 2015<span class="nt">&lt;/time&gt;</span>
+    <span class="nt">&lt;p&gt;</span>Superours, l’ours favori de la ville, a encore une fois prouvé son courage en secourant un chaton coincé dans un arbre. Les témoins de la scène racontent que les efforts de Superours n’ont pas été appréciés par le félin, qui a infligé quelques petits coups de griffes à son sauveteur.<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;aside&gt;</span>
+      <span class="nt">&lt;h3&gt;</span>Articles connexes<span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;ul&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Superours reçoit les clés de la ville<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>Superours se présente comme maire<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/aside&gt;</span>
+  <span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+</code></pre></div></div>
+
+</figure>
+</div>
+</div></aside>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> Exemple : champ de recherche utilisant <abbr>WAI-ARIA</abbr></header><div class="box-i">
+
+<div class="two-column">
+<figure>
+<figcaption><svg focusable="false" aria-hidden="true" class="icon-desktop "><use xlink:href="/WAI/assets/images/icons.svg#icon-desktop"></use></svg> Rendu</figcaption>
+<form action="#" method="post">
+  <div role="search">
+    <label for="search">Rechercher</label>
+    <input type="search" id="search" aria-describedby="search-help">
+    <div id="search-help">Recherchez des résultats par identifiant ou nom de client</div>
+    <button type="submit">Lancer la recherche</button>
+  </div>
+</form>
+</figure>
+<figure>
+<figcaption><svg focusable="false" aria-hidden="true" class="icon-code "><use xlink:href="/WAI/assets/images/icons.svg#icon-code"></use></svg> Extrait de code</figcaption>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"#"</span> <span class="na">method=</span><span class="s">"post"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"search"</span><span class="nt">&gt;</span>Rechercher<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">id=</span><span class="s">"search"</span> <span class="na">aria-describedby=</span><span class="s">"search-help"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"search-help"</span><span class="nt">&gt;</span>Recherchez des résultats par identifiant ou nom de client<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>Lancer la recherche<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre></div></div>
+
+</figure>
+</div>
+</div></aside>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> Plus d’informations</header><div class="box-i">
+
+<ul>
+  <li><strong>WCAG</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#info-and-relationships">Informations et relations 1.3.1</a> (<a href="/WAI/WCAG21/Understanding/info-and-relationships">Comprendre 1.3.1</a>)</li>
+    </ul>
+  </li>
+  <li><strong>Tutoriel</strong>
+    <ul>
+      <li><a href="/WAI/tutorials/page-structure/" hreflang="en">Structure de page (en anglais)</a></li>
+      <li><a href="/WAI/tutorials/tables/" hreflang="en">Tableaux (en anglais)</a></li>
+    </ul>
+  </li>
+  <li><strong>Témoignage d’utilisateur</strong>
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/archived/#accountant" hreflang="en">Comment les informations structurées aident les utilisateurs de lecteur d’écran (en anglais)</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="aidez-les-utilisateurs-à-éviter-les-erreurs-et-à-les-corriger">Aidez les utilisateurs à éviter les erreurs, et à les corriger</h2>
+
+<p>Fournissez des instructions claires, des messages d’erreur, et des notifications pour aider les utilisateurs à compléter les formulaires présents sur votre site. Lorsqu’une erreur survient :</p>
+
+<ul>
+  <li>Aidez les utilisateurs à trouver où est le problème</li>
+  <li>Fournissez des explications précises et compréhensibles</li>
+  <li>Proposez des moyens de correction</li>
+</ul>
+
+<p>Soyez aussi flexibles que possible vis-à-vis du format lors du traitement des données saisies par l’utilisateur. Par exemple, acceptez les numéros de téléphone qui comprennent des espaces et supprimez les espaces au besoin.</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> Exemple : champ destiné à un numéro de téléphone australien, avec une validation flexible</header><div class="box-i">
+
+<div class="two-column">
+<figure>
+<figcaption><svg focusable="false" aria-hidden="true" class="icon-desktop "><use xlink:href="/WAI/assets/images/icons.svg#icon-desktop"></use></svg> Rendu</figcaption>
+<label for="phone">Téléphone</label>
+<input id="phone" name="phone" type="tel" pattern="^(\(?0[1-9]{1}\)?)?[0-9 -]*$" aria-describedby="phone-desc">
+<p id="phone-desc">Par exemple, (02) 1234 1234</p>
+</figure>
+<figure>
+<figcaption><svg focusable="false" aria-hidden="true" class="icon-code "><use xlink:href="/WAI/assets/images/icons.svg#icon-code"></use></svg> Extrait de code</figcaption>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"phone"</span><span class="nt">&gt;</span>Téléphone<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"phone"</span> <span class="na">name=</span><span class="s">"phone"</span> <span class="na">type=</span><span class="s">"tel"</span>
+       <span class="na">pattern=</span><span class="s">"^(\(?0[1-9]{1}\)?)?[0-9 -]*$"</span>
+       <span class="na">aria-describedby=</span><span class="s">"phone-desc"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"phone-desc"</span><span class="nt">&gt;</span>Par exemple, (02) 1234 1234<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+</figure>
+</div>
+</div></aside>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> Plus d’informations</header><div class="box-i">
+
+<ul>
+  <li><strong>WCAG</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#error-identification">Identification des erreurs 3.3.1</a> (<a href="/WAI/WCAG21/Understanding/error-identification">Comprendre 3.3.1</a>)</li>
+    </ul>
+  </li>
+  <li><strong>Tutoriel</strong>
+    <ul>
+      <li><a href="/WAI/tutorials/forms/validation/" hreflang="en">Valider la saisie (en anglais)</a></li>
+    </ul>
+  </li>
+  <li><strong>Témoignage d’utilisateur</strong>
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/archived/#classroomstudent" hreflang="en">Comment des erreurs utiles aident un utilisateur dyslexique (en anglais)</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="reflétez-lordre-logique-de-lecture-dans-lordre-du-code">Reflétez l’ordre logique de lecture dans l’ordre du code</h2>
+
+<p>Assurez-vous que l’ordre des éléments dans le code corresponde à l’ordre logique des informations présentées. Une des manières de le vérifier consiste à enlever le style CSS et à vérifier si l’ordre du contenu a du sens.</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> Exemple : refléter l’ordre logique de lecture dans le code</header><div class="box-i">
+
+<div class="two-column">
+<div class="order">
+  <article class="product">
+    <h3 class="name">Baskets Espace</h3>
+    <img src="/WAI/content-images/tips/trainer.png"  alt="Baskets violettes avec lacets blancs, rond blanc vide sur la cheville extérieure et pointe de chaussure blanche">
+    <p class="desc">Baskets Espace pour un look classique et élégant.</p>
+    <p class="buy"><a href="javascript:return false" class="button button-icon"><span><svg focusable="false" aria-hidden="true" class="icon-cart-plus "><use xlink:href="/WAI/assets/images/icons.svg#icon-cart-plus"></use></svg> Ajouter au panier</span></a></p>
+  </article>
+</div>
+<figure>
+<figcaption><svg focusable="false" aria-label="Mauvaise pratique" class="icon-ex-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-ex-circle"></use></svg> L’image positionnée avant l’en-tête pourrait être manquée</figcaption>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/trainer.png"</span> <span class="na">alt=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+<span class="nt">&lt;h3&gt;</span>Baskets Espace<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;p&gt;</span>Baskets...<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"..."</span><span class="nt">&gt;</span>Ajouter au panier<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<details id="full-code-img-before-heading"><summary>
+    <p>Voir tout l’exemple de code</p>
+  </summary>
+  <div>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"product"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"Baskets violettes avec lacets blancs, rond blanc vide sur la cheville extérieure et pointe de chaussure blanche"</span> <span class="na">src=</span><span class="s">"images/trainer.png"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"name"</span><span class="nt">&gt;</span>Baskets Espace<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"desc"</span><span class="nt">&gt;</span>Baskets Espace pour un look classique et élégant.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"buy"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"javascript:return false"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#cart-plus"</span><span class="nt">/&gt;&lt;/svg&gt;</span> Ajouter au panier<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/article&gt;</span>
+</code></pre></div>    </div>
+
+  </div>
+</details>
+
+</figure>
+<figure>
+<figcaption><svg focusable="false" aria-label="Bonne pratique" class="icon-check-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-check-circle"></use></svg> L’en-tête marque le début de la section</figcaption>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h3&gt;</span>Baskets Espace<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/trainer.png"</span> <span class="na">alt=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+<span class="nt">&lt;p&gt;</span>Baskets...<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"..."</span><span class="nt">&gt;</span>Ajouter au panier<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<details id="full-code-img-before-heading"><summary>
+    <p>Voir tout l’exemple de code</p>
+  </summary>
+  <div>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"product"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"name"</span><span class="nt">&gt;</span>Baskets Espace<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"Baskets violettes avec lacets blancs, rond blanc vide sur la cheville extérieure et pointe de chaussure blanche"</span> <span class="na">src=</span><span class="s">"images/trainer.png"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"desc"</span><span class="nt">&gt;</span>Baskets Espace pour un look classique et élégant.<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"buy"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"javascript:return false"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#cart-plus"</span><span class="nt">/&gt;&lt;/svg&gt;</span> Ajouter au panier<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/article&gt;</span>
+</code></pre></div>    </div>
+
+  </div>
+</details>
+
+</figure>
+</div>
+</div></aside>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> Plus d’informations</header><div class="box-i">
+
+<ul>
+  <li><strong>WCAG</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#meaningful-sequence">Ordre séquentiel logique 1.3.2</a> (<a href="/WAI/WCAG21/Understanding/meaningful-sequence">Comprendre 1.3.2</a>)</li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="créez-un-code-qui-sadapte-aux-technologies-des-utilisateurs">Créez un code qui s’adapte aux technologies des utilisateurs</h2>
+
+<p>Utilisez un design réactif pour adapter l’affichage à différents niveaux d’agrandissement et à différentes tailles d’espaces de restitution, tels que sur des appareils mobiles et des tablettes. Lorsque la taille de la police est agrandie d’au moins 200 %, évitez le défilement horizontal et empêcher tout rognage du contenu. Utilisez l’amélioration progressive pour veiller à ce que les fonctionnalités et le contenu soient disponibles quelle que soit la technologie utilisée.</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> Exemple : utiliser les requêtes média pour adapter la navigation</header><div class="box-i">
+
+<div class="adapt-code">
+  <figure>
+    <div class="code">
+      <div class="grid-4">
+        <div class="from-col1 to-col2">
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Sur les petits espaces de restitution, faire prendre toute la largeur à la navigation */</span>
+<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">25em</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nf">#nav</span> <span class="p">{</span>
+    <span class="nl">float</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nf">#main</span> <span class="p">{</span>
+    <span class="nl">margin-left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+</div>
+<div class="from-col3 to-col4">
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* Sur les plus grands espaces de restitution, placer la navigation à gauche */</span>
+<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">43em</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nf">#nav</span> <span class="p">{</span>
+    <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">24%</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nf">#main</span> <span class="p">{</span>
+    <span class="nl">margin-left</span><span class="p">:</span> <span class="m">27%</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+      </div>
+    </div>
+  </div>
+  </figure>
+</div>
+
+</div></aside>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> Plus d’informations</header><div class="box-i">
+
+<ul>
+  <li><strong>WCAG</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#resize-text">Redimensionnement du texte 1.4.4</a> (<a href="/WAI/WCAG21/Understanding/resize-text">Comprendre 1.4.4</a>)</li>
+      <li><a href="/WAI/WCAG21/quickref/#consistent-identification">Identification cohérente 3.2.4</a> (<a href="/WAI/WCAG21/Understanding/consistent-identification">Comprendre 3.2.4</a>)</li>
+    </ul>
+  </li>
+  <li><strong>Contexte</strong>
+    <ul>
+      <li><a href="/TR/mobile-accessibility-mapping/#h-small-screen-size">Écran de petite taille</a></li>
+    </ul>
+  </li>
+  <li><strong>Témoignage d’utilisateur</strong>
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/archived/#retiree" hreflang="en">Comment les vues équivalentes des pages agrandies peuvent être utiles (en anglais)</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="transmettez-une-signification-pour-les-éléments-interactifs-non-standards">Transmettez une signification pour les éléments interactifs non standards</h2>
+
+<p>Utilisez <abbr title="Accessible Rich Internet Applications">WAI-ARIA</abbr> pour fournir des informations sur l’état et la fonction des widgets personnalisés, tels que les accordéons et les boutons personnalisés. Par exemple, <code class="language-plaintext highlighter-rouge">role="navigation"</code> et <code class="language-plaintext highlighter-rouge">aria-expanded="true"</code>. Du code supplémentaire est nécessaire pour implémenter le comportement de ces widgets, comme le développement et la réduction du contenu ou la manière dont le widget répond aux événements du clavier.</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> Exemple : Fonction et état du menu identifiés en utilisant WAI-ARIA</header><div class="box-i">
+
+<div class="non-standard">
+  <figure>
+      <div class="code">
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"Navigation principale"</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"..."</span><span class="nt">&gt;</span>Accueil<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"..."</span><span class="nt">&gt;</span>Boutique<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"has-submenu"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">href=</span><span class="s">"..."</span><span class="nt">&gt;</span>SpaceBears<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;ul&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"..."</span><span class="nt">&gt;</span>SpaceBear 6<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"..."</span><span class="nt">&gt;</span>SpaceBear 6 Plus<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"..."</span><span class="nt">&gt;</span>MarsCars<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"..."</span><span class="nt">&gt;</span>Contact<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</code></pre></div></div>
+
+      </div>
+  </figure>
+</div>
+
+</div></aside>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> Plus d’informations</header><div class="box-i">
+
+<ul>
+  <li><strong>WCAG</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#name-role-value">Nom, rôle, et valeur 4.1.2</a> (<a href="/WAI/WCAG21/Understanding/name-role-value">Comprendre 4.1.2</a>)</li>
+    </ul>
+  </li>
+  <li><strong>Contexte</strong>
+    <ul>
+      <li><a href="/TR/aria-in-html/">Commentaires sur l’utilisation d’ARIA en HTML</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="assurez-vous-que-tous-les-éléments-interactifs-sont-accessibles-au-clavier">Assurez-vous que tous les éléments interactifs sont accessibles au clavier</h2>
+
+<p>Pensez à l’accès au clavier, particulièrement au moment de développer des éléments interactifs, comme des menus, des informations affichées au passage de la souris, des accordéons réductibles, ou des lecteurs multimédia. Utilisez <code class="language-plaintext highlighter-rouge">tabindex="0"</code> pour ajouter un élément qui ne reçoit normalement pas le focus, tel que <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code> ou <code class="language-plaintext highlighter-rouge">&lt;span&gt;</code>, dans l’ordre de navigation ; lorsqu’il est utilisé pour l’interaction. Utilisez un script pour capter et répondre aux événements clavier.</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> Exemple : bouton de menu accessible au clavier</header><div class="box-i">
+
+<div class="two-column keyboard-accessible">
+<figure>
+<figcaption><svg focusable="false" aria-hidden="true" class="icon-desktop "><use xlink:href="/WAI/assets/images/icons.svg#icon-desktop"></use></svg> Rendu</figcaption>
+<div class="rendered">
+  <div id="example-button" class="menu-button" role="button" aria-expanded="false" aria-controls="example-button-menu" tabindex="0"><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> Menu</div>
+  <div id="example-button-menu" class="menu" aria-hidden="true" tabindex="-1">
+    <ul>
+      <li><a href="javascript:return false">À propos</a></li>
+      <li><a href="javascript:return false">Actualités</a></li>
+      <li><a href="javascript:return false">Billets</a></li>
+      <li><a href="javascript:return false">Pour le plaisir</a></li>
+    </ul>
+  </div>
+</div>
+<script>
+  !function() {
+    "use strict";
+    function e(e) {
+        "true" == e.getAttribute("aria-hidden") ? (e.setAttribute("aria-hidden", "false"), e.focus()) : e.setAttribute("aria-hidden", "true")
+    }
+    function t(e) {
+        "true" == e.getAttribute("aria-checked") ? (e.setAttribute("aria-checked", "false"), e.getElementsByTagName("span")[0].innerHTML = "Off") : (e.setAttribute("aria-checked", "true"), e.getElementsByTagName("span")[0].innerHTML = "On")
+    }
+    var a = document.getElementById("example-button");
+    a && (a.addEventListener("keydown", function(t) {
+        t.keyCode && 13 == t.keyCode && (e(document.getElementById("example-button-menu")), "true" == t.target.getAttribute("aria-expanded") ? t.target.setAttribute("aria-expanded", "false") : t.target.setAttribute("aria-expanded", "true"))
+    }), a.addEventListener("click", function(t) {
+        e(document.getElementById("example-button-menu")), "true" == t.target.getAttribute("aria-expanded") ? t.target.setAttribute("aria-expanded", "false") : t.target.setAttribute("aria-expanded", "true")
+    }));
+    var n = document.getElementById("switch");
+    n && (n.addEventListener("keydown", function(e) {
+        !e.keyCode || 32 != e.keyCode && 13 != e.keyCode || t(this)
+    }), n.addEventListener("click", function() {
+        t(this)
+    }))
+}();
+</script>
+</figure>
+<figure>
+<figcaption><svg focusable="false" aria-hidden="true" class="icon-code "><use xlink:href="/WAI/assets/images/icons.svg#icon-code"></use></svg> Extrait de code</figcaption>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">buttonExample</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">example-button</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="nx">buttonExample</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">keydown</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// Déroule le menu quand la touche ENTRÉE est pressée</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">keyCode</span> <span class="o">&amp;&amp;</span> <span class="nx">e</span><span class="p">.</span><span class="nx">keyCode</span> <span class="o">==</span> <span class="mi">13</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">toggleMenu</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">example-button-menu</span><span class="dl">'</span><span class="p">));</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="nx">buttonExample</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+<span class="c1">// Déroule the menu au clic de la souris</span>
+  <span class="nf">toggleMenu</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">example-button-menu</span><span class="dl">'</span><span class="p">));</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+</figure>
+</div>
+</div></aside>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> Plus d’informations</header><div class="box-i">
+
+<ul>
+  <li><strong>WCAG</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#keyboard">Clavier 2.1.1</a> (<a href="/WAI/WCAG21/Understanding/keyboard">Comprendre 2.1.1</a>)</li>
+    </ul>
+  </li>
+  <li><strong>Témoignage d’utilisateur</strong>
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/archived/#reporter" hreflang="en">Comment un utilisateur avec un trouble musculosquelettique a besoin du support du clavier (en anglais)</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="évitez-les-captchas-si-possible">Évitez les CAPTCHAs si possible</h2>
+
+<p>Les CAPTCHAs posent problème pour un grand nombre de personnes. Il existe d’autres manières, plus simples à utiliser, de vérifier si les données de l’utilisateur ont été saisies par un humain, comme la détection automatique ou les interactions avec l’interface. Si le CAPTCHA doit absolument être inclus, veillez à ce qu’il soit facile à comprendre et qu’il inclue des alternatives pour les utilisateurs en situation de handicap, telles que :</p>
+
+<ul>
+  <li>Fournir plus de deux moyens de résoudre les CAPTCHAs</li>
+  <li>Fournir l’accès à un interlocuteur humain qui peut contourner le CAPTCHA</li>
+  <li>Ne pas rendre obligatoires les CAPTCHAS pour les utilisateurs autorisés</li>
+</ul>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> Plus d’informations</header><div class="box-i">
+
+<ul>
+  <li><strong>WCAG</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#non-text-content">Contenu non textuel 1.1.1</a> (<a href="/WAI/WCAG21/Understanding/non-text-content">Comprendre 1.1.1</a>)</li>
+    </ul>
+  </li>
+  <li><strong>Contexte</strong>
+    <ul>
+      <li><a href="/TR/turingtest/">Inaccessibilité des CAPTCHAs</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<aside class="box box-large"><header class="box-h  box-h-large box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-readmore "><use xlink:href="/WAI/assets/images/icons.svg#icon-readmore"></use></svg> En savoir plus sur l’accessibilité</header><div class="box-i">
+
+<p>Ces conseils sont quelques-uns des éléments à prendre en compte pour l’accessibilité Web. Les ressources suivantes vous aident à comprendre l’importance de l’accessibilité, et à prendre connaissance des recommandations pour rendre le Web plus accessible pour les personnes handicapées.</p>
+
+<ul>
+  <li><a href="/WAI/fundamentals/accessibility-intro/fr">Introduction à l’accessibilité</a> — introduit l’accessibilité et fournit des liens vers de nombreuses ressources utiles</li>
+  <li><a href="/WAI/fundamentals/accessibility-principles/fr">Principes d’accessibilité</a> — une introduction aux exigences des <abbr>WCAG</abbr></li>
+  <li><a href="/WAI/people-use-web/fr">Comment les personnes en situation de handicap utilisent le Web</a> — des exemples concrets des bénéfices de l’accessibilité pour les personnes en situation de handicap</li>
+  <li><a href="/WAI/tutorials/" hreflang="en">Tutoriels sur l’accessibilité Web (en anglais)</a> — vous montre comment développer du contenu Web accessible aux personnes en situation de handicap</li>
+  <li><a href="/WAI/demos/bad/">Démonstration avant/après</a> — un exemple de sites Web accessible et inaccessible qui partagent le même design visuel, avec des commentaires sur les principaux obstacles à l’accessibilité et les moyens d’y remédier, et des rapports d’évaluation pour les WCAG</li>
+  <li><a href="/WAI/WCAG21/quickref/">Comment répondre aux exigences des WCAG (Référence rapide)</a> — une liste personnalisable de toutes les exigences et les techniques des WCAG</li>
+  <li><a href="/WAI/ER/tools/">Liste d’outils d’évaluation de l’accessibilité Web</a> — mentionne un éventail d’outils pour aider à explorer l’accessibilité du code</li>
+  <li><a href="/WAI/standards-guidelines/aria/" hreflang="en">Une vue d’ensemble de <abbr>WAI-ARIA</abbr> (en anglais)</a> — une introduction aux <abbr>WAI-ARIA</abbr> avec des liens vers toutes les spécifications</li>
+</ul>
+
+</div></aside>
+
+
+    
+
+<nav class="pager" aria-label="Previous/Next Page" style="clear: both;">
+  <ul><li class="pager--item previous">
+      <a href="/WAI/tips/designing/fr">
+        <svg focusable="false" aria-hidden="true" class="icon-arrow-left pager--item-icon"><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-left"></use></svg>
+        <span class="pager--item-text">
+          <span class="pager--item-text-direction">Précédent:</span>
+          <span class="pager--item-text-target">Conseils pour le design</span>
+        </span>
+      </a>
+    </li></nav><aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Aider à améliorer cette page </h2></header><div class="box-i"><p>Merci de partager vos idées, vos suggestions ou vos commentaires par courriel à la liste archivée publiquement <a href="mailto:wai@w3.org?subject=%5Bfr%5D%20D%C3%A9velopper%20pour%20l%E2%80%99accessibilit%C3%A9%20Web%20%E2%80%93%20Conseils%20pour%20d%C3%A9marrer&amp;body=%5Bvotre%20commentaire%20ici...%5D%0A%0AJ%E2%80%99accepte%20que%20ceci%20soit%20partag%C3%A9%20sur%20une%20liste%20de%20diffusion%20archiv%C3%A9e%20publiquement.">wai@w3.org</a> ou via GitHub.</p>
+<div class="button-group">
+    <a href="mailto:wai@w3.org?subject=%5Bfr%5D%20D%C3%A9velopper%20pour%20l%E2%80%99accessibilit%C3%A9%20Web%20%E2%80%93%20Conseils%20pour%20d%C3%A9marrer&body=%5Bvotre%20commentaire%20ici...%5D%0A%0AJ%E2%80%99accepte%20que%20ceci%20soit%20partag%C3%A9%20sur%20une%20liste%20de%20diffusion%20archiv%C3%A9e%20publiquement." class="button"><span>Courriel</span></a><a href="
+https://github.com/w3c/wai-website/edit/main/collections/_tips/developing.fr.md
+" class="button"><span>Cloner et modifier sur GitHub</span></a><a href="https://github.com/w3c/wai-website/issues/new?template=content-issue.yml&title=[fr]%20&wai-resource-id=wai-tips&wai-url=https://www.w3.org/WAI/tips/developing/fr" class="button"><span>Nouveau ticket sur GitHub</span></a></div></div></aside>
+
+
+    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Retour en haut de page</span></a>
+  </main>
+</div>
+
+
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner"
+      >
+      <p><strong>Date :</strong> Mise à jour mineure : 9 janvier 2019. Mise à jour : 15 avril 2016. Première publication en septembre 2015.</p> <p><strong>Rédaction :</strong> <a href="https://www.w3.org/People/kevin">Kevin White</a>, <a href="https://www.w3.org/People/shadi">Shadi Abou-Zahra</a>, et <a href="https://www.w3.org/People/Shawn">Shawn Lawton Henry</a>. <a href="/WAI/tips/acknowledgements/">Remerciements</a>.</p> <p>Développé par le <a href="https://www.w3.org/WAI/EO/">Groupe de travail Éducation et promotion (EOWG)</a>. Développé avec le soutien du <a href="https://www.w3.org/WAI/DEV/">projet WAI-DEV</a>, co-financé par le programme <abbr title="Technologies de la Société de l’information">IST</abbr> de la Commission européenne.</p>
+</div>
+  </footer>
+  
+
+
+
+
+
+<footer class="site-footer grid-4q" aria-label="Site">
+  <div class="q1-start q3-end about">
+    <div>
+      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
+      <p>Stratégies, standards et ressources pour rendre le Web accessible aux personnes en situation de handicap.</p>
+    </div>
+    <div class="social" lang="en" dir="auto" translate="no">
+      <ul>
+        <li><a href="https://w3c.social/@wai"><svg focusable="false" aria-hidden="true" class="icon-mastodon "><use xlink:href="/WAI/assets/images/icons.svg#icon-mastodon"></use></svg> Mastodon</a></li>
+        <li><a href="https://www.linkedin.com/company/w3c-wai/"><svg focusable="false" aria-hidden="true" class="icon-linkedin "><use xlink:href="/WAI/assets/images/icons.svg#icon-linkedin"></use></svg> LinkedIn</a></li>
+        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
+        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
+        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+      </ul>
+    </div>
+    <div lang="en" dir="auto"  translate="no">
+      <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
+    </div>
+  </div>
+  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
+    <ul style="margin-bottom:0">
+      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+      <li><a href="/WAI/sitemap/">Site Map</a></li>
+      <li><a href="/WAI/news/">News</a></li>
+      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
+      <li><a href="/WAI/translations/"> Translations</a></li>
+      <li><a href="/WAI/roles/">Resources for Roles</a></li>
+    </ul>
+  </div>
+</footer><!-- Details4Everybody -->
+<script src="/WAI/assets/scripts/details4everybody.js?1725936703303430688"></script>
+<!-- SVG4Everybody -->
+<script src="/WAI/assets/scripts/svg4everybody.js?1725936703303430688"></script>
+<script>
+  svg4everybody();
+</script>
+<script src="/WAI/assets/scripts/lang/fr.js?1725936703303430688"></script>
+
+  </body>
+</html>

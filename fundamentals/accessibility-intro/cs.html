@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html class="no-js" lang="cs" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+
+    function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "/WAI/assets/scripts/main.js?1725936703303430688";
+      document.body.appendChild(element);
+    }
+
+    window.addEventListener("load", downloadJSAtOnload, false);
+  </script>
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1725936703303430688">
+
+<title> Úvod do webové přístupnosti | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="Úvod do webové přístupnosti" />
+<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+<meta property="og:locale" content="cs" />
+<meta name="description" content="Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI)." />
+<meta property="og:description" content="Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI)." />
+<link rel="canonical" href="https://www.w3.org/WAI/fundamentals/accessibility-intro/cs" />
+<meta property="og:url" content="https://www.w3.org/WAI/fundamentals/accessibility-intro/cs" />
+<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
+<meta property="og:type" content="website" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="Úvod do webové přístupnosti" />
+<meta name="twitter:site" content="@w3c_wai" />
+<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"WebPage","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"description":"Accessibility resources free online from the international standards organization: W3C Web Accessibility Initiative (WAI).","headline":"Úvod do webové přístupnosti","url":"https://www.w3.org/WAI/fundamentals/accessibility-intro/cs"}</script>
+<!-- End Jekyll SEO tag -->
+<meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
+
+  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
+</head>
+
+  <body id="top" class="page-úvod-do-webové-přístupnosti ">
+    <nav aria-label="Přeskočit na hlavní obsah a výběr jazyka" id="controls" class="default-grid">
+  <ul>
+      <li><a href="#main">Přeskočit na obsah</a></li>
+      <li class="opt"><a href="/WAI/meta/customize/">Změnit velikost textu nebo barvy</a></li>
+      <li class="opt languagelist">
+          <strong>Tato&nbsp;stránka&nbsp;v:</strong>
+          <ul class="languagelistul"><li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/" lang="en"  dir="auto" translate="no">English</a></li><li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/ar" lang="ar"  dir="auto" translate="no">العربية</a></li>
+          <li><strong style="text-transform: capitalize;">čeština</strong></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/de" lang="de"  dir="auto" translate="no">Deutsch</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/es" lang="es"  dir="auto" translate="no">español</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/fr" lang="fr"  dir="auto" translate="no">français</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/id" lang="id"  dir="auto" translate="no">Bahasa Indonesia</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/ko" lang="ko"  dir="auto" translate="no">한국어</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/pl" lang="pl"  dir="auto" translate="no">polski</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/ru" lang="ru"  dir="auto" translate="no">русский язык</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/zh-hans" lang="zh-hans"  dir="auto" translate="no">简体中文</a></li>
+          </ul>
+        </li>
+        <li class="opt">
+          <a href="/WAI/translations/">Všechny&nbsp;překlady <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+        </li>
+        <li><button id="showoptions" data-showhidebuttonid="header-showoptions" class="showhidebutton button-inline" data-target="#controls .opt" aria-expanded="false" data-large-aria-expanded="true" data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Zobrazit přizpůsobení, jazyky, překlady' data-hidetext='Skrýt možnosti'><svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> Zobrazit přizpůsobení, jazyky, překlady</button></li>
+      </ul>
+    </nav>
+<header id="site-header" class="default-grid with-gap">
+  <div class="logos">
+    <a lang="en" class="home w3c" href="https://www.w3.org/">
+      <svg role="img" aria-label="W3C" viewBox="0 0 68 34" xmlns="http://www.w3.org/2000/svg"><g><path d="m16.117 1.006 5.759 19.58 5.759-19.58h4.17 11.444v1.946l-5.879 10.128c2.065.663 3.627 1.868 4.686 3.615 1.059 1.748 1.589 3.799 1.589 6.155 0 2.914-.775 5.363-2.324 7.348s-3.555 2.978-6.017 2.978c-1.854 0-3.469-.589-4.845-1.767-1.377-1.178-2.396-2.773-3.058-4.786l3.256-1.35c.477 1.218 1.106 2.178 1.887 2.879.781.702 1.701 1.052 2.76 1.052 1.112 0 2.052-.622 2.82-1.866.768-1.245 1.152-2.74 1.152-4.489 0-1.933-.411-3.429-1.231-4.488-.954-1.244-2.45-1.867-4.489-1.867h-1.588v-1.906l5.56-9.612h-6.712l-.382.65-8.163 27.548h-.397l-5.958-19.937-5.957 19.937h-.397l-9.53-32.168h4.17l5.759 19.58 3.892-13.185-1.906-6.395z"/><path d="m64.92 1.006c-.819 0-1.554.295-2.111.861-.591.6-.92 1.376-.92 2.178s.313 1.545.887 2.128c.583.591 1.334.912 2.145.912.793 0 1.562-.321 2.161-.903.574-.557.887-1.3.887-2.136 0-.811-.321-1.57-.878-2.136-.584-.592-1.344-.904-2.171-.904zm2.643 3.065c0 .701-.271 1.351-.768 1.832-.524.507-1.174.777-1.892.777-.675 0-1.342-.278-1.84-.785s-.777-1.157-.777-1.849.287-1.368.802-1.891c.481-.49 1.131-.751 1.84-.751.726 0 1.376.271 1.883.785.49.489.752 1.147.752 1.882zm-2.559-1.807h-1.3v3.445h.65v-1.469h.642l.701 1.469h.726l-.769-1.57c.498-.102.785-.439.785-.929 0-.625-.472-.946-1.435-.946zm-.118.422c.608 0 .886.169.886.591 0 .405-.278.549-.87.549h-.549v-1.14z"/><path d="m59.807.825.676 4.107-2.391 4.575s-.918-1.941-2.443-3.015c-1.285-.905-2.122-1.102-3.431-.832-1.681.347-3.587 2.357-4.419 4.835-.995 2.965-1.005 4.4-1.04 5.718-.056 2.113.277 3.362.277 3.362s-1.452-2.686-1.438-6.62c.009-2.808.451-5.354 1.75-7.867 1.143-2.209 2.842-3.535 4.35-3.691 1.559-.161 2.791.59 3.743 1.403 1 .854 2.01 2.721 2.01 2.721z"/><path d="m60.102 24.063s-1.057 1.889-1.715 2.617c-.659.728-1.837 2.01-3.292 2.651s-2.218.762-3.656.624c-1.437-.138-2.772-.97-3.24-1.317s-1.664-1.369-2.34-2.322-1.733-2.859-1.733-2.859.589 1.91.958 2.721c.212.467.864 1.894 1.789 3.136.863 1.159 2.539 3.154 5.086 3.604 2.547.451 4.297-.693 4.73-.97s1.346-1.042 1.924-1.66c.603-.645 1.174-1.468 1.49-1.962.231-.36.607-1.092.607-1.092z"/></g></svg>
+    </a>
+    <a lang="en" class="home" href="/WAI/">
+      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
+    </a>
+    <div class="claim">
+      <span>Strategie, standardy, zdroje pro tvorbu webu přístupného pro lidi s postižením</span>
+    </div>
+    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> Menu</span></button>
+  </div>
+
+  <div class="navigations">
+  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+    <ul>
+      <li><a href="/WAI/about/participating/">Get Involved</a></li>
+      <li><a href="/WAI/about/">About W3C WAI</a></li>
+      <li>
+        <form action="/WAI/search/" role="search">
+          <div>
+            <label for="header-search">
+              <span class="visuallyhidden">Hledat:</span>
+              <input id="header-search" type="search" name="q" placeholder="Hledat" aria-label="Hledat">
+            </label>
+            
+            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="Vyhledat" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
+          </div>
+        </form>
+      </li>
+    </ul>
+  </nav>
+</div>
+</header><nav class="mainnav" aria-label="Hlavní menu" lang="cs"><ul><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/planning/"><span>Planning &amp; Policies</span></a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="en" href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a></li><li><a lang="en" href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="Struktura" lang="en">
+  <ul style="align-self: center;">
+    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="cs" href="/WAI/fundamentals/accessibility-intro/cs" aria-current="page"><span>Úvod do webové přístupnosti</span></a></li></ul>
+</nav>
+    <div class="default-grid with-gap leftcol">
+
+  
+      
+        <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
+      <ul class="sidenav--list">
+  <li>
+  <a lang="en" href="/WAI/fundamentals/" class="page-link"><span>Accessibility Fundamentals</span></a></li><li>
+  <a lang="cs" href="/WAI/fundamentals/accessibility-intro/cs" aria-current="page" class="page-link"><span>Úvod do webové přístupnosti</span></a><ul><li>
+  <a lang="cs" href="/WAI/videos/standards-and-benefits/cs" class="page-link"><span>Video úvod</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/people/" class="page-link"><span>Accessibility is About People</span></a><ul><li>
+  <a lang="en" href="/WAI/perspective-videos/" class="page-link"><span>Perspectives Videos</span></a><ul><li>
+  <a lang="en" href="/WAI/perspective-videos/keyboard/" class="page-link"><span>Keyboard Compatibility</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/contrast/" class="page-link"><span>Colors with Good Contrast</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/layout/" class="page-link"><span>Clear Layout and Design</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/speech/" class="page-link"><span>Text to Speech</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/controls/" class="page-link"><span>Large Links, Buttons, and Controls</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/captions/" class="page-link"><span>Video Captions</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/customizable/" class="page-link"><span>Customizable Text</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/voice/" class="page-link"><span>Speech Recognition</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/understandable/" class="page-link"><span>Understandable Content</span></a></li><li>
+  <a lang="en" href="/WAI/perspective-videos/notifications/" class="page-link"><span>Notifications and Feedback</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/people-use-web/" class="page-link"><span>How People with Disabilities Use the Web</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/" class="page-link"><span>Stories of Web Users</span></a><ul><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-one/" class="page-link"><span>Ade&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-two/" class="page-link"><span>Ian&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-three/" class="page-link"><span>Lakshmi&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-four/" class="page-link"><span>Lexie&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-five/" class="page-link"><span>Sophie&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-six/" class="page-link"><span>Dhruv&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-seven/" class="page-link"><span>Marta&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-eight/" class="page-link"><span>Stefan&apos;s Story</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/user-stories/story-nine/" class="page-link"><span>Elias&apos; Story</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/people-use-web/abilities-barriers/" class="page-link"><span>Diverse Abilities and Barriers</span></a><ul><li>
+  <a lang="en" href="/WAI/people-use-web/abilities-barriers/auditory/" class="page-link"><span>Auditory</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/abilities-barriers/cognitive/" class="page-link"><span>Cognitive and Learning</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/abilities-barriers/physical/" class="page-link"><span>Physical</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/abilities-barriers/speech/" class="page-link"><span>Speech</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/abilities-barriers/visual/" class="page-link"><span>Visual</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/people-use-web/tools-techniques/" class="page-link"><span>Tools and Techniques</span></a><ul><li>
+  <a lang="en" href="/WAI/people-use-web/tools-techniques/perception/" class="page-link"><span>Perception</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/tools-techniques/presentation/" class="page-link"><span>Presentation</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/tools-techniques/input/" class="page-link"><span>Input</span></a></li><li>
+  <a lang="en" href="/WAI/people-use-web/tools-techniques/navigation/" class="page-link"><span>Interaction</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/older-users/" class="page-link"><span>Older Users and Accessibility</span></a><ul><li>
+  <a lang="en" href="/WAI/older-users/developing/" class="page-link"><span>How WCAG 2 Applies</span></a></li><li>
+  <a lang="en" href="/WAI/older-users/literature/" class="page-link"><span>Literature Review</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/fundamentals/accessibility-usability-inclusion/" class="page-link"><span>Accessibility, Usability, Inclusion</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/fundamentals/components/" class="page-link"><span>Components of Web Accessibility</span></a></li><li>
+  <a lang="cs" href="/WAI/fundamentals/accessibility-principles/cs" class="page-link"><span>Zásady přístupnosti</span></a></li><li>
+  <a lang="en" href="/WAI/research/" class="page-link"><span>Research</span></a><ul><li>
+  <a lang="en" href="/WAI/research/user-requirements/" class="page-link"><span>User Requirements</span></a></li><li>
+  <a lang="en" href="/WAI/research/ai2023/" class="page-link"><span>AI and Accessibility</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/courses/" class="page-link"><span>Digital Accessibility Courses</span></a><ul><li>
+  <a lang="en" href="/WAI/courses/foundations-course/" class="page-link"><span>W3C Foundations Online Course</span></a></li><li>
+  <a lang="en" href="/WAI/courses/list/" class="page-link"><span>Course List</span></a></li></ul></li></ul></nav><nav class="sidenav-languages" aria-labelledby="languagehead">
+        <header id="languagehead">Jazyky/překlady</header>
+        <ul class="langlist">
+          <li style="margin-bottom: 2px;"><a href="/WAI/fundamentals/accessibility-intro/" lang="en" dir="auto" translate="no">English (original)</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/ar" dir="auto" translate="no" lang="ar">العربية</a></li><li style="margin-bottom: 2px;"><strong style="text-transform: capitalize;">čeština</strong></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/de" dir="auto" translate="no" lang="de">Deutsch</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/es" dir="auto" translate="no" lang="es">español</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/fr" dir="auto" translate="no" lang="fr">français</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/id" dir="auto" translate="no" lang="id">Bahasa Indonesia</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/ko" dir="auto" translate="no" lang="ko">한국어</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/pl" dir="auto" translate="no" lang="pl">polski</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/ru" dir="auto" translate="no" lang="ru">русский язык</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/fundamentals/accessibility-intro/zh-hans" dir="auto" translate="no" lang="zh-hans">简体中文</a></li></ul><p><a href="/WAI/translations/#cs">Další zdroje v čeština</a></p>
+        
+        <p><a href="/WAI/translations/">Všechny&nbsp;překlady</a></p>
+        <p><a href="/WAI/about/translating/">Překlady WAI zdrojů</a></p>
+      </nav>
+</div>
+
+
+      
+  
+
+  <main id="main" lang="cs">
+
+    
+
+    
+    <header>
+      <h1>
+      
+      
+      
+        Úvod do webové přístupnosti
+      
+      </h1></header>
+    <section id="translation-info" class="doc-note-box doc-note-translation">
+  <h2 class="visuallyhidden">O tomto překladu</h2>
+  <p>Tento dobrovolnický překlad nemusí přesně vystihovat záměry <a href="/WAI/fundamentals/accessibility-intro/">anglického originálu</a>.</p>
+  
+  
+  <p><svg focusable="false" aria-hidden="true" class="icon-warning "><use xlink:href="/WAI/assets/images/icons.svg#icon-warning"></use></svg> Anglická verze aktualizována od tohoto překladu: <a href="/WAI/fundamentals/accessibility-intro/changelog/">Záznam změn</a>.
+    <br>Angličtina aktualizována: <span dir="auto">2024-03-07</span>. Překlad aktualizován: <span dir="auto">2020-08-26</span>.
+  </p>
+  
+  
+  <p>
+    <strong>Překladatel:</strong> Kristýna Švecová. 
+    Přispěvatel: Jiří Zmrhal. <br>WAI děkuje překladatelům a vítá další <a href="/WAI/about/translating/">překlady</a>.</p>
+</section><aside class="box box-full"><header class="box-h  box-h-full"> <h2> Shrnutí </h2></header><div class="box-i">
+
+<p>Pokud jsou webové stránky a nástroje řádně navrženy a naprogramovány, jsou použitelné pro lidi se zdravotním postižením. V současné době je ale mnoho stránek a nástrojů vytvořeno s bariérami přístupnosti, které pro některé lidi znemožňují použití těchto stránek.</p>
+
+<p>Tvorba přístupného webu je prospěšná pro jednotlivce, podniky i společnost. Mezinárodní webové směrnice definují, co je potřeba pro webovou přístupnost.</p>
+
+</div></aside>
+
+
+
+<nav class="box box-simple box-full" aria-labelledby="tocheading" id="toc">
+  <header id="tocheading" class="box-h box-h-simple box-h-full"> Obsah stránky</header>
+  <div class="box-i">
+
+
+
+
+<ul id="markdown-toc">
+  <li><a href="#context" id="markdown-toc-context">Přístupnost v souvislostech</a></li>
+  <li><a href="#what" id="markdown-toc-what">Co je webová přístupnost</a></li>
+  <li><a href="#important" id="markdown-toc-important">Přístupnost je důležitá pro jednotlivce, podniky, společnost</a></li>
+  <li><a href="#making" id="markdown-toc-making">Tvorba přístupného webu</a></li>
+  <li><a href="#evaluate" id="markdown-toc-evaluate">Hodnocení přístupnosti</a></li>
+  <li><a href="#pklady" id="markdown-toc-pklady">Příklady</a></li>
+  <li><a href="#more-info" id="markdown-toc-more-info">Více informací</a></li>
+</ul>
+
+<p><span class="box-h box-h-simple box-h-full">Související zdroje</span><br />
+<a href="https://www.w3.org/WAI/videos/standards-and-benefits.html" class="video-link">
+  <img src="/WAI/content-images/intro-accessibility/video-still-accessibility-intro-16-9.jpg" alt="" />
+  <span>Video úvod do webové přístupnosti a W3C standardů <em>(4 minuty)</em></span>
+</a></p>
+
+
+
+  </div>
+</nav>
+
+
+
+<h2 id="context">Přístupnost v souvislostech</h2>
+
+<blockquote class="pull">
+  <p>Síla webu je v jeho všeobecnosti.<br />
+    Přístup pro všechny nehledě na způsobilost je zásadním aspektem.</p>
+  <footer><cite>Tim Berners-Lee, ředitel W3C a vynálezce World Wide Webu</cite></footer>
+</blockquote>
+
+<p>Web je v podstatě navržen, aby fungoval pro všechny lidi, nehledě na jejich hardware, software, jazyk, lokaci nebo schopnosti. Když web dosáhne tohoto cíle, je přístupný pro osoby s širokým spektrem sluchu, pohybu, zraku a kognitivních schopností.</p>
+
+<p>Dopad zdravotního postižení se tedy na webu radikálně mění, protože web odstraňuje překážky v komunikaci a interakcích, kterým mnoho lidí ve fyzickém světě čelí. Pokud jsou však webové stránky, aplikace, technologie nebo nástroje špatně navrženy, mohou vytvářet bariéry, které zabraňují lidem v používání webu.</p>
+
+<p><strong>Přístupnost je nezbytná pro vývojáře a organizace, kteří chtějí produkovat vysoce kvalitní webové stránky a webové nástroje a nezabraňovat lidem v používání jejich produktů a služeb.</strong></p>
+
+<h2 id="what">Co je webová přístupnost</h2>
+
+<p>Webová přístupnost znamená, že webové stránky, nástroje a technologie jsou navržené a vyvinuté tak, že lidé se zdravotním postižením je mohou používat. Konkrétněji, lidé mohou:</p>
+
+<ul>
+  <li>vnímat, rozumět, navigovat a interagovat s webem</li>
+  <li>přispívat na web</li>
+</ul>
+
+<p>Webová přístupnost zahrnuje všechna postižení, která mají vliv na přístup k webu, včetně postižení:</p>
+
+<ul>
+  <li>sluchových</li>
+  <li>kognitivních</li>
+  <li>neurologických</li>
+  <li>fyzických</li>
+  <li>řečových</li>
+  <li>zrakových</li>
+</ul>
+
+<p>Webová přístupnost je přínosná také pro osoby <em>bez</em> postižení, například:</p>
+
+<ul>
+  <li>osoby, které používají mobilní telefony, chytré hodinky, chytré televize a další přístroje s malými obrazovkami, různými vstupními režimy apod.</li>
+  <li>starší osoby, jejichž schopnosti se mění s věkem</li>
+  <li>osoby s “dočasným postižením” jako třeba zlomenou rukou nebo ztracenými brýlemi</li>
+  <li>osoby v “limitujících situacích” jako třeba na přímém slunci nebo v prostředí, kde nemohou poslouchat zvuk</li>
+  <li>osoby s pomalým připojením k internetu nebo s omezenými nebo drahými daty</li>
+</ul>
+
+<p>Pro sedmiminutové video s příklady, jak je přístupnost nezbytná pro lidi s postižením a užitečná pro všechny v různých situacích, navštivte:<br />
+<a href="https://www.youtube.com/watch?v=3f31oufqFSM" class="video-link">
+  <img src="/WAI/content-images/intro-accessibility/video-still-accessibility-perspectives-16-9.jpg" alt="" />
+  <span>Video o perspektivách webové přístupnosti <em>(YouTube)</em></span>
+</a></p>
+
+<aside class="box box-simple box-aside"><header class="box-h  box-h-simple box-h-aside"> <h3> Více informací o tom, co je přístupnost </h3></header><div class="box-i">
+
+<ul>
+  <li>Pokud chcete zjistit více o tom, jak různá zdravotní postižení ovlivňují používání webu, navštivte <a href="/WAI/people-use-web/" hreflang="en">Jak lidé s postižením používají web (anglicky)</a>.</li>
+  <li>Pro více příkladů výhod pro ostatní, podložených WCAG, navštivte <a href="/WAI/standards-guidelines/shared-experiences/" hreflang="en">Sdílené zkušenosti na webu: Bariéry společné pro uživatele mobilních telefonů a osoby s postižením (anglicky)</a> a archivované <a href="https://www.w3.org/WAI/business-case/archive/soc#groups">výhody webové přístupnost pro lidi s postižením i bez</a>.</li>
+</ul>
+
+</div></aside>
+
+<h2 id="important">Přístupnost je důležitá pro jednotlivce, podniky, společnost</h2>
+
+<p>Web se stává stále důležitějších zdrojem v mnoha oblastech života: vzdělání, zaměstnání, vládě, obchodu, zdravotnictví, rekreaci a dalších. Je zásadní, aby web byl přístupný a poskytoval rovnocenný přístup a rovné příležitosti lidem s různými schopnostmi. Přístup k informačním a komunikačním technologiím, včetně webu, je definován jako základní lidské právo v konvenci Spojených národů O právech osob se zdravotním postižením (UN <a href="https://www.un.org/development/desa/disabilities/convention-on-the-rights-of-persons-with-disabilities.html">CRPD</a>).</p>
+
+<p>Web nabízí možnost bezprecedentního přístupu k informacím a interakcím pro mnoho lidí se zdravotním postižením. To znamená, že bariéry přístupnosti v tisku, audio a vizuálních médiích lze snadno překonat pomocí webových technologií.</p>
+
+<p>Přístupnost podporuje sociální začleňování osob se zdravotním postižením i ostatních, například:</p>
+
+<ul>
+  <li>starších osob</li>
+  <li>osob v odlehlých oblastech</li>
+  <li>osob v rozvojových zemích</li>
+</ul>
+
+<p><strong>Přístupnost má také zásadní ekonomický význam.</strong> Jak je vysvětleno v předchozích sekcích, přístupný design vylepšuje celkový uživatelský prožitek a spokojenost, zejména v různých situacích, s různými zařízeními a pro starší uživatele. Přístupnost může vylepšit Vaši značku, řídit inovace a zvětšit Váš dosah na trhu.</p>
+
+<p>Webová přístupnost je <strong>vyžadována zákonem</strong> v mnoha situacích.</p>
+
+<aside class="box box-simple box-aside"><header class="box-h  box-h-simple box-h-aside"> <h3> Více informací k sekci Přístupnost je důležitá </h3></header><div class="box-i">
+
+<ul>
+  <li>Základní informace o výhodách pro firmy jsou v <a href="/WAI/business-case/" hreflang="en">Obchodním případě pro digitální přístupnost (anglicky)</a>.</li>
+  <li>Pokyny pro pochopení zákonných požadavků je v archivovaných <a href="https://www.w3.org/WAI/business-case/archive/pol">Právních a politických faktorech</a>.</li>
+</ul>
+
+</div></aside>
+
+<h2 id="making">Tvorba přístupného webu</h2>
+
+<p>Webová přístupnost závisí na několika spolupracujících komponentách, včetně webových technologií, prohlížečů a dalších "uživatelských" agentů, vývojových nástrojů a webových stránek.</p>
+
+<p>Iniciativa pro webovou přístupnost W3C (<a href="/WAI/get-involved/" hreflang="en">WAI (anglicky)</a>) vyvíjí technické specifikace, pokyny, techniky a podpůrné zdroje, které popisují přístupná řešení. Ta jsou považována za mezinárodní standardy pro webovou přístupnost, například <abbr title="Pokyny pro přístupnost webového obsahu (WCAG)">WCAG</abbr> 2.0 je také <abbr title="Mezinárodní organizace pro normalizaci">ISO</abbr> norma: ISO/<abbr title="Mezinárodní elektrotechnická komise">IEC</abbr> 40500.</p>
+
+<aside class="box box-simple box-aside"><header class="box-h  box-h-simple box-h-aside"> <h3> Více informací o Tvorbě přístupného webu </h3></header><div class="box-i">
+
+<ul>
+  <li>Více o spolupracujících aspektech přístupnosti v <a href="/WAI/fundamentals/components/" hreflang="en">Základních komponentech webové přístupnosti (anglicky)</a>.</li>
+  <li>Pokyny pro zpřístupnění obsahu webu (WCAG), Pokyny pro zpřístupnění vývojových nástrojů (ATAG), ARIA Přístupné internetové aplikace a další důležité zdroje jsou představeny ve <a href="/WAI/standards-guidelines/cs">Přehled standardů přístupnosti W3C</a>.</li>
+  <li>Pro více informací o tom, jak W3C WAI vyvíjí materiály za pomoci několika zúčastněných stran, mezinárodní spolupráce a jak můžete přispět Vy, navštivte <a href="/WAI/about/" hreflang="en">O WAI (anglicky)</a> a <a href="/WAI/get-involved/" hreflang="en">Přispívání pro WAI (anglicky)</a>.</li>
+</ul>
+
+</div></aside>
+
+<h3 id="website">Zpřístupnění Vaší webové stránky</h3>
+
+<p>Řada aspektů přístupnosti je poměrně snadno pochopitelná a impementovatelná. Některá řešení přístupnosti jsou složitější a jejich implementace vyžaduje více znalostí.</p>
+
+<p>Nejefektivnější je zařadit přístupnost hned od začátku projektu, aby nebylo nutné se vracet a opravovat již existující práci.</p>
+
+<aside class="box box-simple box-aside"><header class="box-h  box-h-simple box-h-aside"> <h3> Více informací o Zpřístupnění Vaší webové stránky </h3></header><div class="box-i">
+
+<ul>
+  <li>Pro úvod do požadavků pro přístupnost a mezinárodních standardů, navštivte <a href="/WAI/fundamentals/accessibility-principles/cs">Zásady přístupnosti</a>.</li>
+  <li>Pro porozumění běžným překážkám přístupnosti z pohledu testování, navštivte <a href="/WAI/test-evaluate/preliminary/" hreflang="en">Základní kontrola - První revize (anglicky)</a>.</li>
+  <li>Pro základní činitele přístupnosti při navrhování, psaní a vyvíjení, navštivte <a href="/WAI/tips/" hreflang="en">Tipy pro začátek (anglicky)</a>.</li>
+  <li>Pokud jste připraveni dozvědět se víc o vyvíjení a navrhování, pravděpodobně se Vám budou hodit zdroje jako:
+    <ul>
+      <li><a href="https://www.w3.org/WAI/WCAG21/quickref/">Jak splnit WCAG (Rychlý průvodce)</a></li>
+      <li><a href="https://www.w3.org/WAI/tutorials/">Výukové materiály pro webovou přístupnost</a></li>
+    </ul>
+  </li>
+  <li>Pro řízení projektů a organizační aspekty, navštivte <a href="/WAI/planning-and-managing/" hreflang="en">Plánování a řízení webové přístupnosti (anglicky)</a>.<br />
+Pokud potřebujete rychlé opravy hned, navštivte <a href="/WAI/planning/interim-repairs/" hreflang="en">Kroky pro dočasné opravy (anglicky)</a>.</li>
+</ul>
+
+</div></aside>
+
+<h2 id="evaluate">Hodnocení přístupnosti</h2>
+
+<p>Při vývoji nebo redesignu webové stránky zhodnoťte přístupnost na začátku, a pak také během vývoje, abyste identifikovali problémy v přístupnosti co nejdříve, dokud je možné je snadněji opravit. Jednuduché kroky, jako třeba změna nastavení v prohlížeči, Vám mohou pomoci zhodnotit některé aspekty přístupnosti. Komplexní zhodnocení toho, zda Vaše webová stránka splňuje všechny pokyny pro přístupnost, vyžaduje více úsilí.</p>
+
+<p>Existují nástroje, které pomáhají s hodnocením. Žádný nástroj však sám nemůže určit, zda stránka splňuje všechny pokyny pro přístupnost. K určení, zda je web skutečně přístupný, je třeba informované lidské zhodnocení.</p>
+
+<aside class="box box-simple box-aside"><header class="box-h  box-h-simple box-h-aside"> <h3> Více informací o Hodnocení přístupnosti </h3></header><div class="box-i">
+
+<ul>
+  <li>Zdroje, které pomáhají s hodnocením přístupnosti, jsou popsány v <a href="/WAI/test-evaluate/" hreflang="en">Hodnocení přístupnosti webových stránek (anglicky)</a>.</li>
+</ul>
+
+</div></aside>
+
+<details id="examples"><summary>
+
+    <h2 id="pklady">Příklady</h2>
+
+  </summary>
+  <div>
+
+    <h3 id="textov-alternativy-obrzk">Textové alternativy obrázků</h3>
+
+    <p><img src="https://www.w3.org/WAI/intro/alt-logo.png" alt="obrázek loga, HTML kód pro obrázek s alternativním textem Logo Iniciativy pro přístupnost webu'" class="right" /></p>
+
+    <p>Obrázky by měly obsahovat <em><a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/text-equiv.html">ekvivalentní textové alternativy</a></em> (alt text) v kódu.</p>
+
+    <p>Pokud není poskytnuta textová alternativa obrázku, obrázek není přístupný například pro lidi, kteří nevidí a používají čtečku obrazovky. Ta čte nahlas informace na stránce, včetně textových alternativ pro obrázky.</p>
+
+    <p>Pokud je poskytnutá textová alternativa obrázku, informace je přístupná pro slepé osoby, stejně jako pro osoby, které mají vypnuté zobrazení obrázků (například v oblastech s drahým nebo pomalým připojením). Informace je také dostupná pro technologie, které obrázky nevidí, jako třeba vyhledávače.</p>
+
+    <h3 id="pstupnost-z-klvesnice">Přístupnost z klávesnice</h3>
+
+    <p><img src="https://www.w3.org/WAI/intro/no-mouse.png" alt="přeškrtnutá myš" class="left" width="67" height="45" /></p>
+
+    <p>Někteří lidé nemohou používat myš, včetně starších osob s omezenou jemnou motorikou. Přístupná webová stránka nespoléhá na myš, <a href="https://www.w3.org/TR/UNDERSTANDING-WCAG20/keyboard-operation.html">všechny funkce jsou dostupné z klávesnice</a>. Pak lidé se zdravotním postižením mohou používat <a href="/WAI/planning/involving-users/#at" hreflang="en">asistenční technologie (anglicky)</a>, které imitují klávesnici, jako třeba ovládání hlasem.</p>
+
+    <h3 id="pepis-pro-zvuk">Přepis pro zvuk</h3>
+
+    <p><a href="https://www.w3.org/WAI/highlights/200606wcag2interview.html"><img src="https://www.w3.org/WAI/intro/transcript.png" alt="příklad přepisu" class="right" width="251" height="254" /></a></p>
+
+    <p>Stejně jako obrázky nejsou přístupné lidem, kteří nevidí, zvukové soubory nejsou dostupné lidem, kteří neslyší. Poskytnutí přepisu zpřístupní zvukové informace hluchým a osobám se zhoršeným sluchem, zároveň vyhledávačům a dalším technologiím, které neslyší.</p>
+
+    <p>Poskytnutí přepisu je jednoduché a relativně levné. Existují také <a href="http://www.uiaccess.com/transcripts/transcript_services.html">služby pro tvorbu přepisu</a>, které vytvoří přepis ve formátu HTML.</p>
+
+<aside class="box box-simple box-aside"><header class="box-h  box-h-simple box-h-aside"> <h3> Více příkladů </h3></header><div class="box-i">
+
+    <ul>
+      <li><a href="/WAI/tips/" hreflang="en">Tipy pro začátek (anglicky)</a></li>
+      <li><a href="/WAI/test-evaluate/preliminary/" hreflang="en">Základní kontrola - První revize (anglicky)</a></li>
+      <li><a href="/WAI/perspective-videos/" class="video-link video-link-small video-link-inline">
+  <img src="/WAI/content-images/intro-accessibility/video-still-accessibility-perspectives-16-9.jpg" alt="" />
+  <span>Perspektivy webové přístupnosti — videa a popisy</span>
+</a></li>
+    </ul>
+
+</div></aside>
+
+  </div>
+</details>
+
+<h2 id="more-info">Více informací</h2>
+
+<p>W3C WAI poskytuje široké spektrum zdrojů o různých aspektech <a href="/WAI/standards-guidelines/cs">standardů</a> webové přístupnosti, <a href="/WAI/teach-advocate/" hreflang="en">vzdělávání (anglicky)</a>, <a href="/WAI/test-evaluate/" hreflang="en">testování/hodnocení (anglicky)</a>, <a href="/WAI/planning/" hreflang="en">řízení projektů a firemních postupech (anglicky)</a>. Doporučujeme prozkoumat tento web nebo prostudovat seznam <a href="/WAI/Resources/" hreflang="en">zdrojů WAI (anglicky)</a>.</p>
+
+
+    <aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Pomozte vylepšit tuto stránku </h2></header><div class="box-i"><p>Prosíme, sdílejte své nápady, připomínky nebo komentáře e-mailem do veřejně archivovaného seznamu <a href="mailto:wai@w3.org?subject=%5Bcs%5D%20%C3%9Avod%20do%20webov%C3%A9%20p%C5%99%C3%ADstupnosti&amp;body=%5Bvlo%C5%BEit%20koment%C3%A1%C5%99%20zde...%5D%0A%0AD%C3%A1v%C3%A1m%20souhlas%20se%20sd%C3%ADlen%C3%ADm%20do%20ve%C5%99ejn%C4%9B%20archivovan%C3%A9ho%20e-mailov%C3%A9ho%20seznamu">wai@w3.org</a> nebo na GitHubu.</p>
+<div class="button-group">
+    <a href="mailto:wai@w3.org?subject=%5Bcs%5D%20%C3%9Avod%20do%20webov%C3%A9%20p%C5%99%C3%ADstupnosti&body=%5Bvlo%C5%BEit%20koment%C3%A1%C5%99%20zde...%5D%0A%0AD%C3%A1v%C3%A1m%20souhlas%20se%20sd%C3%ADlen%C3%ADm%20do%20ve%C5%99ejn%C4%9B%20archivovan%C3%A9ho%20e-mailov%C3%A9ho%20seznamu" class="button"><span>E-mail</span></a><a href="
+https://github.com/w3c/wai-website/edit/main/pages/fundamentals/introduction/index.cs.md
+" class="button"><span>Vytvořit fork &amp; upravit na GitHubu</span></a><a href="https://github.com/w3c/wai-website/issues/new?template=content-issue.yml&title=[cs]%20&wai-resource-id=wai-accessibility-intro&wai-url=https://www.w3.org/WAI/fundamentals/accessibility-intro/cs" class="button"><span>Nová GitHub Issue</span></a></div></div></aside>
+
+
+    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> Nahoru</span></a>
+  </main>
+</div>
+
+
+  
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner"
+      >
+      <p><strong>Datum:</strong> Aktualizováno 5. června 2019. Poprvé zveřejněno v únoru 2005. <a href="/WAI/fundamentals/accessibility-intro/changelog/">Seznam změn</a>.</p> <p><strong>Editor:</strong> <a href="https://www.w3.org/People/Shawn/">Shawn Lawton Henry</a>.</p> <p>Vyvinuto Pracovní skupinou pro vzdělání a osvětu (<a href="https://www.w3.org/WAI/EO/">EOWG</a>).</p>
+</div>
+  </footer>
+  
+
+
+
+
+
+<footer class="site-footer grid-4q" aria-label="Site">
+  <div class="q1-start q3-end about">
+    <div>
+      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
+      <p>Strategie, standardy a další zdroje pro tvorbu webu přístupného pro lidi s postižením.</p>
+    </div>
+    <div class="social" lang="en" dir="auto" translate="no">
+      <ul>
+        <li><a href="https://w3c.social/@wai"><svg focusable="false" aria-hidden="true" class="icon-mastodon "><use xlink:href="/WAI/assets/images/icons.svg#icon-mastodon"></use></svg> Mastodon</a></li>
+        <li><a href="https://www.linkedin.com/company/w3c-wai/"><svg focusable="false" aria-hidden="true" class="icon-linkedin "><use xlink:href="/WAI/assets/images/icons.svg#icon-linkedin"></use></svg> LinkedIn</a></li>
+        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
+        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlistsv"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
+        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+      </ul>
+    </div>
+    <div lang="en" dir="auto"  translate="no">
+      <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
+    </div>
+  </div>
+  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
+    <ul style="margin-bottom:0">
+      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+      <li><a href="/WAI/sitemap/">Site Map</a></li>
+      <li><a href="/WAI/news/">News</a></li>
+      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
+      <li><a href="/WAI/translations/"> Translations</a></li>
+      <li><a href="/WAI/roles/">Resources for Roles</a></li>
+    </ul>
+  </div>
+</footer><!-- Details4Everybody -->
+<script src="/WAI/assets/scripts/details4everybody.js?1725936703303430688"></script>
+<!-- SVG4Everybody -->
+<script src="/WAI/assets/scripts/svg4everybody.js?1725936703303430688"></script>
+<script>
+  svg4everybody();
+</script>
+<script src="/WAI/assets/scripts/lang/cs.js?1725936703303430688"></script>
+
+  </body>
+</html>
