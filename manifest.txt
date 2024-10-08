@@ -3088,6 +3088,7 @@
 /news/2024-06-24/people-use-web/index.html
 /news/2024-07-02/wcag2ict/index.html
 /news/2024-07-10/ctaur/index.html
+/news/2024-10-08/wcag2ict/index.html
 /news/21/index.html
 /news/22/index.html
 /news/23/index.html

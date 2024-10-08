@@ -13,6 +13,27 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2024-10-08/wcag2ict/",
+            "title": "WCAG2ICT Note Published",
+            "summary": null,
+            "content_text": "Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies (WCAG2ICT) is a completed W3C Group Note. WCAG2ICT describes how Web Content Accessibility Guidelines (WCAG) principles, guidelines, and success criteria can be applied to non-web information and communications technologies (ICT), specifically to non-web documents and software. The document includes guidance for WCAG 2.0, 2.1, and 2.2 success criteria and glossary terms. WCAG2ICT has been a key resource for including WCAG in ICT accessibility regulation, legislation, and standards around the world. This update facilitates further adoption of WCAG 2.1 and WCAG 2.2 in non-web contexts. For an introduction, see: WCAG2ICT Overview.",
+            "content_html": "<p><a href=\"https://www.w3.org/TR/wcag2ict/\">Guidance on Applying WCAG 2 to Non-Web Information and Communications Technologies (WCAG2ICT)</a> is a completed W3C Group Note. WCAG2ICT describes how Web Content Accessibility Guidelines (WCAG) principles, guidelines, and success criteria can be applied to non-web information and communications technologies (ICT), specifically to non-web documents and software. The document includes guidance for WCAG 2.0, 2.1, and 2.2 success criteria and glossary terms. WCAG2ICT has been a key resource for including WCAG in ICT accessibility regulation, legislation, and standards around the world. This update facilitates further adoption of WCAG 2.1 and WCAG 2.2 in non-web contexts. For an introduction, see: <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/non-web-ict/\">WCAG2ICT Overview</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2024-10-08/wcag2ict/",
+            
+            
+            
+            
+            
+            "date_published": "2024-10-08T00:00:00+00:00",
+            "date_modified": "2024-10-08T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2024-07-10/ctaur/",
             "title": "For Wide Review: Collaboration Tools Accessibility User Requirements",
             "summary": null,
@@ -740,27 +761,6 @@
             
             "date_published": "2022-09-19T00:00:00+00:00",
             "date_modified": "2022-09-19T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2022-09-06/wcag-22-cr/",
-            "title": "Call for Implementations: WCAG 2.2 Candidate Recommendation",
-            "summary": null,
-            "content_text": "WCAG 2.2 is now officially a ‘Candidate Recommendation’. We’re seeking examples of how the new ‘success criteria’ are implemented in websites and web apps. We plan to publish the finalized WCAG 2.2 in December 2022. Please see status and updates in What’s New in WCAG 2.2 Draft. Please submit implementations and any comments by 4 October 2022.",
-            "content_html": "<p><a href=\"https://www.w3.org/TR/WCAG22\">WCAG 2.2</a> is now officially a ‘Candidate Recommendation’. We’re seeking examples of how the new ‘success criteria’ are implemented in websites and web apps. We plan to publish the finalized WCAG 2.2 in December 2022. Please see status and updates in <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/new-in-22/\">What’s New in WCAG 2.2 Draft</a>. Please submit implementations and any comments by <strong>4 October 2022</strong>.</p>",
-            "url": "https://www.w3.org/WAI/news/2022-09-06/wcag-22-cr/",
-            
-            
-            
-            
-            
-            "date_published": "2022-09-06T00:00:00+00:00",
-            "date_modified": "2022-09-06T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"
