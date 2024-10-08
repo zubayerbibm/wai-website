@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1727980847565018125";
+      element.src = "/WAI/assets/scripts/main.js?1728383157269504702";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1727980847565018125">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1728383157269504702">
 
-<title> HTML page has non-empty title[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1727980847565018125"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> HTML page has non-empty title[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1728383157269504702"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="HTML page has non-empty title" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -589,6 +589,28 @@ h2#sidebar-header {
 <span class="nt">&lt;/html&gt;</span>
 </code></pre></div></div>
 
+<h4 id="failed-example-6">Failed Example 6</h4>
+
+<p><a class="example-link" title="Failed Example 6" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/60574540bb0248b7670f5c04df10983520878860.html">Open in a new tab</a></p>
+
+<p>This page does not have a title because the shadow root is not a <a href="https://dom.spec.whatwg.org/#concept-tree-descendant">descendant</a> of the <a href="https://dom.spec.whatwg.org/#document-element">document element</a>.</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html&gt;</span>
+	<span class="nt">&lt;body&gt;</span>
+		<span class="nt">&lt;template</span> <span class="na">id=</span><span class="s">"shadow-element"</span><span class="nt">&gt;</span>
+			<span class="nt">&lt;title&gt;</span>This is the page title<span class="nt">&lt;/title&gt;</span>
+		<span class="nt">&lt;/template&gt;</span>
+		<span class="nt">&lt;script&gt;</span>
+      			<span class="kd">const</span> <span class="nx">host</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">querySelector</span><span class="p">(</span><span class="dl">"</span><span class="s2">body</span><span class="dl">"</span><span class="p">);</span>
+      			<span class="kd">const</span> <span class="nx">shadow</span> <span class="o">=</span> <span class="nx">host</span><span class="p">.</span><span class="nf">attachShadow</span><span class="p">({</span> <span class="na">mode</span><span class="p">:</span> <span class="dl">"</span><span class="s2">open</span><span class="dl">"</span> <span class="p">});</span>
+      			<span class="kd">const</span> <span class="nx">template</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">"</span><span class="s2">shadow-element</span><span class="dl">"</span><span class="p">);</span>
+
+      			<span class="nx">shadow</span><span class="p">.</span><span class="nf">appendChild</span><span class="p">(</span><span class="nx">template</span><span class="p">.</span><span class="nx">content</span><span class="p">);</span>
+    		<span class="nt">&lt;/script&gt;</span>
+	<span class="nt">&lt;/body&gt;</span>
+<span class="nt">&lt;/html&gt;</span>
+</code></pre></div></div>
+
 <h3 id="inapplicable">Inapplicable</h3>
 
 <h4 id="inapplicable-example-1">Inapplicable Example 1</h4>
@@ -796,7 +818,7 @@ h2#sidebar-header {
         style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"
       >
       <p><strong>Rule Identifier:</strong> 2779a5</p>
-<p><strong>Date:</strong> Updated 30 August 2024</p>
+<p><strong>Date:</strong> Updated 30 September 2024</p>
 <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/brynanders">Bryn Anderson</a>, <a href="https://github.com/jkodu">Jey Nandakumar</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -838,9 +860,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1727980847565018125"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1728383157269504702"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1727980847565018125"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1728383157269504702"></script>
 <script>
   svg4everybody();
 </script><script>
