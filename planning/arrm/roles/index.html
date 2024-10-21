@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1728401446962619909";
+      element.src = "/WAI/assets/scripts/main.js?1729532124045755009";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1728401446962619909">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1729532124045755009">
 
 <title>[Draft] Roles Involved in Accessibility | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
@@ -113,59 +113,76 @@
         Roles Involved in Accessibility
       
       </h1></header>
-    <h2 id="introduction">Introduction</h2>
+    <section class="doc-note-box">
+  <p>This is an in-progress draft. We welcome comments via GitHub or email from the <a href="#helpimprove">links below</a>.</p>
 
-<p>This document defines typical roles that have responsibilities for ensuring web accessibility. These role descriptions are generalized on purpose. A individual may fill with more than one role.</p>
+</section><aside class="box"><header class="box-h "> Summary</header><div class="box-i">
+
+<p>This page defines typical roles that have responsibilities for ensuring accessibility.</p>
+
+</div></aside>
+
+
+
+<nav class="box box-simple" aria-labelledby="tocheading" id="toc">
+  <header id="tocheading" class="box-h box-h-simple"> Page Contents</header>
+  <div class="box-i">
+
+
+
+
+<ul id="markdown-toc">
+  <li><a href="#introduction" id="markdown-toc-introduction">Introduction</a></li>
+  <li><a href="#1-business-role-group" id="markdown-toc-1-business-role-group">1. Business Role Group</a>    <ul>
+      <li><a href="#business-analysis" id="markdown-toc-business-analysis">Business Analysis</a></li>
+    </ul>
+  </li>
+  <li><a href="#2-author-role-group" id="markdown-toc-2-author-role-group">2. Author Role Group</a>    <ul>
+      <li><a href="#content-authoring" id="markdown-toc-content-authoring">Content Authoring</a></li>
+      <li><a href="#content-publishing" id="markdown-toc-content-publishing">Content Publishing</a></li>
+    </ul>
+  </li>
+  <li><a href="#3-design-role-group" id="markdown-toc-3-design-role-group">3. Design Role Group</a>    <ul>
+      <li><a href="#user-experience-researcher" id="markdown-toc-user-experience-researcher">User Experience Researcher</a></li>
+      <li><a href="#user-experience-design" id="markdown-toc-user-experience-design">User Experience Design</a></li>
+      <li><a href="#visual-design" id="markdown-toc-visual-design">Visual Design</a></li>
+    </ul>
+  </li>
+  <li><a href="#4-development-role-group" id="markdown-toc-4-development-role-group">4. Development Role Group</a>    <ul>
+      <li><a href="#front-end-development" id="markdown-toc-front-end-development">Front-End Development</a></li>
+      <li><a href="#back-end-development" id="markdown-toc-back-end-development">Back-End Development</a></li>
+    </ul>
+  </li>
+  <li><a href="#5-testing-role-group" id="markdown-toc-5-testing-role-group">5. Testing Role Group</a>    <ul>
+      <li><a href="#qa-testing-roles-overall" id="markdown-toc-qa-testing-roles-overall">QA Testing Roles (overall)</a></li>
+      <li><a href="#automated-qa-testing" id="markdown-toc-automated-qa-testing">Automated QA Testing</a></li>
+      <li><a href="#manual-qa-testing" id="markdown-toc-manual-qa-testing">Manual QA Testing</a></li>
+    </ul>
+  </li>
+  <li><a href="#6-administration-role-group" id="markdown-toc-6-administration-role-group">6. Administration Role Group</a>    <ul>
+      <li><a href="#product-ownership" id="markdown-toc-product-ownership">Product Ownership</a></li>
+      <li><a href="#project-management" id="markdown-toc-project-management">Project Management</a></li>
+      <li><a href="#governance" id="markdown-toc-governance">Governance</a></li>
+    </ul>
+  </li>
+</ul>
+
+
+
+  </div>
+</nav>
+
+
+
+<h2 id="introduction">Introduction</h2>
+
+<p>This page defines typical roles that have responsibilities for ensuring accessibility. These role descriptions are generalized on purpose. An individual may fulfill more than one role.</p>
 
 <p>Each role description includes areas of focus in decision making, decision ownership, notes on the primary tasks of that role, a shortlist of common job titles, and a general description of the accessibility responsibilities of that role.</p>
 
-<p>These roles were defined as part of the <a href="/WAI/planning/arrm/">Accessibility Roles and Responsibilities Mapping (ARRM)</a> project. You are welcome to use them and change them for your organization.</p>
+<p>You are welcome to use this information as is, or change it for your situation.</p>
 
-<p>The roles in this document are:</p>
-
-<ol>
-  <li><a href="#analysis"><strong>Analysis</strong> Role Group</a>
-    <ul>
-      <li>Business Analysis</li>
-    </ul>
-  </li>
-  <li><a href="#author"><strong>Author</strong> Role Group</a>
-    <ul>
-      <li>Content Authoring</li>
-      <li>Content Publishing</li>
-    </ul>
-  </li>
-  <li><a href="#designer"><strong>Designer</strong> Role Group</a>
-    <ul>
-      <li>Visual Design</li>
-      <li>User Experience (UX) Design</li>
-    </ul>
-  </li>
-  <li><a href="#development"><strong>Development</strong> Role Group</a>
-    <ul>
-      <li>Front-End Development</li>
-      <li>Back-End Development</li>
-    </ul>
-  </li>
-  <li><a href="#testing"><strong>Testing</strong> Role Group</a>
-    <ul>
-      <li>QA Testing Roles (overall)</li>
-      <li>Automated QA Testing</li>
-      <li>Manual QA Testing</li>
-    </ul>
-  </li>
-  <li><a href="#admin"><strong>Administration</strong> Role Group</a>
-    <ul>
-      <li>Product Ownership</li>
-      <li>Project Management</li>
-      <li>Governance</li>
-    </ul>
-  </li>
-</ol>
-
-<h2 id="analysis">Analysis Role Group</h2>
-
-<p>Main focus: <strong>Business Vision, Rules &amp; Requirements</strong></p>
+<h2 id="1-business-role-group">1. Business Role Group</h2>
 
 <p>Writes business requirements and/or initial user stories, are concerned with ensuring that the project delivers the agreed-upon business benefits.</p>
 
@@ -173,13 +190,14 @@
 
 <p>Business analysts are involved in the design or modification of business systems or IT systems. They interact with business stakeholders and subject matter experts in order to understand their problems and needs. They gather, document and analyze business needs and requirements to help steer the team towards an end result that meets the organization’s needs and expectations.</p>
 
-<p><strong>Example job titles for this role</strong></p>
+<dl>
+<dt>Example job titles for this role:</dt>
+<dd>Business Analyst, Client Sponsor</dd>
+</dl>
 
-<p>Business Analyst, Client Sponsor, etc.</p>
+<h2 id="2-author-role-group">2. Author Role Group</h2>
 
-<h2 id="author">Author Role Group</h2>
-
-<p>Main focus: Content Strategy <strong>and</strong> Content Authoring</p>
+<p>This role includes content strategy and content authoring, including audio/video production.</p>
 
 <p>Responsible for creating all text presented by the deliverable in all forms (HTML, audio, video). Defines or selects the standards the content should meet and processes for its review and preparation.</p>
 
@@ -187,127 +205,100 @@
 
 <p>Content Creation is often used in marketing, but can also be a task assigned to a role within a product team. Content creation involves defining a content strategy, the writing or creation of the content or media for a product. The person who authors the content is responsible for making sure that content is accessible to people with disabilities.</p>
 
-<p><strong>Key Deliverables</strong></p>
+<p>Content Creation extends to roles specific audio and video media production. These begin with the writing of scripts but can extend to the production of the media files or support of live streaming content.</p>
 
-<ul>
-  <li>Body copy, managed content, scripts, taxonomies, writing guidelines, media files, including PDF, audio and video, etc.</li>
-</ul>
-
-<p><strong>Tasks include</strong></p>
-
-<ul>
-  <li>Content authoring, media and documentation creation, content strategies definition, etc.</li>
-</ul>
-
-<p><strong>Example job titles for this role</strong></p>
-
-<p>Content Strategist, Content Creator, Content Designer, Content Author, Digital Copywriter, UX Writer, Content Producer, Technical Writer, etc.</p>
+<dl>
+<dt>Key deliverable examples:</dt>
+<dd>Body copy, managed content, scripts, taxonomies, writing guidelines, media files, including PDF, audio and video</dd>
+<dt>Tasks include:</dt>
+<dd>Content authoring, media and documentation creation, content strategies definition</dd><dt>Example job titles for this role:</dt>
+<dd>Content Strategist, Content Creator, Content Designer, Content Author, Digital Copywriter, UX Writer, Content Producer, Technical Writer, Script Writer, Video Producer, Podcast Host</dd></dl>
 
 <h3 id="content-publishing">Content Publishing</h3>
 
-<p>Description (not a definition, @@needs a more polished “Definition” statement): Team members who are not front-end web developers that are tasked with preparing content for publishing to websites, products, applications, etc. These team members do not author content, instead they work with the content within specific business enterprise systems or software tools and apply edits to material generated by content authors.</p>
+<p>Description (not a definition, needs a more polished “Definition” statement): Team members who are not front-end web developers that are tasked with preparing content for publishing to websites, products, applications, etc. These team members do not author content, instead they work with the content within specific business enterprise systems or software tools and apply edits to material generated by content authors.</p>
 
 <p>Content Publishers may perform some tasks that are a part of the front end web developer skillset, however they are not web developers and are often applying this markup using proprietary tools and widget.</p>
 
-<p><strong>Key Deliverables</strong></p>
+<dl>
+<dt>Key deliverable examples:</dt>
+<dd>Content editing and formatting, metadata and SEO optimization, content publishing schedule, cross-platform compatibility, and quality assurance and testing</dd>
+<dt>Tasks include:</dt>
+<dd>Advanced tagging in a PDF document, adjusting timing of captions, creating and editing transcripts, conversion to ePUB documentation, applying tags though a proprietary software to generate heading structure, SSML</dd>
+<dt>Example job titles for this role:</dt>
+<dd>Content Strategist, Content Producer, Content Publisher, Publishing Technology Specialist, Content Designer, Video Editor, Accessible Materials Specialist, Information Developer, Content Developer, Publishing Implementation Manager</dd>
+</dl>
 
-<ul>
-  <li>@@ TBD</li>
-</ul>
+<h2 id="3-design-role-group">3. Design Role Group</h2>
 
-<p><strong>Tasks include</strong></p>
+<p>This group includes user research, user experience (UX), and presentation decisions.</p>
 
-<ul>
-  <li>Advanced tagging in a PDF document, adjusting timing of captions, creating and editing transcripts, conversion to ePUB documentation, applying tags though a proprietary software to generate heading structure, SSML, etc.</li>
-</ul>
+<p>Some roles within this group define the user experience of a product, designing its behaviours and interactions with the end user and/or their assistive technologies. Some roles provide the general “look and feel” of the products and features, covering presentation, fonts and colors. Others outline the functionality of features, and their operation through assistive technologies (ATs). They translate input from business roles into user stories, requirements, specifications, documentation, and guidelines used by other roles (mainly Development) to build the finished product.</p>
 
-<p><strong>Example job titles for this role</strong></p>
+<p>This includes applying user research that has been conducted and an understanding of the intended audiences for a quality experience.</p>
 
-<p>Content Strategist, Content Producer, Content Publisher, Publishing Technology Specialist, Content Designer, Video Editor, Accessible Materials Specialist, Information Developer, Content Developer, Publishing Implementation Manager, etc.</p>
+<h3 id="user-experience-researcher">User Experience Researcher</h3>
 
-<h2 id="design">Design Role Group</h2>
+<p>UX Researchers conduct both exploratory and generative research with end users (e.g. user interviews, ethnographic research, etc.) to gather their feedback. The responsibility of this role is to continuously feed user feedback to those creating products. They test existing concepts and summarize user insights to inform the assets that will be built by the roles in UX Design, Visual Design, Front-end Development and Content Authoring.</p>
 
-<p>Main focus: User Experience (UX) <strong>and</strong> Presentation <strong>decisions</strong></p>
-
-<p>These roles define the general “look and feel” of the products covering presentation, functionality, features, operation. They translate input from business roles into user stories, requirements, specifications, documentation, guidelines used by other roles (mainly Development) to build the finish product. This includes applying research and understanding of the intended audiences for a quality experience.</p>
-
-<h3 id="visual-design">Visual Design</h3>
-
-<p>Visual Design focuses largely on the look and feel of an application, as an end user would experience it, visually or otherwise. This includes specifying original design of interface elements and layout, choosing fonts and colors, and more. While UX design is focused on how something works, visual design is focused on how it looks and feels.</p>
-
-<p><strong>Key Deliverables include</strong></p>
-
-<ul>
-  <li>Style guides, Page comps, Design mockups, Image files, etc.</li>
-</ul>
-
-<p><strong>Tasks include</strong></p>
-
-<ul>
-  <li>Visual styling, logos and branding, animation and iconography design, etc.</li>
-</ul>
-
-<p><strong>Example job titles for this role</strong></p>
-
-<p>Visual Designer, Web Designer, User Interface (UI) Designer, Graphic Designer, etc.</p>
+<dl>
+<dt>Key deliverable examples:</dt>
+<dd>Findings from moderated and unmoderated versions of user research studies, usability testing and user interviews (i.e. a moderator or facilitator was present during the test, or the end user was alone)</dd>
+<dt>Tasks include:</dt>
+<dd>Conducting user research with a partial prototype, concept, or completed product</dd><dt>Example job titles for this role:</dt>
+<dd>User Researcher, UXR (User Experience Researcher), Usability Analyst</dd>
+</dl>
 
 <h3 id="user-experience-design">User Experience Design</h3>
 
-<p>The role of UX Design can potentially cover a large number of related areas: from exploratory user research (like user interviews, ethnographic research, etc.) to partial front-end development. For the purposes of this resource, UX Design is defined by its core responsibilities, such as information architecture, creating wireframes (low fidelity screen mockups), creating prototypes that define interactions, or testing designs for usability.</p>
+<p>UX Designers can potentially cover numerous related areas, from conceptualizing the user journey to partial front-end development. For the purposes of this resource, UX Design is defined by its core responsibilities, such as information architecture, creating wireframes (low fidelity screen mockups), and creating prototypes that define interactions.</p>
 
-<p><strong>Key Deliverables</strong></p>
+<dl>
+<dt>Key deliverable examples:</dt>
+<dd>User journeys, wireframes, prototypes, interaction guidelines, information architecture</dd><dt>Tasks include:</dt>
+<dd>User workflow / process maps, designing user experiences, user task and workflow mapping, creating and maintaining user personas</dd>
+<dt>Example job titles for this role:</dt>
+<dd>User Experience (UX) Designer, Product Designer, Web Designer, Service Designer</dd>
+</dl>
 
-<ul>
-  <li>Wireframes, prototypes, interaction guidelines, information architecture, etc.</li>
-</ul>
+<h3 id="visual-design">Visual Design</h3>
 
-<p><strong>Tasks include</strong></p>
+<p>Visual Designers focus largely on the look and feel of an application, as an end user would experience it, visually or otherwise. This includes specifying original design of interface elements and layout, choosing fonts and colors, and more. While UX design is focused on how something works, visual design is focused on how it looks and feels.</p>
 
-<ul>
-  <li>User workflow / process maps, usability testing, user interviews and analysis, user task and workflow mapping, creating and maintaining user personas, etc.</li>
-</ul>
+<dl>
+<dt>Key deliverable examples:</dt>
+<dd>Style guides, page comps, design mockups, image files</dd>
+<dt>Tasks include:</dt>
+<dd>Visual styling, logos and branding, animation, and iconography design</dd>
+<dt>Example job titles for this role:</dt>
+<dd>Visual Designer, User Interface (UI) Designer, Interaction Designer, Graphic Designer</dd>
+</dl>
 
-<p><strong>Example job titles for this role</strong></p>
-
-<p>User Experience (UX) Designer, Service Designer, Interaction Designer, Information Architect, User Researcher, UX Researcher, User Experience Analyst, Usability Specialist, etc.</p>
-
-<h2 id="development">Development Role Group</h2>
-
-<p>Main focus: <strong>Development</strong></p>
+<h2 id="4-development-role-group">4. Development Role Group</h2>
 
 <p>Oversees the creation, coding and delivery of the product based upon the requirements provided. Responsible for all user-facing and supporting systems, along with all related infrastructure selection, setup and deployment.</p>
 
-<h3 id="front-end-development">Front End Development</h3>
+<h3 id="front-end-development">Front-End Development</h3>
 
 <p>Front end development typically builds the parts of a product that will be interacted with by the user - specifically, the user interface. For the purpose of this resource, front end development refers to the implementation or codification of the design in functional templates for a product using technologies such as HTML, CSS and JavaScript.</p>
 
-<p><strong>Key Deliverables</strong></p>
+<dl>
+<dt>Key deliverable examples:</dt>
+<dd>HTML and CSS files, client-side scripting, JavaScript libraries and frameworks</dd><dt>Tasks include:</dt>
+<dd>Pattern libraries and prototypes, template functionalities, semantically-rich HTML document structures and widgets, use and adapt frameworks and content management systems</dd><dt>Example job titles for this role:</dt>
+<dd>Front-End Developer, Web Developer, Full-Stack Developer, UI/UX Developer, JavaScript Developer, UI/UX Engineer</dd>
+</dl>
 
-<ul>
-  <li>HTML and CSS files, client-side scripting, JavaScript libraries and frameworks, etc.</li>
-</ul>
-
-<p><strong>Tasks include</strong></p>
-
-<ul>
-  <li>Pattern libraries and prototypes, template functionalities, semantically-rich HTML document structures and widgets, use and adapt frameworks and content management systems, etc.</li>
-</ul>
-
-<p><strong>Example job titles for this role</strong></p>
-
-<p>Front End Developer, Web Developer, Full-Stack Developer, UI/UX Developer, JavaScript Developer, UI/UX Engineer, etc.</p>
-
-<h3 id="back-end-development">Back End Development</h3>
+<h3 id="back-end-development">Back-End Development</h3>
 
 <p>Back end developers have a smaller, more indirect involvement with accessibility work, but still play a critical role in delivering accessible products, as the underlying product architecture can inform accessibility solutions. It’s important for back end developers to be involved in accessibility discussions so that any potential issues stemming from how the database is organized can be caught and fixed, or better yet, avoided altogether.</p>
 
-<p><strong>Example job titles for this role</strong></p>
+<dl>
+<dt>Example job titles for this role:</dt>
+<dd>Back-End Developer, Middleware Developer, Database Architect, Data Engineer</dd>
+</dl>
 
-<p>Back End Developer, Middleware Developer, Database Architect, Data Engineer, etc.</p>
-
-<h2 id="testing">Testing Role Group</h2>
-
-<p>Main focus: <strong>Testing</strong></p>
+<h2 id="5-testing-role-group">5. Testing Role Group</h2>
 
 <p>QA Testers run automated test frameworks or manually test products to confirm correct operation based upon provided requirement.</p>
 
@@ -319,21 +310,21 @@
 
 <p>Quality Assurance (QA) automation frameworks typically run against products in order to test features and functionality that would otherwise fall to a manual QA tester. For the purpose of this resource, a QA Tester performing automated tests is responsible for running tests within an automation framework that covers accessibility features and requirements. This can be accomplished either through automation of functional tests, and/or the inclusion of an accessibility testing library within the framework. QA Testers responsible for automated testing may also typically run automated accessibility testing tools, such as browser extensions or add-ons. It is expected that automated tools will uncover about 30 to 35% of potential accessibility issues on a screen. The rest will be identified through the team’s manual accessibility testing methodology.</p>
 
-<p><strong>Example job titles for this role</strong></p>
-
-<p>QA Automation Engineer, Quality Engineer, Automation Engineer, etc.</p>
+<dl>
+<dt>Example job titles for this role:</dt>
+<dd>QA Automation Engineer, Quality Engineer, Automation Engineer</dd>
+</dl>
 
 <h3 id="manual-qa-testing">Manual QA Testing</h3>
 
 <p>Quality Assurance Testers responsible for manual testing will typically handle the testing that cannot be covered through the use of automated tools. They will typically be resources that are more knowledgeable about accessibility, with a deeper understanding of the requirements, and some experience operating assistive technologies for testing, such as screen readers. They will typically run a series of test cases to validate the degree of inclusion of the components of a screen and will be charged with making sure that the overall user experience is positive for people with disabilities. It is expected that manual testing will build on top of an automated testing process, in order to cover the remaining 65 to 70% of potential accessibility issues on any given screen.</p>
 
-<p><strong>Example job titles for this role</strong></p>
+<dl>
+<dt>Example job titles for this role:</dt>
+<dd>QA Analyst, QA Specialist, User Acceptance Tester, Functional Tester</dd>
+</dl>
 
-<p>QA Analyst, QA Specialist, User Acceptance Tester, Functional Tester, etc.</p>
-
-<h2 id="administration-role-group-admin">Administration Role Group {#admin</h2>
-
-<p>Main focus: <strong>Business Vision, Rules &amp; Requirements</strong></p>
+<h2 id="6-administration-role-group">6. Administration Role Group</h2>
 
 <p>The roles in this section cover managing the product and project, as well as other bureaucratic functions of the broader organization that often have a larger mandate than any individual project. Most administrative roles, as defined in this resource, have very little, if anything, to do with the design, the implementation, or the testing of accessibility principles to create more inclusive applications and websites. These roles, however, are still instrumental in ensuring that the team members who are actively taking part in making content accessible and conformant with WCAG can be successful at doing so. This begins with project managers and product owners working hand in hand with the design, development and testing teams, but also other governance roles contributing to steering the organization’s culture in a direction that is aligned with the goals pursued by accessibility guidelines.</p>
 
@@ -341,25 +332,28 @@
 
 <p>Product owners own individual products and define their features and are key to defining the importance of accessibility on a project. It is their job to make sure that products are built and delivered in a way that meets business needs and user needs. They should have some basic understanding of the accessibility implications of the UI requirements they request, such as cost and required infrastructure. But, as with features in general, they delegate design and implementation decisions to other roles. As a result, they are typically not directly involved and do not have ownership in the ARRM model.</p>
 
-<p><strong>Example job titles for this role</strong></p>
-
-<p>Product Manager, Product Owner, Release Manager, Business Owner, etc.</p>
+<dl>
+<dt>Example job titles for this role:</dt>
+<dd>Product Manager, Product Owner, Release Manager, Business Owner</dd>
+</dl>
 
 <h3 id="project-management">Project Management</h3>
 
 <p>Project managers are primarily responsible for keeping everything about the process of building a product organized and on track. They have little decision-making power directly impacting accessibility. The person managing the project should make sure that accessibility is built into estimates, user stories (if Agile), and requirements documents. In smaller teams, the roles of product owners and project managers often overlap.</p>
 
-<p><strong>Example job titles for this role</strong></p>
-
-<p>Project Manager, Scrum Master (Agile), Team Lead, etc.</p>
+<dl>
+<dt>Example job titles for this role:</dt>
+<dd>Project Manager, Scrum Master (Agile), Team Lead</dd>
+</dl>
 
 <h3 id="governance">Governance</h3>
 
 <p>Unlike most other administrative roles, governance is not part of an individual project team. Their mandate focuses on the big picture, often enterprise-wide initiatives. Most importantly to individual projects, governance roles are deliberative (often committee-based) and are not bound to the deadlines of a singular project without outside, executive influence to encourage higher-velocity decision making.</p>
 
-<p><strong>Example job titles for this role</strong></p>
-
-<p>Legal, procurement, conformance, administrative, governance, branding, etc.</p>
+<dl>
+<dt>Example job titles for this role:</dt>
+<dd>Legal, procurement, conformance, administrative, governance, branding</dd>
+</dl>
 
 
     <aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai@w3.org?subject=%5Ben%5D%20Roles%20Involved%20in%20Accessibility&amp;body=%5Bput%20comment%20here...%5D%0A%0AI%20give%20permission%20to%20share%20this%20to%20a%20publicly-archived%20e-mail%20list.">wai@w3.org</a> or via GitHub.</p>
@@ -378,7 +372,7 @@ https://github.com/w3c/wai-arrm/edit/main/content/roles.md
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner"
       >
-      <p><strong>Status: Editors' DRAFT that is incomplete, unapproved, in progress </strong><strong>Date:</strong> Updated @@ Month 2021. First published Month 20@@. <!-- . --></p> <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href=”https://www.w3.org/groups/wg/@@wg/participants”>participants of the @@WG</a>.<!--  lists additional contributors. --></p> <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>).</p>
+      <strong>Status: Editors' DRAFT that is incomplete, unapproved, in progress </strong><strong>Date:</strong> Updated @@ Month 2021. First published Month 20@@. <!-- . --></p> <strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href=”https://www.w3.org/groups/wg/@@wg/participants”>participants of the @@WG</a>. <a href="/WAI/planning/arrm/acknowledgements/">Acknowledgements</a> lists additional contributors. </p> Developed with the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>).</p>
 <p><svg focusable="false" aria-hidden="true" class="icon-creative-commons "><use xlink:href="/WAI/assets/images/icons.svg#icon-creative-commons"></use></svg> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p></div>
   </footer>
   
@@ -418,9 +412,9 @@ https://github.com/w3c/wai-arrm/edit/main/content/roles.md
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1728401446962619909"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1729532124045755009"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1728401446962619909"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1729532124045755009"></script>
 <script>
   svg4everybody();
 </script><script>

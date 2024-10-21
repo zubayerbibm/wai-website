@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1728401446962619909";
+      element.src = "/WAI/assets/scripts/main.js?1729532124045755009";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1728401446962619909">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1729532124045755009">
 
 <title>[Draft] ARRM: Accessibility Roles and Responsibilities Mapping | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
@@ -113,9 +113,12 @@
         ARRM: Accessibility Roles and Responsibilities Mapping
       
       </h1></header>
-    <aside class="box box-full"><header class="box-h  box-h-full"> <h2> Summary </h2></header><div class="box-i">
+    <section class="doc-note-box">
+  <p>This is an in-progress draft. We welcome comments via GitHub or email from the <a href="#helpimprove">links below</a>.</p>
 
-<p>ARRM defines which roles have which responsibilities for meeting accessibility requirements.</p>
+</section><aside class="box box-full"><header class="box-h  box-h-full"> <h2> Summary </h2></header><div class="box-i">
+
+<p>Accessibility Roles and Responsibilities Mapping (ARRM) helps define which roles have responsibilities for meeting which aspects of Web Content Accessibility Guidelines (WCAG).</p>
 
 </div></aside>
 
@@ -144,17 +147,19 @@
 
 <h2 id="background">Background</h2>
 
-<p>When responsibilities for accessibility are not clearly defined and communicated, they are often left until too late in the lifecycle. For example, developers are sometimes left to address issues like color selection, image description, and heading identification that are not really in their purview. Such responsibilities more appropriately fall to other roles earlier in the process, such as user experience (UX) designers, visual designers, and content authors.</p>
+<p>Different aspects of accessibility are the responsibility of different project roles, such as writers, designers, and developers. It is best to clearly define and communicate the responsibilities for accessibility early in projects.</p>
+
+<p>When accessibility is left until late in a project, the responsibility often falls on developers and they are tasked with addressing aspects that are not their skillset. For example, selecting colors, describing images, and writing headings.</p>
 
 <p>ARRM helps the right roles address their appropriate responsibilities.</p>
 
 <h2 id="what-is-arrm">What is ARRM</h2>
 
-<p>Accessibility Roles and Responsibilities Mapping (ARRM) helps define which roles (designer, developer, writer, etc.) have which responsibilities for meeting which aspects of the Web Content Accessibility Guidelines (WCAG) requirements.</p>
+<p>Accessibility Roles and Responsibilities Mapping (ARRM) helps define which roles have responsibilities for meeting which aspects of Web Content Accessibility Guidelines (WCAG) requirements, called “success criteria”.</p>
 
 <aside class="box box-simple"><header class="box-h  box-h-simple"> Here is a simplified example.</header><div class="box-i">
 
-<p>For meeting the WCAG requirement on headings:</p>
+<p>Roles that contribute to meeting WCAG requirements on headings:</p>
 <ul>
   <li>Writers are responsible for the writing the heading text.</li>
   <li>Designers are responsible for defining how the headings look.</li>
@@ -165,7 +170,7 @@
 
 <p>ARRM assigns primary, secondary, and contributor level responsibilities for tasks.</p>
 
-<p>ARRM currently provides an example of typical roles and responsibilities for WCAG success criteria. It is also a tool for project managers to assign different responsibilities across roles within their team.</p>
+<p>ARRM provides examples of typical responsibilities that each role has in helping to meet WCAG success criteria. It is a tool for project managers to assign different responsibilities across roles within their team.</p>
 
 <h2 id="typical-roles-and-mapping">Typical Roles and Mapping</h2>
 
@@ -175,13 +180,13 @@
 
 <ul>
   <li><strong><a href="roles">Roles Involved in Accessibility</a></strong></li>
-  <li><strong><a href="https://deploy-preview-9--wai-arrm.netlify.app/planning/arrm/matrix/">WCAG Success Criteria ARRM</a></strong> table of all success criteria.</li>
+  <li><strong><a href="wcag-sc">WCAG Success Criteria ARRM</a></strong> table of all success criteria.</li>
   <li>Additional guideance for roles:
     <ul>
-      <li><a href="https://deploy-preview-9--wai-arrm.netlify.app/planning/arrm/user-experience/">User Experience (UX) Designer Responsibilities — List of Success Criteria</a></li>
-      <li><a href="https://deploy-preview-9--wai-arrm.netlify.app/planning/arrm/visual-designer/">Visual Designer Responsibilities — List of Success Criteria</a></li>
-      <li><a href="https://deploy-preview-9--wai-arrm.netlify.app/planning/arrm/content-author/">Content Author Responsibilities — List of Success Criteria</a></li>
-      <li><a href="https://deploy-preview-9--wai-arrm.netlify.app/planning/arrm/front-end/">Front-End Developer Responsibilities — List of Success Criteria</a></li>
+      <li><a href="user-experience">User Experience (UX) Designer Responsibilities — List of Success Criteria</a> {in-progress WAI site update}</li>
+      <li><a href="https://deploy-preview-9--wai-arrm.netlify.app/planning/arrm/visual-designer/">Visual Designer Responsibilities — List of Success Criteria</a> {preview 9}</li>
+      <li><a href="https://deploy-preview-9--wai-arrm.netlify.app/planning/arrm/content-author/">Content Author Responsibilities — List of Success Criteria</a> {preview 9}</li>
+      <li><a href="https://deploy-preview-9--wai-arrm.netlify.app/planning/arrm/front-end/">Front-End Developer Responsibilities — List of Success Criteria</a> {preview 9}</li>
     </ul>
   </li>
 </ul>
@@ -191,20 +196,12 @@
 <p>ARRM also guides organizations that want to customize their own accessibility roles and responsibilities mapping, based on considerations in their organizations. The key tool for this is the:</p>
 
 <ul>
-  <li><strong><a href="https://deploy-preview-9--wai-arrm.netlify.app/planning/arrm/decision-tree/">ARRM Decision Tree</a></strong> provides steps for deciding which roles have which level responsibilities.</li>
+  <li><strong><a href="https://deploy-preview-9--wai-arrm.netlify.app/planning/arrm/decision-tree/">ARRM Decision Tree@@</a></strong> provides steps for deciding which roles have which level responsibilities.</li>
 </ul>
 
 <p>First, decide if you want to use the example <a href="roles">role definitions</a>, or use different roles for your project team.</p>
 
-<p>Next, for each success criteria (or your organization’s accessibility checkpoints), walk through the ARRM Decision Tree to assign responsibilities.</p>
-
-<!-- @@not likely any time soon, so suggest we delete this section
-
-## Future Work
-
-Future work on ARRM includes breaking down success criteria into multiple sub-points, and assigning those sub-points to roles. We may also provide a tool for organizations that want to development their own ARRM.
-
--->
+<p>Next, for each success criteria (or your organization’s accessibility @@checkpoints), walk through the ARRM Decision Tree@@ to assign responsibilities.</p>
 
 
     <aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> Help improve this page </h2></header><div class="box-i"><p>Please share your ideas, suggestions, or comments via e-mail to the publicly-archived list <a href="mailto:wai@w3.org?subject=%5Ben%5D%20ARRM%3A%20Accessibility%20Roles%20and%20Responsibilities%20Mapping&amp;body=%5Bput%20comment%20here...%5D%0A%0AI%20give%20permission%20to%20share%20this%20to%20a%20publicly-archived%20e-mail%20list.">wai@w3.org</a> or via GitHub.</p>
@@ -223,7 +220,7 @@ https://github.com/w3c/wai-arrm/edit/main/content/index.md
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner"
       >
-      <p><strong>Status: Editors' DRAFT that is incomplete, unapproved, in progress </strong><strong>Date:</strong> Updated @@ Month 2021. First published Month 20@@. <!-- . --></p> <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href=”https://www.w3.org/groups/wg/@@wg/participants”>participants of the @@WG</a>.<!--  lists additional contributors. --></p> <p>Developed by the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>).</p>
+      <p><strong>Status: Editors' DRAFT that is incomplete, unapproved, in progress </strong><strong>Date:</strong> Updated @@ Month 2021. First published Month 20@@. <!-- . --></p> <p><strong>Editors:</strong> @@name, @@name. <strong>Contributors:</strong> @@name, @@name, and <a href=”https://www.w3.org/groups/wg/@@wg/participants”>participants of the @@WG</a>. <a href="/WAI/planning/arrm/acknowledgements/">Acknowledgements</a> lists additional contributors.</p> <p>Developed with the Accessibility Education and Outreach Working Group (<a href="http://www.w3.org/WAI/EO/">EOWG</a>).</p>
 <p><svg focusable="false" aria-hidden="true" class="icon-creative-commons "><use xlink:href="/WAI/assets/images/icons.svg#icon-creative-commons"></use></svg> This work is licensed under a <a rel="license" href="http://creativecommons.org/licenses/by/4.0/">Creative Commons Attribution 4.0 International License</a>.</p></div>
   </footer>
   
@@ -263,9 +260,9 @@ https://github.com/w3c/wai-arrm/edit/main/content/index.md
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1728401446962619909"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1729532124045755009"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1728401446962619909"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1729532124045755009"></script>
 <script>
   svg4everybody();
 </script><script>
