@@ -310,6 +310,7 @@
 /about/translating/sitemaps/sitemap-zh-hans/index.html
 /about/translating/step-by-step/index.html
 /about/translating/wcag/index.html
+/about/translating/wcag/wcag21-update/index.html
 /about/using-wai-material/index.html
 /adapt/index.html
 /assets/ableplayer/.gitattributes

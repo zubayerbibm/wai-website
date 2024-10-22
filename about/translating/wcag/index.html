@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1729535367669798314";
+      element.src = "/WAI/assets/scripts/main.js?1729615755242231840";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1729535367669798314">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1729615755242231840">
 
 <title> How to Translate WCAG 2 | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
@@ -152,7 +152,8 @@
   <a lang="en" href="/WAI/about/translating/resources/resource-specific-instructions/" class="page-link"><span>Resource-Specific Instructions</span></a></li></ul></li><li>
   <a lang="en" href="/WAI/about/translating/reviewing/" class="page-link"><span>Reviewing a Translation</span></a></li>
           <li>
-  <a lang="en" href="/WAI/about/translating/wcag/" aria-current="page" class="page-link"><span>Translating WCAG</span></a></li><li>
+  <a lang="en" href="/WAI/about/translating/wcag/" aria-current="page" class="page-link"><span>Translating WCAG</span></a><ul><li>
+  <a lang="en" href="/WAI/about/translating/wcag/wcag21-update/" class="page-link"><span>Updating WCAG 2.1 Translations</span></a></li></ul></li><li>
   <a lang="en" href="/WAI/about/translating/sitemaps/" class="page-link"><span>Translations Sitemaps</span></a><ul><li>
   <a lang="en" href="/WAI/about/translating/sitemaps/sitemap-ar/" class="page-link"><span>Arabic</span></a></li><li>
   <a lang="en" href="/WAI/about/translating/sitemaps/sitemap-zh-hans/" class="page-link"><span>Chinese (Simplified)</span></a></li><li>
@@ -234,7 +235,8 @@
   <li><a href="#translate-source-files" id="markdown-toc-translate-source-files">Step 2: Translate WCAG source files</a></li>
   <li><a href="#preview-export" id="markdown-toc-preview-export">Step 3: Preview your changes and export in HTML</a></li>
   <li><a href="#edit-html" id="markdown-toc-edit-html">Step 4: Edit the resulting HTML file and complete the translation</a></li>
-  <li><a href="#deliver-files" id="markdown-toc-deliver-files">Step 5: Deliver the final files to W3C</a></li>
+  <li><a href="#check" id="markdown-toc-check">Step 5: Check your translation thoroughly</a></li>
+  <li><a href="#deliver-files" id="markdown-toc-deliver-files">Step 6: Deliver the final files to W3C</a></li>
 </ul>
 
 
@@ -248,12 +250,13 @@
 
 <p>Web Content Accessibility Guidelines (WCAG) 2.1/2.2 are currently <a href="/WAI/standards-guidelines/wcag/translations/">available in more than 14 languages</a>!</p>
 
-<p>There are 5 main steps to create a new translation:</p>
+<p>There are 6 main steps to create a new translation:</p>
 <ol>
   <li><strong><a href="#get-source-files">Get the source files</a></strong> from <a href="https://github.com/w3c/wcag/"><code class="language-plaintext highlighter-rouge">w3c/wcag/</code> <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a> repository</li>
   <li><strong><a href="#translate-source-files">Translate WCAG source files</a></strong></li>
   <li><strong><a href="#preview-export">Export in HTML</a></strong></li>
   <li><strong><a href="#edit-html">Edit the HTML files</a></strong> to complete the translation</li>
+  <li><strong><a href="#check">Check your translation</a></strong></li>
   <li><strong><a href="#deliver-files">Deliver the final files to W3C</a></strong></li>
 </ol>
 
@@ -261,10 +264,10 @@
 
 <ol>
   <li>Clone <a href="https://github.com/w3c/wcag/"><code class="language-plaintext highlighter-rouge">w3c/wcag</code> <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a> repository (you can <a href="https://docs.github.com/en/pull-requests/collaborating-with-pull-requests/working-with-forks/fork-a-repo">fork <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a> it first)</li>
-  <li>Base your translation on the following branch:
+  <li>Checkout the following tag to get the relevant source files:
     <ul>
-      <li><a href="https://github.com/w3c/wcag/tree/main"><code class="language-plaintext highlighter-rouge">main</code> branch <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a> to translate WCAG 2.2</li>
-      <li><a href="https://github.com/w3c/wcag/tree/WCAG-2.1"><code class="language-plaintext highlighter-rouge">WCAG-2.1</code> branch <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a> to translate WCAG 2.1</li>
+      <li><a href="https://github.com/w3c/wcag/tree/WCAG22-20231005"><code class="language-plaintext highlighter-rouge">WCAG22-20231005</code> tag <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a> to translate WCAG 2.2 (5 October 2023 version)</li>
+      <li><a href="https://github.com/w3c/wcag/tree/WCAG21-20230921"><code class="language-plaintext highlighter-rouge">WCAG21-20230921</code> tag <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a> to translate WCAG 2.1 (21 September 2023 version)</li>
     </ul>
   </li>
 </ol>
@@ -284,11 +287,12 @@
   <li>All files in <code class="language-plaintext highlighter-rouge">acknowledgements/</code> folder</li>
 </ul>
 
-<p>Make sure to follow these translation guidelines:</p>
+<p>Make sure to follow these guidelines:</p>
 <ul>
   <li>Update &lt;html&gt; <code class="language-plaintext highlighter-rouge">lang</code> and <code class="language-plaintext highlighter-rouge">xml:lang</code> attributes in <code class="language-plaintext highlighter-rouge">index.html</code> and <code class="language-plaintext highlighter-rouge">relative-luminance.html</code>.<br />
 Use the appropriate “language tag” from the <a href="https://www.iana.org/assignments/language-subtag-registry/language-subtag-registry">Language Subtag Registry <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a></li>
-  <li>Do not translate IDs</li>
+  <li>Do not add or edit CSS.</li>
+  <li>Do not translate <code class="language-plaintext highlighter-rouge">id</code>s.</li>
   <li>Add <code class="language-plaintext highlighter-rouge">hreflang="en"</code> to links when needed, and <code class="language-plaintext highlighter-rouge">lang="en"</code> where needed.</li>
   <li>Follow the guidelines of the <a href="https://www.w3.org/International/">W3C Internationalization Activity <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a>: for example, the proper usage of language tags, encoding declarations, handling bidirectional text, etc.</li>
 </ul>
@@ -318,7 +322,7 @@ Use the appropriate “language tag” from the <a href="https://www.iana.org/as
 
 <p>Rename the exported HTML file to <code class="language-plaintext highlighter-rouge">index.html</code> and make the following changes.</p>
 
-<h3 id="add-the-translation-header">Add the translation header</h3>
+<h3 id="translation-header">Add the translation header</h3>
 
 <p>At the very start of your <code class="language-plaintext highlighter-rouge">body</code> element, add a <a href="https://www.w3.org/2005/02/TranslationPolicy#Disclamier">translation header, based on the provided boilerplate</a>.</p>
 
@@ -333,8 +337,10 @@ Use the appropriate “language tag” from the <a href="https://www.iana.org/as
   <li>Change the ID of the <a href="https://www.w3.org/TR/WCAG22/#conformance">“5. Conformance”</a> <code class="language-plaintext highlighter-rouge">&lt;section&gt;</code> to “<code class="language-plaintext highlighter-rouge">conformance</code>”.</li>
 </ul>
 
-<p>Make sure to follow these translation guidelines:</p>
+<p>Make sure to follow these guidelines:</p>
 <ul>
+  <li>Do not add or edit CSS.</li>
+  <li>Do not translate <code class="language-plaintext highlighter-rouge">id</code>s.</li>
   <li>Add <code class="language-plaintext highlighter-rouge">hreflang="en"</code> to links when needed, and <code class="language-plaintext highlighter-rouge">lang="en"</code> where needed.</li>
   <li>Follow the guidelines of the <a href="https://www.w3.org/International/">W3C Internationalization Activity</a>: for example, the proper usage of language tags, encoding declarations, handling bidirectional text, etc.</li>
 </ul>
@@ -350,7 +356,29 @@ Use the appropriate “language tag” from the <a href="https://www.iana.org/as
   <li>“Jump to Table of Contents”</li>
 </ul>
 
-<h2 id="deliver-files">Step 5: Deliver the final files to W3C</h2>
+<h2 id="check">Step 5: Check your translation thoroughly</h2>
+
+<p>Please properly check your files before submission to W3C.</p>
+
+<p>In particular, make sure that:</p>
+<ul>
+  <li>All links are valid. You can use <a href="https://validator.w3.org/checklink">W3C Link Checker</a></li>
+  <li>HTML is valid. You can use <a href="https://validator.w3.org/">W3C Markup Validation Service</a></li>
+  <li>CSS is valid. You can use <a href="https://jigsaw.w3.org/css-validator/">W3C CSS Validation Service</a></li>
+  <li>Pages are internationalization-friendly. You can use <a href="https://validator.w3.org/i18n-checker/">W3C Internationalization Checker</a></li>
+  <li>All relevant content has been properly translated</li>
+  <li>All <code class="language-plaintext highlighter-rouge">id</code>s are in English; that is, they have not been translated. If you have followed <a href="#get-source-files">How to Translate WCAG 2 – Get the source files</a>, this should be fine.</li>
+  <li><code class="language-plaintext highlighter-rouge">lang</code> and <code class="language-plaintext highlighter-rouge">xml:lang</code> attributes of the <code class="language-plaintext highlighter-rouge">&lt;html&gt;</code> tag are correct</li>
+  <li><code class="language-plaintext highlighter-rouge">hreflang</code> attribute has been added to links when relevant</li>
+  <li><code class="language-plaintext highlighter-rouge">lang</code> attribute has been used when relevant (especially when some text has been kept in English)</li>
+  <li>The links/anchors of the original and translated versions match.</li>
+  <li>“Jump to table of contents”, “Collapse sidebar” and “Hide sidebar” have been translated.</li>
+  <li>There is no code showing in the rendered page.</li>
+  <li>No custom CSS has been added.</li>
+  <li>(Authorized translation) An errata has been created and is hosted on the Lead Translation Organization (LTO)’s website.</li>
+</ul>
+
+<h2 id="deliver-files">Step 6: Deliver the final files to W3C</h2>
 
 <p>In conformance with step 6.3 of the <a href="https://www.w3.org/2005/02/TranslationPolicy.html">Policy for Authorized W3C Translations <svg focusable="false" aria-label="External Site" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a>, deliver the following files to W3C for publication:</p>
 <ul>
@@ -378,7 +406,7 @@ https://github.com/w3c/wai-website/edit/main/pages/about/translating/wcag.md
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner"
       >
-      <p><strong>Date:</strong> Updated 17 September 2024.</p>
+      <p><strong>Date:</strong> Updated 22 October 2024.</p>
 <p><strong>Editor:</strong> Rémi Bétin.</p>
 </div>
   </footer>
@@ -419,9 +447,9 @@ https://github.com/w3c/wai-website/edit/main/pages/about/translating/wcag.md
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1729535367669798314"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1729615755242231840"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1729535367669798314"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1729615755242231840"></script>
 <script>
   svg4everybody();
 </script><script>
