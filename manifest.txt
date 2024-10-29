@@ -3135,7 +3135,6 @@
 /pages/about/projects/wai-coop/symposium3_transcript.html
 /pages/design-develop/tutorials/carousels/examples/carousel.js
 /pages/design-develop/tutorials/carousels/examples/focusinoutpolyfill.js
-/pages/planning-policies/arrm/user-experience.md
 /pages/planning-policies/statements/generator.nl.md
 /pages/planning-policies/statements/generator_layout.html
 /pages/wai-authoring-tools-list/images/w3c.svg
@@ -3206,6 +3205,8 @@
 /planning/arrm/index.html
 /planning/arrm/roles/index.html
 /planning/arrm/sc-map/index.html
+/planning/arrm/tasks/index.html
+/planning/arrm/user-experience/index.html
 /planning/arrm/wcag-sc/index.html
 /planning/changelog/index.html
 /planning/es.html
