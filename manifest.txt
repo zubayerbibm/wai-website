@@ -3147,6 +3147,7 @@
 /people-use-web/abilities-barriers/speech/index.html
 /people-use-web/abilities-barriers/visual/index.html
 /people-use-web/acknowledgements/index.html
+/people-use-web/changelog/index.html
 /people-use-web/es.html
 /people-use-web/fr.html
 /people-use-web/index.html
@@ -3156,9 +3157,9 @@
 /people-use-web/tools-techniques/navigation/index.html
 /people-use-web/tools-techniques/perception/index.html
 /people-use-web/tools-techniques/presentation/index.html
+/people-use-web/user-stories/archived/es.html
+/people-use-web/user-stories/archived/fr.html
 /people-use-web/user-stories/archived/index.html
-/people-use-web/user-stories/es.html
-/people-use-web/user-stories/fr.html
 /people-use-web/user-stories/index.html
 /people-use-web/user-stories/story-eight/index.html
 /people-use-web/user-stories/story-five/index.html
@@ -3585,6 +3586,7 @@
 /test-evaluate/tools/submit-a-tool/index.html
 /test-evaluate/tools/submit-a-tool/success.html
 /tips/acknowledgements/index.html
+/tips/changelog/index.html
 /tips/css/tips.css
 /tips/designing/fr.html
 /tips/designing/id.html
