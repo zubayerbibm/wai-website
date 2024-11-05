@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1730430858544508311";
+      element.src = "/WAI/assets/scripts/main.js?1730798790032399313";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1730430858544508311">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1730798790032399313">
 
-<title> Autocomplete attribute has valid value[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1730430858544508311"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Autocomplete attribute has valid value[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1730798790032399313"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Autocomplete attribute has valid value" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -361,7 +361,7 @@ h2#sidebar-header {
 
 <p>The <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute is used on form fields that correspond to <a href="https://www.w3.org/TR/WCAG22/#input-purposes">Input Purposes for User Interface Components</a> and collect information about the user.</p>
 
-<p>If the <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute is used to describe “custom” taxonomy, for example using the custom autocomplete value “banner” (<code class="language-plaintext highlighter-rouge">&lt;input type="text" autocomplete="banner" /&gt;</code>), success Criterion <a href="https://www.w3.org/TR/WCAG22/#identify-input-purpose" title="WCAG 2.2 success criterion 1.3.5 Identify Input Purpose">1.3.5 Identify Input Purpose</a> may be satisfied even if this rule failed.</p>
+<p>If the <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute is used to describe “custom” taxonomy, for example using the custom autocomplete value “banner” (<code class="language-plaintext highlighter-rouge">&lt;input type="text" autocomplete="banner" /&gt;</code>), success criterion <a href="https://www.w3.org/TR/WCAG22/#identify-input-purpose" title="WCAG 2.2 success criterion 1.3.5 Identify Input Purpose">1.3.5 Identify Input Purpose</a> may be satisfied even if this rule failed.</p>
 
 <p>The <code class="language-plaintext highlighter-rouge">aria-disabled</code> state is used on <code class="language-plaintext highlighter-rouge">input</code> elements which are not part of <a href="https://html.spec.whatwg.org/#sequential-focus-navigation" title="HTML sequential focus navigation, 2020/08/12">sequential focus navigation</a> and are not otherwise <a href="https://www.w3.org/TR/wai-aria-1.2/#dfn-operable">operable</a>. If this is not the case, this rule may be inapplicable on elements that are still operable and require a valid <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute to satisfy success criterion <a href="https://www.w3.org/TR/WCAG22/#identify-input-purpose" title="WCAG 2.2 success criterion 1.3.5 Identify Input Purpose">1.3.5 Identify Input Purpose</a>.</p>
 
@@ -372,9 +372,8 @@ h2#sidebar-header {
 <ul>
   <li>While <code class="language-plaintext highlighter-rouge">autocomplete</code> is a promising technique for supporting personalization in HTML, support for this in assistive technologies is fairly limited.</li>
   <li>Implementation of <a href="https://www.w3.org/TR/wai-aria-1.2/#conflict_resolution_presentation_none" title="Presentational Roles Conflict Resolution">Presentational Roles Conflict Resolution</a> varies from one browser or assistive technology to another. Depending on this, some elements can have a <a href="#semantic-role" title="Definition of Semantic Role">semantic role</a> of <code class="language-plaintext highlighter-rouge">none</code> and fail this rule with some technology but users of other technologies would not experience any accessibility issue.</li>
-  <li>Some user agents treat the value of the <code class="language-plaintext highlighter-rouge">aria-disabled</code> attribute as case-sensitive.</li>
   <li>In some user agents, querying the value of the <code class="language-plaintext highlighter-rouge">autocomplete</code> property returns an empty string (“”) even when the attribute was set according to the rule’s expectations. It affects assistive technologies which rely on this property to personalize input fields collecting information about the user.</li>
-  <li>Authors may assign inappropriate <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute values. Moreover, HTML specifications restrict certain <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute values to specific form controls. Mismatches between <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute values and form control types may or may not lead to a failure of <a href="https://www.w3.org/TR/WCAG22/#identify-input-purpose">Success Criterion 1.3.5 Identify Input Purpose</a>. However, this rule focuses exclusively on validating valid <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute values, disregarding their contextual appropriateness.</li>
+  <li>Authors may assign inappropriate <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute values. Moreover, HTML specifications restrict certain <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute values to specific form controls. Mismatches between <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute values and form control types may or may not lead to a failure of <a href="https://www.w3.org/TR/WCAG22/#identify-input-purpose">success criterion 1.3.5 Identify Input Purpose</a>. However, this rule focuses exclusively on validating valid <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute values, disregarding their contextual appropriateness.</li>
 </ul>
 
 <h2 id="background">Background</h2>
@@ -383,9 +382,9 @@ h2#sidebar-header {
 
 <p>Many browsers provide auto-filling suggestions even when the control’s <code class="language-plaintext highlighter-rouge">type</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> is not <a href="#appropriate-field-for-the-form-control" title="Definition of Appropriate field for the form control">appropriate</a> for its <code class="language-plaintext highlighter-rouge">autocomplete</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a>. The same happens when the <code class="language-plaintext highlighter-rouge">autocomplete</code> property is queried. However, the <code class="language-plaintext highlighter-rouge">autocomplete</code> property is not programmatically identifiable if the requirements for the optional tokens are not met.</p>
 
-<p>The auto-completing feature of the <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute benefits many users, but it is not required to satisfy success Criterion <a href="https://www.w3.org/TR/WCAG22/#identify-input-purpose" title="WCAG 2.2 success criterion 1.3.5 Identify Input Purpose">1.3.5 Identify Input Purpose</a>. Setting <code class="language-plaintext highlighter-rouge">autocomplete="off"</code> on the element’s <a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-owner">form owner</a> prevents the user agent from completing it, but it does not prevent the <code class="language-plaintext highlighter-rouge">autocomplete</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> from being programmatically identifiable.</p>
+<p>The auto-completing feature of the <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute benefits many users, but it is not required to satisfy success criterion <a href="https://www.w3.org/TR/WCAG22/#identify-input-purpose" title="WCAG 2.2 success criterion 1.3.5 Identify Input Purpose">1.3.5 Identify Input Purpose</a>. Setting <code class="language-plaintext highlighter-rouge">autocomplete="off"</code> on the element’s <a href="https://html.spec.whatwg.org/multipage/form-control-infrastructure.html#form-owner">form owner</a> prevents the user agent from completing it, but it does not prevent the <code class="language-plaintext highlighter-rouge">autocomplete</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> from being programmatically identifiable.</p>
 
-<p>The <a href="#73f2c2:fixed-value">fixed value</a> condition in the Applicability is excluding <code class="language-plaintext highlighter-rouge">input</code> elements who do not consider the <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute, based on their <code class="language-plaintext highlighter-rouge">type</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a>; <code class="language-plaintext highlighter-rouge">input</code> elements with a <code class="language-plaintext highlighter-rouge">type</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of <code class="language-plaintext highlighter-rouge">hidden</code> are excluded by the <a href="#73f2c2:hidden">hidden</a> condition.</p>
+<p>The <a href="#73f2c2:fixed-value">fixed value</a> condition in the Applicability is excluding <code class="language-plaintext highlighter-rouge">input</code> elements that do not consider the <code class="language-plaintext highlighter-rouge">autocomplete</code> attribute, based on their <code class="language-plaintext highlighter-rouge">type</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a>; <code class="language-plaintext highlighter-rouge">input</code> elements with a <code class="language-plaintext highlighter-rouge">type</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of <code class="language-plaintext highlighter-rouge">hidden</code> are excluded by the <a href="#73f2c2:hidden">hidden</a> condition.</p>
 
 <p>On an <code class="language-plaintext highlighter-rouge">input</code> element with a <code class="language-plaintext highlighter-rouge">type</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of <code class="language-plaintext highlighter-rouge">hidden</code>, the autocomplete attribute wears the <a href="https://html.spec.whatwg.org/#autofill-anchor-mantle">autofill anchor mantle</a>, describing the meaning of the given value. In all other cases, it wears the <a href="https://html.spec.whatwg.org/#autofill-expectation-mantle">autofill expectation mantle</a>.</p>
 
@@ -980,7 +979,7 @@ h2#sidebar-header {
   
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner"style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"><p><strong>Rule Identifier:</strong> 73f2c2</p>
-<p><strong>Date:</strong> Updated 10 June 2024</p>
+<p><strong>Date:</strong> Updated 31 October 2024</p>
 <p><strong>Authors:</strong> <a href="https://github.com/ajanec01">Aron Janecki</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -1016,9 +1015,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1730430858544508311"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1730798790032399313"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1730430858544508311"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1730798790032399313"></script>
 <script>
   svg4everybody();
 </script><script>
