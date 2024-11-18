@@ -3634,6 +3634,7 @@
 /tutorials/images/decision-tree/index.html
 /tutorials/images/decision-tree/ja.html
 /tutorials/images/decision-tree/ko.html
+/tutorials/images/decision-tree/pl.html
 /tutorials/images/decorative/index.html
 /tutorials/images/examples/2014-first-qtr/index.html
 /tutorials/images/examples/imagemap/index.html
