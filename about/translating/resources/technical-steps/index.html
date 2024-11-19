@@ -9,13 +9,13 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1731947979997447397";
+      element.src = "/WAI/assets/scripts/main.js?1732036545091084701";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1731947979997447397">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1732036545091084701">
 
 <title> How to Translate a WAI Resource | Web Accessibility Initiative (WAI) | W3C</title><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
@@ -313,14 +313,12 @@ If you have suggestions for changes to the English version, submit them via GitH
 <span class="na">last_updated</span><span class="pi">:</span> <span class="s">2020-04-28</span>
 
 <span class="na">github</span><span class="pi">:</span>
-  <span class="na">repository</span><span class="pi">:</span> <span class="s">w3c/wai-eval-tools-overview</span>
-  <span class="na">path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">content/index.md"</span>
+  <span class="na">label</span><span class="pi">:</span> <span class="s">wai-evaluation-tools</span>
 
 <span class="na">permalink</span><span class="pi">:</span> <span class="s">/test-evaluate/tools/</span>
 <span class="na">ref</span><span class="pi">:</span> <span class="s">/test-evaluate/tools/</span>
 
 <span class="na">footer</span><span class="pi">:</span> <span class="pi">&gt;</span>
-   <span class="s">&lt;p&gt;&lt;strong&gt;Date:&lt;/strong&gt; Updated 28 April 2020.&lt;/p&gt;</span>
    <span class="s">&lt;p&gt;&lt;strong&gt;Editor:&lt;/strong&gt; &lt;a href="https://www.w3.org/People/Shawn/"&gt;Shawn Lawton Henry&lt;/a&gt;.&lt;/p&gt;</span>
    <span class="s">&lt;p&gt;Video developed by the Education and Outreach Working Group (&lt;a href="http://www.w3.org/WAI/EO/"&gt;EOWG&lt;/a&gt;) with support from the &lt;a href="https://www.w3.org/WAI/about/projects/wai-guide/"&gt;WAI-Guide&lt;/a&gt; project funded by the European Commission (EC) under the Horizon 2020 program (Grant Agreement 822245). &lt;a href="./acknowledgements/"&gt;Acknowledgements&lt;/a&gt;.&lt;/p&gt;</span>
 <span class="s">---</span>
@@ -332,12 +330,6 @@ If you have suggestions for changes to the English version, submit them via GitH
 <p><code class="language-plaintext highlighter-rouge">lang</code></p>
 <ul>
   <li>Replace the original value (<code class="language-plaintext highlighter-rouge">en</code>) with the language shortcode of your translation.</li>
-</ul>
-
-<p><code class="language-plaintext highlighter-rouge">last_updated</code></p>
-<ul>
-  <li>Change <code class="language-plaintext highlighter-rouge">last_updated: 2000-00-00</code> to the date you finish the translation.<br />
-Use the format: YYYY-MM-DD (with month in the middle).</li>
 </ul>
 
 <p><code class="language-plaintext highlighter-rouge">path</code> (below <code class="language-plaintext highlighter-rouge">github</code>)</p>
@@ -353,17 +345,18 @@ Use the format: YYYY-MM-DD (with month in the middle).</li>
 <p><code class="language-plaintext highlighter-rouge">footer</code> (not always present)</p>
 <ul>
   <li>If this attribute is present, translate its content.</li>
-  <li>Do not change the dates in this section. Those dates should be the same in your translation as in the English version.</li>
 </ul>
 
-<h3 id="22-add-translators--contributors-names">2.2. Add translators &amp; contributors names.</h3>
+<h3 id="22-add-translation-information">2.2. Add translation information</h3>
 
-<p>After <code class="language-plaintext highlighter-rouge">last_updated</code>, add these lines, depending on how many translators there are and if there are contributors.</p>
-
-<p>Policy for names and links is introduced in <a href="/WAI/about/translating#links">Translating WAI Resources</a>.</p>
+<p>After <code class="language-plaintext highlighter-rouge">last_updated</code> (that corresponds to the date of the English version), add these lines:</p>
 
 <aside class="box"><div class="box-i">
-<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="na">translators</span><span class="pi">:</span>
+<div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code>
+<span class="na">translation</span><span class="pi">:</span>
+  <span class="na">last_updated</span><span class="pi">:</span> <span class="s">2000-00-00</span>
+
+<span class="na">translators</span><span class="pi">:</span>
   <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Your</span><span class="nv"> </span><span class="s">Name"</span>
 <span class="na">contributors</span><span class="pi">:</span>
   <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Other</span><span class="nv"> </span><span class="s">Name"</span>
@@ -371,7 +364,17 @@ Use the format: YYYY-MM-DD (with month in the middle).</li>
 </code></pre></div></div>
 </div></aside>
 
-<p>Or, if the lines are there with “<code class="language-plaintext highlighter-rouge">#</code>” before them to comment them out: delete the # and the space.</p>
+<p><code class="language-plaintext highlighter-rouge">translation</code> / <code class="language-plaintext highlighter-rouge">last_updated</code></p>
+<ul>
+  <li>Change <code class="language-plaintext highlighter-rouge">last_updated: 2000-00-00</code> to the date you finish the translation.<br />
+Use the format: YYYY-MM-DD (with month in the middle).</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">translators</code> and <code class="language-plaintext highlighter-rouge">contributors</code></p>
+<ul>
+  <li>Add information depending on how many translators there are, and if there are contributors. Policy for names and links is introduced in <a href="/WAI/about/translating/#links">Translating WAI Resources</a>.\</li>
+  <li>If the lines are present and commented out with “<code class="language-plaintext highlighter-rouge">#</code> “ before: delete the # and the space.</li>
+</ul>
 
 <aside class="box"><header class="box-h "> Updated front matter for a translation into French</header><div class="box-i">
 <details id="optional-id"><summary>
@@ -384,7 +387,10 @@ Use the format: YYYY-MM-DD (with month in the middle).</li>
     <div class="language-yaml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nn">---</span>
 <span class="na">title</span><span class="pi">:</span> <span class="s">Evaluation Tools Overview</span>
 <span class="na">lang</span><span class="pi">:</span> <span class="s">fr</span>
-<span class="na">last_updated</span><span class="pi">:</span> <span class="s">2023-09-13</span>
+<span class="na">last_updated</span><span class="pi">:</span> <span class="s">2020-04-28</span>
+
+<span class="na">translation</span><span class="pi">:</span>
+  <span class="na">last_updated</span><span class="pi">:</span> <span class="s">2024-11-11</span>
 
 <span class="na">translators</span><span class="pi">:</span>
   <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Your</span><span class="nv"> </span><span class="s">Name"</span>
@@ -393,14 +399,12 @@ Use the format: YYYY-MM-DD (with month in the middle).</li>
   <span class="pi">-</span> <span class="na">name</span><span class="pi">:</span> <span class="s2">"</span><span class="s">Other</span><span class="nv"> </span><span class="s">Name"</span>
 
 <span class="na">github</span><span class="pi">:</span>
-  <span class="na">repository</span><span class="pi">:</span> <span class="s">w3c/wai-eval-tools-overview</span>
-  <span class="na">path</span><span class="pi">:</span> <span class="s2">"</span><span class="s">content/index.fr.md"</span>
+  <span class="na">label</span><span class="pi">:</span> <span class="s">wai-evaluation-tools</span>
 
 <span class="na">permalink</span><span class="pi">:</span> <span class="s">/test-evaluate/tools/fr</span>
 <span class="na">ref</span><span class="pi">:</span> <span class="s">/test-evaluate/tools/</span>
 
 <span class="na">footer</span><span class="pi">:</span> <span class="pi">&gt;</span>
-  <span class="s">&lt;p&gt;&lt;strong&gt;Date :&lt;/strong&gt; Mise à jour : 28 avril 2020.&lt;/p&gt;</span>
   <span class="s">&lt;p&gt;&lt;strong&gt;Rédactrice :&lt;/strong&gt; &lt;a href="https://www.w3.org/People/Shawn/"&gt;Shawn Lawton Henry&lt;/a&gt;.&lt;/p&gt;</span>
   <span class="s">&lt;p&gt;Vidéo créée par le groupe de travail Éducation et Promotion (&lt;a href="http://www.w3.org/WAI/EO/"&gt;EOWG&lt;/a&gt;) avec le soutien du projet &lt;a href="https://www.w3.org/WAI/about/projects/wai-guide/"&gt;WAI-Guide&lt;/a&gt; financé par la Commission européenne (CE) dans le cadre du programme Horizon 2020 (convention de subvention n°822245) &lt;a href="./acknowledgements/"&gt;Remerciements&lt;/a&gt;.&lt;/p&gt;</span>
 <span class="s">---</span>
@@ -529,7 +533,7 @@ https://github.com/w3c/wai-website/edit/main/pages/about/translating/resources/t
 
 
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
-    <div class="inner"><p><strong>Updated:</strong> 27 May 2024.</p><p><strong>Editors:</strong> <a href="https://www.w3.org/People/Shawn/">Shawn Lawton Henry</a> and Rémi Bétin.</p>
+    <div class="inner"><p><strong>Updated:</strong> 19 November 2024.</p><p><strong>Editors:</strong> <a href="https://www.w3.org/People/Shawn/">Shawn Lawton Henry</a> and Rémi Bétin.</p>
 <p>Developed as part of the <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP project</a>, co-funded by the European Commission.</p>
 </div>
   </footer>
@@ -564,9 +568,9 @@ https://github.com/w3c/wai-website/edit/main/pages/about/translating/resources/t
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1731947979997447397"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1732036545091084701"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1731947979997447397"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1732036545091084701"></script>
 <script>
   svg4everybody();
 </script><script>
