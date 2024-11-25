@@ -2857,6 +2857,7 @@
 /fundamentals/accessibility-principles/es.html
 /fundamentals/accessibility-principles/fr.html
 /fundamentals/accessibility-principles/index.html
+/fundamentals/accessibility-principles/ja.html
 /fundamentals/accessibility-principles/ko.html
 /fundamentals/accessibility-principles/ru.html
 /fundamentals/accessibility-principles/zh-hans.html
