@@ -1,5 +1,5 @@
 ---
-title: APA Participation 
+title: ARIA Participation 
 permalink: /about/groups/ariawg/participate/
 ref: /about/groups/ariawg/participate/
 lang: en
