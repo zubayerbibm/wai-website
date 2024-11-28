@@ -306,7 +306,7 @@
 /about/translating/sitemaps/sitemap-ja/index.html
 /about/translating/sitemaps/sitemap-ko/index.html
 /about/translating/sitemaps/sitemap-pl/index.html
-/about/translating/sitemaps/sitemap-ru/index.html
+/about/translating/sitemaps/sitemap-pt-br/index.html
 /about/translating/sitemaps/sitemap-zh-hans/index.html
 /about/translating/step-by-step/index.html
 /about/translating/wcag/index.html
