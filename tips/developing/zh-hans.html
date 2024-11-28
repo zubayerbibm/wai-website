@@ -1,0 +1,896 @@
+<!DOCTYPE html>
+<html class="no-js" lang="zh-hans" dir="ltr" prefix="og: http://ogp.me/ns#">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <script>
+    document.documentElement.className = document.documentElement.className.replace('no-js', 'has-js');
+
+    function downloadJSAtOnload() {
+      var element = document.createElement("script");
+      element.src = "/WAI/assets/scripts/main.js?1732789184186543083";
+      document.body.appendChild(element);
+    }
+
+    window.addEventListener("load", downloadJSAtOnload, false);
+  </script>
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1732789184186543083">
+
+<title> 为实现无障碍而开发 – 入门技巧 | Web Accessibility Initiative (WAI) | W3C</title><link rel="stylesheet" href="/WAI/tips/css/tips.css?1732789184186543083"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<meta name="generator" content="Jekyll v4.3.3" />
+<meta property="og:title" content="为实现无障碍而开发 – 入门技巧" />
+<meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
+<meta property="og:locale" content="zh_hans" />
+<meta name="description" content="摘要" />
+<meta property="og:description" content="摘要" />
+<link rel="canonical" href="https://www.w3.org/WAI/tips/developing/zh-hans" />
+<meta property="og:url" content="https://www.w3.org/WAI/tips/developing/zh-hans" />
+<meta property="og:site_name" content="Web Accessibility Initiative (WAI)" />
+<meta property="og:type" content="article" />
+<meta property="article:published_time" content="2024-11-28T10:19:44+00:00" />
+<meta name="twitter:card" content="summary_large_image" />
+<meta property="twitter:title" content="为实现无障碍而开发 – 入门技巧" />
+<meta name="twitter:site" content="@w3c_wai" />
+<meta name="twitter:creator" content="@W3C Web Accessibility Initiative (WAI)" />
+<script type="application/ld+json">
+{"@context":"https://schema.org","@type":"BlogPosting","author":{"@type":"Person","name":"W3C Web Accessibility Initiative (WAI)"},"dateModified":"2024-11-28T10:19:44+00:00","datePublished":"2024-11-28T10:19:44+00:00","description":"摘要","headline":"为实现无障碍而开发 – 入门技巧","mainEntityOfPage":{"@type":"WebPage","@id":"https://www.w3.org/WAI/tips/developing/zh-hans"},"url":"https://www.w3.org/WAI/tips/developing/zh-hans"}</script>
+<!-- End Jekyll SEO tag -->
+<meta name="twitter:image" property="og:image" content="https://www.w3.org/WAI/assets/images/social-sharing-default.jpg">
+
+  <link rel="alternate" type="application/rss+xml" href="/WAI/feed.xml">
+</head>
+
+  <body id="top" class="page-为实现无障碍而开发-入门技巧 resource-tips">
+    <nav aria-label="跳过链接和语言选择器" id="controls" class="default-grid">
+  <ul>
+      <li><a href="#main">跳到内容</a></li>
+      <li class="opt"><a href="/WAI/meta/customize/">更改文本大小或颜色</a></li>
+      <li class="opt languagelist">
+          <strong>当前语言为：</strong>
+          <ul class="languagelistul"><li><a style="text-transform: capitalize;" href="/WAI/tips/developing/" lang="en"  dir="auto" translate="no">English</a></li><li><a style="text-transform: capitalize;" href="/WAI/tips/developing/fr" lang="fr"  dir="auto" translate="no">français</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/tips/developing/id" lang="id"  dir="auto" translate="no">Bahasa Indonesia</a></li>
+          <li><a style="text-transform: capitalize;" href="/WAI/tips/developing/ja" lang="ja"  dir="auto" translate="no">日本語</a></li>
+          <li><strong style="text-transform: capitalize;">简体中文</strong></li>
+          </ul>
+        </li>
+        <li class="opt">
+          <a href="/WAI/translations/">所有翻译 <svg focusable="false" aria-hidden="true" class="icon-translations "><use xlink:href="/WAI/assets/images/icons.svg#icon-translations"></use></svg></a>
+        </li>
+        <li><button id="showoptions" data-showhidebuttonid="header-showoptions" class="showhidebutton button-inline" data-target="#controls .opt" aria-expanded="false" data-large-aria-expanded="true" data-showtext='<svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> 显示定制，语言，翻译' data-hidetext='隐藏选项'><svg focusable="false" aria-hidden="true" class="icon-languages "><use xlink:href="/WAI/assets/images/icons.svg#icon-languages"></use></svg> 显示定制，语言，翻译</button></li>
+      </ul>
+    </nav>
+<header id="site-header" class="default-grid with-gap">
+  <div class="logos">
+    <a lang="en" class="home w3c" href="https://www.w3.org/">
+      <svg role="img" aria-label="W3C" viewBox="0 0 68 34" xmlns="http://www.w3.org/2000/svg"><g><path d="m16.117 1.006 5.759 19.58 5.759-19.58h4.17 11.444v1.946l-5.879 10.128c2.065.663 3.627 1.868 4.686 3.615 1.059 1.748 1.589 3.799 1.589 6.155 0 2.914-.775 5.363-2.324 7.348s-3.555 2.978-6.017 2.978c-1.854 0-3.469-.589-4.845-1.767-1.377-1.178-2.396-2.773-3.058-4.786l3.256-1.35c.477 1.218 1.106 2.178 1.887 2.879.781.702 1.701 1.052 2.76 1.052 1.112 0 2.052-.622 2.82-1.866.768-1.245 1.152-2.74 1.152-4.489 0-1.933-.411-3.429-1.231-4.488-.954-1.244-2.45-1.867-4.489-1.867h-1.588v-1.906l5.56-9.612h-6.712l-.382.65-8.163 27.548h-.397l-5.958-19.937-5.957 19.937h-.397l-9.53-32.168h4.17l5.759 19.58 3.892-13.185-1.906-6.395z"/><path d="m64.92 1.006c-.819 0-1.554.295-2.111.861-.591.6-.92 1.376-.92 2.178s.313 1.545.887 2.128c.583.591 1.334.912 2.145.912.793 0 1.562-.321 2.161-.903.574-.557.887-1.3.887-2.136 0-.811-.321-1.57-.878-2.136-.584-.592-1.344-.904-2.171-.904zm2.643 3.065c0 .701-.271 1.351-.768 1.832-.524.507-1.174.777-1.892.777-.675 0-1.342-.278-1.84-.785s-.777-1.157-.777-1.849.287-1.368.802-1.891c.481-.49 1.131-.751 1.84-.751.726 0 1.376.271 1.883.785.49.489.752 1.147.752 1.882zm-2.559-1.807h-1.3v3.445h.65v-1.469h.642l.701 1.469h.726l-.769-1.57c.498-.102.785-.439.785-.929 0-.625-.472-.946-1.435-.946zm-.118.422c.608 0 .886.169.886.591 0 .405-.278.549-.87.549h-.549v-1.14z"/><path d="m59.807.825.676 4.107-2.391 4.575s-.918-1.941-2.443-3.015c-1.285-.905-2.122-1.102-3.431-.832-1.681.347-3.587 2.357-4.419 4.835-.995 2.965-1.005 4.4-1.04 5.718-.056 2.113.277 3.362.277 3.362s-1.452-2.686-1.438-6.62c.009-2.808.451-5.354 1.75-7.867 1.143-2.209 2.842-3.535 4.35-3.691 1.559-.161 2.791.59 3.743 1.403 1 .854 2.01 2.721 2.01 2.721z"/><path d="m60.102 24.063s-1.057 1.889-1.715 2.617c-.659.728-1.837 2.01-3.292 2.651s-2.218.762-3.656.624c-1.437-.138-2.772-.97-3.24-1.317s-1.664-1.369-2.34-2.322-1.733-2.859-1.733-2.859.589 1.91.958 2.721c.212.467.864 1.894 1.789 3.136.863 1.159 2.539 3.154 5.086 3.604 2.547.451 4.297-.693 4.73-.97s1.346-1.042 1.924-1.66c.603-.645 1.174-1.468 1.49-1.962.231-.36.607-1.092.607-1.092z"/></g></svg>
+    </a>
+    <a lang="en" class="home" href="/WAI/">
+      <span class="wai"><span class="wa">Web&nbsp;Accessibility</span> <span class="i"><span class="initieative">Initiative</span> <span>WAI</span></span></span>
+    </a>
+    <div class="claim">
+      <span>使残疾人能够访问Web的策略、标准和资源。</span>
+    </div>
+    <button class="button button-menu" aria-haspopup="true" aria-expanded="false" id="openmenu"><span><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> 菜单</span></button>
+  </div>
+
+  <div class="navigations">
+  <nav class="metanav" aria-label="Meta &amp; Search" lang="en">
+    <ul>
+      <li><a href="/WAI/about/participating/">Get Involved</a></li>
+      <li><a href="/WAI/about/">About W3C WAI</a></li>
+      <li>
+        <form action="/WAI/search/" role="search">
+          <div>
+            <label for="header-search">
+              <span class="visuallyhidden">搜索:</span>
+              <input id="header-search" type="search" name="q" placeholder="搜索" aria-label="搜索">
+            </label>
+            
+            <button class="button button-icon button-nobg button-noborder"><span><svg focusable="false" aria-label="提交搜索" class="icon-search "><use xlink:href="/WAI/assets/images/icons.svg#icon-search"></use></svg></span></button>
+          </div>
+        </form>
+      </li>
+    </ul>
+  </nav>
+</div>
+</header><nav class="mainnav" aria-label="主导航" lang="zh-hans"><ul><li><a lang="en" href="/WAI/fundamentals/"><span>Accessibility Fundamentals</span></a></li><li><a lang="en" href="/WAI/planning/"><span>Planning &amp; Policies</span></a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="en" href="/WAI/test-evaluate/"><span>Test &amp; Evaluate</span></a></li><li><a lang="en" href="/WAI/teach-advocate/"><span>Teach &amp; Advocate</span></a></li><li><a lang="en" href="/WAI/standards-guidelines/"><span>Standards/<wbr>Guidelines</span></a></li></ul></nav><nav class="default-grid breadcrumb" aria-label="面包屑导航" lang="en">
+  <ul style="align-self: center;">
+    <li><a href="/WAI/" lang="en">Home</a></li><li><a lang="en" href="/WAI/design-develop/"><span>Design &amp; Develop</span></a></li><li><a lang="zh-hans" href="/WAI/tips/developing/zh-hans" aria-current="page"><span>Tips for Developing</span></a></li></ul>
+</nav>
+    <div class="default-grid with-gap leftcol">
+
+  
+      
+        <div class="sidenav"><nav class="sn-contents" aria-label="Secondary">
+      <ul class="sidenav--list">
+  <li>
+  <a lang="en" href="/WAI/design-develop/" class="page-link"><span>Design &amp; Develop</span></a></li><li>
+  <a lang="en" href="/WAI/tips/writing/" class="page-link"><span>Tips for Writing</span></a></li><li>
+  <a lang="en" href="/WAI/tips/designing/" class="page-link"><span>Tips for Designing</span></a></li><li>
+  <a lang="zh-hans" href="/WAI/tips/developing/zh-hans" aria-current="page" class="page-link"><span>Tips for Developing</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/" class="page-link"><span>Audio &amp; Video Media</span></a><ul><li>
+  <a lang="en" href="/WAI/media/av/users-orgs/" class="page-link"><span>User Needs</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/planning/" class="page-link"><span>Planning</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/av-content/" class="page-link"><span>Audio Content &amp; Video Content</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/description/" class="page-link"><span>Description</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/captions/" class="page-link"><span>Captions/Subtitles</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/transcripts/" class="page-link"><span>Transcripts</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/transcribing/" class="page-link"><span>Transcribing Audio to Text</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/sign-languages/" class="page-link"><span>Sign Languages</span></a></li><li>
+  <a lang="en" href="/WAI/media/av/player/" class="page-link"><span>Media Player</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/" class="page-link"><span>Tutorials</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/" class="page-link"><span>Page Structure</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/regions/" class="page-link"><span>Page Regions</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/labels/" class="page-link"><span>Labeling Regions</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/headings/" class="page-link"><span>Headings</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/content/" class="page-link"><span>Content Structure</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/page-structure/example/" class="page-link"><span>Full Example</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/menus/" class="page-link"><span>Menus</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/menus/structure/" class="page-link"><span>Structure</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/menus/styling/" class="page-link"><span>Styling</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/menus/flyout/" class="page-link"><span>Fly-Out Menus</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/menus/application-menus/" class="page-link"><span>Application Menus</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/menus/application-menus-code/" class="page-link"><span>Application Menu Example &amp; Code</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/images/" class="page-link"><span>Images</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/images/informative/" class="page-link"><span>Informative Images</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/decorative/" class="page-link"><span>Decorative Images</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/functional/" class="page-link"><span>Functional Images</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/textual/" class="page-link"><span>Images of Text</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/complex/" class="page-link"><span>Complex Images</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/groups/" class="page-link"><span>Groups of Images</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/imagemap/" class="page-link"><span>Image Maps</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/decision-tree/" class="page-link"><span>An <code style="color: inherit;">alt</code> Decision Tree</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/images/tips/" class="page-link"><span>Tips and Tricks</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/" class="page-link"><span>Tables</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/tables/one-header/" class="page-link"><span>One Header</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/two-headers/" class="page-link"><span>Two Headers</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/irregular/" class="page-link"><span>Irregular Headers</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/multi-level/" class="page-link"><span>Multi-level Headers</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/caption-summary/" class="page-link"><span>Caption &amp; Summary</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/tables/tips/" class="page-link"><span>Tips and Tricks</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/" class="page-link"><span>Forms</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/forms/labels/" class="page-link"><span>Labeling Controls</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/grouping/" class="page-link"><span>Grouping Controls</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/instructions/" class="page-link"><span>Form Instructions</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/validation/" class="page-link"><span>Validating Input</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/notifications/" class="page-link"><span>User Notifications</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/multi-page/" class="page-link"><span>Multi-page Forms</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/forms/custom-controls/" class="page-link"><span>Custom Controls</span></a></li></ul></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/" class="page-link"><span>Carousels</span></a><ul><li>
+  <a lang="en" href="/WAI/tutorials/carousels/structure/" class="page-link"><span>Structure</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/functionality/" class="page-link"><span>Functionality</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/animations/" class="page-link"><span>Animations</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/styling/" class="page-link"><span>Styling</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/working-example/" class="page-link"><span>Working Example</span></a></li><li>
+  <a lang="en" href="/WAI/tutorials/carousels/full-code/" class="page-link"><span>Complete Code</span></a></li></ul></li></ul></li></ul></nav><nav class="sidenav-languages" aria-labelledby="languagehead">
+        <header id="languagehead">语言/翻译</header>
+        <ul class="langlist">
+          <li style="margin-bottom: 2px;"><a href="/WAI/tips/developing/" lang="en" dir="auto" translate="no">English (original)</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/tips/developing/fr" dir="auto" translate="no" lang="fr">français</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/tips/developing/id" dir="auto" translate="no" lang="id">Bahasa Indonesia</a></li><li style="margin-bottom: 2px;"><a style="text-transform: capitalize;" href="/WAI/tips/developing/ja" dir="auto" translate="no" lang="ja">日本語</a></li><li style="margin-bottom: 2px;"><strong style="text-transform: capitalize;">简体中文</strong></li></ul><p><a href="/WAI/translations/#zh-hans">其他语言资源： 简体中文</a></p>
+        
+        <p><a href="/WAI/translations/">所有翻译</a></p>
+        <p><a href="/WAI/about/translating/">翻译WAI的资源</a></p>
+      </nav>
+</div>
+
+
+      
+  
+
+  <main id="main" lang="zh-hans">
+
+    
+
+    
+    <header class="in-resource">
+      <h1>
+        
+        <svg class="icon-in-title" aria-hidden="true"><use xlink:href="/WAI/content-images/tips/icons.svg#developing"></use></svg>
+        
+        
+        
+          为实现无障碍而开发
+        </h1><p>在 <a lang="en" href="/WAI/tips/"><span>Tips for Getting Started <span class="lang" lang="zh-hans" dir="auto" translate="no">(英文)</span></span></a></p></header>
+    <section id="translation-info" class="doc-note-box doc-note-translation">
+    <h2 class="visuallyhidden"><span lang="en">About this translation</span></h2>
+    <p>该志愿翻译可能不能准确地反映出<a href="/WAI/tips/developing/">英文原版内容</a>。</p>
+    <p><strong>翻译者：</strong> <a href="https://github.com/heybran" rel="nofollow noopener" target="_blank">heybran <svg focusable="false" aria-label="new tab/window" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a>. 贡献者： <a href="https://github.com/JinMokai" rel="nofollow noopener" target="_blank">金凯 <svg focusable="false" aria-label="new tab/window" class="icon-external-link "><use xlink:href="/WAI/assets/images/icons.svg#icon-external-link"></use></svg></a>. <br />WAI感谢这些翻译者们，并欢迎其他的<a href="/WAI/about/translating/">翻译</a>。</p></section><aside class="box box-full"><header class="box-h  box-h-full"> <h2> 摘要 </h2></header><div class="box-i">
+
+<p>本页介绍了一些基本注意事项，帮助您开始开发更便于残障人士访问的网页内容。这些技巧是帮助您满足Web内容无障碍指南（WCAG）要求的良好实践。请跟随链接进入相关的 WCAG 要求、“了解” 文档中的详细背景、教程中的指导、用户故事等。</p>
+
+</div></aside>
+
+
+
+<nav class="box box-simple box-full" aria-labelledby="tocheading" id="toc">
+  <header id="tocheading" class="box-h box-h-simple box-h-full"> 页面目录</header>
+  <div class="box-i">
+
+
+
+
+<ul id="markdown-toc">
+  <li><a href="#为每个表单控件关联一个标签" id="markdown-toc-为每个表单控件关联一个标签">为每个表单控件关联一个标签</a></li>
+  <li><a href="#为图片添加替代文本" id="markdown-toc-为图片添加替代文本">为图片添加替代文本</a></li>
+  <li><a href="#确定页面语言和语言变化" id="markdown-toc-确定页面语言和语言变化">确定页面语言和语言变化</a></li>
+  <li><a href="#使用正确的html元素来传达语义和结构" id="markdown-toc-使用正确的html元素来传达语义和结构">使用正确的HTML元素来传达语义和结构</a></li>
+  <li><a href="#帮助用户避免和纠正错误" id="markdown-toc-帮助用户避免和纠正错误">帮助用户避免和纠正错误</a></li>
+  <li><a href="#在代码顺序中反映阅读顺序" id="markdown-toc-在代码顺序中反映阅读顺序">在代码顺序中反映阅读顺序</a></li>
+  <li><a href="#编写能适应用户技术的代码" id="markdown-toc-编写能适应用户技术的代码">编写能适应用户技术的代码</a></li>
+  <li><a href="#为非标准互动元素提供意义" id="markdown-toc-为非标准互动元素提供意义">为非标准互动元素提供意义</a></li>
+  <li><a href="#确保所有可交互元素可以通过键盘操作" id="markdown-toc-确保所有可交互元素可以通过键盘操作">确保所有可交互元素可以通过键盘操作</a></li>
+  <li><a href="#尽可能避免使用验证码captcha" id="markdown-toc-尽可能避免使用验证码captcha">尽可能避免使用验证码（CAPTCHA）</a></li>
+</ul>
+
+
+
+  </div>
+</nav>
+
+
+
+<h2 id="为每个表单控件关联一个标签">为每个表单控件关联一个标签</h2>
+
+<p>将<code class="language-plaintext highlighter-rouge">&lt;label&gt;</code>元素的<code class="language-plaintext highlighter-rouge">for</code>属性关联到表单控件的<code class="language-plaintext highlighter-rouge">id</code>属性，或者使用<abbr title="无障碍富互联网应用程序">WAI-ARIA</abbr>属性。在特定情况下，视觉上隐藏<code class="language-plaintext highlighter-rouge">&lt;label&gt;</code>元素是允许的，但在大多数情况下，需要使用label元素来帮助所有用户理解所需的输入内容。</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> 示例: 使用 <code>for</code> 和 <code>id</code> 属性</header><div class="box-i">
+
+<div class="two-column">
+<figure>
+<figcaption><svg focusable="false" aria-hidden="true" class="icon-desktop "><use xlink:href="/WAI/assets/images/icons.svg#icon-desktop"></use></svg> 渲染输出</figcaption>
+<label for="username">用户名</label>
+<input id="username" type="text" name="username">
+</figure>
+<figure>
+<figcaption><svg focusable="false" aria-hidden="true" class="icon-code "><use xlink:href="/WAI/assets/images/icons.svg#icon-code"></use></svg> 代码片段</figcaption>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"username"</span><span class="nt">&gt;</span>用户名<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"username"</span> <span class="na">type=</span><span class="s">"text"</span> <span class="na">name=</span><span class="s">"username"</span><span class="nt">&gt;</span>
+</code></pre></div></div>
+
+</figure>
+</div>
+</div></aside>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> 更多信息</header><div class="box-i">
+
+<ul>
+  <li><strong>Web内容无障碍指南（WCAG）</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#labels-or-instructions">标签或说明 3.3.2 指南</a> (<a href="/WAI/WCAG21/Understanding/labels-or-instructions">理解 3.3.2 指南</a>)</li>
+    </ul>
+  </li>
+  <li><strong>教程</strong>
+    <ul>
+      <li><a href="/WAI/tutorials/forms/labels/" hreflang="en">标签控制 (英文)</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="为图片添加替代文本">为图片添加替代文本</h2>
+
+<p>确保为所有信息性和功能性图片添加图像替代文本。对装饰性图片使用空的替代文本<code class="language-plaintext highlighter-rouge">alt=“”</code>，或将其包含在 CSS 中。图片替代文本通常由负责书面内容的人员提供。</p>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> 更多信息</header><div class="box-i">
+
+<ul>
+  <li><strong>Web内容无障碍指南（WCAG）</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#non-text-content">非文本内容 1.1.1 指南</a> (<a href="/WAI/WCAG21/Understanding/non-text-content">理解 1.1.1 指南</a>)</li>
+    </ul>
+  </li>
+  <li><strong>教程</strong>
+    <ul>
+      <li><a href="/WAI/tutorials/images/" hreflang="en">图片 (英文)</a></li>
+    </ul>
+  </li>
+  <li><strong>用户故事</strong>
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/story-eight/" hreflang="en">Stefan，患有注意力缺陷多动障碍和阅读障碍的学生 (英文)</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="确定页面语言和语言变化">确定页面语言和语言变化</h2>
+
+<p>在 <code class="language-plaintext highlighter-rouge">html</code> 元素中使用 <code class="language-plaintext highlighter-rouge">lang</code> 属性来指明每个页面的主要语言，例如 <code class="language-plaintext highlighter-rouge">&lt;html lang=“en”&gt;</code>。当特定元素的语言与页面其他部分不同时，可在该元素上使用 <code class="language-plaintext highlighter-rouge">lang</code> 属性。</p>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> 更多信息</header><div class="box-i">
+
+<ul>
+  <li><strong>Web内容无障碍指南（WCAG）</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#language-of-page">网页语言 3.1.1 指南</a> (<a href="/WAI/WCAG21/Understanding/language-of-page">理解 3.1.1 指南</a>)</li>
+      <li><a href="/WAI/WCAG21/quickref/#language-of-parts">局部语言 3.1.2 指南</a> (<a href="/WAI/WCAG21/Understanding/language-of-parts">理解 3.1.2 指南</a>)</li>
+    </ul>
+  </li>
+  <li><strong>怎么做</strong>
+    <ul>
+      <li><a href="/International/questions/qa-html-language-declarations">在HTML中声明语言</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="使用正确的html元素来传达语义和结构">使用正确的HTML元素来传达语义和结构</h2>
+
+<p>为标题、列表、表格等使用语义化的标记。HTML5 提供了许多元素，如 <code class="language-plaintext highlighter-rouge">&lt;nav&gt;</code> 和 <code class="language-plaintext highlighter-rouge">&lt;aside&gt;</code>，以便更好地组织内容。
+<abbr>WAI-ARIA</abbr> 角色可以提供额外的含义，例如，使用 <code class="language-plaintext highlighter-rouge">role=“search”</code> 来标识搜索功能。
+与设计人员和内容撰写人员合作，就含义达成一致，然后统一使用。</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> 示例： 使用 HTML 提供结构和意义</header><div class="box-i">
+
+<div class="two-column">
+<figure>
+<figcaption><svg focusable="false" aria-hidden="true" class="icon-desktop "><use xlink:href="/WAI/assets/images/icons.svg#icon-desktop"></use></svg> 渲染输出</figcaption>
+<section>
+  <article>
+    <h2>超级熊转危为安</h2>
+    <time datetime="2015-08-07">2015年8月7日</time>
+    <p>超级熊从树上救下一只小猫，再次证明了自己的能力。目击者称，超级熊的努力并没有得到小猫的感激，它给救它的超级熊造成了一些轻微的抓伤。</p>
+    <aside>
+      <h3>相关文章</h3>
+      <ul>
+        <li><a href="#">超级熊收到城市钥匙</a></li>
+        <li><a href="#">超级熊成为市长候选人</a></li>
+      </ul>
+    </aside>
+  </article>
+</section>
+</figure>
+<figure>
+<figcaption><svg focusable="false" aria-hidden="true" class="icon-code "><use xlink:href="/WAI/assets/images/icons.svg#icon-code"></use></svg> 代码片段</figcaption>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;section&gt;</span>
+  <span class="nt">&lt;article&gt;</span>
+    <span class="nt">&lt;h2&gt;</span>超级熊转危为安<span class="nt">&lt;/h2&gt;</span>
+    <span class="nt">&lt;time</span> <span class="na">datetime=</span><span class="s">"2015-08-07"</span><span class="nt">&gt;</span>2015年8月7日<span class="nt">&lt;/time&gt;</span>
+    <span class="nt">&lt;p&gt;</span>超级熊从树上救下一只小猫，再次证明了自己的能力。目击者称，超级熊的努力并没有得到小猫的感激，它给救它的超级熊造成了一些轻微的抓伤。<span class="nt">&lt;/p&gt;</span>
+    <span class="nt">&lt;aside&gt;</span>
+      <span class="nt">&lt;h3&gt;</span>相关文章<span class="nt">&lt;/h3&gt;</span>
+      <span class="nt">&lt;ul&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>超级熊收到城市钥匙<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+        <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>超级熊成为市长候选人<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/aside&gt;</span>
+  <span class="nt">&lt;/article&gt;</span>
+<span class="nt">&lt;/section&gt;</span>
+</code></pre></div></div>
+
+</figure>
+</div>
+</div></aside>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> 示例: 在搜索字段中使用 <abbr>WAI-ARIA</abbr></header><div class="box-i">
+
+<div class="two-column">
+<figure>
+<figcaption><svg focusable="false" aria-hidden="true" class="icon-desktop "><use xlink:href="/WAI/assets/images/icons.svg#icon-desktop"></use></svg> 渲染输出</figcaption>
+<form action="#" method="post">
+  <div role="search">
+    <label for="search">搜索</label>
+    <input type="search" id="search" aria-describedby="search-help">
+    <div id="search-help">您可以通过编号或者姓名查询客户信息</div>
+    <button type="submit">提交</button>
+  </div>
+</form>
+</figure>
+<figure>
+<figcaption><svg focusable="false" aria-hidden="true" class="icon-code "><use xlink:href="/WAI/assets/images/icons.svg#icon-code"></use></svg> 代码片段</figcaption>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;form</span> <span class="na">action=</span><span class="s">"#"</span> <span class="na">method=</span><span class="s">"post"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"search"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"search"</span><span class="nt">&gt;</span>查询<span class="nt">&lt;/label&gt;</span>
+    <span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"search"</span> <span class="na">id=</span><span class="s">"search"</span> <span class="na">aria-describedby=</span><span class="s">"search-help"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;div</span> <span class="na">id=</span><span class="s">"search-help"</span><span class="nt">&gt;</span>您可以通过编号或者姓名查询客户信息<span class="nt">&lt;/div&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">type=</span><span class="s">"submit"</span><span class="nt">&gt;</span>提交<span class="nt">&lt;/button&gt;</span>
+  <span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;/form&gt;</span>
+</code></pre></div></div>
+
+</figure>
+</div>
+</div></aside>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> 更多信息</header><div class="box-i">
+
+<ul>
+  <li><strong>Web内容无障碍指南（WCAG）</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#info-and-relationships">信息和关系 1.3.1 指南</a> (<a href="/WAI/WCAG21/Understanding/info-and-relationships">理解 1.3.1 指南</a>)</li>
+    </ul>
+  </li>
+  <li><strong>教程</strong>
+    <ul>
+      <li><a href="/WAI/tutorials/page-structure/" hreflang="en">页面结构 (英文)</a></li>
+      <li><a href="/WAI/tutorials/tables/" hreflang="en">表格 (英文)</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="帮助用户避免和纠正错误">帮助用户避免和纠正错误</h2>
+
+<p>提供清晰的说明、错误信息和通知，来帮助用户填写网站上的表单。当出现错误时：</p>
+
+<ul>
+  <li>帮助用户找到问题所在</li>
+  <li>提供具体、易懂的解释</li>
+  <li>建议更正方法</li>
+</ul>
+
+<p>在处理用户输入时，对格式尽可能宽容。例如，接受包含空格的电话号码，并根据需要删除空格。</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> 示例: 格式要求宽容度大的澳大利亚电话号码表单控件</header><div class="box-i">
+
+<div class="two-column">
+<figure>
+<figcaption><svg focusable="false" aria-hidden="true" class="icon-desktop "><use xlink:href="/WAI/assets/images/icons.svg#icon-desktop"></use></svg> 渲染输出</figcaption>
+<label for="phone">电话</label>
+<input id="phone" name="phone" type="tel" pattern="^(\(?0[1-9]{1}\)?)?[0-9 -]*$" aria-describedby="phone-desc">
+<p id="phone-desc">例如, (02) 1234 1234</p>
+</figure>
+<figure>
+<figcaption><svg focusable="false" aria-hidden="true" class="icon-code "><use xlink:href="/WAI/assets/images/icons.svg#icon-code"></use></svg> 代码片段</figcaption>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;label</span> <span class="na">for=</span><span class="s">"phone"</span><span class="nt">&gt;</span>电话<span class="nt">&lt;/label&gt;</span>
+<span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"phone"</span> <span class="na">name=</span><span class="s">"phone"</span> <span class="na">type=</span><span class="s">"tel"</span>
+       <span class="na">pattern=</span><span class="s">"^(\(?0[1-9]{1}\)?)?[0-9 -]*$"</span>
+       <span class="na">aria-describedby=</span><span class="s">"phone-desc"</span><span class="nt">&gt;</span>
+<span class="nt">&lt;p</span> <span class="na">id=</span><span class="s">"phone-desc"</span><span class="nt">&gt;</span>例如, (02) 1234 1234<span class="nt">&lt;/p&gt;</span>
+</code></pre></div></div>
+
+</figure>
+</div>
+</div></aside>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> 更多信息</header><div class="box-i">
+
+<ul>
+  <li><strong>Web内容无障碍指南（WCAG）</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#error-identification">错误标识 3.3.1 指南</a> (<a href="/WAI/WCAG21/Understanding/error-identification">理解 3.3.1 指南</a>)</li>
+    </ul>
+  </li>
+  <li><strong>教程</strong>
+    <ul>
+      <li><a href="/WAI/tutorials/forms/validation/" hreflang="en">校验输入 (英文)</a></li>
+    </ul>
+  </li>
+  <li><strong>用户故事</strong>
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/story-two/" hreflang="en">Ian, 患有自闭症的数据录入员 (英文)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/story-eight/" hreflang="en">Stefan，患有注意力缺陷多动障碍和阅读障碍的学生 (英文)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/story-nine/" hreflang="en">Elias, 患有低视力，手颤震，和轻度短期失忆症的退休人员 (英文)</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="在代码顺序中反映阅读顺序">在代码顺序中反映阅读顺序</h2>
+
+<p>确保代码中元素的顺序与所展示信息的逻辑顺序一致。检查的方法之一是移除 CSS 样式并检查内容的顺序是否合理。</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> 示例： 在代码中反映逻辑阅读顺序</header><div class="box-i">
+
+<div class="two-column">
+<div class="order">
+  <article class="product">
+    <h3 class="name">太空训练鞋</h3>
+    <img src="/WAI/content-images/tips/trainer.png"  alt="紫色高帮运动鞋，白色鞋带，脚踝外侧有白色空点，白色鞋头帽">
+    <p class="desc">太空训练鞋，经典时尚的外观</p>
+    <p class="buy"><a href="javascript:return false" class="button button-icon"><span><svg focusable="false" aria-hidden="true" class="icon-cart-plus "><use xlink:href="/WAI/assets/images/icons.svg#icon-cart-plus"></use></svg> 加入购物车</span></a></p>
+  </article>
+</div>
+<figure>
+<figcaption><svg focusable="false" aria-label="Wrong" class="icon-ex-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-ex-circle"></use></svg> 标题前的图像可能会被错过</figcaption>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/trainer.png"</span> <span class="na">alt=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+<span class="nt">&lt;h3&gt;</span>太空训练鞋<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;p&gt;</span>太空...<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"..."</span><span class="nt">&gt;</span>加入购物车<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<details id="full-code-img-before-heading"><summary>
+    <p>查看完整代码示范</p>
+  </summary>
+  <div>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"product"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"紫色高帮运动鞋，白色鞋带，脚踝外侧有白色空点，白色鞋头帽"</span> <span class="na">src=</span><span class="s">"images/trainer.png"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"name"</span><span class="nt">&gt;</span>太空训练鞋<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"desc"</span><span class="nt">&gt;</span>太空训练鞋，经典时尚的外观<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"buy"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"javascript:return false"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#cart-plus"</span><span class="nt">/&gt;&lt;/svg&gt;</span> 加入购物车<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/article&gt;</span>
+</code></pre></div>    </div>
+
+  </div>
+</details>
+
+</figure>
+<figure>
+<figcaption><svg focusable="false" aria-label="OK" class="icon-check-circle "><use xlink:href="/WAI/assets/images/icons.svg#icon-check-circle"></use></svg> 标题标志着章节的开始</figcaption>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;h3&gt;</span>太空训练鞋<span class="nt">&lt;/h3&gt;</span>
+<span class="nt">&lt;img</span> <span class="na">src=</span><span class="s">"images/trainer.png"</span> <span class="na">alt=</span><span class="s">"..."</span><span class="nt">&gt;</span>
+<span class="nt">&lt;p&gt;</span>太空...<span class="nt">&lt;/p&gt;</span>
+<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"..."</span><span class="nt">&gt;</span>加入购物车<span class="nt">&lt;/a&gt;</span>
+</code></pre></div></div>
+
+<details id="full-code-img-before-heading"><summary>
+    <p>查看完整代码示范</p>
+  </summary>
+  <div>
+
+    <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;article</span> <span class="na">class=</span><span class="s">"product"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;h3</span> <span class="na">class=</span><span class="s">"name"</span><span class="nt">&gt;</span>太空训练鞋<span class="nt">&lt;/h3&gt;</span>
+  <span class="nt">&lt;img</span> <span class="na">alt=</span><span class="s">"紫色高帮运动鞋，白色鞋带，脚踝外侧有白色空点，白色鞋头帽"</span> <span class="na">src=</span><span class="s">"images/trainer.png"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"desc"</span><span class="nt">&gt;</span>太空训练鞋，经典时尚的外观<span class="nt">&lt;/p&gt;</span>
+  <span class="nt">&lt;p</span> <span class="na">class=</span><span class="s">"buy"</span><span class="nt">&gt;&lt;a</span> <span class="na">href=</span><span class="s">"javascript:return false"</span><span class="nt">&gt;&lt;svg</span> <span class="na">class=</span><span class="s">"icon"</span><span class="nt">&gt;&lt;use</span> <span class="na">xlink:href=</span><span class="s">"#cart-plus"</span><span class="nt">/&gt;&lt;/svg&gt;</span> 加入购物车<span class="nt">&lt;/a&gt;&lt;/p&gt;</span>
+<span class="nt">&lt;/article&gt;</span>
+</code></pre></div>    </div>
+
+  </div>
+</details>
+
+</figure>
+</div>
+</div></aside>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> 更多信息</header><div class="box-i">
+
+<ul>
+  <li><strong>Web内容无障碍指南（WCAG）</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#meaningful-sequence">有含义的顺序 1.3.2 指南</a> (<a href="/WAI/WCAG21/Understanding/meaningful-sequence">理解 1.3.2 指南</a>)</li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="编写能适应用户技术的代码">编写能适应用户技术的代码</h2>
+
+<p>使用响应式设计，使显示内容适应不同的缩放状态和视窗尺寸，如移动设备和平板电脑。
+当字体大小增加至少200%时，应避免水平滚动并防止内容被剪切。
+使用渐进增强技术，确保无论使用何种技术，都能使用核心功能和内容。</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> 示例： 使用媒体查询调整导航</header><div class="box-i">
+
+<div class="adapt-code">
+  <figure>
+    <div class="code">
+      <div class="grid-4">
+        <div class="from-col1 to-col2">
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* 在窄视窗上，使导航全宽 */</span>
+<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">25em</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nf">#nav</span> <span class="p">{</span>
+    <span class="nl">float</span><span class="p">:</span> <span class="nb">none</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="nb">auto</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nf">#main</span> <span class="p">{</span>
+    <span class="nl">margin-left</span><span class="p">:</span> <span class="m">0</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+</div>
+<div class="from-col3 to-col4">
+
+<div class="language-css highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c">/* 在较宽的视窗中，将导航放在左侧 */</span>
+<span class="k">@media</span> <span class="n">screen</span> <span class="n">and</span> <span class="p">(</span><span class="n">min-width</span><span class="p">:</span> <span class="m">43em</span><span class="p">)</span> <span class="p">{</span>
+  <span class="nf">#nav</span> <span class="p">{</span>
+    <span class="nl">float</span><span class="p">:</span> <span class="nb">left</span><span class="p">;</span>
+    <span class="nl">width</span><span class="p">:</span> <span class="m">24%</span><span class="p">;</span>
+  <span class="p">}</span>
+  <span class="nf">#main</span> <span class="p">{</span>
+    <span class="nl">margin-left</span><span class="p">:</span> <span class="m">27%</span><span class="p">;</span>
+  <span class="p">}</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+      </div>
+    </div>
+  </div>
+  </figure>
+</div>
+
+</div></aside>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> 更多信息</header><div class="box-i">
+
+<ul>
+  <li><strong>Web内容无障碍指南（WCAG）</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#resize-text">调整文本 1.4.4 指南</a> (<a href="/WAI/WCAG21/Understanding/resize-text">理解 1.4.4 指南</a>)</li>
+      <li><a href="/WAI/WCAG21/quickref/#consistent-identification">一致性标识 3.2.4 指南</a> (<a href="/WAI/WCAG21/Understanding/consistent-identification">理解 3.2.4 指南</a>)</li>
+    </ul>
+  </li>
+  <li><strong>背景</strong>
+    <ul>
+      <li><a href="/TR/mobile-accessibility-mapping/#h-small-screen-size">小屏幕尺寸</a></li>
+    </ul>
+  </li>
+  <li><strong>用户故事</strong>
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/story-six/" hreflang="en">Dhruv, 老年聋哑学生 (英文)</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="为非标准互动元素提供意义">为非标准互动元素提供意义</h2>
+
+<p>使用 <abbr title="可访问的富互联网应用程序">WAI-ARIA</abbr>，为自定义组件（如手风琴组件accordions和自定义按钮）提供功能和状态信息。
+例如，<code class="language-plaintext highlighter-rouge">role=“navigation”</code> 和 <code class="language-plaintext highlighter-rouge">aria-expanded=“true”</code>。
+要实现此类组件的行为，如展开和折叠内容或组件如何响应键盘事件，还需要额外的代码。</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> 示例： 使用 WAI-ARIA 体现菜单功能和状态</header><div class="box-i">
+
+<div class="non-standard">
+  <figure>
+      <div class="code">
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;nav</span> <span class="na">aria-label=</span><span class="s">"主导航"</span> <span class="na">role=</span><span class="s">"navigation"</span><span class="nt">&gt;</span>
+  <span class="nt">&lt;ul&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"..."</span><span class="nt">&gt;</span>首页<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"..."</span><span class="nt">&gt;</span>商店<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li</span> <span class="na">class=</span><span class="s">"has-submenu"</span><span class="nt">&gt;</span>
+      <span class="nt">&lt;a</span> <span class="na">aria-expanded=</span><span class="s">"false"</span> <span class="na">aria-haspopup=</span><span class="s">"true"</span> <span class="na">href=</span><span class="s">"..."</span><span class="nt">&gt;</span>太空熊<span class="nt">&lt;/a&gt;</span>
+      <span class="nt">&lt;ul&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"..."</span><span class="nt">&gt;</span>太空熊 6<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+          <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"..."</span><span class="nt">&gt;</span>太空熊 6 Plus<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+      <span class="nt">&lt;/ul&gt;</span>
+    <span class="nt">&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"..."</span><span class="nt">&gt;</span>火星车<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+    <span class="nt">&lt;li&gt;&lt;a</span> <span class="na">href=</span><span class="s">"..."</span><span class="nt">&gt;</span>联系<span class="nt">&lt;/a&gt;&lt;/li&gt;</span>
+  <span class="nt">&lt;/ul&gt;</span>
+<span class="nt">&lt;/nav&gt;</span>
+</code></pre></div></div>
+
+      </div>
+  </figure>
+</div>
+
+</div></aside>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> 更多信息</header><div class="box-i">
+
+<ul>
+  <li><strong>Web内容无障碍指南（WCAG）</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#name-role-value">名称，角色，值 4.1.2 指南</a> (<a href="/WAI/WCAG21/Understanding/name-role-value">理解 4.1.2 指南</a>)</li>
+    </ul>
+  </li>
+  <li><strong>背景</strong>
+    <ul>
+      <li><a href="/TR/aria-in-html/">在 HTML 中使用 ARIA 的注意事项</a></li>
+    </ul>
+  </li>
+  <li><strong>用户故事</strong>
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/story-five/" hreflang="en">Sophie, 患有唐氏综合症的篮球迷 (英文)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/story-nine/" hreflang="en">Elias, 患有低视力，手颤震，和轻度短期失忆症的退休人员 (英文)</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="确保所有可交互元素可以通过键盘操作">确保所有可交互元素可以通过键盘操作</h2>
+
+<p>考虑键盘操作，尤其是在开发像菜单，鼠标悬浮信息，收缩件或者媒体播放器等交互元素。
+对于默认不支持Tab键的 <code class="language-plaintext highlighter-rouge">&lt;div&gt;</code>，<code class="language-plaintext highlighter-rouge">&lt;span&gt;</code> 等元素，当它们被用来当作交互元素时，则可以添加 <code class="language-plaintext highlighter-rouge">tabindex="0"</code> 属性使键盘可以焦距到它们上面，同时使用脚本捕捉和反应键盘事件。</p>
+
+<aside class="box box-example"><header class="box-h  box-h-example"> 示例: 键盘操作友好的菜单按钮</header><div class="box-i">
+
+<div class="two-column keyboard-accessible">
+<figure>
+<figcaption><svg focusable="false" aria-hidden="true" class="icon-desktop "><use xlink:href="/WAI/assets/images/icons.svg#icon-desktop"></use></svg> 渲染输出</figcaption>
+<div class="rendered">
+  <div id="example-button" class="menu-button" role="button" aria-expanded="false" aria-controls="example-button-menu" tabindex="0"><svg focusable="false" aria-hidden="true" class="icon-menu "><use xlink:href="/WAI/assets/images/icons.svg#icon-menu"></use></svg> 菜单</div>
+  <div id="example-button-menu" class="menu" aria-hidden="true" tabindex="-1">
+    <ul>
+      <li><a href="javascript:return false">关于</a></li>
+      <li><a href="javascript:return false">新闻</a></li>
+      <li><a href="javascript:return false">门票</a></li>
+      <li><a href="javascript:return false">景点</a></li>
+    </ul>
+  </div>
+</div>
+<script>
+  !function() {
+    "use strict";
+    function e(e) {
+        "true" == e.getAttribute("aria-hidden") ? (e.setAttribute("aria-hidden", "false"), e.focus()) : e.setAttribute("aria-hidden", "true")
+    }
+    function t(e) {
+        "true" == e.getAttribute("aria-checked") ? (e.setAttribute("aria-checked", "false"), e.getElementsByTagName("span")[0].innerHTML = "Off") : (e.setAttribute("aria-checked", "true"), e.getElementsByTagName("span")[0].innerHTML = "On")
+    }
+    var a = document.getElementById("example-button");
+    a && (a.addEventListener("keydown", function(t) {
+        t.keyCode && 13 == t.keyCode && (e(document.getElementById("example-button-menu")), "true" == t.target.getAttribute("aria-expanded") ? t.target.setAttribute("aria-expanded", "false") : t.target.setAttribute("aria-expanded", "true"))
+    }), a.addEventListener("click", function(t) {
+        e(document.getElementById("example-button-menu")), "true" == t.target.getAttribute("aria-expanded") ? t.target.setAttribute("aria-expanded", "false") : t.target.setAttribute("aria-expanded", "true")
+    }));
+    var n = document.getElementById("switch");
+    n && (n.addEventListener("keydown", function(e) {
+        !e.keyCode || 32 != e.keyCode && 13 != e.keyCode || t(this)
+    }), n.addEventListener("click", function() {
+        t(this)
+    }))
+}();
+</script>
+</figure>
+<figure>
+<figcaption><svg focusable="false" aria-hidden="true" class="icon-code "><use xlink:href="/WAI/assets/images/icons.svg#icon-code"></use></svg> 代码片段</figcaption>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">buttonExample</span> <span class="o">=</span> <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">example-button</span><span class="dl">'</span><span class="p">);</span>
+
+<span class="nx">buttonExample</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">keydown</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// 当回车键按下时切换菜单状态</span>
+  <span class="k">if</span><span class="p">(</span><span class="nx">e</span><span class="p">.</span><span class="nx">keyCode</span> <span class="o">&amp;&amp;</span> <span class="nx">e</span><span class="p">.</span><span class="nx">keyCode</span> <span class="o">==</span> <span class="mi">13</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nf">toggleMenu</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">example-button-menu</span><span class="dl">'</span><span class="p">));</span>
+  <span class="p">}</span>
+<span class="p">});</span>
+
+<span class="nx">buttonExample</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="kd">function</span><span class="p">(</span><span class="nx">e</span><span class="p">)</span> <span class="p">{</span>
+  <span class="c1">// 当鼠标点击时切换菜单状态</span>
+  <span class="nf">toggleMenu</span><span class="p">(</span><span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">example-button-menu</span><span class="dl">'</span><span class="p">));</span>
+<span class="p">});</span>
+</code></pre></div></div>
+
+</figure>
+</div>
+</div></aside>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> 更多信息</header><div class="box-i">
+
+<ul>
+  <li><strong>Web内容无障碍指南（WCAG）</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#keyboard">键盘 2.1.1 指南</a> (<a href="/WAI/WCAG21/Understanding/keyboard">理解 2.1.1 指南</a>)</li>
+    </ul>
+  </li>
+  <li><strong>用户故事</strong>
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/story-one/" hreflang="en">Ade, 双臂功能受限的记者 (英文)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/story-three/" hreflang="en">Lakshmi, 盲人高级会计师 (英文)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/story-seven/" hreflang="en">Marta, 一位盲聋的营销助理 (英文)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/story-nine/" hreflang="en">Elias, 患有低视力，手颤震，和轻度短期失忆症的退休人员 (英文)</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<h2 id="尽可能避免使用验证码captcha">尽可能避免使用验证码（CAPTCHA）</h2>
+
+<p>验证码会给用户造成很多阻碍。除了验证码，还有其他更易使用的用户输入验证方式，比如自动检测或者界面交互验证。
+如果一定需要用到验证码，确保它是容易理解的，另外提供其他可选方案，比如：</p>
+
+<ul>
+  <li>提供多于两种解决验证码的方法</li>
+  <li>让用户有机会请求可绕过验证码的人工代表的帮助</li>
+  <li>授权用户无需验证码</li>
+</ul>
+
+<aside class="box box-simple"><header class="box-h  box-h-simple"> 更多信息</header><div class="box-i">
+
+<ul>
+  <li><strong>Web内容无障碍指南（WCAG）</strong>
+    <ul>
+      <li><a href="/WAI/WCAG21/quickref/#non-text-content">非文本内容 1.1.1 指南</a> (<a href="/WAI/WCAG21/Understanding/non-text-content">理解 1.1.1 指南</a>)</li>
+    </ul>
+  </li>
+  <li><strong>背景</strong>
+    <ul>
+      <li><a href="/TR/turingtest/">验证码（CAPTCHA）使无障碍变得困难</a></li>
+    </ul>
+  </li>
+  <li><strong>用户故事</strong>
+    <ul>
+      <li><a href="/WAI/people-use-web/user-stories/story-seven/" hreflang="en">Marta, 一位盲聋的营销助理 (英文)</a></li>
+      <li><a href="/WAI/people-use-web/user-stories/story-nine/" hreflang="en">Elias, 患有低视力，手颤震，和轻度短期失忆症的退休人员 (英文)</a></li>
+    </ul>
+  </li>
+</ul>
+
+</div></aside>
+
+<aside class="box box-large"><header class="box-h  box-h-large box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-readmore "><use xlink:href="/WAI/assets/images/icons.svg#icon-readmore"></use></svg> 了解更多无障碍相关知识</header><div class="box-i">
+
+<p>这些提示是Web无障碍需要考虑的一些事项。以下资源可以帮助您了解无障碍的重要性，以及让残疾人更容易访问Web的指南。</p>
+
+<ul>
+  <li><a href="/WAI/fundamentals/accessibility-intro/zh-hans">Web无障碍简介</a> — 无障碍简介，并提供许多有用资源的链接</li>
+  <li><a href="/WAI/fundamentals/accessibility-principles/zh-hans">无障碍原则</a> — <abbr>WCAG</abbr> 要求简介</li>
+  <li><a href="/WAI/people-use-web/" hreflang="en">残疾人如何使用Web (英文)</a> — 通过真实事例说明无障碍给残疾人士带来的益处</li>
+  <li><a href="/WAI/tutorials/" hreflang="en">Web无障碍教程 (英文)</a> — 向您展示如何开发便于残障人士访问的网页内容</li>
+  <li><a href="/WAI/demos/bad/">网站无障碍提升前后对比</a> — 对比具有相同视觉设计的无障碍不友好和无障碍友好的网站，并附有注释，强调关键的无障碍屏障和纠正方法，以及 <abbr>WCAG</abbr> 的评估报告。</li>
+  <li><a href="/WAI/WCAG21/quickref/">如何满足WCAG规范 (快速查阅)</a> — 所有WCAG要求和技术的可定制查阅</li>
+  <li><a href="/WAI/ER/tools/">Web无障碍评估工具列表</a> — 提供一系列工具，帮助探索代码的无障碍</li>
+  <li><a href="/WAI/standards-guidelines/aria/" hreflang="en"><abbr>WAI-ARIA</abbr> 概述 (英文)</a> — <abbr>WAI-ARIA</abbr> 简介及所有规范的链接</li>
+</ul>
+
+</div></aside>
+
+
+    
+
+<nav class="pager" aria-label="Previous/Next Page" style="clear: both;">
+  <ul><li class="pager--item previous">
+      <a href="">
+        <svg focusable="false" aria-hidden="true" class="icon-arrow-left pager--item-icon"><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-left"></use></svg>
+        <span class="pager--item-text">
+          <span class="pager--item-text-direction">上一页:</span>
+          <span class="pager--item-text-target"></span>
+        </span>
+      </a>
+    </li></nav><aside class="box box-icon box-space-above" id="helpimprove" aria-label="feedback"><header class="box-h  box-h-icon box-h-space-above box-h-icon"> <svg focusable="false" aria-hidden="true" class="icon-comments "><use xlink:href="/WAI/assets/images/icons.svg#icon-comments"></use></svg> <h2> 帮助提升本页 </h2></header><div class="box-i"><p>请通过电子邮件将您的想法、建议或意见分享到公共存档列表<a href="mailto:wai@w3.org?body=%5Binclude%20a%20relevant%20email%20Subject%5D%0A%0A%5B%E6%8A%8A%E6%B3%A8%E9%87%8A%E5%86%99%E5%9C%A8%E8%BF%99%E9%87%8C......%5D%0A%0AI%20%E5%85%81%E8%AE%B8%E5%B0%86%E5%85%B6%E5%85%B1%E4%BA%AB%E5%88%B0%E5%85%AC%E5%BC%80%E5%AD%98%E6%A1%A3%E7%9A%84%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6%E5%88%97%E8%A1%A8%E3%80%82">wai@w3.org</a>或通过GitHub提交意见</p>
+<div class="button-group">
+    <a href="mailto:wai@w3.org?body=%5Binclude%20a%20relevant%20email%20Subject%5D%0A%0A%5B%E6%8A%8A%E6%B3%A8%E9%87%8A%E5%86%99%E5%9C%A8%E8%BF%99%E9%87%8C......%5D%0A%0AI%20%E5%85%81%E8%AE%B8%E5%B0%86%E5%85%B6%E5%85%B1%E4%BA%AB%E5%88%B0%E5%85%AC%E5%BC%80%E5%AD%98%E6%A1%A3%E7%9A%84%E7%94%B5%E5%AD%90%E9%82%AE%E4%BB%B6%E5%88%97%E8%A1%A8%E3%80%82" class="button"><span>邮件</span></a><a href="
+https://github.com/w3c/wai-website/edit/main/collections/_tips/developing.zh-hans.md
+" class="button"><span>派生到本地，在Github上编辑</span></a><a href="https://github.com/w3c/wai-website/issues/new?template=content-issue.yml&title=[zh-hans]%20&wai-resource-id=wai-tips&wai-url=https://www.w3.org/WAI/tips/developing/zh-hans" class="button"><span>创建新的Github问题</span></a></div></div></aside>
+
+
+    <a class="button button-backtotop" href="#top"><span><svg focusable="false" aria-hidden="true" class="icon-arrow-up "><use xlink:href="/WAI/assets/images/icons.svg#icon-arrow-up"></use></svg> 回到顶部</span></a>
+  </main>
+</div>
+
+
+  <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
+    <div class="inner"><p><strong>英文版本更新：</strong> 2024-07-16.
+          (<span lang="en">Translated:</span> 2024-11-22).</p><p><strong>日期:</strong> 2024年7月16日小更新。2016 年4月15日更新。2015年9月首次发布。</p> <p><strong>编者:</strong> <a href="https://www.w3.org/People/kevin">Kevin White</a>, <a href="https://www.w3.org/People/shadi">Shadi Abou-Zahra</a>, 和 <a href="https://www.w3.org/People/Shawn">Shawn Lawton Henry</a>. <a href="/WAI/tips/acknowledgements/"><span lang="en">Acknowledgements</span></a> 页面列出了贡献者和功劳。</p> <p>由教育及外展工作组(<a href="https://www.w3.org/WAI/EO/">EOWG</a>)开发.  作为<a href="https://www.w3.org/WAI/DEV/">WAI-DEV项目</a>的一部分进行开发，该项目由欧盟委员会共同资助。</p>
+</div>
+  </footer>
+  <footer class="site-footer grid-4q" aria-label="Site">
+  <div class="q1-start q3-end about">
+    <div>
+      <p><a class="largelink" href="https://www.w3.org/WAI/" lang="en" dir="auto" translate="no">W3C Web Accessibility Initiative (WAI)</a></p>
+      <p>使残疾人能够访问Web的策略、标准和支持资源。</p>
+    </div>
+    <div class="social" lang="en" dir="auto" translate="no">
+      <ul>
+        <li><a href="https://w3c.social/@wai"><svg focusable="false" aria-hidden="true" class="icon-mastodon "><use xlink:href="/WAI/assets/images/icons.svg#icon-mastodon"></use></svg> Mastodon</a></li>
+        <li><a href="https://www.linkedin.com/company/w3c-wai/"><svg focusable="false" aria-hidden="true" class="icon-linkedin "><use xlink:href="/WAI/assets/images/icons.svg#icon-linkedin"></use></svg> LinkedIn</a></li>
+        <li><a href="https://www.w3.org/WAI/feed.xml"><svg focusable="false" aria-hidden="true" class="icon-rss "><use xlink:href="/WAI/assets/images/icons.svg#icon-rss"></use></svg> Feed</a></li>
+        <li><a href="https://www.youtube.com/channel/UCU6ljj3m1fglIPjSjs2DpRA/playlists/"><svg focusable="false" aria-hidden="true" class="icon-youtube "><use xlink:href="/WAI/assets/images/icons.svg#icon-youtube"></use></svg> YouTube</a></li>
+        <li><a href="https://www.w3.org/WAI/news/subscribe/" class="button">Get News in Email</a></li>
+      </ul>
+    </div>
+    <div lang="en" dir="auto"  translate="no">
+      <p>Copyright © 2024 World Wide Web Consortium (<a href="https://www.w3.org/">W3C</a><sup>®</sup>). See <a href="/WAI/about/using-wai-material/">Permission to Use WAI Material</a>.</p>
+    </div>
+  </div>
+  <div lang="en" dir="auto"  translate="no" class="q4-start q4-end">
+    <ul style="margin-bottom:0">
+      <li><a href="/WAI/about/contacting/">Contact WAI</a></li>
+      <li><a href="/WAI/sitemap/">Site Map</a></li>
+      <li><a href="/WAI/news/">News</a></li>
+      <li><a href="/WAI/sitemap/#archive">Archive</a></li>
+      <li><a href="/WAI/about/accessibility-statement/">Accessibility Statement</a></li>
+      <li><a href="/WAI/translations/"> Translations</a></li>
+      <li><a href="/WAI/roles/">Resources for Roles</a></li>
+    </ul>
+  </div>
+</footer><!-- Details4Everybody -->
+<script src="/WAI/assets/scripts/details4everybody.js?1732789184186543083"></script>
+<!-- SVG4Everybody -->
+<script src="/WAI/assets/scripts/svg4everybody.js?1732789184186543083"></script>
+<script>
+  svg4everybody();
+</script>
+<script src="/WAI/assets/scripts/lang/zh-hans.js?1732789184186543083"></script>
+
+  </body>
+</html>

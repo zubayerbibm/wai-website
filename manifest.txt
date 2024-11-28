@@ -3597,6 +3597,7 @@
 /tips/developing/id.html
 /tips/developing/index.html
 /tips/developing/ja.html
+/tips/developing/zh-hans.html
 /tips/fr.html
 /tips/id.html
 /tips/index.html
