@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1732789184186543083";
+      element.src = "/WAI/assets/scripts/main.js?1732791142071997238";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1732789184186543083">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1732791142071997238">
 
-<title> Audio and visuals of video element have transcript[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1732789184186543083"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Audio and visuals of video element have transcript[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1732791142071997238"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Audio and visuals of video element have transcript" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -277,10 +277,6 @@ h2#sidebar-header {
                 
                 <li><a href="#expectation">Expectation</a></li>
                 
-                <li><a href="#assumptions">Assumptions</a></li>
-                
-                <li><a href="#accessibility-support">Accessibility Support</a></li>
-                
                 <li><a href="#background">Background</a></li>
                 
                 <li><a href="#accessibility-requirements-mapping">Accessibility Requirements Mapping</a></li>
@@ -343,15 +339,15 @@ h2#sidebar-header {
 
 <p><strong>Note:</strong> A “text transcript” in the context of this rule is defined in WCAG 2 as an <a href="https://www.w3.org/TR/WCAG22/#dfn-alternative-for-time-based-media">alternative for time based media</a>.</p>
 
-<h2 id="assumptions">Assumptions</h2>
+<h2 id="background">Background</h2>
+
+<h3 id="assumptions">Assumptions</h3>
 
 <p>This rule assumes that a mechanism is available to start the video and that the video element is not simply used to display the <a href="https://www.w3.org/TR/html5/semantics-embedded-content.html#element-attrdef-video-poster">poster</a>.</p>
 
-<h2 id="accessibility-support">Accessibility Support</h2>
+<h3 id="accessibility-support">Accessibility Support</h3>
 
 <p>There are no accessibility support issues known.</p>
-
-<h2 id="background">Background</h2>
 
 <h3 id="bibliography">Bibliography</h3>
 
@@ -543,7 +539,7 @@ Then he stops to scratch his bottom.<span class="nt">&lt;/p&gt;</span>
   <li>the element has a <a href="https://html.spec.whatwg.org/#tabindex-value">tabindex value</a> that is not null.</li>
 </ul>
 
-<p><strong>Exception</strong>: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered <em>focusable</em>.</p>
+<p><strong>Exception</strong>: Elements that lose focus and do not regain focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered <em>focusable</em>.</p>
 
 <p>Notes:</p>
 
@@ -568,17 +564,21 @@ Then he stops to scratch his bottom.<span class="nt">&lt;/p&gt;</span>
 
 <h3 id="outcome">Outcome</h3>
 
-<p>An <em>outcome</em> is a conclusion that comes from evaluating an ACT Rule on a <a href="https://www.w3.org/TR/act-rules-format/#test-subject">test subject</a> or one of its constituent <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a>. An outcome can be one of the three following types:</p>
+<p>A conclusion that comes from evaluating an ACT Rule on a <a href="https://www.w3.org/TR/act-rules-format-1.1/#test-subject">test subject</a> or one of its constituent test target. An outcome can be one of the five following types:</p>
 
 <ul>
   <li><strong>Inapplicable:</strong> No part of the test subject matches the applicability</li>
   <li><strong>Passed:</strong> A <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a> meets all expectations</li>
   <li><strong>Failed:</strong> A <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a> does not meet all expectations</li>
+  <li><strong>cantTell:</strong> Whether the rule is applicable, or not all expectations were met could not be fully determined by the tester.</li>
+  <li><strong>Untested</strong>: The tester has not attempted to evaluate the test subject.</li>
 </ul>
 
-<p><strong>Note:</strong> A rule has one <code class="language-plaintext highlighter-rouge">passed</code> or <code class="language-plaintext highlighter-rouge">failed</code> outcome for every <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a>. When there are no test targets the rule has one <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome. This means that each <a href="https://www.w3.org/TR/act-rules-format/#test-subject">test subject</a> will have one or more outcomes.</p>
+<p><strong>Note</strong>: A rule has one <code class="language-plaintext highlighter-rouge">passed</code> or <code class="language-plaintext highlighter-rouge">failed</code> outcome for every <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a>. When a tester evaluates a test target it can also be reported as <code class="language-plaintext highlighter-rouge">cantTell</code> if the rule cannot be tested in its entirety. For example, when applicability was automated, but the expectations have to be evaluated manually.</p>
 
-<p><strong>Note:</strong> Implementations using the <a href="https://www.w3.org/TR/EARL10-Schema/">EARL10-Schema</a> can express the outcome with the <a href="https://www.w3.org/TR/EARL10-Schema/#outcome">outcome property</a>. In addition to <code class="language-plaintext highlighter-rouge">passed</code>, <code class="language-plaintext highlighter-rouge">failed</code> and <code class="language-plaintext highlighter-rouge">inapplicable</code>, EARL 1.0 also defined an <code class="language-plaintext highlighter-rouge">incomplete</code> outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such “interim” results can be expressed with the <code class="language-plaintext highlighter-rouge">incomplete</code> outcome.</p>
+<p>When there are no test targets the rule has one <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome. If the tester is unable to determine whether there are test targets there will be one <code class="language-plaintext highlighter-rouge">cantTell</code> outcome. And when no evaluation has occurred the test target has one untested outcome. This means that each <a href="https://www.w3.org/TR/act-rules-format-1.1/#test-subject">test subject</a> always has one or more outcomes.</p>
+
+<p>Outcomes used in ACT Rules can be expressed using the <a href="https://www.w3.org/TR/EARL10-Schema/#outcome">outcome property</a> of the [<a href="https://www.w3.org/TR/act-rules-format-1.1/#biblio-earl10-schema">EARL10-Schema</a>][].</p>
 
 <h3 id="programmatically-hidden">Programmatically Hidden</h3>
 
@@ -669,7 +669,7 @@ Then he stops to scratch his bottom.<span class="nt">&lt;/p&gt;</span>
   
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner"style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"><p><strong>Rule Identifier:</strong> 1a02b0</p>
-<p><strong>Date:</strong> Updated 22 March 2024</p>
+<p><strong>Date:</strong> Updated 21 November 2024</p>
 <p><strong>Authors:</strong> <a href="https://www.linkedin.com/in/brianbors/">Brian Bors</a>, <a href="https://github.com/wilcofiers">Wilco Fiers</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 
@@ -707,9 +707,9 @@ Then he stops to scratch his bottom.<span class="nt">&lt;/p&gt;</span>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1732789184186543083"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1732791142071997238"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1732789184186543083"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1732791142071997238"></script>
 <script>
   svg4everybody();
 </script><script>

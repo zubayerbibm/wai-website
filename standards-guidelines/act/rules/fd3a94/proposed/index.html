@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1732789184186543083";
+      element.src = "/WAI/assets/scripts/main.js?1732791142071997238";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1732789184186543083">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1732791142071997238">
 
-<title> Links with identical accessible names and same context serve equivalent purpose[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1732789184186543083"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Links with identical accessible names and same context serve equivalent purpose[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1732791142071997238"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Links with identical accessible names and same context serve equivalent purpose" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -277,10 +277,6 @@ h2#sidebar-header {
                 
                 <li><a href="#expectation">Expectation</a></li>
                 
-                <li><a href="#assumptions">Assumptions</a></li>
-                
-                <li><a href="#accessibility-support">Accessibility Support</a></li>
-                
                 <li><a href="#background">Background</a></li>
                 
                 <li><a href="#accessibility-requirements-mapping">Accessibility Requirements Mapping</a></li>
@@ -359,18 +355,6 @@ h2#sidebar-header {
 
 <p><strong>Note</strong>: Resolving the links includes potential redirects, if the redirects happen instantly.</p>
 
-<h2 id="assumptions">Assumptions</h2>
-
-<ul>
-  <li>This rule assumes that, within the context of the test subject, the description provided by the <a href="#accessible-name" title="Definition of accessible name">accessible name</a> of a link can only accurately describe one resource (notably, homonyms alone are not used as link names). Thus, if two or more links have the same <a href="#accessible-name" title="Definition of accessible name">accessible name</a> but resolve to different resources, at least one of them does not accurately describe its purpose.</li>
-  <li>This rule assumes that assistive technologies are exposing all links on the page in the same way no matter which <a href="https://dom.spec.whatwg.org/#document-trees">document tree</a> they are in. If an assistive technology requires the user to “enter” an <code class="language-plaintext highlighter-rouge">iframe</code> or a <a href="https://dom.spec.whatwg.org/#shadow-tree" title="Definition of shadow tree">shadow tree</a> before exposing its links, then it is possible for two links to have identical name and context but resolve to different resources without failing <a href="https://www.w3.org/TR/WCAG22/#link-purpose-in-context" title="Success Criterion 2.4.4: Link Purpose (In Context)">Success Criterion 2.4.4 Link Purpose (In Context)</a> (if said links are in separate <a href="https://dom.spec.whatwg.org/#concept-document" title="Definition of document">documents</a> or <a href="https://dom.spec.whatwg.org/#shadow-tree" title="Definition of shadow tree">shadow trees</a>).</li>
-  <li>This rule assumes that reading the URL, such as from the status bar when the link is focused, is not considered part of the context, and therefore, it does not disambiguate links.</li>
-</ul>
-
-<h2 id="accessibility-support">Accessibility Support</h2>
-
-<p>There are no accessibility support issues known.</p>
-
 <h2 id="background">Background</h2>
 
 <p>There is a difference between two contexts being the <em>same</em> and being <em>identical</em>. This rule specifically targets links within the <em>same</em> context. The same context means exactly the same set of DOM nodes. Identical (but not the same) contexts might have a different set of DOM nodes, but those DOM nodes have equivalent content - such as text content, attribute values, and so on. This difference is similar to the difference in some programming languages between pointer equivalence and deep object equivalence. Links with identical name that are in identical (but not the same) contexts also fail <a href="https://www.w3.org/TR/WCAG22/#link-purpose-in-context" title="Success Criterion 2.4.4: Link Purpose (In Context)">2.4.4 Link Purpose (In Context)</a>. However, defining “identical context” unambiguously has been deemed infeasible at this time, and so has been left out of this rule.</p>
@@ -378,6 +362,18 @@ h2#sidebar-header {
 <p>Links that are <a href="https://www.w3.org/TR/WCAG22/#dfn-ambiguous-to-users-in-general">ambiguous to users in general</a> are covered by the exception mentioned in Success Criterion 2.4.4 Link Purpose (In Context). If the links are ambiguous to users in general, users of assistive technologies are not at a disadvantage when viewing the links, which makes it more of a general user experience concern than an accessibility issue.</p>
 
 <p>Pages with links that are not [ambiguous to users in general][], but are ambiguous to some users are likely to fail [success criterion 1.3.1 Info and Relationships][sc131] if the disambiguation information is conveyed through presentation, but not semantically. Moreover, when this information is non-text content, such a page is likely to fail [success criterion 1.1.1 Non-text Content][sc111].</p>
+
+<h3 id="assumptions">Assumptions</h3>
+
+<ul>
+  <li>This rule assumes that, within the context of the test subject, the description provided by the <a href="#accessible-name" title="Definition of accessible name">accessible name</a> of a link can only accurately describe one resource (notably, homonyms alone are not used as link names). Thus, if two or more links have the same <a href="#accessible-name" title="Definition of accessible name">accessible name</a> but resolve to different resources, at least one of them does not accurately describe its purpose.</li>
+  <li>This rule assumes that assistive technologies are exposing all links on the page in the same way no matter which <a href="https://dom.spec.whatwg.org/#document-trees">document tree</a> they are in. If an assistive technology requires the user to “enter” an <code class="language-plaintext highlighter-rouge">iframe</code> or a <a href="https://dom.spec.whatwg.org/#shadow-tree" title="Definition of shadow tree">shadow tree</a> before exposing its links, then it is possible for two links to have identical name and context but resolve to different resources without failing <a href="https://www.w3.org/TR/WCAG22/#link-purpose-in-context" title="Success Criterion 2.4.4: Link Purpose (In Context)">Success Criterion 2.4.4 Link Purpose (In Context)</a> (if said links are in separate <a href="https://dom.spec.whatwg.org/#concept-document" title="Definition of document">documents</a> or <a href="https://dom.spec.whatwg.org/#shadow-tree" title="Definition of shadow tree">shadow trees</a>).</li>
+  <li>This rule assumes that reading the URL, such as from the status bar when the link is focused, is not considered part of the context, and therefore, it does not disambiguate links.</li>
+</ul>
+
+<h3 id="accessibility-support">Accessibility Support</h3>
+
+<p>There are no accessibility support issues known.</p>
 
 <h3 id="bibliography">Bibliography</h3>
 
@@ -899,19 +895,36 @@ not tested by the rule:</p>
 
 <h4 id="failed-example-7">Failed Example 7</h4>
 
-<p><a class="example-link" title="Failed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/1286cd0804868cc0f1a5f42a269240100dbdbf2c.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Failed Example 7" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/fd3a94/7ebe961dbb4fb0e259fc3bc98a8f048170b063af.html">Open in a new tab</a></p>
 
 <p>These two SVG <code class="language-plaintext highlighter-rouge">a</code> elements have the same <a href="#accessible-name" title="Definition of accessible name">accessible name</a> and <a href="#programmatically-determined-link-context" title="Definition of programmatically determined link context">context</a> but link to different resources.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;html</span> <span class="na">lang=</span><span class="s">"en"</span><span class="nt">&gt;</span>
 	<span class="nt">&lt;p&gt;</span>
-		<span class="nt">&lt;svg</span> <span class="na">enable-background=</span><span class="s">"new 0 0 264 120"</span> <span class="na">viewBox=</span><span class="s">"-5 -20 80 50"</span> <span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span> <span class="na">style=</span><span class="s">"max-width: 300px"</span><span class="nt">&gt;</span>
+		<span class="nt">&lt;svg</span>
+			<span class="na">enable-background=</span><span class="s">"new 0 0 264 120"</span>
+			<span class="na">viewBox=</span><span class="s">"-5 -20 80 50"</span>
+			<span class="na">xmlns=</span><span class="s">"http://www.w3.org/2000/svg"</span>
+			<span class="na">style=</span><span class="s">"max-width: 300px"</span>
+		<span class="nt">&gt;</span>
 			<span class="nt">&lt;text&gt;</span>Contact us<span class="nt">&lt;/text&gt;</span>
-			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=1"</span> <span class="na">aria-label=</span><span class="s">"Contact Us"</span> <span class="na">style=</span><span class="s">"scale: 0.2"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"m212.0806 68.0717c-10.3917 10.3852-22.4311 20.3239-27.1905 15.5646-6.8075-6.8075-11.0088-12.7418-26.0285-.6696-15.0132 12.0657-3.4792 20.1139 3.1182 26.7047 7.6149 7.6149 36.0001.407 64.0571-27.6434 28.0504-28.057 35.2386-56.4422 27.6172-64.0571-6.5974-6.604-14.6062-18.1314-26.6719-3.1182-12.0723 15.0132-6.1444 19.2145.6761 26.0285 4.7397 4.7593-5.1925 16.7988-15.5777 27.1905z"</span><span class="nt">/&gt;</span>
+			<span class="nt">&lt;a</span>
+				<span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=1"</span>
+				<span class="na">aria-label=</span><span class="s">"Contact Us"</span>
+				<span class="na">style=</span><span class="s">"scale: 0.2"</span>
+			<span class="nt">&gt;</span>
+				<span class="nt">&lt;path</span>
+					<span class="na">d=</span><span class="s">"m212.0806 68.0717c-10.3917 10.3852-22.4311 20.3239-27.1905 15.5646-6.8075-6.8075-11.0088-12.7418-26.0285-.6696-15.0132 12.0657-3.4792 20.1139 3.1182 26.7047 7.6149 7.6149 36.0001.407 64.0571-27.6434 28.0504-28.057 35.2386-56.4422 27.6172-64.0571-6.5974-6.604-14.6062-18.1314-26.6719-3.1182-12.0723 15.0132-6.1444 19.2145.6761 26.0285 4.7397 4.7593-5.1925 16.7988-15.5777 27.1905z"</span>
+				<span class="nt">/&gt;</span>
 			<span class="nt">&lt;/a&gt;</span>
-			<span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=2"</span> <span class="na">aria-label=</span><span class="s">"Contact Us"</span> <span class="na">style=</span><span class="s">"scale: 0.2"</span><span class="nt">&gt;</span>
-				<span class="nt">&lt;path</span> <span class="na">d=</span><span class="s">"m105 7.5h-90c-8.2576 0-15 6.7497-15 15v52.5c0 8.2498 6.7424 15 15 15h30l30 22.5v-22.5h30c8.2498 0 15-6.7502 15-15v-52.5c0-8.2503-6.7502-15-15-15zm-80.7903 52.5c-6.2132 0-11.255-5.0372-11.255-11.25 0-6.2132 5.0418-11.25 11.255-11.25 6.2128 0 11.245 5.0418 11.245 11.25 0 6.2077-5.0322 11.25-11.245 11.25zm35.7953 0c-6.2128 0-11.255-5.0372-11.255-11.25 0-6.2132 5.0423-11.25 11.255-11.25 6.2132 0 11.245 5.0368 11.245 11.25 0 6.2128-5.0317 11.25-11.245 11.25zm35.7958 0c-6.2132 0-11.2555-5.0372-11.2555-11.25 0-6.2132 5.0423-11.25 11.2555-11.25 6.2128 0 11.2445 5.0368 11.2445 11.25 0 6.2128-5.0318 11.25-11.2445 11.25z"</span><span class="nt">/&gt;</span>
+			<span class="nt">&lt;a</span>
+				<span class="na">href=</span><span class="s">"/test-assets/links-with-identical-names-serve-equivalent-purpose-b20e66/contact-us.html?page=2"</span>
+				<span class="na">aria-label=</span><span class="s">"Contact Us"</span>
+				<span class="na">style=</span><span class="s">"scale: 0.2"</span>
+			<span class="nt">&gt;</span>
+				<span class="nt">&lt;path</span>
+					<span class="na">d=</span><span class="s">"m105 7.5h-90c-8.2576 0-15 6.7497-15 15v52.5c0 8.2498 6.7424 15 15 15h30l30 22.5v-22.5h30c8.2498 0 15-6.7502 15-15v-52.5c0-8.2503-6.7502-15-15-15zm-80.7903 52.5c-6.2132 0-11.255-5.0372-11.255-11.25 0-6.2132 5.0418-11.25 11.255-11.25 6.2128 0 11.245 5.0418 11.245 11.25 0 6.2077-5.0322 11.25-11.245 11.25zm35.7953 0c-6.2128 0-11.255-5.0372-11.255-11.25 0-6.2132 5.0423-11.25 11.255-11.25 6.2132 0 11.245 5.0368 11.245 11.25 0 6.2128-5.0317 11.25-11.245 11.25zm35.7958 0c-6.2132 0-11.2555-5.0372-11.2555-11.25 0-6.2132 5.0423-11.25 11.2555-11.25 6.2128 0 11.2445 5.0368 11.2445 11.25 0 6.2128-5.0318 11.25-11.2445 11.25z"</span>
+				<span class="nt">/&gt;</span>
 			<span class="nt">&lt;/a&gt;</span>
 		<span class="nt">&lt;/svg&gt;</span>
 	<span class="nt">&lt;/p&gt;</span>
@@ -1103,7 +1116,7 @@ not tested by the rule:</p>
   <li>the element has a <a href="https://html.spec.whatwg.org/#tabindex-value">tabindex value</a> that is not null.</li>
 </ul>
 
-<p><strong>Exception</strong>: Elements that lose focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered <em>focusable</em>.</p>
+<p><strong>Exception</strong>: Elements that lose focus and do not regain focus during a period of up to 1 second after gaining focus, without the user interacting with the page the element is on, are not considered <em>focusable</em>.</p>
 
 <p>Notes:</p>
 
@@ -1159,17 +1172,21 @@ not tested by the rule:</p>
 
 <h3 id="outcome">Outcome</h3>
 
-<p>An <em>outcome</em> is a conclusion that comes from evaluating an ACT Rule on a <a href="https://www.w3.org/TR/act-rules-format/#test-subject">test subject</a> or one of its constituent <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a>. An outcome can be one of the three following types:</p>
+<p>A conclusion that comes from evaluating an ACT Rule on a <a href="https://www.w3.org/TR/act-rules-format-1.1/#test-subject">test subject</a> or one of its constituent test target. An outcome can be one of the five following types:</p>
 
 <ul>
   <li><strong>Inapplicable:</strong> No part of the test subject matches the applicability</li>
   <li><strong>Passed:</strong> A <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a> meets all expectations</li>
   <li><strong>Failed:</strong> A <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a> does not meet all expectations</li>
+  <li><strong>cantTell:</strong> Whether the rule is applicable, or not all expectations were met could not be fully determined by the tester.</li>
+  <li><strong>Untested</strong>: The tester has not attempted to evaluate the test subject.</li>
 </ul>
 
-<p><strong>Note:</strong> A rule has one <code class="language-plaintext highlighter-rouge">passed</code> or <code class="language-plaintext highlighter-rouge">failed</code> outcome for every <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a>. When there are no test targets the rule has one <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome. This means that each <a href="https://www.w3.org/TR/act-rules-format/#test-subject">test subject</a> will have one or more outcomes.</p>
+<p><strong>Note</strong>: A rule has one <code class="language-plaintext highlighter-rouge">passed</code> or <code class="language-plaintext highlighter-rouge">failed</code> outcome for every <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a>. When a tester evaluates a test target it can also be reported as <code class="language-plaintext highlighter-rouge">cantTell</code> if the rule cannot be tested in its entirety. For example, when applicability was automated, but the expectations have to be evaluated manually.</p>
 
-<p><strong>Note:</strong> Implementations using the <a href="https://www.w3.org/TR/EARL10-Schema/">EARL10-Schema</a> can express the outcome with the <a href="https://www.w3.org/TR/EARL10-Schema/#outcome">outcome property</a>. In addition to <code class="language-plaintext highlighter-rouge">passed</code>, <code class="language-plaintext highlighter-rouge">failed</code> and <code class="language-plaintext highlighter-rouge">inapplicable</code>, EARL 1.0 also defined an <code class="language-plaintext highlighter-rouge">incomplete</code> outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such “interim” results can be expressed with the <code class="language-plaintext highlighter-rouge">incomplete</code> outcome.</p>
+<p>When there are no test targets the rule has one <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome. If the tester is unable to determine whether there are test targets there will be one <code class="language-plaintext highlighter-rouge">cantTell</code> outcome. And when no evaluation has occurred the test target has one untested outcome. This means that each <a href="https://www.w3.org/TR/act-rules-format-1.1/#test-subject">test subject</a> always has one or more outcomes.</p>
+
+<p>Outcomes used in ACT Rules can be expressed using the <a href="https://www.w3.org/TR/EARL10-Schema/#outcome">outcome property</a> of the [<a href="https://www.w3.org/TR/act-rules-format-1.1/#biblio-earl10-schema">EARL10-Schema</a>][].</p>
 
 <h3 id="programmatically-determined-link-context">Programmatically Determined Link Context</h3>
 
@@ -1312,7 +1329,7 @@ not tested by the rule:</p>
   
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner"style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"><p><strong>Rule Identifier:</strong> fd3a94</p>
-<p><strong>Date:</strong> Updated 1 August 2024</p>
+<p><strong>Date:</strong> Updated 21 November 2024</p>
 <p><strong>Authors:</strong> <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, Giacomo Petri. Previous Authors: <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -1348,9 +1365,9 @@ not tested by the rule:</p>
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1732789184186543083"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1732791142071997238"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1732789184186543083"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1732791142071997238"></script>
 <script>
   svg4everybody();
 </script><script>

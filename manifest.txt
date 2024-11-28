@@ -899,6 +899,7 @@
 /content-assets/wcag-act-rules/testcases/0ssw9k/997b49af2f0596bb505c7cbbfd501c0f2fa393a5.html
 /content-assets/wcag-act-rules/testcases/0ssw9k/a7da5f9dbc260d633787386b6041c70cb9fbdc32.html
 /content-assets/wcag-act-rules/testcases/0ssw9k/bb9ee4cc0b4779228701779090f461ecb2947b82.html
+/content-assets/wcag-act-rules/testcases/0ssw9k/c5f649f91ebe4979270972db7c42279a74efc6c5.html
 /content-assets/wcag-act-rules/testcases/0ssw9k/d7f9b0ca63b41bfc560c867696744a14f8590394.html
 /content-assets/wcag-act-rules/testcases/0ssw9k/dd5ca5252dacc6d5e0fabb30e92633b284336832.html
 /content-assets/wcag-act-rules/testcases/0va7u6/00a1b04016513662a754e5114d0efbbd98ba58c8.html
@@ -982,6 +983,7 @@
 /content-assets/wcag-act-rules/testcases/2779a5/7f9f315b5041f3726662bf269613c43678af99d4.html
 /content-assets/wcag-act-rules/testcases/2779a5/820fb18c9bb20fb1a940a0806a87c6f6e468bb5b.html
 /content-assets/wcag-act-rules/testcases/2779a5/94ff40484422832c2910086d4387163aa2d9dd7d.html
+/content-assets/wcag-act-rules/testcases/2779a5/9c5eeb535181f3709e13b548a04b9d0054532cdd.html
 /content-assets/wcag-act-rules/testcases/2779a5/a14968698b0e95b6624f187d4538e320e4fa8952.html
 /content-assets/wcag-act-rules/testcases/2779a5/ecc29b73e37b6a125b3fd9767068dcaa368d467a.svg
 /content-assets/wcag-act-rules/testcases/2779a5/efa1e0438bb515332ec6b4d943044c336ca77fab.html
@@ -1545,6 +1547,7 @@
 /content-assets/wcag-act-rules/testcases/afw4f7/7b27adc8d5a8f07dca43b0f90806f40bc2a1b15b.html
 /content-assets/wcag-act-rules/testcases/afw4f7/7c7d6412dae7381d90517a6f3c0a30104d63062a.html
 /content-assets/wcag-act-rules/testcases/afw4f7/881897444deae644139c4b799b8eeb4b4b764c2a.html
+/content-assets/wcag-act-rules/testcases/afw4f7/8c33a0af471cc3c1abbb9f709afa6629b13daf3a.html
 /content-assets/wcag-act-rules/testcases/afw4f7/8df570a7bb69487e5f3b5d07a7af45cc881dc449.html
 /content-assets/wcag-act-rules/testcases/afw4f7/9e3383a60ab67d5988ac2144fec58a34677c52b2.html
 /content-assets/wcag-act-rules/testcases/afw4f7/a7d34d6d1dad765c7e444d3c3f63b18ca4742e9e.html
@@ -2063,6 +2066,7 @@
 /content-assets/wcag-act-rules/testcases/fd3a94/547d69dca1d88658ee7036136b8cd29e05a28823.html
 /content-assets/wcag-act-rules/testcases/fd3a94/58087cbeb108ebf723ffc232c9996123a6eb168b.html
 /content-assets/wcag-act-rules/testcases/fd3a94/7d61465599fad14c1a2135a3e1a85209fec9302f.html
+/content-assets/wcag-act-rules/testcases/fd3a94/7ebe961dbb4fb0e259fc3bc98a8f048170b063af.html
 /content-assets/wcag-act-rules/testcases/fd3a94/7f585ec08b99c103759f23ea36fe0ee263a7a1b4.html
 /content-assets/wcag-act-rules/testcases/fd3a94/8d14f906398220f1ba52ef34b7f8e40d654312bd.html
 /content-assets/wcag-act-rules/testcases/fd3a94/8dc58c481c594488a331cd267974a324b97c9c98.html

@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1732789184186543083";
+      element.src = "/WAI/assets/scripts/main.js?1732791142071997238";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1732789184186543083">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1732791142071997238">
 
-<title> Important letter spacing in style attributes is wide enough[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1732789184186543083"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Important letter spacing in style attributes is wide enough[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1732791142071997238"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Important letter spacing in style attributes is wide enough" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -277,10 +277,6 @@ h2#sidebar-header {
                 
                 <li><a href="#expectation">Expectation</a></li>
                 
-                <li><a href="#assumptions">Assumptions</a></li>
-                
-                <li><a href="#accessibility-support">Accessibility Support</a></li>
-                
                 <li><a href="#background">Background</a></li>
                 
                 <li><a href="#accessibility-requirements-mapping">Accessibility Requirements Mapping</a></li>
@@ -346,7 +342,13 @@ h2#sidebar-header {
 
 <p>For each test target, the <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of its <code class="language-plaintext highlighter-rouge">letter-spacing</code> property is at least 0.12 times the <a href="https://www.w3.org/TR/css-cascade-4/#computed" title="CSS Cascading and Inheritance Level 4 (Working draft) - Computed Values">computed</a> value of its <code class="language-plaintext highlighter-rouge">font-size</code> property.</p>
 
-<h2 id="assumptions">Assumptions</h2>
+<h2 id="background">Background</h2>
+
+<p>Styles <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declared</a> in a <code class="language-plaintext highlighter-rouge">style</code> attribute have higher <a href="https://www.w3.org/TR/css-cascade-3/#cascade-specificity" title="CSS Cascading and Inheritance Level 4 (Candidate Recommendation) - Cascade specificity">cascade specificity</a> than any selector; therefore, they “win” the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> over any other style from <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-author" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - Author Origin">author origin</a>, i.e. it cannot be overridden by any of these. On the other hand, if such a style is <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declared</a> in a style sheet, it can still “lose” the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> to declarations with higher <a href="https://www.w3.org/TR/selectors/#specificity" title="CSS Selectors Level 4 (Working draft) - Specificity">specificity</a> or simply coming from a later style sheet (such as ones injected by assistive technologies). This rule ensures that the element is not in the first case and that the style can be overridden by users, unless it is already at least the minimum required threshold. <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">Important</a> styles that are declared with the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-user" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - User Origin">user</a> or <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-ua" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - User Agent Origin">user agent</a> can win the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> over styles with the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-author" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - Author Origin">author origin</a>.</p>
+
+<p>CSS specifications define each declaration as being either <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a> (if it has the <code class="language-plaintext highlighter-rouge">!important</code> annotation) or <a href="https://www.w3.org/TR/css-cascade-4/#normal" title="CSS Cascading and Inheritance Level 4 (Working draft) - Normal declarations">normal</a>. Given that <code class="language-plaintext highlighter-rouge">normal</code> is also a keyword for some properties, and that <code class="language-plaintext highlighter-rouge">!important</code> is wider known than this distinction, this rule rather uses “<a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a>”/”not <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a>” to avoid confusion.</p>
+
+<h3 id="assumptions">Assumptions</h3>
 
 <ul>
   <li>
@@ -366,15 +368,9 @@ h2#sidebar-header {
   </li>
 </ul>
 
-<h2 id="accessibility-support">Accessibility Support</h2>
+<h3 id="accessibility-support">Accessibility Support</h3>
 
 <p>While some assistive technologies are able to set <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-user" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - User Origin">user origin</a> or <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-ua" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - User Agent Origin">user agent origin</a> styles, others, such as browser extensions, are only able to set styles with the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-author" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - Author Origin">author origin</a>. Such assistive technologies cannot create styles “winning” the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> over a <code class="language-plaintext highlighter-rouge">style</code> attribute with an <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a> declaration.</p>
-
-<h2 id="background">Background</h2>
-
-<p>Styles <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declared</a> in a <code class="language-plaintext highlighter-rouge">style</code> attribute have higher <a href="https://www.w3.org/TR/css-cascade-3/#cascade-specificity" title="CSS Cascading and Inheritance Level 4 (Candidate Recommendation) - Cascade specificity">cascade specificity</a> than any selector; therefore, they “win” the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> over any other style from <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-author" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - Author Origin">author origin</a>, i.e. it cannot be overridden by any of these. On the other hand, if such a style is <a href="https://www.w3.org/TR/css-cascade-4/#declared" title="CSS Cascading and Inheritance Level 4 (Working draft) - Declared Values">declared</a> in a style sheet, it can still “lose” the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> to declarations with higher <a href="https://www.w3.org/TR/selectors/#specificity" title="CSS Selectors Level 4 (Working draft) - Specificity">specificity</a> or simply coming from a later style sheet (such as ones injected by assistive technologies). This rule ensures that the element is not in the first case and that the style can be overridden by users, unless it is already at least the minimum required threshold. <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">Important</a> styles that are declared with the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-user" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - User Origin">user</a> or <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-ua" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - User Agent Origin">user agent</a> can win the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-sort" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascade Sort">cascade sort</a> over styles with the <a href="https://www.w3.org/TR/css-cascade-4/#cascade-origin-author" title="CSS Cascading and Inheritance Level 4 (Working draft) - Cascading Origins - Author Origin">author origin</a>.</p>
-
-<p>CSS specifications define each declaration as being either <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a> (if it has the <code class="language-plaintext highlighter-rouge">!important</code> annotation) or <a href="https://www.w3.org/TR/css-cascade-4/#normal" title="CSS Cascading and Inheritance Level 4 (Working draft) - Normal declarations">normal</a>. Given that <code class="language-plaintext highlighter-rouge">normal</code> is also a keyword for some properties, and that <code class="language-plaintext highlighter-rouge">!important</code> is wider known than this distinction, this rule rather uses “<a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a>”/”not <a href="https://www.w3.org/TR/css-cascade-4/#importance" title="CSS Cascading and Inheritance Level 4 (Working draft) - Importance">important</a>” to avoid confusion.</p>
 
 <h3 id="bibliography">Bibliography</h3>
 
@@ -665,17 +661,21 @@ h2#sidebar-header {
 
 <h3 id="outcome">Outcome</h3>
 
-<p>An <em>outcome</em> is a conclusion that comes from evaluating an ACT Rule on a <a href="https://www.w3.org/TR/act-rules-format/#test-subject">test subject</a> or one of its constituent <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a>. An outcome can be one of the three following types:</p>
+<p>A conclusion that comes from evaluating an ACT Rule on a <a href="https://www.w3.org/TR/act-rules-format-1.1/#test-subject">test subject</a> or one of its constituent test target. An outcome can be one of the five following types:</p>
 
 <ul>
   <li><strong>Inapplicable:</strong> No part of the test subject matches the applicability</li>
   <li><strong>Passed:</strong> A <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a> meets all expectations</li>
   <li><strong>Failed:</strong> A <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a> does not meet all expectations</li>
+  <li><strong>cantTell:</strong> Whether the rule is applicable, or not all expectations were met could not be fully determined by the tester.</li>
+  <li><strong>Untested</strong>: The tester has not attempted to evaluate the test subject.</li>
 </ul>
 
-<p><strong>Note:</strong> A rule has one <code class="language-plaintext highlighter-rouge">passed</code> or <code class="language-plaintext highlighter-rouge">failed</code> outcome for every <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a>. When there are no test targets the rule has one <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome. This means that each <a href="https://www.w3.org/TR/act-rules-format/#test-subject">test subject</a> will have one or more outcomes.</p>
+<p><strong>Note</strong>: A rule has one <code class="language-plaintext highlighter-rouge">passed</code> or <code class="language-plaintext highlighter-rouge">failed</code> outcome for every <a href="https://www.w3.org/TR/act-rules-format/#test-target">test target</a>. When a tester evaluates a test target it can also be reported as <code class="language-plaintext highlighter-rouge">cantTell</code> if the rule cannot be tested in its entirety. For example, when applicability was automated, but the expectations have to be evaluated manually.</p>
 
-<p><strong>Note:</strong> Implementations using the <a href="https://www.w3.org/TR/EARL10-Schema/">EARL10-Schema</a> can express the outcome with the <a href="https://www.w3.org/TR/EARL10-Schema/#outcome">outcome property</a>. In addition to <code class="language-plaintext highlighter-rouge">passed</code>, <code class="language-plaintext highlighter-rouge">failed</code> and <code class="language-plaintext highlighter-rouge">inapplicable</code>, EARL 1.0 also defined an <code class="language-plaintext highlighter-rouge">incomplete</code> outcome. While this cannot be the outcome of an ACT Rule when applied in its entirety, it often happens that rules are only partially evaluated. For example, when applicability was automated, but the expectations have to be evaluated manually. Such “interim” results can be expressed with the <code class="language-plaintext highlighter-rouge">incomplete</code> outcome.</p>
+<p>When there are no test targets the rule has one <code class="language-plaintext highlighter-rouge">inapplicable</code> outcome. If the tester is unable to determine whether there are test targets there will be one <code class="language-plaintext highlighter-rouge">cantTell</code> outcome. And when no evaluation has occurred the test target has one untested outcome. This means that each <a href="https://www.w3.org/TR/act-rules-format-1.1/#test-subject">test subject</a> always has one or more outcomes.</p>
+
+<p>Outcomes used in ACT Rules can be expressed using the <a href="https://www.w3.org/TR/EARL10-Schema/#outcome">outcome property</a> of the [<a href="https://www.w3.org/TR/act-rules-format-1.1/#biblio-earl10-schema">EARL10-Schema</a>][].</p>
 
 <h3 id="visible">Visible</h3>
 
@@ -809,7 +809,7 @@ h2#sidebar-header {
   
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner"style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"><p><strong>Rule Identifier:</strong> 24afc2</p>
-<p><strong>Date:</strong> Updated 25 January 2024</p>
+<p><strong>Date:</strong> Updated 21 November 2024</p>
 <p><strong>Authors:</strong> <a href="https://github.com/Jym77">Jean-Yves Moyen</a>. Previous Authors: <a href="https://github.com/jkodu">Jey Nandakumar</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -845,9 +845,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1732789184186543083"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1732791142071997238"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1732789184186543083"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1732791142071997238"></script>
 <script>
   svg4everybody();
 </script><script>
