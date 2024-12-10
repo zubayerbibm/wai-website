@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1732807903713432608";
+      element.src = "/WAI/assets/scripts/main.js?1733851335133312091";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1732807903713432608">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1733851335133312091">
 
-<title> Total Validator (+Browser) ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1732807903713432608"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Total Validator (+Browser) ACT Implementation |  | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1733851335133312091"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Total Validator (+Browser) ACT Implementation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -306,7 +306,7 @@ h2#sidebar-header {
       version 17.4.0
      is an Automated tool
       by <a href="https://www.totalvalidator.com/">Total Validator</a>.
-      The test results were last updated 29 August 2024.
+      The test results were last updated 30 November 2024.
 
     
 
@@ -326,7 +326,7 @@ h2#sidebar-header {
     </tr>
     <tr>
       <th>WCAG 2 rules</th>
-      <td>30</td>
+      <td>31</td>
       <td>0</td>
     </tr>
     <tr>
@@ -677,6 +677,16 @@ h2#sidebar-header {
         </tr>
       
       
+      
+        <tr>
+          <td><a href="#breakdown-oj04fd">
+            Element in sequential focus order has visible focus
+          </a></td>
+          <td>
+            WCAG 2 Rule </td>
+          <td>
+            Consistent </td>
+        </tr>
       
       
       
@@ -3460,16 +3470,17 @@ h2#sidebar-header {
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/94ff40484422832c2910086d4387163aa2d9dd7d.html">Passed Example 2</a>
             <abbr title="Proposed example">*</abbr>
         </th>
-        <td class="act-untested">untested</td>
-        <td class="act-untested">untested</td>
+        <td class="">passed</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/2779a5/9c5eeb535181f3709e13b548a04b9d0054532cdd.html">Failed Example 6</a>
             <abbr title="Proposed example">*</abbr>
         </th>
-        <td class="act-untested">untested</td>
-        <td class="act-untested">untested</td>
+        <td class="
+            act-false-negative">passed</td>
+        <td class="">failed</td>
       </tr>
     </tbody>
   </table>
@@ -5412,7 +5423,7 @@ h2#sidebar-header {
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/c5f649f91ebe4979270972db7c42279a74efc6c5.html">Passed Example 3</a>
             <abbr title="Proposed example">*</abbr>
         </th>
-        <td class="act-untested">untested</td>
+        <td class="">passed</td>
       </tr>
       <tr>
         <th>
@@ -5431,6 +5442,133 @@ h2#sidebar-header {
       <tr>
         <th>
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/0ssw9k/349a8b4b881ab5380ed63e4e0d8e26d8bd1ad025.html">Inapplicable Example 6</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="">passed</td>
+      </tr>
+    </tbody>
+  </table>
+</div>
+<p>
+  *: These examples are not yet approved for the rule. Results on these outcomes are not
+  taken into consideration determining the consistency and coverage.
+</p>
+
+<h3 id="breakdown-oj04fd">Element in sequential focus order has visible focus</h3>
+<p>
+  This rule is implemented by Total Validator (+Browser) using the
+  <code>E914</code> procedure.
+  The implementation is 
+    fully  consistent with the
+  <a href="/WAI/standards-guidelines/act/rules/oj04fd">Element in sequential focus order has visible focus</a>
+  WCAG 2 rule. 
+    It covers 5 of the 7 examples.
+    On 2 examples
+    the implementation cannot tell the outcome. This is often because of technical 
+    limitations in tools.
+  
+  
+  
+    The implementation correctly reports which success criteria are failed by this rule.
+  
+  See <a href="../#understanding-act-consistency">understanding ACT consistency</a>.
+</p>
+
+
+<div class="scroll-wrap">
+  <table class="act-requirements">
+    <caption>Success Criteria</caption>
+    <tbody><tr> <th>Expected</th> <th>Reported</th></tr>
+    <tr>
+      <td>
+        
+          <ul>
+            <li>
+              2.4.7
+              Focus Visible
+            </li>
+          </ul>
+        
+      </td>
+
+      <td>
+        
+          <ul>
+            <li>
+              2.4.7
+              Focus Visible
+            </li>
+          </ul>
+        
+      </td>
+    </tr>
+  </tbody></table>
+</div>
+
+
+<div class="scroll-wrap">
+  <table class="act-example-outcomes">
+    <caption>Test Results</caption>
+    <thead>
+      <tr>
+        <th></th>
+        <th>E914</th>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/52be6331dc0978990a8b806a9a4a84bf738a43e1.html">Passed Example 1</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/95cf4fdf26825900e91a30eaf6c2235516db79f9.html">Passed Example 2</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/b44aa294df6f0de62f11f6ae732087d92c90b448.html">Passed Example 3</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/dd9628d86628e285fe99ce98efdacbe441c20ca5.html">Passed Example 4</a>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/f1c9efb4c8d1b5f7870c693bce2e6ca046dd768d.html">Failed Example 1</a>
+        </th>
+        <td class="">failed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/90789ad82a761b7697418e8cb403db103f0925a2.html">Inapplicable Example 1</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/b12f1f45eef29c30197ca3bda79d793cd90eeadd.html">Inapplicable Example 2</a>
+        </th>
+        <td class="">passed</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/8f296b7a417523e9c769761dd41b703c75d90019.html">Passed Example 4</a>
+            <abbr title="Proposed example">*</abbr>
+        </th>
+        <td class="act-cannot-tell">cannot tell</td>
+      </tr>
+      <tr>
+        <th>
+          <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/oj04fd/eb4f387bfa2459fb12dc5b0cbda478238b3eeeda.html">Inapplicable Example 2</a>
             <abbr title="Proposed example">*</abbr>
         </th>
         <td class="">passed</td>
@@ -5804,9 +5942,11 @@ h2#sidebar-header {
           <a href="https://www.w3.org/WAI/content-assets/wcag-act-rules/testcases/afw4f7/8c33a0af471cc3c1abbb9f709afa6629b13daf3a.html">Failed Example 11</a>
             <abbr title="Proposed example">*</abbr>
         </th>
-        <td class="act-untested">untested</td>
-        <td class="act-untested">untested</td>
-        <td class="act-untested">untested</td>
+        <td class="
+            act-false-negative">passed</td>
+        <td class="act-cannot-tell">cannot tell</td>
+        <td class="
+            act-false-negative">passed</td>
       </tr>
     </tbody>
   </table>
@@ -8207,9 +8347,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1732807903713432608"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1733851335133312091"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1732807903713432608"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1733851335133312091"></script>
 <script>
   svg4everybody();
 </script><script>

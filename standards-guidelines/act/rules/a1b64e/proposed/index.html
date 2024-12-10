@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1732807903713432608";
+      element.src = "/WAI/assets/scripts/main.js?1733851335133312091";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1732807903713432608">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1733851335133312091">
 
-<title> Focusable element has no keyboard trap via standard navigation[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1732807903713432608"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Focusable element has no keyboard trap via standard navigation[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1733851335133312091"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Focusable element has no keyboard trap via standard navigation" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -350,7 +350,7 @@ h2#sidebar-header {
 
 <h3 id="accessibility-support">Accessibility Support</h3>
 
-<p>There are no accessibility support issues known.</p>
+<p>Some browsers have settings that will immediately cycle focus back to the web document. This fulfills the expectation because focus can cycle to the browser UI and the browser UI cycles focus back to the web document.</p>
 
 <h3 id="bibliography">Bibliography</h3>
 
@@ -388,11 +388,11 @@ h2#sidebar-header {
 
 <h4 id="passed-example-2">Passed Example 2</h4>
 
-<p><a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/fb76f71a94bf95f5cfef22f3db6655e7b0a57b0c.html">Open in a new tab</a></p>
+<p><a class="example-link" title="Passed Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/d26e3cbd39acb781e77c93ea99cc37b4c886c0c5.html">Open in a new tab</a></p>
 
 <p>This element is made <a href="#focusable" title="Definition of focusable">focusable</a> by the <code class="language-plaintext highlighter-rouge">tabindex</code> attribute. It does not create a trap for keyboard navigation.</p>
 
-<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">tabindex=</span><span class="s">"1"</span><span class="nt">&gt;</span>Text<span class="nt">&lt;/div&gt;</span>
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">role=</span><span class="s">"button"</span> <span class="na">tabindex=</span><span class="s">"1"</span><span class="nt">&gt;</span>Text<span class="nt">&lt;/div&gt;</span>
 </code></pre></div></div>
 
 <h4 id="passed-example-3">Passed Example 3</h4>
@@ -402,6 +402,55 @@ h2#sidebar-header {
 <p>This element is made <a href="#focusable" title="Definition of focusable">focusable</a> by the <code class="language-plaintext highlighter-rouge">tabindex</code> attribute, even if it is not part of the sequential focus navigation. It does not create a trap for keyboard navigation.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div</span> <span class="na">tabindex=</span><span class="s">"-1"</span><span class="nt">&gt;</span>Text<span class="nt">&lt;/div&gt;</span>
+</code></pre></div></div>
+
+<h4 id="passed-example-4">Passed Example 4</h4>
+
+<p><a class="example-link" title="Passed Example 4" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/a1b64e/6ee6cdfc0ae79ec72379b9ee4df9c1920b09ba15.html">Open in a new tab</a></p>
+
+<p>While the elements with id “sentinelBefore” and “sentinelAfter” contain focus to the contents of the div with name “Sample Modal”, focus is not trapped since the user can
+use <a href="#standard-keyboard-navigation">standard keyboard navigation</a> using the Escape key or by activating the “Close button” to dismiss the modal</p>
+
+<div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;div&gt;</span>Main page content with <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span><span class="nt">&gt;</span>some link<span class="nt">&lt;/a&gt;&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">id=</span><span class="s">"sentinelBefore"</span> <span class="na">style=</span><span class="s">"position:absolute; top:-999em"</span>
+        <span class="nt">&gt;</span>Upon receiving focus, this focus sentinel should wrap focus to the bottom of the modal<span class="nt">&lt;/a</span>
+    <span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span>
+    <span class="na">id=</span><span class="s">"sampleModal"</span>
+    <span class="na">role=</span><span class="s">"dialog"</span>
+    <span class="na">aria-label=</span><span class="s">"Sample Modal"</span>
+    <span class="na">aria-modal=</span><span class="s">"true"</span>
+    <span class="na">style=</span><span class="s">"border: solid black 1px; padding: 1rem;"</span>
+<span class="nt">&gt;</span>
+    <span class="nt">&lt;label&gt;</span>First and last name <span class="nt">&lt;input</span> <span class="na">id=</span><span class="s">"dialogFirst"</span><span class="nt">/&gt;&lt;/label&gt;&lt;br</span> <span class="nt">/&gt;</span>
+    <span class="nt">&lt;button</span> <span class="na">id=</span><span class="s">"closeButton"</span><span class="nt">&gt;</span>Close button<span class="nt">&lt;/button&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;div</span> <span class="na">aria-hidden=</span><span class="s">"true"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;a</span> <span class="na">href=</span><span class="s">"#"</span> <span class="na">id=</span><span class="s">"sentinelAfter"</span> <span class="na">style=</span><span class="s">"position:absolute; top:-999em"</span>
+        <span class="nt">&gt;</span>Upon receiving focus, this focus sentinel should wrap focus to the top of the modal<span class="nt">&lt;/a</span>
+    <span class="nt">&gt;</span>
+<span class="nt">&lt;/div&gt;</span>
+<span class="nt">&lt;script&gt;</span>
+    <span class="nb">window</span><span class="p">.</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">load</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">dialogFirst</span><span class="dl">'</span><span class="p">).</span><span class="nf">focus</span><span class="p">();</span>
+    <span class="p">})</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">sentinelBefore</span><span class="dl">'</span><span class="p">).</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">focus</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">closeButton</span><span class="dl">'</span><span class="p">).</span><span class="nf">focus</span><span class="p">()</span>
+    <span class="p">})</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">sentinelAfter</span><span class="dl">'</span><span class="p">).</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">focus</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">dialogFirst</span><span class="dl">'</span><span class="p">).</span><span class="nf">focus</span><span class="p">()</span>
+    <span class="p">})</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">closeButton</span><span class="dl">'</span><span class="p">).</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">click</span><span class="dl">'</span><span class="p">,</span> <span class="p">()</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">sampleModal</span><span class="dl">'</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">none</span><span class="dl">'</span>
+    <span class="p">})</span>
+    <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">sampleModal</span><span class="dl">'</span><span class="p">).</span><span class="nf">addEventListener</span><span class="p">(</span><span class="dl">'</span><span class="s1">keydown</span><span class="dl">'</span><span class="p">,</span> <span class="p">(</span><span class="nx">evt</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="p">{</span>
+        <span class="k">if </span><span class="p">(</span><span class="nx">evt</span><span class="p">.</span><span class="nx">key</span> <span class="o">===</span> <span class="dl">"</span><span class="s2">Escape</span><span class="dl">"</span><span class="p">)</span> <span class="p">{</span>
+            <span class="nb">document</span><span class="p">.</span><span class="nf">getElementById</span><span class="p">(</span><span class="dl">'</span><span class="s1">sampleModal</span><span class="dl">'</span><span class="p">).</span><span class="nx">style</span><span class="p">.</span><span class="nx">display</span> <span class="o">=</span> <span class="dl">'</span><span class="s1">none</span><span class="dl">'</span><span class="p">;</span>    
+        <span class="p">}</span>
+    <span class="p">})</span>
+<span class="nt">&lt;/script&gt;</span>
 </code></pre></div></div>
 
 <h3 id="failed">Failed</h3>
@@ -612,8 +661,8 @@ h2#sidebar-header {
   
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner"style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"><p><strong>Rule Identifier:</strong> a1b64e</p>
-<p><strong>Date:</strong> Updated 21 November 2024</p>
-<p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>, <a href="https: //github.com/MaliinO">Malin Øvrebø</a>, <a href="https://github.com/nitedog">Shadi Abou-Zahra</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
+<p><strong>Date:</strong> Updated 5 December 2024</p>
+<p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>, <a href="https://github.com/carlosapaduarte">Carlos Duarte</a>, <a href="https://github.com/DagfinnRomen">Dagfinn Rømen</a>, <a href="https://github.com/geirsf">Geir Sindre Fossøy</a>, <a href="https: //github.com/MaliinO">Malin Øvrebø</a>, <a href="https://github.com/nitedog">Shadi Abou-Zahra</a>, <a href="https://github.com/skotkjerra">Stein Erik Skotkjerra</a>, Tom Brunet. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
   </footer>
@@ -648,9 +697,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1732807903713432608"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1733851335133312091"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1732807903713432608"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1733851335133312091"></script>
 <script>
   svg4everybody();
 </script><script>

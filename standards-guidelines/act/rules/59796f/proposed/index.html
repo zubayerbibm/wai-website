@@ -9,15 +9,15 @@
 
     function downloadJSAtOnload() {
       var element = document.createElement("script");
-      element.src = "/WAI/assets/scripts/main.js?1732807903713432608";
+      element.src = "/WAI/assets/scripts/main.js?1733851335133312091";
       document.body.appendChild(element);
     }
 
     window.addEventListener("load", downloadJSAtOnload, false);
   </script>
-  <link rel="stylesheet" href="/WAI/assets/css/style.css?1732807903713432608">
+  <link rel="stylesheet" href="/WAI/assets/css/style.css?1733851335133312091">
 
-<title> Image button has non-empty accessible name[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1732807903713432608"><!-- Begin Jekyll SEO tag v2.8.0 -->
+<title> Image button has non-empty accessible name[proposed] | ACT Rule | WAI | W3C</title><link rel="stylesheet" href="/WAI/content-assets/wcag-act-rules/act-styles.css?1733851335133312091"><!-- Begin Jekyll SEO tag v2.8.0 -->
 <meta name="generator" content="Jekyll v4.3.3" />
 <meta property="og:title" content="Image button has non-empty accessible name" />
 <meta name="author" content="W3C Web Accessibility Initiative (WAI)" />
@@ -332,7 +332,7 @@ h2#sidebar-header {
 
 <h2 id="applicability">Applicability</h2>
 
-<p>This rule applies to any <code class="language-plaintext highlighter-rouge">input</code> element with a <code class="language-plaintext highlighter-rouge">type</code> <a href="#attribute-value:enumerated" title="Definition of Attribute Value">attribute value</a> of <code class="language-plaintext highlighter-rouge">image</code>, and that is <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a>.</p>
+<p>This rule applies to any <code class="language-plaintext highlighter-rouge">input</code> element with a <code class="language-plaintext highlighter-rouge">type</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of <code class="language-plaintext highlighter-rouge">image</code>, and that is <a href="#included-in-the-accessibility-tree" title="Definition of Included in the Accessibility Tree">included in the accessibility tree</a>.</p>
 
 <h2 id="expectation">Expectation</h2>
 
@@ -340,7 +340,7 @@ h2#sidebar-header {
 
 <h2 id="background">Background</h2>
 
-<p>Contrarily to <code class="language-plaintext highlighter-rouge">img</code> elements, an empty <code class="language-plaintext highlighter-rouge">alt</code> attribute (<code class="language-plaintext highlighter-rouge">alt=""</code>) does not make an image button decorative; image buttons have a button role and are therefore exposed as interactive elements. Consequently, an empty <code class="language-plaintext highlighter-rouge">alt</code> attribute does not provide a “usable string” for image buttons and the computation defaults to other means of providing a name, as defined in <a href="https://www.w3.org/TR/html-aam/#input-type-image-accessible-name-computation">input type=”image” Accessible Name Computation algorithm</a>.</p>
+<p>Unlike for <code class="language-plaintext highlighter-rouge">img</code> elements, an empty <code class="language-plaintext highlighter-rouge">alt</code> attribute (<code class="language-plaintext highlighter-rouge">alt=""</code>) does not make an image button decorative; image buttons have a button role and are therefore exposed as interactive elements. An empty <code class="language-plaintext highlighter-rouge">alt</code> attribute therefore does not provide a “usable string” for image buttons and the computation defaults to other means of providing a name, as defined in <a href="https://www.w3.org/TR/html-aam/#input-type-image-accessible-name-computation">input type=”image” Accessible Name Computation algorithm</a>.</p>
 
 <h3 id="assumptions">Assumptions</h3>
 
@@ -351,7 +351,7 @@ h2#sidebar-header {
 
 <h3 id="accessibility-support">Accessibility Support</h3>
 
-<p>The <a href="https://www.w3.org/TR/html-aam/#input-type-image-accessible-name-computation">input type=”image” Accessible Name Computation algorithm</a> uses the first non-empty name, but some user agents and assistive technologies combinations stop at the first existing one, even if empty.</p>
+<p>The <a href="https://www.w3.org/TR/html-aam/#input-type-image-accessible-name-computation">input type=”image” Accessible Name Computation algorithm</a> uses the first defined attribute, even if the attribute has an empty value. In contrast, some user agents and assistive technologies ignore empty attributes.</p>
 
 <h3 id="related-rules">Related rules</h3>
 
@@ -374,7 +374,7 @@ h2#sidebar-header {
   <li><details>
     <summary><span>1.1.1 Non-text Content (Level A)</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#non-text-content">Learn more about 1.1.1 Non-text Content</a></li>
+      <li><a href="https://www.w3.org/TR/WCAG22/#non-text-content">Learn more about 1.1.1 Non-text Content</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
@@ -386,7 +386,7 @@ h2#sidebar-header {
   <li><details>
     <summary><span>4.1.2 Name, Role, Value (Level A)</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/TR/WCAG21/#name-role-value">Learn more about 4.1.2 Name, Role, Value</a></li>
+      <li><a href="https://www.w3.org/TR/WCAG22/#name-role-value">Learn more about 4.1.2 Name, Role, Value</a></li>
       <li><strong>Required for conformance</strong> to WCAG 2.0 and later on level A and higher.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: success criterion is not satisfied</li>
@@ -398,7 +398,7 @@ h2#sidebar-header {
   <li><details>
     <summary><span>G94: Providing short text alternative for non-text content that serves the same purpose and presents the same information as the non-text content</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G94">Learn more about technique G94</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G94">Learn more about technique G94</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
@@ -410,7 +410,7 @@ h2#sidebar-header {
   <li><details>
     <summary><span>G95: Providing short text alternatives that provide a brief description of the non-text content</span></summary>
     <ul>
-      <li><a href="https://www.w3.org/WAI/WCAG21/Techniques/general/G95">Learn more about technique G95</a></li>
+      <li><a href="https://www.w3.org/WAI/WCAG22/Techniques/general/G95">Learn more about technique G95</a></li>
       <li>Not required for conformance to any W3C accessibility recommendation.</li>
       <li>Outcome mapping: <ul>
         <li>Any <code>failed</code> outcomes: technique is not satisfied</li>
@@ -515,7 +515,7 @@ h2#sidebar-header {
 
 <p><a class="example-link" title="Inapplicable Example 2" target="_blank" href="https://w3.org/WAI/content-assets/wcag-act-rules/testcases/59796f/37cce377c874eec22d1137977d2b8f00ebc42ea8.html">Open in a new tab</a></p>
 
-<p>The <code class="language-plaintext highlighter-rouge">input</code> element with the <code class="language-plaintext highlighter-rouge">type</code> <a href="#attribute-value:enumerated" title="Definition of Attribute Value">attribute value</a> of <code class="language-plaintext highlighter-rouge">button</code> is not an image button. <a href="https://www.w3.org/TR/WCAG22/#non-text-content">Success Criterion 1.1.1 Non-text Content</a> can not fail text buttons. Only non-text content is applicable.</p>
+<p>The <code class="language-plaintext highlighter-rouge">input</code> element with the <code class="language-plaintext highlighter-rouge">type</code> <a href="#attribute-value" title="Definition of Attribute Value">attribute value</a> of <code class="language-plaintext highlighter-rouge">button</code> is not an image button. <a href="https://www.w3.org/TR/WCAG22/#non-text-content">Success Criterion 1.1.1 Non-text Content</a> can not fail text buttons. Only non-text content is applicable.</p>
 
 <div class="language-html highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;input</span> <span class="na">type=</span><span class="s">"button"</span> <span class="na">value=</span><span class="s">"My button"</span> <span class="nt">/&gt;</span>
 </code></pre></div></div>
@@ -562,6 +562,25 @@ h2#sidebar-header {
 <p><strong>Note:</strong> As per the <a href="https://www.w3.org/TR/accname" title="Accessible Name and Description Computation">accessible name and description computation</a>, each element always has an accessible name. When no accessible name is provided, the element will nonetheless be assigned an empty (<code class="language-plaintext highlighter-rouge">""</code>) one.</p>
 
 <p><strong>Note:</strong> As per the <a href="https://www.w3.org/TR/accname" title="Accessible Name and Description Computation">accessible name and description computation</a>, accessible names are <a href="https://www.w3.org/TR/accname-1.1/#terminology">flat string</a> trimmed of leading and trailing whitespace. Notably, it is not possible for a non-empty accessible name to be composed only of whitespace since these must be trimmed.</p>
+
+<h3 id="attribute-value">Attribute value</h3>
+
+<p>The <dfn id="attribute-value:attribute">attribute value</dfn> of a content attribute set on an HTML element is the value that the attribute gets after being parsed and computed according to specifications. It may differ from the value that is actually written in the HTML code due to trimming whitespace or non-digits characters, default values, or case-insensitivity.</p>
+
+<p>Some notable case of attribute value, among others:</p>
+
+<ul>
+  <li>For <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#enumerated-attribute" title="HTML Specification of Enumerated Attribute">enumerated attributes</a>, the <dfn id="attribute-value:enumerated">attribute value</dfn> is either the state of the attribute, or the keyword that maps to it; even for the default states. Thus <code class="language-plaintext highlighter-rouge">&lt;input type="image" /&gt;</code> has an attribute value of either <code class="language-plaintext highlighter-rouge">Image Button</code> (the state) or <code class="language-plaintext highlighter-rouge">image</code> (the keyword mapping to it), both formulations having the same meaning; similarly, “an input element with a <code class="language-plaintext highlighter-rouge">type</code> <em>attribute value</em> of <code class="language-plaintext highlighter-rouge">Text</code>” can be either <code class="language-plaintext highlighter-rouge">&lt;input type="text" /&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;input /&gt;</code> (missing value default), or <code class="language-plaintext highlighter-rouge">&lt;input type="invalid" /&gt;</code> (invalid value default).</li>
+  <li>For <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#boolean-attributes" title="HTML Specification of Boolean Attribute">boolean attributes</a>, the <dfn id="attribute-value:boolean">attribute value</dfn> is <code class="language-plaintext highlighter-rouge">true</code> when the attribute is present and <code class="language-plaintext highlighter-rouge">false</code> otherwise. Thus <code class="language-plaintext highlighter-rouge">&lt;button disabled&gt;</code>, <code class="language-plaintext highlighter-rouge">&lt;button disabled="disabled"&gt;</code> and <code class="language-plaintext highlighter-rouge">&lt;button disabled=""&gt;</code> all have a <code class="language-plaintext highlighter-rouge">disabled</code> <em>attribute value</em> of <code class="language-plaintext highlighter-rouge">true</code>.</li>
+  <li>For attributes whose value is used in a case-insensitive context, the <dfn id="attribute-value:case-insensitive">attribute value</dfn> is the lowercase version of the value written in the HTML code.</li>
+  <li>For attributes that accept <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#numbers" title="HTML Specification of Number Parsing">numbers</a>, the <dfn id="attribute-value:number">attribute value</dfn> is the result of parsing the value written in the HTML code according to the rules for parsing this kind of number.</li>
+  <li>For attributes that accept sets of tokens, whether <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#space-separated-tokens" title="HTML Specification of Space Separated Tokens">space separated</a> or <a href="https://html.spec.whatwg.org/multipage/common-microsyntaxes.html#comma-separated-tokens" title="HTML Specification of Comma Separated Tokens">comma separated</a>, the <dfn id="attribute-value:tokens-list">attribute value</dfn> is the set of tokens obtained after parsing the set and, depending on the case, converting its items to lowercase (if the set is used in a case-insensitive context).</li>
+  <li>For <code class="language-plaintext highlighter-rouge">aria-*</code> attributes, the <dfn id="attribute-value:aria">attribute value</dfn> is computed as indicated in the <a href="https://www.w3.org/TR/wai-aria-1.2/#propcharacteristic_value" title="WAI-ARIA Specification of States and Properties Value">WAI-ARIA specification</a> and the <a href="https://www.w3.org/TR/html-aam-1.0/#html-attribute-state-and-property-mappings" title="Specification of HTML attributes value mapping to ARIA states and properties">HTML Accessibility API Mappings</a>.</li>
+</ul>
+
+<p>This list is not exhaustive, and only serves as an illustration for some of the most common cases.</p>
+
+<p>The <dfn id="attribute-value:idl">attribute value</dfn> of an <a href="https://heycam.github.io/webidl/#idl-attributes" title="Definition of Web IDL Attribute (Editor's Draft)">IDL attribute</a> is the value returned on getting it. Note that when an <a href="https://heycam.github.io/webidl/#idl-attributes" title="Definition of Web IDL Attribute (Editor's Draft)">IDL attribute</a> <a href="https://html.spec.whatwg.org/multipage/common-dom-interfaces.html#reflecting-content-attributes-in-idl-attributes" title="HTML specification of Reflecting Content Attributes in IDL Attributes">reflects</a> a content attribute, they have the same attribute value.</p>
 
 <h3 id="focusable">Focusable</h3>
 
@@ -757,7 +776,7 @@ h2#sidebar-header {
   
   <footer id="wai-site-footer" class="page-footer default-grid" aria-label="Page">
     <div class="inner"style="-ms-grid-column: 2; -ms-grid-column-span: 8; grid-column: 2 / 8;"><p><strong>Rule Identifier:</strong> 59796f</p>
-<p><strong>Date:</strong> Updated 21 November 2024</p>
+<p><strong>Date:</strong> Updated 2 December 2024</p>
 <p><strong>Authors:</strong> <a href="https://github.com/annethyme">Anne Thyme Nørregaard</a>. Contributors: <a href="https://www.w3.org/community/act-r/participants">Participants of the ACT Rules Community Group (CG)</a>.</p>
 <p>This rule was written in the <a href="https://w3.org/community/act-r/">ACT Rules Community Group</a>. It is written as part of the EU-funded <a href="https://www.w3.org/WAI/about/projects/wai-tools/">WAI-Tools Project</a>. Implementations are part of the EU funded <a href="https://www.w3.org/WAI/about/projects/wai-coop/">WAI-CooP Project</a>. It will be reviewed by the Accessibility Guidelines Working Group (<a href="https://www.w3.org/groups/wg/ag">AG WG</a>).</p>
 </div>
@@ -793,9 +812,9 @@ h2#sidebar-header {
     </ul>
   </div>
 </footer><!-- Details4Everybody -->
-<script src="/WAI/assets/scripts/details4everybody.js?1732807903713432608"></script>
+<script src="/WAI/assets/scripts/details4everybody.js?1733851335133312091"></script>
 <!-- SVG4Everybody -->
-<script src="/WAI/assets/scripts/svg4everybody.js?1732807903713432608"></script>
+<script src="/WAI/assets/scripts/svg4everybody.js?1733851335133312091"></script>
 <script>
   svg4everybody();
 </script><script>
