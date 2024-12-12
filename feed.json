@@ -13,6 +13,48 @@
 "items": [
     
         {
+            "id": "https://www.w3.org/WAI/news/2024-12-12/wcag3/",
+            "title": "For Review: WCAG 3 Working Draft - example guidelines and conformance",
+            "summary": null,
+            "content_text": "An updated W3C Accessibility Guidelines (WCAG) 3.0 Working Draft is available for review. For a summary of changes, new content for review, and how to comment, see the WCAG 3 Introduction section Status: In-progress drafts.",
+            "content_html": "<p>An updated W3C Accessibility Guidelines (WCAG) 3.0 Working Draft is available for review. For a summary of changes, new content for review, and how to comment, see the WCAG 3 Introduction section <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/wcag3-intro/#status-in-progress-drafts\">Status: In-progress drafts</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2024-12-12/wcag3/",
+            
+            
+            
+            
+            
+            "date_published": "2024-12-12T00:00:00+00:00",
+            "date_modified": "2024-12-12T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
+            "id": "https://www.w3.org/WAI/news/2024-12-12/wcag2updates/",
+            "title": "WCAG 2.1 and WCAG 2.2 published with minor editorial updates",
+            "summary": null,
+            "content_text": "The W3C Accessibility Guidelines Working Group (AG WG) is addressing open issues on Web Content Accessibility Guidelines (WCAG) 2.1 and 2.2. Most issue resolutions resulted in updates to Understanding WCAG and Techniques for WCAG. Some resulted in minor editorial updates to the WCAG standard. Today W3C published updates to: Web Content Accessibility Guidelines (WCAG) 2.1 and Web Content Accessibility Guidelines (WCAG) 2.2. For a list of updates, see the Change Log section of each document. Please share this web page as the place to start for up-to-date information on WCAG 2: WCAG 2 Overview.",
+            "content_html": "<p>The W3C Accessibility Guidelines Working Group (AG WG) is addressing open issues on Web Content Accessibility Guidelines (WCAG) 2.1 and 2.2. Most issue resolutions resulted in updates to <a href=\"https://www.w3.org/WAI/WCAG22/Understanding/\">Understanding WCAG</a> and <a href=\"https://www.w3.org/WAI/WCAG22/Techniques/\">Techniques for WCAG</a>. Some resulted in minor editorial updates to the WCAG standard. Today W3C published updates to: <a href=\"https://www.w3.org/TR/WCAG21/\">Web Content Accessibility Guidelines (WCAG) 2.1</a> and <a href=\"https://www.w3.org/TR/WCAG22/\">Web Content Accessibility Guidelines (WCAG) 2.2</a>. For a list of updates, see the Change Log section of each document. Please share this web page as the place to start for up-to-date information on WCAG 2: <a href=\"https://www.w3.org/WAI/standards-guidelines/wcag/\">WCAG 2 Overview</a>.</p>",
+            "url": "https://www.w3.org/WAI/news/2024-12-12/wcag2updates/",
+            
+            
+            
+            
+            
+            "date_published": "2024-12-12T00:00:00+00:00",
+            "date_modified": "2024-12-12T00:00:00+00:00",
+            
+                "author": 
+                "W3C Web Accessibility Initiative (WAI)"
+                
+            
+        },
+    
+        {
             "id": "https://www.w3.org/WAI/news/2024-10-08/wcag2ict/",
             "title": "WCAG2ICT Note Published",
             "summary": null,
@@ -719,48 +761,6 @@
             
             "date_published": "2022-11-08T00:00:00+00:00",
             "date_modified": "2022-11-08T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2022-09-29/curricula/",
-            "title": "Updated Resource: Content Author Modules in Curricula on Web Accessibility",
-            "summary": null,
-            "content_text": "Curricula on Web Accessibility now has new content author modules. This curricula provides a framework for creating courses on digital accessibility, for including accessibility in other courses, and for reviewing and comparing existing and proposed courses. The September 2022 publication adds new content author modules. These modules focus on teaching accessibility to writers, editors, content creators, and content publishers.",
-            "content_html": "<p><a href=\"https://www.w3.org/WAI/curricula/\">Curricula on Web Accessibility</a> now has new content author modules. This curricula provides a framework for creating courses on digital accessibility, for including accessibility in other courses, and for reviewing and comparing existing and proposed courses. The September 2022 publication adds new <a href=\"https://www.w3.org/WAI/curricula/content-author-modules/\">content author modules</a>. These modules focus on teaching accessibility to writers, editors, content creators, and content publishers.</p>",
-            "url": "https://www.w3.org/WAI/news/2022-09-29/curricula/",
-            
-            
-            
-            
-            
-            "date_published": "2022-09-29T00:00:00+00:00",
-            "date_modified": "2022-09-29T00:00:00+00:00",
-            
-                "author": 
-                "W3C Web Accessibility Initiative (WAI)"
-                
-            
-        },
-    
-        {
-            "id": "https://www.w3.org/WAI/news/2022-09-19/course-list/",
-            "title": "New Resource: Accessibility Course List",
-            "summary": null,
-            "content_text": "Course List - Digital Accessibility Education, Training, and Certification includes publicly-available courses around the world. We expect to add more courses in the coming weeks. We invite course providers to submit your courses. We may also revise the user interface based on additional user feedback. Please send any comments by 17 October 2022.",
-            "content_html": "<p><a href=\"https://www.w3.org/WAI/courses/list/\">Course List - Digital Accessibility Education, Training, and Certification</a> includes publicly-available courses around the world. We expect to add more courses in the coming weeks. We invite course providers to submit your courses. We may also revise the user interface based on additional user feedback. Please send any comments by 17 October 2022.</p>",
-            "url": "https://www.w3.org/WAI/news/2022-09-19/course-list/",
-            
-            
-            
-            
-            
-            "date_published": "2022-09-19T00:00:00+00:00",
-            "date_modified": "2022-09-19T00:00:00+00:00",
             
                 "author": 
                 "W3C Web Accessibility Initiative (WAI)"

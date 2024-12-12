@@ -3097,6 +3097,8 @@
 /news/2024-07-02/wcag2ict/index.html
 /news/2024-07-10/ctaur/index.html
 /news/2024-10-08/wcag2ict/index.html
+/news/2024-12-12/wcag2updates/index.html
+/news/2024-12-12/wcag3/index.html
 /news/21/index.html
 /news/22/index.html
 /news/23/index.html
@@ -3114,6 +3116,7 @@
 /news/34/index.html
 /news/35/index.html
 /news/36/index.html
+/news/37/index.html
 /news/4/index.html
 /news/5/index.html
 /news/6/index.html
